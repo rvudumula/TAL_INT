@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="SAPMM.wsdl"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="materialmasterRequest"
+				type="tns:Request">
+
+			</xsd:element>
+			<xsd:element name="materialmasterResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		
+			<xsd:complexType name="Request">
+				<xsd:sequence>
+					<xsd:element name="LongTxt" type="xsd:string" maxOccurs="1" minOccurs="0"></xsd:element>
+					<xsd:element name="zdate" type="xsd:string" maxOccurs="1" minOccurs="0"></xsd:element>
+					<xsd:element name="ztime" type="xsd:string" maxOccurs="1" minOccurs="0"></xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="materialmasterRequest">
+		<wsdl:part name="parameters" element="tns:materialmasterRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="materialmasterResponse">
+		<wsdl:part name="parameters" element="tns:materialmasterResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:portType name="SAPMM.wsdlPortType">
+		<wsdl:operation name="materialmaster">
+			<wsdl:input message="tns:materialmasterRequest"></wsdl:input>
+			<wsdl:output message="tns:materialmasterResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="SAPMM.wsdlBinding" type="tns:SAPMM.wsdlPortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="materialmaster">
+			<soap:operation soapAction="http://www.talend.org/service/materialmaster" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="SAPMM.wsdl">
+		<wsdl:port name="SAPMM.wsdlPort" binding="tns:SAPMM.wsdlBinding">
+			<soap:address location="http://localhost:8090/services/SAPMM.wsdl" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
