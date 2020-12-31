@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="SOAP_SAP_WareHouse"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="SOAP_SAP_WareHouseOperationRequest"
+				type="tns:request">
+
+			</xsd:element>
+			<xsd:element name="SOAP_SAP_WareHouseOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		
+			<xsd:complexType name="request">
+				<xsd:sequence>
+					<xsd:element name="PLANT" type="xsd:string" maxOccurs="1" minOccurs="0"></xsd:element>
+					<xsd:element name="SLOC" type="xsd:string" maxOccurs="1" minOccurs="0"></xsd:element>
+					<xsd:element name="ZDate" type="xsd:string" maxOccurs="1" minOccurs="0"></xsd:element>
+					<xsd:element name="ZTime" type="xsd:string" maxOccurs="1" minOccurs="0"></xsd:element>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="SOAP_SAP_WareHouseOperationRequest">
+		<wsdl:part name="parameters" element="tns:SOAP_SAP_WareHouseOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="SOAP_SAP_WareHouseOperationResponse">
+		<wsdl:part name="parameters" element="tns:SOAP_SAP_WareHouseOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:portType name="SOAP_SAP_WareHousePortType">
+		<wsdl:operation name="SOAP_SAP_WareHouseOperation">
+			<wsdl:input message="tns:SOAP_SAP_WareHouseOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:SOAP_SAP_WareHouseOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="SOAP_SAP_WareHouseBinding" type="tns:SOAP_SAP_WareHousePortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="SOAP_SAP_WareHouseOperation">
+			<soap:operation soapAction="http://www.talend.org/service/SOAP_SAP_WareHouseOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="SOAP_SAP_WareHouse">
+		<wsdl:port name="SOAP_SAP_WareHousePort" binding="tns:SOAP_SAP_WareHouseBinding">
+			<soap:address location="http://localhost:8090/services/SOAP_SAP_WareHouse" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
