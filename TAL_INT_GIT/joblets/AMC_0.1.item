@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
   <model:JobletProcess defaultContext="Default" jobType="Standard">
-    <context confirmationNeeded="false" name="Default"/>
+    <context confirmationNeeded="false" name="Default">
+      <contextParameter comment="" name="AMC_files" prompt="AMC_files?" promptNeeded="false" repositoryContextId="_-frAQEt8Eeu1hJK2f4Kg4A" type="id_String" value="C:/Softwares/New folder/AMC/"/>
+    </context>
     <parameters>
       <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
       <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="128"/>
@@ -45,7 +47,7 @@
       <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:Xeft0Gfa0rNkeciDVxZGfApLePq/mhXZb0lcaCUO"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:VQ2LZJH4zEjLtRveZLjvDSj96MndmAX2wL/uW1GK"/>
       <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
       <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -167,13 +169,13 @@
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
       <elementParameter field="CHECK" name="USESTREAM" value="false"/>
       <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
-      <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Administrator/workspace/out.csv&quot;"/>
+      <elementParameter field="FILE" name="FILENAME" value="context.AMC_files+&quot;Stats.csv&quot;"/>
       <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
       <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
       <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
       <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
       <elementParameter field="CHECK" name="APPEND" value="true"/>
-      <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+      <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
       <elementParameter field="CHECK" name="COMPRESS" show="false" value="false"/>
       <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
       <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
@@ -330,14 +332,14 @@
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_2"/>
       <elementParameter field="CHECK" name="USESTREAM" value="false"/>
       <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
-      <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Administrator/workspace/out.csv&quot;"/>
+      <elementParameter field="FILE" name="FILENAME" value="context.AMC_files+&quot;Logs.csv&quot;"/>
       <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
       <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
       <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
       <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
-      <elementParameter field="CHECK" name="APPEND" value="false"/>
-      <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
-      <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+      <elementParameter field="CHECK" name="APPEND" value="true"/>
+      <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+      <elementParameter field="CHECK" name="COMPRESS" show="false" value="false"/>
       <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
       <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
       <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
@@ -353,7 +355,7 @@
       <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
       <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
       <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
-      <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true"/>
+      <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" show="false" value="true"/>
       <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
       <elementParameter field="TEXT" name="LABEL" value="log"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -399,7 +401,7 @@
       <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
       <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
       <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;username&quot;"/>
-      <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:GwDuInvVRR3OT7th80PILoY4uFTlnz4y96KIXviKRAIqCtHj8Ts="/>
+      <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:sCyjrkpFEx2edV2swcoPmlZUrIYCaD4XOSFVJOPpoxBbiI5wRKY="/>
       <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
       <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
       <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
@@ -504,14 +506,14 @@
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_3"/>
       <elementParameter field="CHECK" name="USESTREAM" value="false"/>
       <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
-      <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Administrator/workspace/out.csv&quot;"/>
+      <elementParameter field="FILE" name="FILENAME" value="context.AMC_files+&quot;Meter.csv&quot;"/>
       <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
       <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
       <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
       <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
-      <elementParameter field="CHECK" name="APPEND" value="false"/>
-      <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
-      <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+      <elementParameter field="CHECK" name="APPEND" value="true"/>
+      <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+      <elementParameter field="CHECK" name="COMPRESS" show="false" value="false"/>
       <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
       <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
       <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
@@ -527,7 +529,7 @@
       <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
       <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
       <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
-      <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true"/>
+      <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" show="false" value="true"/>
       <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
       <elementParameter field="TEXT" name="LABEL" value="meter"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -607,13 +609,13 @@
     </subjob>
   </model:JobletProcess>
   <TalendProperties:ByteArray/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7b6f60aa-6f0e-411c-86f8-9ee69c72b26c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Qc0YUg1+Ubsjb14NCkASMzql66mLvw7T6yXYwi8J+FULSkmhpDWi/HPlbGm1jPxnG5MO2DUZS2iW&#13;
-xKdeEVoc7g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ce4b8931-1df5-42d8-859f-7b138c5fb996"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>meUck5k39p27hWE15osF76QFzhJyqjrBf2WX3jYfgq5mlyW1tZM8acvz47Gp+2FjVuJIrZM4q1lE&#13;
-EJ8T7rbVjg==</DigestValue></Reference></SignedInfo><SignatureValue>ngIu6bFM6wYh56kxnKDaJFUB6Rb5ukNCgZ1dFWv+5h16RPCbW6v/17iPY8vQ/rty+g1E54bPhi44&#13;
-M+fQI2QrPcVx7OswcnqZbRl6vS9JFZsla9Z/cYUW8dttwjYgrOr344nJNPu+ZCIoAGG8qzj5rpfe&#13;
-EyobVHvLr2+TKuI3D+a/UTsaK0V6uwn6RLXyXGtTnd4HWYd2Q+6pJaKk5tQTEJgDpZmYpbp8nUNl&#13;
-YlHdsogNg4iAtr8688At2XG/RszGJUXZKPs+QPrfb7vrm3Kq+dxRzoOFM0okApfeg1RzoGEe98/R&#13;
-hl4AEmcaSudXwSFcfRXKDDTzkO/+gzCwSL+t0g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_bf188c4a-c362-4987-bfcc-7b079d1ac805"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0/X8/bF/Ff7UUdK30E7D/w/JfDc1mhgAhL6SFOLWtt3IFnVBkJwlmeU6ublJ/Cb4kBwWRhN3odR6&#13;
+4qqjUC1sOg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_fdf34d1c-fba0-4a32-9189-510b2912aa9c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>tpnm9kwvO0+dhELSFISo5ArawdgqiDtjI9zaSUCSQxfl32rZA8TDfgMawPXjF4Z+03rS5hEwbOdX&#13;
+x3YAOCaHVg==</DigestValue></Reference></SignedInfo><SignatureValue>pbl9NoptFfx5qzyWs+bIqtdVJXY20mO5gMtNKTjL6N7WvAtkpbH5nwv7aIc19fi+DYS+dpWCUUdx&#13;
+tNWrNA7em7RQ/YF4Zsb92Y/Lkw65iOQ4Ks0N+6M4ik9YNsKy1kz7q8AAgJ+Kao/Bj0p5VTMDaZAY&#13;
+NDIYnznlgWN3q6JXsNx4tJtw0Hzo8JsU4AfE0YBbeezuAtroLoH7fyW2wWEZn76bDFoekMceaiU7&#13;
+eIYVLSTAtDAz6evs+mUmAxaYxm5brKi3PxoH8HJXvjS9bDL+t8ZNOAgD7PjmDFob+riYNFBLnHoG&#13;
+Gecq8UEq/hNTffR7mWULcbEDBkW8Zqs8qgyadw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -635,4 +637,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ce4b8931-1df5-42d8-859f-7b138c5fb996" Target="#_7b6f60aa-6f0e-411c-86f8-9ee69c72b26c"><Timestamp>2021-01-03 10:32:19</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_fdf34d1c-fba0-4a32-9189-510b2912aa9c" Target="#_bf188c4a-c362-4987-bfcc-7b079d1ac805"><Timestamp>2021-01-03 10:38:57</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
