@@ -1,9 +1,34 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Prod" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="payload" prompt="payload?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="keystore_password" prompt="keystore_password?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="keystore_path" prompt="keystore_path?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="C:/ssl/hosprod.jks"/>
+    <contextParameter comment="" name="restkeystorepassword" prompt="restkeystorepassword?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="restkeystorepath" prompt="restkeystorepath?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="C:/ssl/restprodhos.jks"/>
+    <contextParameter comment="" name="SAP_SOAP_Password" prompt="SAP_SOAP_Password?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="&quot;RFCHOS@2020&quot;"/>
+    <contextParameter comment="" name="SAP_SOAP_Username" prompt="SAP_SOAP_Username?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="&quot;rfchoshp1100&quot;"/>
+    <contextParameter comment="" name="res_rest_relpath" prompt="res_rest_relpath?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="/HOS_S4/api/sales-order-status-api"/>
+    <contextParameter comment="" name="res_rest_url" prompt="res_rest_url?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="https://hos.nupco.com"/>
+    <contextParameter comment="" name="res_sap_relpath" prompt="res_sap_relpath?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="/sap/bc/srt/scs/sap/z_ws_get_salesordsts_data_v1?sap-client=100"/>
+    <contextParameter comment="" name="reservation_SAP_ur" prompt="reservation_SAP_ur?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="https://saphp1ap1.nupco.com:44330"/>
+    <contextParameter comment="" name="reservationapi" prompt="reservationapi?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="/sapservices/saleorderservice"/>
+  </context>
+  <context confirmationNeeded="false" name="Prod">
+    <contextParameter comment="" name="payload" prompt="payload?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="keystore_password" prompt="keystore_password?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="keystore_path" prompt="keystore_path?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="C:/ssl/hosprod.jks"/>
+    <contextParameter comment="" name="restkeystorepassword" prompt="restkeystorepassword?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="restkeystorepath" prompt="restkeystorepath?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="C:/ssl/restprodhos.jks"/>
+    <contextParameter comment="" name="SAP_SOAP_Password" prompt="SAP_SOAP_Password?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="&quot;RFCHOS@2020&quot;"/>
+    <contextParameter comment="" name="SAP_SOAP_Username" prompt="SAP_SOAP_Username?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="&quot;rfchoshp1100&quot;"/>
+    <contextParameter comment="" name="res_rest_relpath" prompt="res_rest_relpath?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="/HOS_S4/api/sales-order-status-api"/>
+    <contextParameter comment="" name="res_rest_url" prompt="res_rest_url?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="https://hos.nupco.com"/>
+    <contextParameter comment="" name="res_sap_relpath" prompt="res_sap_relpath?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="/sap/bc/srt/scs/sap/z_ws_get_salesordsts_data_v1?sap-client=100"/>
+    <contextParameter comment="" name="reservation_SAP_ur" prompt="reservation_SAP_ur?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="https://saphp1ap1.nupco.com:44330"/>
+    <contextParameter comment="" name="reservationapi" prompt="reservationapi?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="/sapservices/saleorderservice"/>
   </context>
   <parameters>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="448"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="416"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="160"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
@@ -44,7 +69,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:XWD5dbiMwSMp9310nRywuKzHdMltNWwvuuqqOQm/"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:b81gb0AJ5c+dD3A2y0sALI84qVKZafneccbXrChq"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -59,7 +84,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/rputtamreddy/TAC_workspace/.metadata&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend/PROD_WS/.metadata&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
@@ -79,7 +104,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:JyOR8OoN5SHHCb9JDuPt8m2cbTfAdA3JdtouaBr+"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:f/mh71KAGEcykfmwU0hXGmIr5+VK3EQ5mqkEJ5TC"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -113,12 +138,12 @@
   <node componentName="tSetKeystore" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-160" posY="-96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetKeystore_1"/>
     <elementParameter field="CLOSED_LIST" name="TRUSTSTORE_TYPE" value="JKS"/>
-    <elementParameter field="FILE" name="SSL_TRUSTSERVER_TRUSTSTORE" value="&quot;C:/ssl/webservice.jks&quot;"/>
-    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" value="enc:system.encryption.key.v1:fu/Fg2sP1jHAQbMaUuoc9qs0lsRqQKFpaeroNKJ/2igJn326"/>
+    <elementParameter field="FILE" name="SSL_TRUSTSERVER_TRUSTSTORE" value="&quot;C:\\ssl\\hosprod.jks&quot;"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" value="enc:system.encryption.key.v1:qCCZ+c0iRJF123GpjPXqtuSO01rwjh+h9638eebSHI7tCVlb"/>
     <elementParameter field="CHECK" name="NEED_CLIENT_AUTH" value="false"/>
     <elementParameter field="CLOSED_LIST" name="KEYSTORE_TYPE" show="false" value="JKS"/>
     <elementParameter field="FILE" name="SSL_KEYSTORE" show="false" value="&quot;C:/client.keystore&quot;"/>
-    <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" show="false" value="enc:system.encryption.key.v1:9C9ZpruulWeVxec7WE6xrliOJxHjClGCRVQhH8HlJaFS621vjbA="/>
+    <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" show="false" value="enc:system.encryption.key.v1:NOSdUQCSbA94Dv2EsuWVJteP7qjHT6gA8Um5PxrbzXfqKBaWf7k="/>
     <elementParameter field="CHECK" name="VERIFY_NAME" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
@@ -139,8 +164,6 @@
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-224" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="CHECK" name="DUMMY" show="false" value="true"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -272,7 +295,7 @@
   </node>
   <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTClient_1"/>
-    <elementParameter field="TEXT" name="URL" value="&quot;https://saphd1ap1.nupco.com:44310&quot;"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;https://saphp1ap1.nupco.com:44330&quot;"/>
     <elementParameter field="TEXT" name="PATH" value="&quot;/sap/bc/srt/scs/sap/z_ws_get_salesordsts_data_v1?sap-client=100&quot;"/>
     <elementParameter field="CLOSED_LIST" name="METHOD" value="POST"/>
     <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" value="application/xml"/>
@@ -284,8 +307,8 @@
     <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
     <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC"/>
-    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;ZRFC1&quot;"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:pIjhCwFCSJSTTkscKmsSSOi2ZzE0y4m2L61obBVFTPjsU+3/y7vJCaA="/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;rfchoshp1100&quot;"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:nMTfSBPxSa5yrRtP5ADMzDG5anVDgQWqwpHVp9l9OTGWPtF/wI+uiwU="/>
     <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="NEED_AUTHORIZATION" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROLE" show="false" value="&quot;&quot;"/>
@@ -316,7 +339,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8080"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:tXw2obAAIAjLwMQKvtHYtvdDerGxaxkyfbjRWEjg"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:16YYlz4tQtRs06IkW9Nv6++pPH/AwDt1/Je6SM11"/>
     <elementParameter field="TEXT" name="LABEL" value="SAP_SOAP_Call"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRESTClient_1">
@@ -450,18 +473,27 @@
       <column comment="" key="false" length="-1" name="string" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1472" posY="128">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1376" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_2"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#13;&#10;context.payload = input_row.string;&#13;&#10;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#10;&#10;System.setProperty(&quot;javax.net.ssl.trustStore&quot;,&quot;C:\\ssl\\restprodhos.jks&quot;);&#10;System.setProperty(&quot;javax.net.ssl.trustStorePassword&quot;,&quot;talend&quot;);&#10;if(input_row.string!=null &amp;&amp; !input_row.string.contains(&quot;[&quot;))&#10;context.payload = &quot;[&quot;+input_row.string+&quot;]&quot;;&#10;else&#10;context.payload = input_row.string;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="opt" name="tJavaRow_2">
       <column comment="" key="false" length="-1" name="string" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1536" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="opt" name="tJava_1">
+      <column comment="" key="false" length="-1" name="string" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
   <node componentName="tREST" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-384" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tREST_1"/>
-    <elementParameter field="TEXT" name="URL" value="&quot;http://ansara.in/HOS_S4/api/sales-order-status-api&quot;"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;https://hos.nupco.com/HOS_S4/api/sales-order-status-api&quot;"/>
     <elementParameter field="CLOSED_LIST" name="METHOD" value="POST"/>
     <elementParameter field="TABLE" name="HEADERS">
       <elementValue elementRef="NAME" value="&quot;Content-Type&quot;"/>
@@ -825,6 +857,10 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
   </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tJavaRow_2" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_2" target="tJava_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
   <connection connectorName="FLOW" label="row19" lineStyle="0" metaname="tREST_1" offsetLabelX="0" offsetLabelY="0" source="tREST_1" target="tLogRow_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row19"/>
@@ -903,13 +939,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="192;192;192"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e1939f44-35c4-424a-a63b-fdd4f51f6e38"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>aH1fFgtenpdGgJn8qhBk3zejfl0foGFL3u9TVShdegWmX5C0c4TXc3taO8nR7SaoN/mjasTsAo+G&#13;
-30LTAi5eHw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_23fc984d-a7b9-442c-b4c5-c82610550029"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>oWcjgWp7fpomAc1llEl0Mc4don7AzO25IL0PxB9goQ6c+sJ+5kWfphVTpJwoYZ7FNSYBTXln8e3h&#13;
-5RYKP73vow==</DigestValue></Reference></SignedInfo><SignatureValue>CXVAVBmBKi5l3Qc3N7Bc+nmSuT21TM3D5lvWrv+/6muHjVl3s3WDpCTLMj0HAqYePTGqNgoeYZda&#13;
-+1u3AzHiquAGUxVcQqrzzl5w9Bxjyjvnwdo0fmP6MGR/+ec5TBvzBeDvgsQlNZO0OZXgM39BdMLz&#13;
-t/J4MVPLzOxpmTNBHRSBXFu+OlLWPb6PFds/G28S5vi/8SmzL5Beu/R6+2pKSVTkBie/l7iZ7o7b&#13;
-C/PtnpNxFdS0ZU8EGGQpuUHxSWkSkFss0Qe18DFyMsqMTpmKtzxLNmyZrtRDhbeErpE6FDSUFR0p&#13;
-C8boqYIYQkAuU+fZA4YqDJiy1WWDBJ3i0x6ygQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_84befcee-ef03-42ab-842b-28f24e81d628"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>R9EQaSAdtx4jgPeCC8Ioj2fhJYzl7j/wbJG9ZryGKW0Ia/UJtxi/3+OrrBHTrecQNyUcma3lQcVm&#13;
+WxUkcwNtRQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0061e2d1-b12c-48db-a03c-0880e0d7ef7d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>DdLn6YBPx5XzzXlNp3Ymejve86XnaS1ZBcbLAjRMlvdPYFKxjYWAIxH2/RMyWDMyWNkI7GMxf96h&#13;
+KiTwr8iqVA==</DigestValue></Reference></SignedInfo><SignatureValue>Tsztag2SwU1BWXx5l+eLjWEMUEprtXpKH2JxAZLGiEFjZbO6mUfMDomVbHP9PUegBvVA+b9KUrPa&#13;
+aK74pno/8IgChtUDstCBarHXcFXiwsUvn6RDphj8z2c3EcNOW+4fpIN7bPmXCYoNcXlZsDPUpZPO&#13;
+DV+3kTmAjMrH+y4XwySVy3T9/UkBFqt+z/UhsX6Y5KyBGs/CBkevMcIXuGLhaKlQj7zZF2FmcZta&#13;
+cNbhEIXMg00CK2r2LWorcEEXIjB6cZfi867pAibhwOWYLCBTkfeRiBN6jzCH976wqXK3DCm2G7rs&#13;
+4aPOPrm97bvqSg228LBMJwhUmDA0fX6QXOY/aQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -931,4 +967,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_23fc984d-a7b9-442c-b4c5-c82610550029" Target="#_e1939f44-35c4-424a-a63b-fdd4f51f6e38"><Timestamp>2020-12-31 14:23:17</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0061e2d1-b12c-48db-a03c-0880e0d7ef7d" Target="#_84befcee-ef03-42ab-842b-28f24e81d628"><Timestamp>2021-01-05 11:04:00</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
