@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root t='150' id='1' V150='13' creationTimestamp='0x176d713d219' V1='4' name='RCPT_INB_IFD' incarnation='8'>
+  <rootElem t='167' id='2' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='RCPT_INB_IFD' description='This transaction is used to create, change, or delete receipt information from the warehouse system.'>
+    <structNode t='150' idref='1'/>
+    <child t='167' id='3' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' inheritsFrom='' V281='13' V1='4' name='Anonymous_sequence'>
+      <structNode t='150' idref='1'/>
+      <child t='167' id='4' V167='21' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CTRL_SEG' description='Identifies the transaction, using the transaction name and version as well as the warehouse routing information.'>
+        <structNode t='150' idref='1'/>
+        <child t='167' id='5' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='2' repHandlerStruct='' inheritsFrom='' V281='13' V1='4' name='Anonymous_choice'>
+          <structNode t='150' idref='1'/>
+          <child t='167' id='6' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='30' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRNNAM' description='Transaction ID - Identifier for this IFD. yes'>
+            <structNode t='150' idref='1'/>
+          </child>
+          <child t='167' id='7' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='15' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRNVER' description='Transaction version yes'>
+            <structNode t='150' idref='1'/>
+          </child>
+          <child t='167' id='8' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='32' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='WHSE_ID' description='Warehouse ID - Identifier for the warehouse system.'>
+            <structNode t='150' idref='1'/>
+          </child>
+          <child t='167' id='9' V167='21' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='RCPT_TRLR_SEG' description='This segment is used to create, change or remove receipt trailer information in the Trailer (TRLR) table.'>
+            <structNode t='150' idref='1'/>
+            <child t='167' id='10' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='2' repHandlerStruct='' inheritsFrom='' V281='13' V1='4' name='Anonymous_choice' checksumValid='true' checksum='zNIrfE+nlqMq8E2WZnhLbe6ULh0='>
+              <structNode t='150' idref='1'/>
+              <child t='167' id='11' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SEGNAM' description='Segment Name - Identifier for this IFD segment. yes'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='12' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRNTYP' description='Transaction Type - "A" for Add record, "C" for Change record, "R" for Refresh record or "D" for Delete record. yes'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='13' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRLR_NUM' description='User identification for the trailer. yes'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='14' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CARCOD' description='Carrier for which this trailer transports inventory. A carrier code is only required for Shipping trailers. yes'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='15' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='8' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRLR_STAT' description='The trailer status is updated by system to indicate the current condition of trailer. Receiving trailer status include EX, CI, O...'>
+                <structNode t='150' idref='1'/>
+                <longDesc>The trailer status is updated by system to indicate the current condition of trailer. Receiving trailer status include EX, CI, OR, R, SUSP. Shipping trailer status include CI, O, L, LDG, P, D, C.</longDesc>
+              </child>
+              <child t='167' id='16' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='4' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRLR_TYP' description='The Trailer Type is a user-defined value that can be assigned to the trailer.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='17' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRLR_SIZE' description='The size of the trailer'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='18' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='REFRIG_FLG' description='Indicates that the trailer is a refrigerator trailer.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='19' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRLR_BROKER' description='Owner of the trailer'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='20' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='30' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRLR_SEAL1' description='Identifier assigned to the first trailer seal.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='21' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='30' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRLR_SEAL2' description='Identifier assigned to the second trailer seal'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='22' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='30' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRLR_SEAL3' description='Identifier assigned to the third trailer seal'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='23' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='30' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRLR_SEAL4' description='Identifier assigned to the fourth trailer seal'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='24' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='STOLOC' description='Shipment location. Logical location in the system where inventory for shipments are moved as the inventory is loaded on the trai...'>
+                <structNode t='150' idref='1'/>
+                <longDesc>Shipment location. Logical location in the system where inventory for shipments are moved as the inventory is loaded on the trailer.</longDesc>
+              </child>
+              <child t='167' id='25' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='YARD_LOC' description='Physical location in the yard where the trailer is located'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='26' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='8' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='YARD_STAT' description='User defined status that can be applied to the trailer to specify the current activity of that trailer. This status is a visual ...'>
+                <structNode t='150' idref='1'/>
+                <longDesc>User defined status that can be applied to the trailer to specify the current activity of that trailer. This status is a visual cue and is not associated with any Warehouse Management processes.</longDesc>
+              </child>
+              <child t='167' id='27' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRLR_WGT' description='The weight of the trailer'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='28' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='40' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DRIVER_NAM' description='The name of the trailer driver'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='29' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='40' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DRIVER_LIC_NUM' description='The drivers license number of the trailer driver'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='30' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CLOSE_DTE' description='Trailer closed date.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='31' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PEND_DTE' description='Date the trailer is expected to be dispatched.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='32' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DISPATCH_DTE' description='Date the trailer was dispatched or left the yard.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='33' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='AUTOGEN_FLG' description='Flags the trailer as having been automatically generated when the user chose to automatically generate the carrier move and stop...'>
+                <structNode t='150' idref='1'/>
+                <longDesc>Flags the trailer as having been automatically generated when the user chose to automatically generate the carrier move and stops.</longDesc>
+              </child>
+              <child t='167' id='34' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='HOT_FLG' description='Indicates that product on the trailer could be used to satisfy short allocations'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='35' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='MODDTE' description='Last date this trailer was modified'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='36' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SEC_TRLR_NUM' description='User identification for second trailer on the tractor if carrier move is part of pup.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='37' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='4' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRLR_COD' description='Defines the trailer as either a Shipping or Receiving trailer. Trailer Code options are RCV or SHIP.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='38' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TURN_FLG' description='Indicates whether this receiving trailer will be turned around for shipping'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='39' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TUTN_FLG' description='Indicates whether this receiving trailer will be turned around for shipping'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='40' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DELV_FLG' description='Indicates if this is a delivery trailer'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='41' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='APPT_ID' description='The appointment number assigned to the trailer'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='42' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ARRDTE' description='Date trailer arrived (was checked in) into the facility.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='43' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='32' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CLIENT_ID' description='Client ID (owner) of the trailer'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='44' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRACTOR_NUM' description='The tractor or cab number of the trailer, different than the customer known trailer number.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='45' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRLR_COND' description='The condition of the trailer.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='46' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PAL_SLOT_FLG' description='Keeps track of whether or not the user is required to capture pallet positions for that trailer. Currently will get set when the...'>
+                <structNode t='150' idref='1'/>
+                <longDesc>Keeps track of whether or not the user is required to capture pallet positions for that trailer. Currently will get set when the loader loads the first piece of inventory onto the trailer.</longDesc>
+              </child>
+              <child t='167' id='47' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='32' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='STOLOC_WH_ID' description='The ID of the warehouse where the shipment location is'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='48' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='32' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='YARD_LOC_WH_ID' description='The ID of the warehouse where the yard location of the trailer is yes'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='49' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ORIG_TRLR_NUM' description='Original Trailer Number.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='50' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRLR_REF' description='Trailer Reference number, will be used during trailer audit if user entered a reference number during trailer check in.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='51' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LIVE_LOAD_FLG' description='Live Load Flag'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='52' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TMS_LOAD_ID' description='TMS load ID for the trailer if the transaction comes from tms'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='53' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRLR_ID' description='Trailer ID'>
+                <structNode t='150' idref='1'/>
+              </child>
+            </child>
+          </child>
+          <child t='167' id='54' V167='21' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='RCPT_TRUCK_SEG' description='This segment is used to create or change receipt truck information for the receipt in the Receive Truck (RCVTRK) table.'>
+            <structNode t='150' idref='1'/>
+            <child t='167' id='55' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='2' repHandlerStruct='' inheritsFrom='' V281='13' V1='4' name='Anonymous_choice' checksumValid='true' checksum='yNcmOOn8dCwaSXxlLOTQVYZMCBw='>
+              <structNode t='150' idref='1'/>
+              <child t='167' id='56' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SEGNAM' description='Segment Name - Identifier for this IFD segment. yes'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='57' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRNTYP' description='Transaction Type - "A" for Add record, "C" for Change record or "D" for Delete record. yes'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='58' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRKNUM' description='Truck Number - Identifier for the truck.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='59' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRKREF' description='Truck Reference - Alternate identification for the truck.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='60' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRKSTS' description='Truck Status - Obsolete with 6.1'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='61' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRNSPT' description='Transport Method - Method in which the truck (group of shipments) is to be transported to the warehouse.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='62' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='NUMPAL' description='Number of Pallets - Number of pallets expected on the truck.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='63' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='NUMCAS' description='Number of Cases - Number of cases expected on the truck.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='64' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='GRSWGT' description='Gross Case Weight - This value represents the weight of all product plus the weight of all packing materials expected on the tru...'>
+                <structNode t='150' idref='1'/>
+                <longDesc>Gross Case Weight - This value represents the weight of all product plus the weight of all packing materials expected on the truck.</longDesc>
+              </child>
+              <child t='167' id='65' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='FRTCST' description='Freight Cost - Cost of shipping the product on this truck.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='66' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SHPDTE' description='Shipment Date - Expected Shipment date from the vendor&apos;s facility.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='67' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='EXPDTE' description='Expected Date - Expected arrival date at the warehouse.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='68' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ARRDTE' description='Arrived Date - Obsolete with 6.1'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='69' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='RCVDCK' description='Receiving Dock - Obsolete with 6.1'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='70' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DEVCOD' description='Device Code - Device code of label device that should be used to print labels for inventory received from this truck.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='71' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LBLFLG' description='Produce Labels Flag - Set if labels should be generated for product identified on this truck using an RDT device.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='72' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ARECOD' description='Expected Receipts Area Code - The area where the identified inventory is created. In multi-building sites, this area determines ...'>
+                <structNode t='150' idref='1'/>
+                <longDesc>Expected Receipts Area Code - The area where the identified inventory is created. In multi-building sites, this area determines the building in which the inventory is received.</longDesc>
+              </child>
+              <child t='167' id='73' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='IGNORE_INV_FLG' description='Ignore Invoice Flag - Only used for trntyp = &apos;D&apos;. Determines if we ignore the fact that inventory still exists in the warehouse ...'>
+                <structNode t='150' idref='1'/>
+                <longDesc>Ignore Invoice Flag - Only used for trntyp = &apos;D&apos;. Determines if we ignore the fact that inventory still exists in the warehouse for that rcvkey when removing the truck and invoices.</longDesc>
+              </child>
+              <child t='167' id='74' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CARCOD' description='Carrier Code - the carrier for this receiving trailer.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='75' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='4' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CRNCY_CODE' description='The Currency Code used to specify the Currency fields in Truck related operations.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='76' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TMS_LOAD_ID' description='TMS Load ID This is the Load Plan identifier for this inbound receipt in a TMS system.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='77' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TMS_STOP_SEQ' description='TMS Stop Seqeuence This is the actual stop sequence in the TMS Load Plan.'>
+                <structNode t='150' idref='1'/>
+              </child>
+            </child>
+          </child>
+          <child t='167' id='78' V167='21' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='RCPT_INVOICE_SEG' description='This segment is used to create or change receive invoice information for a receipt in the Receive Invoice (RCVINV) table.'>
+            <structNode t='150' idref='1'/>
+            <child t='167' id='79' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='2' repHandlerStruct='' inheritsFrom='' V281='13' V1='4' name='Anonymous_choice' checksumValid='true' checksum='vew0TgQ21131uA7rYAlHKW9hL1E='>
+              <structNode t='150' idref='1'/>
+              <child t='167' id='80' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SEGNAM' description='Segment Name - Identifier for this IFD segment. yes'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='81' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRNTYP' description='Transaction Type - "A" for Add record, "C" for Change record or "D" for Delete record. yes'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='82' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='35' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INVNUM' description='Invoice Number - Identifier for the invoice. yes'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='83' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SUPNUM' description='Supplier Number - Identifier for a supplier. yes'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='84' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='32' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CLIENT_ID' description='Client ID - Client ID associated with the invoice and supplier. yes'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='85' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='4' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INVTYP' description='Invoice Type - Type of invoice to which incoming product is associated. yes'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='86' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SADNUM' description='Shipment and Delivery Number - Shipping and delivery number. Not used for any standard system processing.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='87' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='WAYBIL' description='Waybill Number - Bill-of-lading number from the shipping paperwork.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='88' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INVDTE' description='Invoice Date - Date on which the invoice was created.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='89' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='35' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ORGREF' description='Originators Reference - Information that identifies the invoice in the supplier&apos;s system.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='90' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SRC_HOST' description='Source Host - Specifies the MOCA server which the inventory originated.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='91' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='30' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SHIP_ID' description='Shipment ID - The from shipment which the inventory originated'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='92' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DOC_NUM' description='Bill of Lading Number - Identifier for paperwork for the delivery of returned inventory.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='93' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRACK_NUM' description='Bill of Lading PRO Number - PRO number identifier on paperwork for the delivery of returned inventory.'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='94' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRKNUM' description='Truck Number'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='95' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='8' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CSTMS_TYP' description='Customs Type'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='96' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='35' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PO_NUM' description='PO Number - Number that identifies the purchase order'>
+                <structNode t='150' idref='1'/>
+              </child>
+              <child t='167' id='97' V167='21' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='RCPT_LINE_SEG' description='This segment is used to create or change a receive line information for a receive line in the Receive Line (RCVLIN) table.'>
+                <structNode t='150' idref='1'/>
+                <child t='167' id='98' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='2' repHandlerStruct='' inheritsFrom='' V281='13' V1='4' name='Anonymous_choice' checksumValid='true' checksum='7XWekfORrxmDlSnyRP8AVnQARLQ='>
+                  <structNode t='150' idref='1'/>
+                  <child t='167' id='99' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SEGNAM' description='Segment Name - Identifier for this IFD segment. yes'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='100' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRNTYP' description='Transaction Type - "A" for Add record, "C" for Change record or "D" for Delete record. yes'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='101' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INVLIN' description='Invoice Line - Number that identifies this line. The number corresponds to the line&apos;s position on the invoice. yes'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='102' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INVSLN' description='Invoice Sub-Line - Number that identifies a sub-line associated with this invoice line. yes'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='103' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='EXPQTY' description='Expected Quantity - Total amount of product expected with this invoice line (in pieces).'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='104' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='50' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PRTNUM' description='Item Number - Also referred to as item number or SKU to be received. yes'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='105' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='25' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ORGCOD' description='Origin Code - The expected/actual origin code of the product. If left blank, this value will be entered during identification if...'>
+                    <structNode t='150' idref='1'/>
+                    <longDesc>Origin Code - The expected/actual origin code of the product. If left blank, this value will be entered during identification if the Item is tracked by origin code.</longDesc>
+                  </child>
+                  <child t='167' id='106' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='25' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='REVLVL' description='Revision Level - Expected/actual revision level of the product. If left blank, this value will be entered during identification ...'>
+                    <structNode t='150' idref='1'/>
+                    <longDesc>Revision Level - Expected/actual revision level of the product. If left blank, this value will be entered during identification if the Item is tracked by revision level.</longDesc>
+                  </child>
+                  <child t='167' id='107' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='25' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LOTNUM' description='Lot Number - Expected/actual lot number of the product. If left blank, this value will be entered during identification if the I...'>
+                    <structNode t='150' idref='1'/>
+                    <longDesc>Lot Number - Expected/actual lot number of the product. If left blank, this value will be entered during identification if the Item is tracked by lot number.</longDesc>
+                  </child>
+                  <child t='167' id='108' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='25' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SUP_LOTNUM' description='Supplier Lot Number'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='109' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='4' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='RCVSTS' description='Receive Status - Default status for inventory identified against this line.'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='110' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='30' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='FRHSTA' description='From Host Account Code - Receive from host account.'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='111' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='30' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TOHSTA' description='To Host Account Code - Receive to host account.'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='112' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='HSTTRN' description='Host Transaction - Code that identifies the transaction that will be sent to the host system when product is received. This info...'>
+                    <structNode t='150' idref='1'/>
+                    <longDesc>Host Transaction - Code that identifies the transaction that will be sent to the host system when product is received. This information is optionally provided by the customer or supplier.</longDesc>
+                  </child>
+                  <child t='167' id='113' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='MANDTE' description='Manufacturing Date - Date on which the Item number identified on this line was manufactured. The date defaults to the received d...'>
+                    <structNode t='150' idref='1'/>
+                    <longDesc>Manufacturing Date - Date on which the Item number identified on this line was manufactured. The date defaults to the received date if this field is left blank.</longDesc>
+                  </child>
+                  <child t='167' id='114' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='4' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='RETCOD' description='Return code - Return code to use upon receipt.'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='115' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='EDTFLG' description='Edit Host Flag'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='116' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='EXP_CATCH_QTY' description='Expected Catch Quantity - Expected catch quantity.'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='117' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SHIP_LINE_ID' description='Shipment Line ID - The shipment line which this inventory originated.'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='118' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CNSG_FLG' description='Consignment Flag: The flag indicates immediate ownership transfer from supplier.'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='119' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='32' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PRT_CLIENT_ID' description='Item Client ID - Client to which the Item in this Receipt Line belongs to.'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='120' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='14' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='MANDTE_FMT' description='Manufacture Date Format (The date format used to format the Manufacture Date)'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='121' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='14' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='MANDTE_FMTVAL' description='Formatted Manufacture Date (Manufacture Date )'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='122' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='EXPIRE_DTE' description='Expiration Date'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='123' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='14' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='EXPIRE_DTE_FMT' description='Expiration Date Format (The date format used to format the Expiration Date)'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='124' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='14' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='EXPIRE_DTE_FMTVAL' description='Formatted Expiration Date'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='125' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DISTRO_OVRFLG' description='This flag specifies if this receive line will allow distributions associated with it to be over shipped.'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='126' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR1' description='Inventory Attribute Text 1'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='127' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR2' description='Inventory Attribute Text 2'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='128' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR3' description='Inventory Attribute Text 3'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='129' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR4' description='Inventory Attribute Text 4'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='130' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR5' description='Inventory Attribute Text 5'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='131' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR6' description='Inventory Attribute Text 6'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='132' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR7' description='Inventory Attribute Text 7'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='133' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR8' description='Inventory Attribute Text 8'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='134' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR9' description='Inventory Attribute Text 9'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='135' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR10' description='Inventory Attribute Text 10'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='136' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR11' description='Inventory Attribute Text 11'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='137' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR12' description='Inventory Attribute Text 12'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='138' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR13' description='Inventory Attribute Text 13'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='139' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR14' description='Inventory Attribute Text 14'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='140' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR15' description='Inventory Attribute Text 15'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='141' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR16' description='Inventory Attribute Text 16'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='142' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR17' description='Inventory Attribute Text 17'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='143' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR18' description='Inventory Attribute Text 18'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='144' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_INT1' description='Inventory Attribute Number 1'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='145' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_INT2' description='Inventory Attribute Number 2'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='146' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_INT3' description='Inventory Attribute Number 3'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='147' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_INT4' description='Inventory Attribute Number 4'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='148' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_INT5' description='Inventory Attribute Number 5'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='149' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_FLT1' description='Inventory Attribute Decimal 1'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='150' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_FLT2' description='Inventory Attribute Decimal 2'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='151' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_FLT3' description='Inventory Attribute Decimal 3'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='152' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_DTE1' description='Inventory Attribute Date 1'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='153' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='14' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_DTE1_FMT' description='Inventory Attribute Date 1 Format (The date format used to format the Inventory Attribute Date 1)'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='154' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='14' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_DTE1_FMTVAL' description='Formatted Inventory Attribute Date 1'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='155' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_DTE2' description='Inventory Attribute Date 2'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='156' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='14' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_DTE2_FMT' description='Inventory Attribute Date 2 Format (The date format used to format the Inventory Attribute Date 2)'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='157' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='14' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_DTE2_FMTVAL' description='Formatted Inventory Attribute Date 2'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='158' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='18' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CSTMS_CNSGNMNT_ID' description='Customs Consignment ID'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='159' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='8' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CSTMS_TYP' description='Customs Type'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='160' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='150' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CSTMS_CMMDTY_COD' description='Customs Commodity Code'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='161' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CSTMS_VAT_COD' description='Customs Value Added Tax Code'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='162' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='3' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DFLT_ORGCOD' description='Country where the goods were manufactured'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='163' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DTY_STMP_TRK_FLG' description='Duty Stamp Track Flag'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='164' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CSTMS_CST' description='Customs Cost'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='165' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CSTMS_CRNCY' description='Customs Currency'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='166' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='RCPT_TRKNUM' description='Truck Number - necessary when downloading multiple receipts within the same transaction.'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='167' V167='21' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='RCPT_DISTRO_SEG' description='The distribution info for this order line'>
+                    <structNode t='150' idref='1'/>
+                    <child t='167' id='168' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='2' repHandlerStruct='' inheritsFrom='' V281='13' V1='4' name='Anonymous_choice' checksumValid='true' checksum='H+li53htGf4fMo2Pq6Ish2EL/ds='>
+                      <structNode t='150' idref='1'/>
+                      <child t='167' id='169' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SEGNAM' description='Segment Name - Identifier for this IFD segment. yes'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='170' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='35' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DISTRO_ID' description='Distribution Identifier - system-generated or user-entered unique identifier for this distribution record.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='171' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='40' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DISTRO_TYP' description='Distribution Type'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='172' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='4' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ORDTYP' description='Order Type'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='173' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='32' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CLIENT_ID' description='Client Id - The client for which this distribution is to be allocated/processed.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='174' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='50' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PRTNUM' description='Item Number - Also referred to as item number or SKU to be received.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='175' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='32' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PRT_CLIENT_ID' description='Item Client ID'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='176' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='4' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INVSTS_PRG' description='Inventory Status Progression'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='177' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='25' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LOTNUM' description='Lot Number - defaults to &apos;----&apos; if not specified.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='178' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='25' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ORGCOD' description='Origin Code - defaults to &apos;----&apos; if not specified.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='179' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='25' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='REVLVL' description='Revision Level - defaults to &apos;----&apos; if not specified.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='180' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='5' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DEPT_COD' description='Department Code - defaults to the department code value from the Item master.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='181' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='5' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PROMO_COD' description='Promotion Code - an attribute that may be assigned to this distribution for filtering and selection.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='182' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PRCPRI' description='Distribution Processing Priority - the priority used for selection and processing of this distro. This value is defaulted from t...'>
+                        <structNode t='150' idref='1'/>
+                        <longDesc>Distribution Processing Priority - the priority used for selection and processing of this distro. This value is defaulted from the store information and may be modified.</longDesc>
+                      </child>
+                      <child t='167' id='183' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='UNTQTY' description='Quantity - Quantity of the distro that is expected to be shipped to this store.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='184' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='APPQTY' description='Applied Quantity - quantity that has been received/and or picked for this distro.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='185' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='RTCUST' description='Route-to Customer - the &apos;customer&apos; or Hub facility where the inventory for this distro will be sent before being distributed to ...'>
+                        <structNode t='150' idref='1'/>
+                        <longDesc>Route-to Customer - the &apos;customer&apos; or Hub facility where the inventory for this distro will be sent before being distributed to the store. This value is defaulted from the store information and may be modified.</longDesc>
+                      </child>
+                      <child t='167' id='186' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='RT_ADR_ID' description='Route-to Address ID - Address of the Hub facility where the inventory for this distro will be sent before being distributed to t...'>
+                        <structNode t='150' idref='1'/>
+                        <longDesc>Route-to Address ID - Address of the Hub facility where the inventory for this distro will be sent before being distributed to the store. This value is defaulted from the store information and may be modified.</longDesc>
+                      </child>
+                      <child t='167' id='187' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='BTCUST' description='Bill-to Customer - the customer or facility that may be billed for this distro&apos;s inventory. This value is defaulted from the sto...'>
+                        <structNode t='150' idref='1'/>
+                        <longDesc>Bill-to Customer - the customer or facility that may be billed for this distro&apos;s inventory. This value is defaulted from the store information and may be modified.</longDesc>
+                      </child>
+                      <child t='167' id='188' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='BT_ADR_ID' description='Bill-to Address ID - Address of the customer or facility that may be billed for this distro&apos;s inventory. This value is defaulted...'>
+                        <structNode t='150' idref='1'/>
+                        <longDesc>Bill-to Address ID - Address of the customer or facility that may be billed for this distro&apos;s inventory. This value is defaulted on the distro and may be modified or over-ridden for individual distros.</longDesc>
+                      </child>
+                      <child t='167' id='189' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='STCUST' description='Ship-To Customer - The cstnum which is the store address.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='190' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ST_ADR_ID' description='Ship-To Address ID - The address id of the Ship-To Customer.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='191' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='EARLY_SHPDTE' description='Early Shipment Date'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='192' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LATE_SHPDTE' description='Late Shipment Date'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='193' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='EARLY_DLVDTE' description='Early Delivery Date'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='194' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LATE_DLVDTE' description='Late Delivery Date'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='195' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRKNUM' description='Truck Number - The invoice&apos;s truck number.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='196' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='35' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INVNUM' description='Invoice Number - The invoice number used for this distro.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='197' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='32' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SUPNUM' description='Supplier Number - The supplier number used for this distro.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='198' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INVLIN' description='Invoice Line Number - The invoice line number used for this distro.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='199' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='35' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SOURCE_DISTRO_ID' description='Distribution Identifier - system-generated or user-entered unique identifier for this distribution record.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='200' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='32' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SOURCE_WH_ID' description='Source Warehouse - Source warehouse that created the distribution for merge and transit.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='201' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='40' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SOURCE_ADRNAM' description='Source_wh_ext_id. This is the external ID for the address of the source warehouse.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='202' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='STO_ALC_FLG' description='Allow allocate from storage yes'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='203' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ALLOW_OVRSHPFLG' description='This flag specifies whether this distribution will allow over shipping'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='204' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR1' description='Inventory Attribute Text 1'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='205' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR2' description='Inventory Attribute Text 2'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='206' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR3' description='Inventory Attribute Text 3'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='207' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR4' description='Inventory Attribute Text 4'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='208' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR5' description='Inventory Attribute Text 5'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='209' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR6' description='Inventory Attribute Text 6'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='210' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR7' description='Inventory Attribute Text 7'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='211' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR8' description='Inventory Attribute Text 8'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='212' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR9' description='Inventory Attribute Text 9'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='213' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR10' description='Inventory Attribute Text 10'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='214' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR11' description='Inventory Attribute Text 11'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='215' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR12' description='Inventory Attribute Text 12'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='216' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR13' description='Inventory Attribute Text 13'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='217' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR14' description='Inventory Attribute Text 14'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='218' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR15' description='Inventory Attribute Text 15'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='219' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR16' description='Inventory Attribute Text 16'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='220' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR17' description='Inventory Attribute Text 17'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='221' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR18' description='Inventory Attribute Text 18'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='222' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_INT1' description='Inventory Attribute Number 1'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='223' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_INT2' description='Inventory Attribute Number 2'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='224' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_INT3' description='Inventory Attribute Number 3'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='225' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_INT4' description='Inventory Attribute Number 4'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='226' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_INT5' description='Inventory Attribute Number 5'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='227' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_FLT1' description='Inventory Attribute Decimal 1'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='228' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_FLT2' description='Inventory Attribute Decimal 2'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='229' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_FLT3' description='Inventory Attribute Decimal 3'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='230' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_DTE1' description='Inventory Attribute Date 1'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='231' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='14' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_DTE1_FMT' description='Inventory Attribute Date 1 Format (The date format used to format the Inventory Attribute Date 1)'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='232' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='14' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_DTE1_FMTVAL' description='Formatted Inventory Attribute Date 1'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='233' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_DTE2' description='Inventory Attribute Date 2'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='234' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='14' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_DTE2_FMT' description='Inventory Attribute Date 2 Format (The date format used to format the Inventory Attribute Date 2)'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='235' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='14' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_DTE2_FMTVAL' description='Formatted Inventory Attribute Date 2'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='236' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='AUT_CREATE_ORD' description='If this flg is checked, it indicates that the corresponding order and order line will be generated automatically, otherwise you ...'>
+                        <structNode t='150' idref='1'/>
+                        <longDesc>If this flg is checked, it indicates that the corresponding order and order line will be generated automatically, otherwise you should choose ordnum,ordlin and ordsln.</longDesc>
+                      </child>
+                      <child t='167' id='237' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='WAVE_FLG' description='This flag will indicate whether the order is waveable or not.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='238' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='35' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ORDNUM' description='Order Number - A number which identifies the order to the system.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='239' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ORDLIN' description='Order Line Number - A number which identifies the order line within the order.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='240' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ORDSLN' description='Order Sub-Line Number - A number which identifies the subline of the order line. Sublines are used to force the system to ship l...'>
+                        <structNode t='150' idref='1'/>
+                        <longDesc>Order Sub-Line Number - A number which identifies the subline of the order line. Sublines are used to force the system to ship like quantities or complete quantities of all sublines within the order line, similarly to married codes.</longDesc>
+                      </child>
+                      <child t='167' id='241' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INVSLN' description='Invoice Sub-Line - Number that identifies a sub-line associated with this invoice line.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                    </child>
+                  </child>
+                  <child t='167' id='242' V167='21' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='RCPT_ASN_SEG' description='This segment is to identify or to create inventory in the warehouse system. Inventory can only be created with this segment. To ...'>
+                    <structNode t='150' idref='1'/>
+                    <longDesc>This segment is to identify or to create inventory in the warehouse system. Inventory can only be created with this segment. To modify or remove the inventory, use the warehouse system application.</longDesc>
+                    <child t='167' id='243' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='2' repHandlerStruct='' inheritsFrom='' V281='13' V1='4' name='Anonymous_choice' checksumValid='true' checksum='xu9OMxcUB3tWkdURW1v63erLq3w='>
+                      <structNode t='150' idref='1'/>
+                      <child t='167' id='244' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SEGNAM' description='Segment Name - Identifier for this IFD segment. yes'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='245' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRNTYP' description='Transaction Type - "A" for Add record, "C" for Change record or "D" for Delete record. yes'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='246' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='50' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PRTNUM' description='Item Number - Item number on this load. yes'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='247' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='UNTCAS' description='Units per Case - Units per case of the inventory on this load.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='248' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='UNTPAK' description='Units per Pack - Units per pack of the inventory on this load.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='249' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='UNTQTY' description='Unit Quantity - Total quantity of the inventory on this load. yes'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='250' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='4' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INVSTS' description='Inventory Status - Quality status of the inventory on this load. yes'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='251' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='30' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='FTPCOD' description='Foot Print Code - The footprint code that defines the dimensional data and pallet configuration for the inventory on this load.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='252' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='FIFDTE' description='FIFO Date - Used to determine order of allocation for this inventory. Defaults to manufacturing date if no date is passed in.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='253' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SRCLOC' description='Source Location - Location from which the load originated. Not required for ASNs.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='254' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='30' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LODNUM' description='LPN - Uniquely identifies the load or LPN. In many systems this value is the same as the label on the pallet.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='255' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='30' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SUBNUM' description='Sub-LPN - Unique identifier used to identify inventory being tracked at the case level. Uniquely identifies the Sub-LPN or case ...'>
+                        <structNode t='150' idref='1'/>
+                        <longDesc>Sub-LPN - Unique identifier used to identify inventory being tracked at the case level. Uniquely identifies the Sub-LPN or case level of the load.</longDesc>
+                      </child>
+                      <child t='167' id='256' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='30' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DTLNUM' description='Detail LPN - Uniquely identifies the detail LPN or each level of the load.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='257' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DSTLOC' description='Destination Location - Typically, this is the expected receipt location where the inventory will be created.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='258' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='30' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DSTLOD' description='Destination LPN - LPN in the warehouse system to create the inventory on. Typically used when creating cases on an existing load...'>
+                        <structNode t='150' idref='1'/>
+                        <longDesc>Destination LPN - LPN in the warehouse system to create the inventory on. Typically used when creating cases on an existing load.</longDesc>
+                      </child>
+                      <child t='167' id='259' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='30' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DSTSUB' description='Destination Sub-LPN - Sub-LPN in the warehouse system to create the inventory on. Typically used when creating details or eaches...'>
+                        <structNode t='150' idref='1'/>
+                        <longDesc>Destination Sub-LPN - Sub-LPN in the warehouse system to create the inventory on. Typically used when creating details or eaches in an existing case.</longDesc>
+                      </child>
+                      <child t='167' id='260' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='USR_ID' description='User ID - The user that identified or created the inventory.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='261' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='25' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ORGCOD' description='Origin Code - Country of origin.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='262' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='25' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='REVLVL' description='Revision Level - Version of this inventory.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='263' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='25' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LOTNUM' description='Lot Number - Lot number of this inventory.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='264' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='25' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SUP_LOTNUM' description='Supplier Lot Number'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='265' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='30' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='AGE_PFLNAM' description='Aging Profile Name - Aging profile to use for this inventory.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='266' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='MANDTE' description='Manufacturing Date - Date on which the inventory on this load was manufactured.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='267' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CATCH_QTY' description='Catch Unit Quantity - The catch quantity for the inventory on this load per stocking unit of measure.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='268' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='EXPDTE' description='Expiration Date - The date on which this inventory is expired. Only applies to date-controlled Items.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='269' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='4' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PLAT_ID' description='Platform ID - the platform identifier for this load, typically a type of pallet.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='270' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='35' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DISTRO_ID' description='The distribution ID for this order line'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='271' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CNSG_FLG' description='Consigned Flag: The status indicates ownership of the inventory (1=ownership is with the supplier, 0=ownership is not with suppl...'>
+                        <structNode t='150' idref='1'/>
+                        <longDesc>Consigned Flag: The status indicates ownership of the inventory (1=ownership is with the supplier, 0=ownership is not with supplier)</longDesc>
+                      </child>
+                      <child t='167' id='272' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='30' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ASSET_TYP' description='Handling Unit Type for the LPN'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='273' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='30' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SUB_ASSET_TYP' description='Handling Unit Type for the Sub-LPN.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='274' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='32' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PRT_CLIENT_ID' description='Item Client ID - Client to which the Item in this Receipt Line belongs to.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='275' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='14' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='MANDTE_FMT' description='Manufacture Date Format (The date format used to format the Manufacture Date)'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='276' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='14' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='MANDTE_FMTVAL' description='Formatted Manufacture Date (Manufacture Date )'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='277' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='14' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='EXPIRE_DTE_FMT' description='Expiration Date Format (The date format used to format the Expiration Date)'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='278' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='14' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='EXPIRE_DTE_FMTVAL' description='Formatted Expiration Date'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='279' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR1' description='Inventory Attribute Text 1'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='280' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR2' description='Inventory Attribute Text 2'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='281' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR3' description='Inventory Attribute Text 3'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='282' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR4' description='Inventory Attribute Text 4'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='283' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR5' description='Inventory Attribute Text 5'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='284' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR6' description='Inventory Attribute Text 6'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='285' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR7' description='Inventory Attribute Text 7'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='286' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR8' description='Inventory Attribute Text 8'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='287' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR9' description='Inventory Attribute Text 9'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='288' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR10' description='Inventory Attribute Text 10'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='289' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR11' description='Inventory Attribute Text 11'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='290' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR12' description='Inventory Attribute Text 12'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='291' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR13' description='Inventory Attribute Text 13'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='292' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR14' description='Inventory Attribute Text 14'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='293' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR15' description='Inventory Attribute Text 15'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='294' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR16' description='Inventory Attribute Text 16'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='295' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR17' description='Inventory Attribute Text 17'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='296' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='100' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_STR18' description='Inventory Attribute Text 18'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='297' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_INT1' description='Inventory Attribute Number 1'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='298' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_INT2' description='Inventory Attribute Number 2'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='299' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_INT3' description='Inventory Attribute Number 3'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='300' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_INT4' description='Inventory Attribute Number 4'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='301' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_INT5' description='Inventory Attribute Number 5'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='302' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_FLT1' description='Inventory Attribute Decimal 1'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='303' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_FLT2' description='Inventory Attribute Decimal 2'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='304' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_FLT3' description='Inventory Attribute Decimal 3'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='305' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_DTE1' description='Inventory Attribute Date 1'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='306' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='14' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_DTE1_FMT' description='Inventory Attribute Date 1 Format (The date format used to format the Inventory Attribute Date 1)'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='307' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='14' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_DTE1_FMTVAL' description='Formatted Inventory Attribute Date 1'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='308' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_DTE2' description='Inventory Attribute Date 2'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='309' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='14' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_DTE2_FMT' description='Inventory Attribute Date 2 Format (The date format used to format the Inventory Attribute Date 2)'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='310' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='14' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INV_ATTR_DTE2_FMTVAL' description='Formatted Inventory Attribute Date 2'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='311' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='18' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CSTMS_CNSGNMNT_ID' description='Customs Consignment ID'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='312' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CSTMS_BOND_FLG' description='Customs Bonded Flag'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='313' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='DTY_STMP_FLG' description='Duty Stamp Flag indicating duty stamp is applied or not.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='314' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LOAD_ATTR1_FLG' description='LPN Attribute 1 Flag - A configurable field that can be used to indicate a flag type attribute of the load, such as whether the ...'>
+                        <structNode t='150' idref='1'/>
+                        <longDesc>LPN Attribute 1 Flag - A configurable field that can be used to indicate a flag type attribute of the load, such as whether the load is shrink wrapped or not.</longDesc>
+                      </child>
+                      <child t='167' id='315' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LOAD_ATTR2_FLG' description='LPN Attribute 2 Flag - A configurable field that can be used to indicate a flag type attribute of the load, such as whether the ...'>
+                        <structNode t='150' idref='1'/>
+                        <longDesc>LPN Attribute 2 Flag - A configurable field that can be used to indicate a flag type attribute of the load, such as whether the load is shrink wrapped or not.</longDesc>
+                      </child>
+                      <child t='167' id='316' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LOAD_ATTR3_FLG' description='LPN Attribute 3 Flag - A configurable field that can be used to indicate a flag type attribute of the load, such as whether the ...'>
+                        <structNode t='150' idref='1'/>
+                        <longDesc>LPN Attribute 3 Flag - A configurable field that can be used to indicate a flag type attribute of the load, such as whether the load is shrink wrapped or not.</longDesc>
+                      </child>
+                      <child t='167' id='317' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LOAD_ATTR4_FLG' description='LPN Attribute 4 Flag - A configurable field that can be used to indicate a flag type attribute of the load, such as whether the ...'>
+                        <structNode t='150' idref='1'/>
+                        <longDesc>LPN Attribute 4 Flag - A configurable field that can be used to indicate a flag type attribute of the load, such as whether the load is shrink wrapped or not.</longDesc>
+                      </child>
+                      <child t='167' id='318' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='LOAD_ATTR5_FLG' description='LPN Attribute 5 Flag - A configurable field that can be used to indicate a flag type attribute of the load, such as whether the ...'>
+                        <structNode t='150' idref='1'/>
+                        <longDesc>LPN Attribute 5 Flag - A configurable field that can be used to indicate a flag type attribute of the load, such as whether the load is shrink wrapped or not.</longDesc>
+                      </child>
+                      <child t='167' id='319' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INVLIN' description='Invoice Line Number'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='320' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INVSLN' description='Invoice Line Sub Number'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='321' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='RCPT_TRKNUM' description='Truck Number - necessary when downloading multiple receipts within the same transaction.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='322' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SSCC_PREFIX_FLG' description='Flag that identifies whether the SSCC values in this ASN include the SSCC prefix.'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='323' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='8' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CSTMS_TYP' description='Customs Type'>
+                        <structNode t='150' idref='1'/>
+                      </child>
+                      <child t='167' id='324' V167='21' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SER_NUM_SEG' description='This segment is used to create or change a Serial Number'>
+                        <structNode t='150' idref='1'/>
+                        <child t='167' id='325' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='2' repHandlerStruct='' inheritsFrom='' V281='13' V1='4' name='Anonymous_choice'>
+                          <structNode t='150' idref='1'/>
+                          <child t='167' id='326' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SEGNAM' description='Segment Name - Identifier of this IFD Segment'>
+                            <structNode t='150' idref='1'/>
+                          </child>
+                          <child t='167' id='327' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='40' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SER_NUM' description='Serial Number yes'>
+                            <structNode t='150' idref='1'/>
+                          </child>
+                          <child t='167' id='328' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='10' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SER_NUM_TYP_ID' description='Serial Number Type ID yes'>
+                            <structNode t='150' idref='1'/>
+                          </child>
+                        </child>
+                      </child>
+                    </child>
+                  </child>
+                </child>
+              </child>
+              <child t='167' id='329' V167='21' V283='2' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='RCPT_ASSET_SEG' description='This segment is used to create the asset details.'>
+                <structNode t='150' idref='1'/>
+                <child t='167' id='330' V167='21' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='2' repHandlerStruct='' inheritsFrom='' V281='13' V1='4' name='Anonymous_choice' checksumValid='true' checksum='kUZWBdErGbYAbwBBStXRmnR2VUU='>
+                  <structNode t='150' idref='1'/>
+                  <child t='167' id='331' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SEGNAM' description='Segment Name - Identifier for this IFD segment. yes'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='332' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRNTYP' description='Transaction Type - "A" for Add record, "C" for Change record or "D" for Delete record. yes'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='333' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='30' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INVT_ID' description='The inventory Identifier that this asset is associated with this could be lodnum/subnum.'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='334' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='30' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ASSET_ID' description='Unique identifier for a handling unit.'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='335' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='30' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PAR_ASSET_ID' description='Unique identifier for the parent handling unit id. This field will be used for serialized handling units in the ASN, in order to...'>
+                    <structNode t='150' idref='1'/>
+                    <longDesc>Unique identifier for the parent handling unit id. This field will be used for serialized handling units in the ASN, in order to store the nesting relationship for the handling units.</longDesc>
+                  </child>
+                  <child t='167' id='336' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='30' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ASSET_TYP' description='Handling Unit Type.(Will be set to active for all inbound handling units)'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='337' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ASSET_QTY' description='This field will hold the total quantity of non-serialized handling units in this transaction (empty+non-empty non-serialized han...'>
+                    <structNode t='150' idref='1'/>
+                    <longDesc>This field will hold the total quantity of non-serialized handling units in this transaction (empty+non-empty non-serialized handling units). This will be set to 1 for serialized handling units in the transaction.</longDesc>
+                  </child>
+                  <child t='167' id='338' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='40' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ASSET_TAG' description='Handling Unit Tag - Typically a unique RFID identifier.'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='339' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='32' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CLIENT_ID' description='Client ID - Unique handling unit client identifier.'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='340' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='WARRANTY_DTE' description='Date and time at which the warranty for a handling unit expires.'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='341' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PURCH_DTE' description='Date and time at which a handling unit was purchased.'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='342' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='MAN_ID' description='Identifies where the handling unit is manufactured.'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='343' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='20' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='MODEL' description='Identifies the model numbers for the handling unit.'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='344' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='40' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SER_NUM' description='Serial number of the handling unit'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                  <child t='167' id='345' V167='21' V283='2' occurMaxTimes='1' minSize='-1' maxSize='15' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ASSET_STAT' description='Status of the handling unit'>
+                    <structNode t='150' idref='1'/>
+                  </child>
+                </child>
+              </child>
+            </child>
+          </child>
+        </child>
+      </child>
+    </child>
+  </rootElem>
+  <defaultRep t='172' id='346' V172='6' autoFixNamespaceMismatch='true' V170='10' V692='1' V690='1' ignoreExcluded='true' fixInvalidCharacters='true' V1='4' name='XML'>
+    <namespaceContainers t='220' ref='Namespace Containers/BY_WMS.xml'/>
+  </defaultRep>
+  <child t='162' id='347' V1='4' name='Representations'>
+    <child t='172' idref='346'/>
+  </child>
+  <child t='165' id='348' V1='4' name='Document Bindings'>
+    <child t='166' id='349' V166='5' docType='1' V1='4' name='/RCPT_INB_IFD'>
+      <elemNode t='167' idref='2'/>
+    </child>
+  </child>
+</root>
