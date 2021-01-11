@@ -12,6 +12,12 @@
     <contextParameter comment="" name="res_sap_relpath" prompt="res_sap_relpath?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="/sap/bc/srt/scs/sap/z_ws_get_salesordsts_data_v1?sap-client=100"/>
     <contextParameter comment="" name="reservation_SAP_ur" prompt="reservation_SAP_ur?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="https://saphp1ap1.nupco.com:44330"/>
     <contextParameter comment="" name="reservationapi" prompt="reservationapi?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="/sapservices/saleorderservice"/>
+    <contextParameter comment="" name="AMC_Database" prompt="AMC_Database?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="AMC"/>
+    <contextParameter comment="" name="AMC_Password" prompt="AMC_Password?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_Password" value="enc:system.encryption.key.v1:4+9oGiNGbqBceOzo0aeaVOqac1Dtojtx8Gr38w+y2Ri5"/>
+    <contextParameter comment="" name="AMC_Port" prompt="AMC_Port?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="3307"/>
+    <contextParameter comment="" name="AMC_AdditionalParams" prompt="AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="AMC_Login" prompt="AMC_Login?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="AMC_Server" prompt="AMC_Server?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="10.1.51.25"/>
   </context>
   <context confirmationNeeded="false" name="Prod">
     <contextParameter comment="" name="payload" prompt="payload?" promptNeeded="false" type="id_String" value=""/>
@@ -26,6 +32,12 @@
     <contextParameter comment="" name="res_sap_relpath" prompt="res_sap_relpath?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="/sap/bc/srt/scs/sap/z_ws_get_salesordsts_data_v1?sap-client=100"/>
     <contextParameter comment="" name="reservation_SAP_ur" prompt="reservation_SAP_ur?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="https://saphp1ap1.nupco.com:44330"/>
     <contextParameter comment="" name="reservationapi" prompt="reservationapi?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="/sapservices/saleorderservice"/>
+    <contextParameter comment="" name="AMC_Database" prompt="AMC_Database?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="AMC"/>
+    <contextParameter comment="" name="AMC_Password" prompt="AMC_Password?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_Password" value="enc:system.encryption.key.v1:9mLW8GNhvxlEKbLqiynKneTOes6bn/1I2E5Pc9G2SKdC"/>
+    <contextParameter comment="" name="AMC_Port" prompt="AMC_Port?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="3307"/>
+    <contextParameter comment="" name="AMC_AdditionalParams" prompt="AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="AMC_Login" prompt="AMC_Login?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="AMC_Server" prompt="AMC_Server?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="10.1.51.25"/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="416"/>
@@ -93,18 +105,18 @@
     <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="true"/>
     <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tMysqlOutput"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_8"/>
-    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="URL" show="false" value=""/>
     <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
-    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;10.1.51.25&quot;"/>
-    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;3307&quot;"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.AMC_Server"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.AMC_Port"/>
     <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;AMC&quot;"/>
-    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value=""/>
-    <elementParameter field="TEXT" name="USER" show="false" value="&quot;talend&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ePoZ8k6FZZsCNqbC/2p7jlQY6tuvKjSUHookIbmw/ewXgfE="/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.AMC_Database"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="context.AMC_Database"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.AMC_AdditionalParams"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.AMC_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:dNWRBnOIgPBF7E+8tVObSRQuCssdEejeDfZJzDul84bf2U0vXmogkREcmaZbJr0k"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;statcatcher&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;logcatcher&quot;"/>
@@ -126,8 +138,8 @@
     <elementParameter field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
     <elementParameter field="CHECK" name="STATS_DEFAULT_PROJECTSETTING" value="true"/>
     <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE" value=""/>
-    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="BUILT_IN"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value="_KNQYIFFkEeuLrfpdOy7SpQ"/>
     <routinesParameter id="_49hyQD-HEeuVLvT_55SQQg" name="DataOperation"/>
     <routinesParameter id="_4-liMD-HEeuVLvT_55SQQg" name="Mathematical"/>
     <routinesParameter id="_4-rBwD-HEeuVLvT_55SQQg" name="Numeric"/>
@@ -944,13 +956,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="192;192;192"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f08938d0-71bd-4dd5-befa-04882f599922"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Ct5uPrfG/L7MSwMFxdhshoJDXpa976Uf+qRjdnP0yDa3QqLf7KSltQJP1FlaLsy14kDy9QFWo72+&#13;
-//iIWL3Uzw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7f8f83e9-4f30-4064-b765-37f45846f895"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VsRoLchmVS1CcjDjq7lEKJpmGPYPNXKtM8LHVgB8CmtCMxEN3QowLbirXvYoAd/NXXP9XCFylD7h&#13;
-unr4mhCOvA==</DigestValue></Reference></SignedInfo><SignatureValue>jyeuyo6dnczFephZkpLn5gxjkrTe1oBuFUEYBtL+pM/ZsQ3FpetQaTasAUjIqp/+vu42ZG16CVu/&#13;
-5Kua4Og6dyfb6mKNH+nKsHKqUcAC/Q6PywiT0YXqmzaLlw2uRkGpnpS/y27ZBIg5juiJIh1nzF6p&#13;
-s197TbSlQqe3odP0P8Vqi3303AlSBCMVDtEo2RvrPAlmZbB3MyaYklx7HpAoowPgzoQ9Uv4qfpUf&#13;
-+mueH2BjNFM3wTCCyYGdIV0I4CugGgXx1+07ADhiszp9l0VrifgXFs+4wECHoCq4kqErF2UK3tZC&#13;
-LydMKvde2B6l5NZKjsG3WAteZtSxwvrF0OTPrg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9001e4f9-4082-47fa-adc5-161bd86c14ad"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>BsoFNcjVvYF7YS6TRlW++vDUe+Jd+wUl7IZzvvTA6Wb0nlq7StAeJrjgbKYUhGruhCm1SmRlD1vd&#13;
+D2hLAG1jkw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9c348dae-4f12-4662-b4a0-927553b302fa"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9B1aw95HqzEk2UUZoRVZEfsdDelBCJYDLNk5Eta+ZF1qQ2HbYngZNobPXPdiA4S0Sh4PKtki6KaO&#13;
+ojSeSkzzYQ==</DigestValue></Reference></SignedInfo><SignatureValue>kI3bmHaI/XX+YU90/3vpU1msHykOMtayuWWxNc5eDLnTqaXToSLpc38XmVp6W5NTCY9FTp8gpD1E&#13;
+x2P4c66UGayaVs9dKEikuea3IrHN3V16x1LA60YbLlt7eVGTPJpeb+AnmE2wB6YMP7r/hKUDExcJ&#13;
+urvKgqdrI782fD2IfT8SjXzcqNQRsdJW28g4O07n3J/CSLbh4/mRMYRQAjgzd5ONTWxVEomjNO8+&#13;
+PXjuzLzUSWOLai1bOtzs/iRSwubvfoef8vG/mdSTQF1kmhLhWqZ6eHJ9YtcXrnyyIMkjK0Hlc6un&#13;
+fownszoI6G/m+skONESf/n7D4C2WSf4RpJhILA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -972,4 +984,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7f8f83e9-4f30-4064-b765-37f45846f895" Target="#_f08938d0-71bd-4dd5-befa-04882f599922"><Timestamp>2021-01-08 04:26:11</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9c348dae-4f12-4662-b4a0-927553b302fa" Target="#_9001e4f9-4082-47fa-adc5-161bd86c14ad"><Timestamp>2021-01-11 12:13:46</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
