@@ -1,6 +1,87 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="payload" prompt="payload?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="keystore_password" prompt="keystore_password?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="keystore_path" prompt="keystore_path?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="C:/ssl/hosprod.jks"/>
+    <contextParameter comment="" name="restkeystorepassword" prompt="restkeystorepassword?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="restkeystorepath" prompt="restkeystorepath?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="C:/ssl/restprodhos.jks"/>
+    <contextParameter comment="" name="SAP_SOAP_Password" prompt="SAP_SOAP_Password?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="&quot;RFCHOS@2020&quot;"/>
+    <contextParameter comment="" name="SAP_SOAP_Username" prompt="SAP_SOAP_Username?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="&quot;rfchoshp1100&quot;"/>
+    <contextParameter comment="" name="res_rest_relpath" prompt="res_rest_relpath?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="/HOS_S4/api/sales-order-status-api"/>
+    <contextParameter comment="" name="res_rest_url" prompt="res_rest_url?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="https://hos.nupco.com"/>
+    <contextParameter comment="" name="res_sap_relpath" prompt="res_sap_relpath?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="/sap/bc/srt/scs/sap/z_ws_get_salesordsts_data_v1?sap-client=100"/>
+    <contextParameter comment="" name="reservation_SAP_ur" prompt="reservation_SAP_ur?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="https://saphp1ap1.nupco.com:44330"/>
+    <contextParameter comment="" name="reservationapi" prompt="reservationapi?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="/sapservices/saleorderservice"/>
+  </context>
+  <context confirmationNeeded="false" name="QA">
+    <contextParameter comment="" name="payload" prompt="payload?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="keystore_password" prompt="keystore_password?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="keystore_path" prompt="keystore_path?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="C:/ssl/hosprod.jks"/>
+    <contextParameter comment="" name="restkeystorepassword" prompt="restkeystorepassword?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="restkeystorepath" prompt="restkeystorepath?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="C:/ssl/restprodhos.jks"/>
+    <contextParameter comment="" name="SAP_SOAP_Password" prompt="SAP_SOAP_Password?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="&quot;RFCHOS@2020&quot;"/>
+    <contextParameter comment="" name="SAP_SOAP_Username" prompt="SAP_SOAP_Username?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="&quot;rfchoshp1100&quot;"/>
+    <contextParameter comment="" name="res_rest_relpath" prompt="res_rest_relpath?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="/HOS_S4/api/sales-order-status-api"/>
+    <contextParameter comment="" name="res_rest_url" prompt="res_rest_url?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="https://hos.nupco.com"/>
+    <contextParameter comment="" name="res_sap_relpath" prompt="res_sap_relpath?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="/sap/bc/srt/scs/sap/z_ws_get_salesordsts_data_v1?sap-client=100"/>
+    <contextParameter comment="" name="reservation_SAP_ur" prompt="reservation_SAP_ur?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="https://saphq1ap1.nupco.com:44320"/>
+    <contextParameter comment="" name="reservationapi" prompt="reservationapi?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="/sapservices/saleorderservice"/>
+  </context>
+  <context confirmationNeeded="false" name="Prod">
+    <contextParameter comment="" name="payload" prompt="payload?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="keystore_password" prompt="keystore_password?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="keystore_path" prompt="keystore_path?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="C:/ssl/hosprod.jks"/>
+    <contextParameter comment="" name="restkeystorepassword" prompt="restkeystorepassword?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="restkeystorepath" prompt="restkeystorepath?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="C:/ssl/restprodhos.jks"/>
+    <contextParameter comment="" name="SAP_SOAP_Password" prompt="SAP_SOAP_Password?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="&quot;RFCHOS@2020&quot;"/>
+    <contextParameter comment="" name="SAP_SOAP_Username" prompt="SAP_SOAP_Username?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="&quot;rfchoshp1100&quot;"/>
+    <contextParameter comment="" name="res_rest_relpath" prompt="res_rest_relpath?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="/HOS_S4/api/sales-order-status-api"/>
+    <contextParameter comment="" name="res_rest_url" prompt="res_rest_url?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="https://hos.nupco.com"/>
+    <contextParameter comment="" name="res_sap_relpath" prompt="res_sap_relpath?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="/sap/bc/srt/scs/sap/z_ws_get_salesordsts_data_v1?sap-client=100"/>
+    <contextParameter comment="" name="reservation_SAP_ur" prompt="reservation_SAP_ur?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="https://saphp1ap1.nupco.com:44330"/>
+    <contextParameter comment="" name="reservationapi" prompt="reservationapi?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="/sapservices/saleorderservice"/>
+  </context>
+  <context confirmationNeeded="false" name="Dev">
+    <contextParameter comment="" name="payload" prompt="payload?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="keystore_password" prompt="keystore_password?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="keystore_path" prompt="keystore_path?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="C:/ssl/hosprod.jks"/>
+    <contextParameter comment="" name="restkeystorepassword" prompt="restkeystorepassword?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="restkeystorepath" prompt="restkeystorepath?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="C:/ssl/restprodhos.jks"/>
+    <contextParameter comment="" name="SAP_SOAP_Password" prompt="SAP_SOAP_Password?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="&quot;RFCHOS@2020&quot;"/>
+    <contextParameter comment="" name="SAP_SOAP_Username" prompt="SAP_SOAP_Username?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="&quot;rfchoshp1100&quot;"/>
+    <contextParameter comment="" name="res_rest_relpath" prompt="res_rest_relpath?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value=""/>
+    <contextParameter comment="" name="res_rest_url" prompt="res_rest_url?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value=""/>
+    <contextParameter comment="" name="res_sap_relpath" prompt="res_sap_relpath?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value=""/>
+    <contextParameter comment="" name="reservation_SAP_ur" prompt="reservation_SAP_ur?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value=""/>
+    <contextParameter comment="" name="reservationapi" prompt="reservationapi?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="/sapservices/reservationservice"/>
+  </context>
+  <context confirmationNeeded="false" name="Quality">
+    <contextParameter comment="" name="payload" prompt="payload?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="keystore_password" prompt="keystore_password?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="keystore_path" prompt="keystore_path?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="C:/ssl/hosprod.jks"/>
+    <contextParameter comment="" name="restkeystorepassword" prompt="restkeystorepassword?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="restkeystorepath" prompt="restkeystorepath?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="C:/ssl/restprodhos.jks"/>
+    <contextParameter comment="" name="SAP_SOAP_Password" prompt="SAP_SOAP_Password?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="&quot;RFCHOS@2020&quot;"/>
+    <contextParameter comment="" name="SAP_SOAP_Username" prompt="SAP_SOAP_Username?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="&quot;rfchoshp1100&quot;"/>
+    <contextParameter comment="" name="res_rest_relpath" prompt="res_rest_relpath?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="/HOS_S4/api/sales-order-status-api"/>
+    <contextParameter comment="" name="res_rest_url" prompt="res_rest_url?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="https://hos.nupco.com"/>
+    <contextParameter comment="" name="res_sap_relpath" prompt="res_sap_relpath?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="/sap/bc/srt/scs/sap/z_ws_get_salesordsts_data_v1?sap-client=100"/>
+    <contextParameter comment="" name="reservation_SAP_ur" prompt="reservation_SAP_ur?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="https://saphp1ap1.nupco.com:44330"/>
+    <contextParameter comment="" name="reservationapi" prompt="reservationapi?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value="/sapservices/saleorderservice"/>
+  </context>
+  <context confirmationNeeded="false" name="SIT">
+    <contextParameter comment="" name="payload" prompt="payload?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="keystore_password" prompt="keystore_password?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="keystore_path" prompt="keystore_path?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="C:/ssl/hosprod.jks"/>
+    <contextParameter comment="" name="restkeystorepassword" prompt="restkeystorepassword?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="talend"/>
+    <contextParameter comment="" name="restkeystorepath" prompt="restkeystorepath?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="C:/ssl/restprodhos.jks"/>
+    <contextParameter comment="" name="SAP_SOAP_Password" prompt="SAP_SOAP_Password?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="&quot;RFCHOS@2020&quot;"/>
+    <contextParameter comment="" name="SAP_SOAP_Username" prompt="SAP_SOAP_Username?" promptNeeded="false" repositoryContextId="_Hn1QYELyEeueQbpkeT6jiQ" type="id_String" value="&quot;rfchoshp1100&quot;"/>
+    <contextParameter comment="" name="res_rest_relpath" prompt="res_rest_relpath?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value=""/>
+    <contextParameter comment="" name="res_rest_url" prompt="res_rest_url?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value=""/>
+    <contextParameter comment="" name="res_sap_relpath" prompt="res_sap_relpath?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value=""/>
+    <contextParameter comment="" name="reservation_SAP_ur" prompt="reservation_SAP_ur?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value=""/>
+    <contextParameter comment="" name="reservationapi" prompt="reservationapi?" promptNeeded="false" repositoryContextId="_17AocE2pEeuEuNS_Az9Dcg" type="id_String" value=""/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="416"/>
@@ -44,7 +125,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:N7fuZkWibvii3/fqYqXXb7DDGj9h3KiJoUmRZ69G"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:c5LEsO9wvxdtylJc5tiqfbatA0ddt/qu0TDlfLK4"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -79,7 +160,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:SHXUe9grRb1a03xzKsiaZYpRnMni3UEGmFewJe2h"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:8/Lan1uSfKVMG5B5LgrHF6+Fu33yD9HJwY9PXFzI"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -114,11 +195,11 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetKeystore_1"/>
     <elementParameter field="CLOSED_LIST" name="TRUSTSTORE_TYPE" value="JKS"/>
     <elementParameter field="FILE" name="SSL_TRUSTSERVER_TRUSTSTORE" value="&quot;C:/ssl/webservice.jks&quot;"/>
-    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" value="enc:system.encryption.key.v1:38Q0+qn+3FJHCuM/jO+x2OgOQ0DsuRfmMIHKLUVHX7187V50"/>
+    <elementParameter field="PASSWORD" name="SSL_TRUSTSERVER_PASSWORD" value="enc:system.encryption.key.v1:snO62+iNdVhKsl0KSxXAWx6UF5+pUTUtUuoOMDCIZ6zUUjra"/>
     <elementParameter field="CHECK" name="NEED_CLIENT_AUTH" value="false"/>
     <elementParameter field="CLOSED_LIST" name="KEYSTORE_TYPE" show="false" value="JKS"/>
     <elementParameter field="FILE" name="SSL_KEYSTORE" show="false" value="&quot;C:/client.keystore&quot;"/>
-    <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" show="false" value="enc:system.encryption.key.v1:7PpZtzPq1IAy9yYi7cyQw9sS0U6XqcnEyoWS0xfh7mgKpG0iL6k="/>
+    <elementParameter field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" show="false" value="enc:system.encryption.key.v1:Nb3nUR5f0FkPkQGT5Fwei16NG97nhJV68TnrzyAlh0JsSrEiwLI="/>
     <elementParameter field="CHECK" name="VERIFY_NAME" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
@@ -285,7 +366,7 @@
     <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC"/>
     <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;rfchoshd1100&quot;"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:IyVPZFSVnZkoWooxpLViPtNKI0HIeqsF9aQvKEMWtGlZkAls8QJVAtI="/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:RflHLk1jpC7LCVXGxUg8dMgcS/h+MB77vnaW+XnEAAZTpq2kt9wg4RQ="/>
     <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="NEED_AUTHORIZATION" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROLE" show="false" value="&quot;&quot;"/>
@@ -316,7 +397,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8080"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:7z4Fr0B3R6+G1GVCuSFCf2BRBPybG0XQNly087+c"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:HRTX6NuUE19jec5t0rtKHwylgLj7C0B67ajONc/U"/>
     <elementParameter field="TEXT" name="LABEL" value="SAP_SOAP_Call"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRESTClient_1">
@@ -903,13 +984,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="192;192;192"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_74c08177-1a98-48c1-a57d-94dd24ad0971"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VMTTLC+5wMDlmvYV+daa4QK6WhqUU/uB17GckrGxgxE4FHq74KPqOeJue3gMmGz10hhj1f1Sky6l&#13;
-r0W78Nvl6g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_af615cec-4006-4f4f-b60e-e89f976ff155"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YeTruGdc56fbHWFx2coinnqGBVNpvCRWYxbF6e81CJwhkmz9kq3dXeTjnfqBeRN3ibXmPHwIKcoc&#13;
-MCix34nDmQ==</DigestValue></Reference></SignedInfo><SignatureValue>R4Cw5LNRKvMoxoygb1vF9nFz6Pnf3AyVsIqLM0ZEONXj4kAB2+KGJZu/sFivMTnLNl49eKaDvslt&#13;
-qdX5BC6MpLprFIyOan2NUo5/KWGKUq51jPfE5QXOVvKt/CDnffeKWeuJSjaCmfMc1TyOSwcUSvid&#13;
-VKQmIG5NVDtI2u1olvPDT2TBKYXad6b0upEU0eVRO83ViyCcDU7mU6zzA/58I2LSLEmLRq6IkrTS&#13;
-hkCghspaM/voSLGrwPede1wOLBxtJB4Oh2eLlwKq1AYqHnPA/wu7hmGYj50cBFX7hfNNGm3f6KYx&#13;
-s7uCn894+r3kBwm3A/lCOlLo4+XaNFUxXZDUGw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_52e4c724-0aff-4951-98cc-54d450a45157"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7EtlCDNqOAeRL4l8bfiv4G8XbPDMn3eu2HfEoRyHlqmUzrQRz5raNB7D9JnyyhfKuf7UTrDlP9eP&#13;
+27yEr1VtTg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1d191efb-e8c1-4e7f-bbb6-13df186f4099"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>HC4fXf62lJrhbKBTQ3lrotKZzbqyWGWE0agxnJ08lTyHPpjZEYdEbs2WSy7YmUIu62B2uXFgj+WO&#13;
+9MrBvhGeKw==</DigestValue></Reference></SignedInfo><SignatureValue>gxGeY5Y9K0Cfd4DYgb3p/wV0SAohqW3wPd4jVq1/zy5L0aWQ9I56o9deJEjGCDW785E/ppoZ56QE&#13;
+Kh2n0g6M0ko1TwsXbg6CBLsb5lY211ThQ+lOS7j5lerR/Yvmkn2ppLXKnrf1UfVr1WFqujpvyda+&#13;
+tSTMTxr6Y/ypOMva+Rd5kpcmUIV+yPUlA7y96txLN/MZfjEyv7V1Mas6bHSPYmUdwGd0oaB91cg2&#13;
+PEKTxuUuV+r09Ag5Gxy98vYOY0evyDrA76ux1aNRaQ6CnOrI0gZ/MV2Bk4Asx2s+/HN1teVHJxXV&#13;
+wlVyWdy3BmL1vhjhGSEV0iXq53aKV3S1Lngcbg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -931,4 +1012,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_af615cec-4006-4f4f-b60e-e89f976ff155" Target="#_74c08177-1a98-48c1-a57d-94dd24ad0971"><Timestamp>2021-01-11 11:45:28</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1d191efb-e8c1-4e7f-bbb6-13df186f4099" Target="#_52e4c724-0aff-4951-98cc-54d450a45157"><Timestamp>2021-01-11 11:45:52</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
