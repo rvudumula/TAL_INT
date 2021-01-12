@@ -3,7 +3,7 @@
     <contextParameter comment="" name="Bearer_Token" prompt="Bearer_Token?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="AMC_files" prompt="AMC_files?" promptNeeded="false" type="id_String" value="C:/Softwares/New folder/AMC/"/>
     <contextParameter comment="" name="AMC_Database" prompt="AMC_Database?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="AMC"/>
-    <contextParameter comment="" name="AMC_Password" prompt="AMC_Password?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_Password" value="enc:system.encryption.key.v1:hk/7csdiJNIPUhCrZMLIGlLQ+mwH4VOjie8UjKxqY1me"/>
+    <contextParameter comment="" name="AMC_Password" prompt="AMC_Password?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_Password" value="enc:system.encryption.key.v1:Vyk30h7W5ANPHZoE+vBDUVwWczBrVPDD5X9CF1pVWUEQ"/>
     <contextParameter comment="" name="AMC_Port" prompt="AMC_Port?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="3307"/>
     <contextParameter comment="" name="AMC_AdditionalParams" prompt="AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="noDatetimeStringSync=true"/>
     <contextParameter comment="" name="AMC_Login" prompt="AMC_Login?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="talend"/>
@@ -51,7 +51,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:RYzgfRx+DSXKIkeFzPSBpqWaeafEGVDK1xaBTyaj"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:mQPnQG+55rKSqtSguCf5ZgsAp3Pq4ysmo0w5hthm"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -88,7 +88,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="context.AMC_AdditionalParams"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="context.AMC_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:uhHf9f0KdUsGBGfCU2MERSHupeUkhJ5vA/keBsx4WXFN991QHfxpX018hX5BPPn+"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:EgoZ/sHCcmRON5BfVFykgNIXd/h1ax0pSVjuyujuofhA2jea+i+sPxTtfrCysiw2"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statcatcher&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logcatcher&quot;"/>
@@ -125,7 +125,7 @@
     <elementParameter field="TEXT" name="SERVERPORT" value="&quot;61617&quot;"/>
     <elementParameter field="TABLE" name="SERVERS" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ye8RvgHtF3ZHmcg1iaZwvSuG6en4tIC4mYBK74bL"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ASQmWUWhspWj+bQSMVduDaMhTmfR6mUNfqbDRi+M"/>
     <elementParameter field="CHECK" name="USE_SSL" value="false"/>
     <elementParameter field="LABEL" name="USE_SSL_NOTE" show="false" value="Notice: You should use tSetKeysore or JVM arguments to specify keystore or truststore"/>
     <elementParameter field="CHECK" name="IS_TRANSACTED" show="false" value="false"/>
@@ -188,227 +188,8 @@
       <column comment="" key="false" length="-1" name="Message" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tConvertType" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="320">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tConvertType_1"/>
-    <elementParameter field="CHECK" name="AUTOCAST" value="true"/>
-    <elementParameter field="TABLE" name="MANUALTABLE" show="false"/>
-    <elementParameter field="CHECK" name="EMPTYTONULL" value="false"/>
-    <elementParameter field="CHECK" name="DIEONERROR" value="true"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="out" name="tConvertType_1">
-      <column comment="" key="false" length="-1" name="Message" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="REJECT" label="out" name="REJECT">
-      <column comment="" key="false" length="-1" name="Message" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="800" posY="320">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_1"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
-    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="Output_2" name="Output_2">
-      <column comment="" defaultValue="" key="false" length="-1" name="RATE_TYPE" nullable="true" originalLength="-1" precision="-1" sourceType="id_Character" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="FROM_CURR" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TO_CURRNCY" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="VALID_FROM" nullable="true" originalLength="-1" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="-1" name="EXCH_RATE" nullable="true" originalLength="-1" precision="-1" sourceType="id_Float" type="id_Float" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="operationCode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <nodeData xsi:type="TalendXMLMap:XmlMapData">
-      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row2">
-        <nodes expression="" name="Message" type="id_Document" xpath="row2/Message">
-          <children loop="true" main="true" name="EXCHANGE_RATE01" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01">
-            <children name="EDI_DC40" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40">
-              <children name="TABNAM" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/TABNAM"/>
-              <children name="MANDT" type="id_Integer" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/MANDT"/>
-              <children name="DOCNUM" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/DOCNUM"/>
-              <children name="DOCREL" type="id_Integer" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/DOCREL"/>
-              <children name="STATUS" type="id_Integer" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/STATUS"/>
-              <children name="DIRECT" type="id_Integer" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/DIRECT"/>
-              <children name="OUTMOD" type="id_Integer" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/OUTMOD"/>
-              <children name="EXPRSS" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/EXPRSS"/>
-              <children name="TEST" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/TEST"/>
-              <children name="IDOCTYP" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/IDOCTYP"/>
-              <children name="CIMTYP" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/CIMTYP"/>
-              <children name="MESTYP" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/MESTYP"/>
-              <children name="MESCOD" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/MESCOD"/>
-              <children name="MESFCT" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/MESFCT"/>
-              <children name="STD" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/STD"/>
-              <children name="STDVRS" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/STDVRS"/>
-              <children name="STDMES" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/STDMES"/>
-              <children name="SNDPOR" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/SNDPOR"/>
-              <children name="SNDPRT" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/SNDPRT"/>
-              <children name="SNDPFC" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/SNDPFC"/>
-              <children name="SNDPRN" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/SNDPRN"/>
-              <children name="SNDSAD" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/SNDSAD"/>
-              <children name="SNDLAD" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/SNDLAD"/>
-              <children name="RCVPOR" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/RCVPOR"/>
-              <children name="RCVPRT" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/RCVPRT"/>
-              <children name="RCVPFC" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/RCVPFC"/>
-              <children name="RCVPRN" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/RCVPRN"/>
-              <children name="RCVSAD" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/RCVSAD"/>
-              <children name="RCVLAD" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/RCVLAD"/>
-              <children name="CREDAT" type="id_Integer" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/CREDAT"/>
-              <children name="CRETIM" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/CRETIM"/>
-              <children name="REFINT" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/REFINT"/>
-              <children name="REFGRP" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/REFGRP"/>
-              <children name="REFMES" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/REFMES"/>
-              <children name="ARCKEY" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/ARCKEY"/>
-              <children name="SERIAL" type="id_Long" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/SERIAL"/>
-            </children>
-            <children name="Loop-E2EXCHANGE_RATE000" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000">
-              <children name="E2EXCHANGE_RATE000" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2EXCHANGE_RATE000">
-                <children name="SEGNAM" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2EXCHANGE_RATE000/SEGNAM"/>
-                <children name="MANDT" type="id_Integer" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2EXCHANGE_RATE000/MANDT"/>
-                <children name="DOCNUM" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2EXCHANGE_RATE000/DOCNUM"/>
-                <children name="SEGNUM" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2EXCHANGE_RATE000/SEGNUM"/>
-                <children name="PSGNUM" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2EXCHANGE_RATE000/PSGNUM"/>
-                <children name="HLEVEL" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2EXCHANGE_RATE000/HLEVEL"/>
-                <children name="LOG_SYSTEM" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2EXCHANGE_RATE000/LOG_SYSTEM"/>
-                <children name="UPD_ALLOW" type="id_Character" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2EXCHANGE_RATE000/UPD_ALLOW"/>
-                <children name="CHG_FIXED" type="id_Character" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2EXCHANGE_RATE000/CHG_FIXED"/>
-                <children name="DEV_ALLOW" type="id_Integer" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2EXCHANGE_RATE000/DEV_ALLOW"/>
-              </children>
-              <children name="E2BP1093_0001" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001">
-                <children name="SEGNAM" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/SEGNAM"/>
-                <children name="MANDT" type="id_Integer" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/MANDT"/>
-                <children name="DOCNUM" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/DOCNUM"/>
-                <children name="SEGNUM" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/SEGNUM"/>
-                <children name="PSGNUM" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/PSGNUM"/>
-                <children name="HLEVEL" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/HLEVEL"/>
-                <children name="RATE_TYPE" outgoingConnections="//@node.3/@nodeData/@connections.0" type="id_Character" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/RATE_TYPE"/>
-                <children name="FROM_CURR" outgoingConnections="//@node.3/@nodeData/@connections.1" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/FROM_CURR"/>
-                <children name="TO_CURRNCY" outgoingConnections="//@node.3/@nodeData/@connections.2" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/TO_CURRNCY"/>
-                <children name="VALID_FROM" outgoingConnections="//@node.3/@nodeData/@connections.3" type="id_Integer" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/VALID_FROM"/>
-                <children name="EXCH_RATE" outgoingConnections="//@node.3/@nodeData/@connections.4" type="id_Float" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/EXCH_RATE"/>
-              </children>
-            </children>
-          </children>
-        </nodes>
-      </inputTrees>
-      <outputTrees name="Output_2">
-        <nodes expression="[row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/RATE_TYPE]" incomingConnections="//@node.3/@nodeData/@connections.0" name="RATE_TYPE" type="id_Character" xpath="Output_2/RATE_TYPE"/>
-        <nodes expression="[row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/FROM_CURR]" incomingConnections="//@node.3/@nodeData/@connections.1" name="FROM_CURR" type="id_String" xpath="Output_2/FROM_CURR"/>
-        <nodes expression="[row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/TO_CURRNCY]" incomingConnections="//@node.3/@nodeData/@connections.2" name="TO_CURRNCY" type="id_String" xpath="Output_2/TO_CURRNCY"/>
-        <nodes expression="[row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/VALID_FROM]" incomingConnections="//@node.3/@nodeData/@connections.3" name="VALID_FROM" type="id_Integer" xpath="Output_2/VALID_FROM"/>
-        <nodes expression="[row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/EXCH_RATE]" incomingConnections="//@node.3/@nodeData/@connections.4" name="EXCH_RATE" type="id_Float" xpath="Output_2/EXCH_RATE"/>
-        <nodes expression="&quot;CREATE&quot;" name="operationCode" pattern="" type="id_String" xpath="Output_2/operationCode"/>
-      </outputTrees>
-      <varTables minimized="true" name="Var"/>
-      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.1/@children.6" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.1/@children.7" target="//@node.3/@nodeData/@outputTrees.0/@nodes.1" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.1/@children.8" target="//@node.3/@nodeData/@outputTrees.0/@nodes.2" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.1/@children.9" target="//@node.3/@nodeData/@outputTrees.0/@nodes.3" xsi:type="TalendXMLMap:Connection"/>
-      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.1/@children.10" target="//@node.3/@nodeData/@outputTrees.0/@nodes.4" xsi:type="TalendXMLMap:Connection"/>
-    </nodeData>
-  </node>
-  <node componentName="tWriteJSONField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="320">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWriteJSONField_1"/>
-    <elementParameter field="COLUMN_LIST" name="JSONFIELD" value="string"/>
-    <elementParameter field="TABLE" name="ROOT" show="false">
-      <elementValue elementRef="PATH" value="/rootTag"/>
-      <elementValue elementRef="COLUMN" value=""/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="main"/>
-      <elementValue elementRef="ORDER" value="1"/>
-      <elementValue elementRef="PATH" value="/rootTag/currencyExchangeRateList"/>
-      <elementValue elementRef="COLUMN" value=""/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="branch"/>
-      <elementValue elementRef="ORDER" value="3"/>
-      <elementValue elementRef="PATH" value="/rootTag/currencyExchangeRateList/currencyExchangeRate"/>
-      <elementValue elementRef="COLUMN" value=""/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="branch"/>
-      <elementValue elementRef="ORDER" value="4"/>
-      <elementValue elementRef="PATH" value="/rootTag/currencyExchangeRateList/currencyExchangeRate/currencySource"/>
-      <elementValue elementRef="COLUMN" value=""/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="branch"/>
-      <elementValue elementRef="ORDER" value="5"/>
-      <elementValue elementRef="PATH" value="/rootTag/currencyExchangeRateList/currencyExchangeRate/currencySource/code"/>
-      <elementValue elementRef="COLUMN" value="FROM_CURR"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="branch"/>
-      <elementValue elementRef="ORDER" value="6"/>
-      <elementValue elementRef="PATH" value="/rootTag/currencyExchangeRateList/currencyExchangeRate/currencyDestination"/>
-      <elementValue elementRef="COLUMN" value=""/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="branch"/>
-      <elementValue elementRef="ORDER" value="7"/>
-      <elementValue elementRef="PATH" value="/rootTag/currencyExchangeRateList/currencyExchangeRate/currencyDestination/code"/>
-      <elementValue elementRef="COLUMN" value="TO_CURRNCY"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="branch"/>
-      <elementValue elementRef="ORDER" value="8"/>
-      <elementValue elementRef="PATH" value="/rootTag/currencyExchangeRateList/currencyExchangeRate/exchangeRate"/>
-      <elementValue elementRef="COLUMN" value="EXCH_RATE"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="branch"/>
-      <elementValue elementRef="ORDER" value="9"/>
-    </elementParameter>
-    <elementParameter field="TABLE" name="GROUP" show="false"/>
-    <elementParameter field="TABLE" name="LOOP" show="false">
-      <elementValue elementRef="PATH" value="/rootTag/operationCode"/>
-      <elementValue elementRef="COLUMN" value="operationCode"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="main"/>
-      <elementValue elementRef="ORDER" value="2"/>
-    </elementParameter>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="TABLE" name="GROUPBYS"/>
-    <elementParameter field="CHECK" name="REMOVE_ROOT" value="true"/>
-    <elementParameter field="CHECK" name="COMPACT_FORMAT" show="false" value="true"/>
-    <elementParameter field="CHECK" name="QUOTE_ALL_VALUES" value="false"/>
-    <elementParameter field="CHECK" name="QUOTE_NULL_VALUES" show="false" value="true"/>
-    <elementParameter field="CHECK" name="ALLOW_EMPTY_STRINGS" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tWriteJSONField_1">
-      <column comment="" key="false" length="-1" name="string" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="320">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
-    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_cAFz8E5sEeuff_1FJM6XjQ-tMap_2-PREVIEW.bmp"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
-    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
-    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
-    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
-    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="out2">
-      <column comment="" key="false" length="-1" name="string" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="FLOW" name="out1">
-      <column comment="" key="false" length="-1" name="string" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
-      <varTables name="Var" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row3.string.indexOf(&quot;currencyExchangeRate&quot;) != -1 ? row3.string.substring(0,row3.string.indexOf(&quot;currencyExchangeRateList&quot;)+50) + &quot;[&quot; + row3.string.substring(row3.string.indexOf(&quot;currencyExchangeRateList&quot;)+50,row3.string.length()-2) + &quot;]}}&quot; : &quot;&quot; " name="string" nullable="true" type="id_String"/>
-      </varTables>
-      <outputTables name="out2" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="Var.string " name="string" nullable="true" type="id_String"/>
-      </outputTables>
-      <outputTables name="out1" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="Var.string " name="string" nullable="true" type="id_String"/>
-      </outputTables>
-      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="string" nullable="true" type="id_String"/>
-      </inputTables>
-    </nodeData>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1344" posY="416">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_3"/>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_4"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -421,14 +202,14 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="string"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Message"/>
       <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_3">
-      <column comment="" key="false" length="-1" name="string" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    <metadata connector="FLOW" label="out" name="tLogRow_4">
+      <column comment="" key="false" length="-1" name="Message" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tREST" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="160">
@@ -509,7 +290,255 @@
     <elementParameter field="CHECK" name="INFORMATION" value="false"/>
     <elementParameter field="MEMO" name="COMMENT" value=""/>
   </node>
-  <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1472" posY="320">
+  <node componentName="tConvertType" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tConvertType_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="AUTOCAST" value="true"/>
+    <elementParameter field="TABLE" name="MANUALTABLE" show="false"/>
+    <elementParameter field="CHECK" name="EMPTYTONULL" value="false"/>
+    <elementParameter field="CHECK" name="DIEONERROR" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out" name="tConvertType_1">
+      <column comment="" key="false" length="-1" name="Message" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="out" name="REJECT">
+      <column comment="" key="false" length="-1" name="Message" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="864" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="Output_2" name="Output_2">
+      <column comment="" defaultValue="" key="false" length="-1" name="RATE_TYPE" nullable="true" originalLength="-1" precision="-1" sourceType="id_Character" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FROM_CURR" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TO_CURRNCY" nullable="true" originalLength="-1" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="VALID_FROM" nullable="true" originalLength="-1" precision="-1" sourceType="id_Integer" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="EXCH_RATE" nullable="true" originalLength="-1" precision="-1" sourceType="id_Float" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="operationCode" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row2">
+        <nodes expression="" name="Message" type="id_Document" xpath="row2/Message">
+          <children loop="true" main="true" name="EXCHANGE_RATE01" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01">
+            <children name="EDI_DC40" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40">
+              <children name="TABNAM" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/TABNAM"/>
+              <children name="MANDT" type="id_Integer" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/MANDT"/>
+              <children name="DOCNUM" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/DOCNUM"/>
+              <children name="DOCREL" type="id_Integer" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/DOCREL"/>
+              <children name="STATUS" type="id_Integer" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/STATUS"/>
+              <children name="DIRECT" type="id_Integer" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/DIRECT"/>
+              <children name="OUTMOD" type="id_Integer" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/OUTMOD"/>
+              <children name="EXPRSS" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/EXPRSS"/>
+              <children name="TEST" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/TEST"/>
+              <children name="IDOCTYP" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/IDOCTYP"/>
+              <children name="CIMTYP" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/CIMTYP"/>
+              <children name="MESTYP" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/MESTYP"/>
+              <children name="MESCOD" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/MESCOD"/>
+              <children name="MESFCT" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/MESFCT"/>
+              <children name="STD" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/STD"/>
+              <children name="STDVRS" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/STDVRS"/>
+              <children name="STDMES" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/STDMES"/>
+              <children name="SNDPOR" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/SNDPOR"/>
+              <children name="SNDPRT" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/SNDPRT"/>
+              <children name="SNDPFC" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/SNDPFC"/>
+              <children name="SNDPRN" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/SNDPRN"/>
+              <children name="SNDSAD" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/SNDSAD"/>
+              <children name="SNDLAD" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/SNDLAD"/>
+              <children name="RCVPOR" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/RCVPOR"/>
+              <children name="RCVPRT" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/RCVPRT"/>
+              <children name="RCVPFC" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/RCVPFC"/>
+              <children name="RCVPRN" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/RCVPRN"/>
+              <children name="RCVSAD" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/RCVSAD"/>
+              <children name="RCVLAD" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/RCVLAD"/>
+              <children name="CREDAT" type="id_Integer" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/CREDAT"/>
+              <children name="CRETIM" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/CRETIM"/>
+              <children name="REFINT" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/REFINT"/>
+              <children name="REFGRP" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/REFGRP"/>
+              <children name="REFMES" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/REFMES"/>
+              <children name="ARCKEY" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/ARCKEY"/>
+              <children name="SERIAL" type="id_Long" xpath="row2.Message:/EXCHANGE_RATE01/EDI_DC40/SERIAL"/>
+            </children>
+            <children name="Loop-E2EXCHANGE_RATE000" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000">
+              <children name="E2EXCHANGE_RATE000" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2EXCHANGE_RATE000">
+                <children name="SEGNAM" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2EXCHANGE_RATE000/SEGNAM"/>
+                <children name="MANDT" type="id_Integer" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2EXCHANGE_RATE000/MANDT"/>
+                <children name="DOCNUM" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2EXCHANGE_RATE000/DOCNUM"/>
+                <children name="SEGNUM" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2EXCHANGE_RATE000/SEGNUM"/>
+                <children name="PSGNUM" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2EXCHANGE_RATE000/PSGNUM"/>
+                <children name="HLEVEL" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2EXCHANGE_RATE000/HLEVEL"/>
+                <children name="LOG_SYSTEM" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2EXCHANGE_RATE000/LOG_SYSTEM"/>
+                <children name="UPD_ALLOW" type="id_Character" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2EXCHANGE_RATE000/UPD_ALLOW"/>
+                <children name="CHG_FIXED" type="id_Character" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2EXCHANGE_RATE000/CHG_FIXED"/>
+                <children name="DEV_ALLOW" type="id_Integer" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2EXCHANGE_RATE000/DEV_ALLOW"/>
+              </children>
+              <children name="E2BP1093_0001" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001">
+                <children name="SEGNAM" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/SEGNAM"/>
+                <children name="MANDT" type="id_Integer" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/MANDT"/>
+                <children name="DOCNUM" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/DOCNUM"/>
+                <children name="SEGNUM" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/SEGNUM"/>
+                <children name="PSGNUM" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/PSGNUM"/>
+                <children name="HLEVEL" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/HLEVEL"/>
+                <children name="RATE_TYPE" outgoingConnections="//@node.8/@nodeData/@connections.0" type="id_Character" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/RATE_TYPE"/>
+                <children name="FROM_CURR" outgoingConnections="//@node.8/@nodeData/@connections.1" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/FROM_CURR"/>
+                <children name="TO_CURRNCY" outgoingConnections="//@node.8/@nodeData/@connections.2" type="id_String" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/TO_CURRNCY"/>
+                <children name="VALID_FROM" outgoingConnections="//@node.8/@nodeData/@connections.3" type="id_Integer" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/VALID_FROM"/>
+                <children name="EXCH_RATE" outgoingConnections="//@node.8/@nodeData/@connections.4" type="id_Float" xpath="row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/EXCH_RATE"/>
+              </children>
+            </children>
+          </children>
+        </nodes>
+      </inputTrees>
+      <outputTrees name="Output_2">
+        <nodes expression="[row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/RATE_TYPE]" incomingConnections="//@node.8/@nodeData/@connections.0" name="RATE_TYPE" type="id_Character" xpath="Output_2/RATE_TYPE"/>
+        <nodes expression="[row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/FROM_CURR]" incomingConnections="//@node.8/@nodeData/@connections.1" name="FROM_CURR" type="id_String" xpath="Output_2/FROM_CURR"/>
+        <nodes expression="[row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/TO_CURRNCY]" incomingConnections="//@node.8/@nodeData/@connections.2" name="TO_CURRNCY" type="id_String" xpath="Output_2/TO_CURRNCY"/>
+        <nodes expression="[row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/VALID_FROM]" incomingConnections="//@node.8/@nodeData/@connections.3" name="VALID_FROM" type="id_Integer" xpath="Output_2/VALID_FROM"/>
+        <nodes expression="[row2.Message:/EXCHANGE_RATE01/Loop-E2EXCHANGE_RATE000/E2BP1093_0001/EXCH_RATE]" incomingConnections="//@node.8/@nodeData/@connections.4" name="EXCH_RATE" type="id_Float" xpath="Output_2/EXCH_RATE"/>
+        <nodes expression="&quot;CREATE&quot;" name="operationCode" pattern="" type="id_String" xpath="Output_2/operationCode"/>
+      </outputTrees>
+      <varTables minimized="true" name="Var"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.1/@children.6" target="//@node.8/@nodeData/@outputTrees.0/@nodes.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.1/@children.7" target="//@node.8/@nodeData/@outputTrees.0/@nodes.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.1/@children.8" target="//@node.8/@nodeData/@outputTrees.0/@nodes.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.1/@children.9" target="//@node.8/@nodeData/@outputTrees.0/@nodes.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.8/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.1/@children.10" target="//@node.8/@nodeData/@outputTrees.0/@nodes.4" xsi:type="TalendXMLMap:Connection"/>
+    </nodeData>
+  </node>
+  <node componentName="tWriteJSONField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWriteJSONField_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="JSONFIELD" value="string"/>
+    <elementParameter field="TABLE" name="ROOT" show="false">
+      <elementValue elementRef="PATH" value="/rootTag"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="1"/>
+      <elementValue elementRef="PATH" value="/rootTag/currencyExchangeRateList"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="3"/>
+      <elementValue elementRef="PATH" value="/rootTag/currencyExchangeRateList/currencyExchangeRate"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="4"/>
+      <elementValue elementRef="PATH" value="/rootTag/currencyExchangeRateList/currencyExchangeRate/currencySource"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="5"/>
+      <elementValue elementRef="PATH" value="/rootTag/currencyExchangeRateList/currencyExchangeRate/currencySource/code"/>
+      <elementValue elementRef="COLUMN" value="FROM_CURR"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="6"/>
+      <elementValue elementRef="PATH" value="/rootTag/currencyExchangeRateList/currencyExchangeRate/currencyDestination"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="7"/>
+      <elementValue elementRef="PATH" value="/rootTag/currencyExchangeRateList/currencyExchangeRate/currencyDestination/code"/>
+      <elementValue elementRef="COLUMN" value="TO_CURRNCY"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="8"/>
+      <elementValue elementRef="PATH" value="/rootTag/currencyExchangeRateList/currencyExchangeRate/exchangeRate"/>
+      <elementValue elementRef="COLUMN" value="EXCH_RATE"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="9"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="GROUP" show="false"/>
+    <elementParameter field="TABLE" name="LOOP" show="false">
+      <elementValue elementRef="PATH" value="/rootTag/operationCode"/>
+      <elementValue elementRef="COLUMN" value="operationCode"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="2"/>
+    </elementParameter>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="TABLE" name="GROUPBYS"/>
+    <elementParameter field="CHECK" name="REMOVE_ROOT" value="true"/>
+    <elementParameter field="CHECK" name="COMPACT_FORMAT" show="false" value="true"/>
+    <elementParameter field="CHECK" name="QUOTE_ALL_VALUES" value="false"/>
+    <elementParameter field="CHECK" name="QUOTE_NULL_VALUES" show="false" value="true"/>
+    <elementParameter field="CHECK" name="ALLOW_EMPTY_STRINGS" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWriteJSONField_1">
+      <column comment="" key="false" length="-1" name="string" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1312" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_cAFz8E5sEeuff_1FJM6XjQ-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out2">
+      <column comment="" key="false" length="-1" name="string" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" name="out1">
+      <column comment="" key="false" length="-1" name="string" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables name="Var" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row3.string.indexOf(&quot;currencyExchangeRate&quot;) != -1 ? row3.string.substring(0,row3.string.indexOf(&quot;currencyExchangeRateList&quot;)+50) + &quot;[&quot; + row3.string.substring(row3.string.indexOf(&quot;currencyExchangeRateList&quot;)+50,row3.string.length()-2) + &quot;]}}&quot; : &quot;&quot; " name="string" nullable="true" type="id_String"/>
+      </varTables>
+      <outputTables name="out2" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="Var.string " name="string" nullable="true" type="id_String"/>
+      </outputTables>
+      <outputTables name="out1" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="Var.string " name="string" nullable="true" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="string" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1408" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_3"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="string"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_3">
+      <column comment="" key="false" length="-1" name="string" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1536" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTClient_1"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="URL" value="&quot;https://nupco-ws01-prep.tejari.com&quot;"/>
@@ -525,7 +554,7 @@
     <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="OAUTH2_BEARER"/>
     <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="&quot;RFCTLDHD1100&quot;"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:2uZaI6RXy6AyTdpWL5vJQS6oGgnNBe1X+DuXeJB6cqmYOXKgGsm34A=="/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:Cmo7Tu67Lh7RwPL9Jl/YVwkFmBUvlRaCUQvap0ErXFMKa6dn33MCWg=="/>
     <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" value="context.Bearer_Token"/>
     <elementParameter field="CHECK" name="NEED_AUTHORIZATION" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROLE" show="false" value="&quot;&quot;"/>
@@ -553,7 +582,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8080"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:mlL12tB/MxHJ9hEkIs3ndTRYOrIL4uobN4p5cScZ"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:Im3iHdric0/j9g5K73odq++u0lAqCvqmPgVsyFTK"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRESTClient_1">
       <column comment="" key="false" length="-1" name="string" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -568,7 +597,7 @@
       <column defaultValue="" key="false" length="1024" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1696" posY="320">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1760" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
@@ -599,7 +628,7 @@
       <column defaultValue="" key="false" length="4048" name="string" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1696" posY="448">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1760" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
@@ -631,35 +660,9 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
-  <connection connectorName="FLOW" label="out" lineStyle="0" metaname="out" offsetLabelX="0" offsetLabelY="0" source="tHMap_1" target="tConvertType_1">
+  <connection connectorName="FLOW" label="out" lineStyle="0" metaname="out" offsetLabelX="0" offsetLabelY="0" source="tHMap_1" target="tLogRow_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out"/>
-  </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tConvertType_1" offsetLabelX="0" offsetLabelY="0" source="tConvertType_1" target="tXMLMap_1">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="Message"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
-  </connection>
-  <connection connectorName="FLOW" label="Output_2" lineStyle="0" metaname="Output_2" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tWriteJSONField_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Output_2"/>
-  </connection>
-  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tWriteJSONField_1" offsetLabelX="0" offsetLabelY="0" source="tWriteJSONField_1" target="tMap_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
-  </connection>
-  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_2" target="tLogRow_3">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out1"/>
-  </connection>
-  <connection connectorName="FLOW" label="out2" lineStyle="0" metaname="out2" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_2" target="tRESTClient_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out2"/>
   </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tREST_1" offsetLabelX="0" offsetLabelY="0" source="tREST_1" target="tExtractJSONFields_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -671,6 +674,36 @@
   <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tExtractJSONFields_1" offsetLabelX="0" offsetLabelY="0" source="tExtractJSONFields_1" target="tJavaRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tConvertType_1" offsetLabelX="0" offsetLabelY="0" source="tConvertType_1" target="tXMLMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Message"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="Output_2" lineStyle="0" metaname="Output_2" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tWriteJSONField_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Output_2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tWriteJSONField_1" offsetLabelX="0" offsetLabelY="0" source="tWriteJSONField_1" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_2" target="tLogRow_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out1"/>
+  </connection>
+  <connection connectorName="FLOW" label="out2" lineStyle="0" metaname="out2" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_2" target="tRESTClient_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out2"/>
   </connection>
   <connection connectorName="RESPONSE" label="row6" lineStyle="0" metaname="RESPONSE" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tRESTClient_1" target="tLogRow_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -702,17 +735,17 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTClient_1"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tConvertType_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f08b89b8-92fd-4925-b78c-a7f1c1793a8c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>UwJs3ETdPThUVsDtyvS71fUOYbzK92qLW9LpC4gOyi4T9Dkjj6HaUkulluxEsxKhUDBvi0chpklG&#13;
-PnWsokQmDQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6b7432ab-cfbe-46a5-8e10-1c913520501e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9dQzRPVwqtpyhGT/WaRUlU+2NSlKA/JE3VUfnujBi68IcTApvcOY9CEZyXwaMLmteTJ7VYsyb3FR&#13;
-JfT9LdxwCw==</DigestValue></Reference></SignedInfo><SignatureValue>Lrvq2lNZdwOPItjoPiIshFaeB38M1gda0X5rEecqN6mHUvecdADidsIX99muLlImBfBQ1TXlsnOV&#13;
-MU0tRDHUoc/mL7iiuC9IC4rn7+JWSyBD4D8S/G+S6dcuPKbhXcn2HUwGFbNxWiMdCz4G6xXY44zv&#13;
-4iwFomdU/cuHs4Bv3RYdZmYfCOeiWcBSEURb17UdhrFTh+RAlzPx2H2LoIy1X/hjqB+3l8yCAsPh&#13;
-tSvVCiB8djw2k7edD6mXJdXgFB4MGd7dGvsyJpFSKRPvaHN2dKpW8XaglOaNebCD9aidtBQo3B4H&#13;
-NpREhP33F3Xg6oezWL0rmoFbw7zpOlgYnumqWA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2cdfc731-aef4-4726-a677-cf4b57123a22"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>tHouCvGt997WJ8K59Ui2RR8jFH5oKVahj+UQoSUKrehgwPcLYm/9SBJqhOl/wRFTWe6WMC9scX9R&#13;
+dHydlddrZA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e55cfdec-f4eb-42a5-b5d9-c5431e3970c0"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>SUiQRRF13ysRJ5Vxb2bxp5Un0jPJzE2EncxN8mupYg/WAKNyHgsqrQ5wP6t0Bz4YtSoEV/pQ8t3i&#13;
+5ea2MR7YQQ==</DigestValue></Reference></SignedInfo><SignatureValue>T7dwEJuLZG73Ri1Za+FocUgNTpz0gz3OMTyWt9j65XFL3QBujUVdyw9fq7IG0kPH4hxXr6b1fUMZ&#13;
+HzQSOBTAsZ40qnYtY/KLSCwYCsLicG950o0lrlwZNAaoy1lWuiUdR9HSOS5R4YgnVSFXH2W977f3&#13;
+OamU6sfGe/0qfGIilNiFOxJi+h/R582XTFCm46D4/XDjUXCGlF4Li1I+RGFGELs5peHwWGNR3bcn&#13;
+Ogx57YEvDcpGvPGDFGn5EYlQaaCjWa11vRZgZ+7fIXn1svXhgxfcSbm8xKyPzI3Lj8CJivrcz0W2&#13;
+EE1m++Alxe//dqBUJdPSPc2bPwGPc4LQl23evw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -734,4 +767,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6b7432ab-cfbe-46a5-8e10-1c913520501e" Target="#_f08b89b8-92fd-4925-b78c-a7f1c1793a8c"><Timestamp>2021-01-12 10:34:29</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e55cfdec-f4eb-42a5-b5d9-c5431e3970c0" Target="#_2cdfc731-aef4-4726-a677-cf4b57123a22"><Timestamp>2021-01-12 12:11:39</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
