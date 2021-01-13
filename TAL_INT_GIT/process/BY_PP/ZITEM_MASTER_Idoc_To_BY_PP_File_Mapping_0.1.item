@@ -14,7 +14,7 @@
     <contextParameter comment="" name="Current_Date" prompt="Current_Date?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="Local_path" prompt="Local_path?" promptNeeded="false" repositoryContextId="_-frAQEt8Eeu1hJK2f4Kg4A" type="id_String" value="C:/Softwares/New folder/BY_PP/"/>
     <contextParameter comment="" name="BY_PP_sftp_hostname" prompt="BY_PP_sftp_hostname?" promptNeeded="false" repositoryContextId="_g5kPUEuCEeu1hJK2f4Kg4A" type="id_String" value="bypdap1"/>
-    <contextParameter comment="" name="BY_PP_sftp_password" prompt="BY_PP_sftp_password?" promptNeeded="false" repositoryContextId="_g5kPUEuCEeu1hJK2f4Kg4A" type="id_Password" value="enc:system.encryption.key.v1:WKLRdBX0cqm9dsPo2OhnN138iExSOUF50qxt3+tX3aVRRa/F"/>
+    <contextParameter comment="" name="BY_PP_sftp_password" prompt="BY_PP_sftp_password?" promptNeeded="false" repositoryContextId="_g5kPUEuCEeu1hJK2f4Kg4A" type="id_Password" value="enc:system.encryption.key.v1:bi6nJG8oeta+7vWyV+V6umWk/l+3SdbpATCLjSlBg6SEZv8K"/>
     <contextParameter comment="" name="BY_PP_sftp_port" prompt="BY_PP_sftp_port?" promptNeeded="false" repositoryContextId="_g5kPUEuCEeu1hJK2f4Kg4A" type="id_Integer" value="22"/>
     <contextParameter comment="" name="BY_PP_sftp_Remote_path" prompt="BY_PP_sftp_Remote_path?" promptNeeded="false" repositoryContextId="_g5kPUEuCEeu1hJK2f4Kg4A" type="id_String" value="/inbound/"/>
     <contextParameter comment="" name="BY_PP_sftp_username" prompt="BY_PP_sftp_username?" promptNeeded="false" repositoryContextId="_g5kPUEuCEeu1hJK2f4Kg4A" type="id_String" value="sftpuser"/>
@@ -65,7 +65,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:VM33bu1xASF8zYez1yMHhhqSU4+y1xc4H27qZNk4"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:CMTNYqQpHyg1e79mL/KkLeptQsbDYkwgAOCO8iWc"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -102,7 +102,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="context.AMC_AdditionalParams"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="context.AMC_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:qcuF2Zv8Wsnole5SrWufUE2yaeKY/SjdwdpHVFZg4OFxZHpHByHHxinbsyqE0CX4"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ZfZLkvFDbriEqpsbmhHVuyym/9M5lF/yGWkFdptqzh4Xzl8f3Eicd+P8ysVlOpKe"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statcatcher&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logcatcher&quot;"/>
@@ -139,7 +139,7 @@
     <elementParameter field="TEXT" name="SERVERPORT" value="&quot;61617&quot;"/>
     <elementParameter field="TABLE" name="SERVERS" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:HEZ5RwjTDI4gTT1RUbUACxx+TdVekj8j06MaWdDP"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:EZzjXW2u8IVXupKxOpB6XPC9Nx0HjYoYqJRxfI9j"/>
     <elementParameter field="CHECK" name="USE_SSL" value="false"/>
     <elementParameter field="LABEL" name="USE_SSL_NOTE" show="false" value="Notice: You should use tSetKeysore or JVM arguments to specify keystore or truststore"/>
     <elementParameter field="CHECK" name="IS_TRANSACTED" show="false" value="false"/>
@@ -681,22 +681,22 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPPut_1"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;bypdap1&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="22"/>
+    <elementParameter field="TEXT" name="HOST" value="context.BY_PP_sftp_hostname"/>
+    <elementParameter field="TEXT" name="PORT" value="context.BY_PP_sftp_port"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
-    <elementParameter field="TEXT" name="USERNAME" value="&quot;sftpuser&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:j3i4YMMLkFE9fMPwwusfU6C88rkbwZqk0/QOp419CnSiP6J5/v0="/>
+    <elementParameter field="TEXT" name="USERNAME" value="context.BY_PP_sftp_username"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:LEUK2MZqoIsQ9BnjnQUyitIyfOOfL8iijcoi96WCS9oDSSBo1SGognhOkGiwPKNa90cRAqfOLw=="/>
     <elementParameter field="CHECK" name="SFTP" value="true"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
     <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:yUe9U/mnxq2FEhDzImL+axExqoB4JWsbbDiUzfrcP9A6m6ev"/>
-    <elementParameter field="DIRECTORY" name="LOCALDIR" value="&quot;C:/Softwares/Idocs&quot;"/>
-    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;/inbound/&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:FdjZROwYFFjc7V2n44xTUuWTAbo9twzUUESO+G+D4pLwl3TS"/>
+    <elementParameter field="DIRECTORY" name="LOCALDIR" value="context.Local_path"/>
+    <elementParameter field="TEXT" name="REMOTEDIR" value="context.BY_PP_sftp_Remote_path"/>
     <elementParameter field="CHECK" name="CREATE_DIR_IF_NOT_EXIST" value="false"/>
     <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" show="false" value="true"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:f5sUIMuUvhc08NNEEF9Vdo5mW54IkYeA5zkGky4IyzMzzdKd"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:LYKzxkDYD63yjsLKjghYClukShbxDfZSVtewjfr0PtufvgX7"/>
     <elementParameter field="CLOSED_LIST" name="MODE" show="false" value="ascii"/>
     <elementParameter field="CLOSED_LIST" name="OVERWRITE" show="false" value="never"/>
     <elementParameter field="CHECK" name="APPEND" show="false" value="false"/>
@@ -705,7 +705,9 @@
     <elementParameter field="LABEL" name="NOTE_CUSTOMER" show="false" value="Note: File can not be renamed while using &quot;append&quot; mode in SFTP"/>
     <elementParameter field="CHECK" name="PERL5_REGEX" value="false"/>
     <elementParameter field="TABLE" name="FILES">
-      <elementValue elementRef="FILEMASK" value="&quot;STG_SAP_ITEM_&quot;+context.Current_Date+&quot;.csv&quot;"/>
+      <elementValue elementRef="FILEMASK" value="((String)globalMap.get(&quot;DATA_FILE&quot;))"/>
+      <elementValue elementRef="NEWNAME" value="&quot;&quot;"/>
+      <elementValue elementRef="FILEMASK" value="((String)globalMap.get(&quot;FLAG_FILE&quot;))"/>
       <elementValue elementRef="NEWNAME" value="&quot;&quot;"/>
     </elementParameter>
     <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" show="false" value="ACTIVE"/>
@@ -718,7 +720,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:UVn2/flkLArEkSbgAoKziI4L4OSUMewNh/4A34OW"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:EbCuaomNOnCLBgXUACWYhGjaWZJIdo3/p8YLz+XB"/>
     <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
     <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
@@ -861,9 +863,15 @@
     <elementParameter field="CHECK" name="USEROWLABEL" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="response"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFTPPut_1" offsetLabelX="0" offsetLabelY="0" source="tFTPPut_1" target="tJava_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk6"/>
+  </connection>
   <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tFileOutputDelimited_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tFTPPut_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk5"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tSAPIDocReceiver_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
@@ -911,13 +919,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_32bdd663-1656-49ce-941c-a8ec70e55a71"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nTLGGGGQDuaPUE+H49HcwmS1iwb4a8A03Ofg48hSCJgdJEtnK4yljQ6DvMHIsKKhwBe/Ec3ZnmKm&#13;
-WuKLvmkXRw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_137b4323-24ae-4e2f-9ac0-94efc8148a8b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mfKTD3FE+PX1+CQi0BfNBKxxTaqnjOnrHWg4hF++N5PY9SZ69BkqFRdhsTW69CttSnzslAw0+aFG&#13;
-DGFVTW4mog==</DigestValue></Reference></SignedInfo><SignatureValue>QHvmANwz4i7h8EQfqlDyJ9Md1N9LCntliEZJVqzrkdPy6QwaP2324UwjpBwvBREA7RvlAUhSINA4&#13;
-bWqpcg9N5FiPP26AnvnoNhfhvxUN6SvJng5zZl1ECdJTVWEywJt0i7Q8H9OixvjH/G3XeR8Pz49w&#13;
-uvh2GQTDAAzDmk99I3rfvmw6aoGCroY/NUyxH3wksNWhSarlgXcXMfBwEaSvTz31DoV5HjVfZsi6&#13;
-FP4CT2zvAF0Pm+HuoPdjHmUlpCepr3xhNONqx1VxvAPP+uEGsE65s6ZVAOm5RSfIK91nIO2nyVNF&#13;
-r5bdoi0ipGzk0GalaBfu01fp7jaZQnT+qJSmAQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b63543d1-1436-4355-9c66-0ddeb793ce63"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wZh1uKg36+3zqOgFJec4wktZH4x/iKhhjrD/6U6hBiVFgUm+JkTykX2CC0Ckcn+T0QeWuH171I5x&#13;
+T8tledvXxA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_977a5b63-e5e7-43c9-ad91-f310d711ea43"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>45jSkQW+djfkidRPwN/hZ39b7zuany7nyjOb7Yh53tEHUUiSM6b13rP+r1Yg8HLXvNliS9qnNGJK&#13;
+zB5qlawNGQ==</DigestValue></Reference></SignedInfo><SignatureValue>E7K+iQsH6QJE+oLrthCQ+lAi6RMBAEnnQP9UwwaKg5wIDDQCjnrjCWqEGmC0Z0qs8Zm4C91NK102&#13;
+rC7FOWi5peCgBgAmtPaWm3n8Mn7LPCWsqFYVmTbpDXwMHQ41MHir2JGZdfslsxmSac+qjNR8zPWl&#13;
+o6Vbend2foRWtzMHnbjyZjlzaCmr0t6S3A3is8nRWLm1qrj3puaf5TNnx3H2Suim7pTMFMdn6Jt8&#13;
+/3JRknLMJlSIAtCeAt13wCsaFuk/PMpSCcWXdj3eiJjVdaocpyJVf5AClIIj0ScSoIF6BqwJXD+4&#13;
+82DjhrdhRBMwh8AGLIhlf6YmaVyTwnAbheFBpg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -939,4 +947,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_137b4323-24ae-4e2f-9ac0-94efc8148a8b" Target="#_32bdd663-1656-49ce-941c-a8ec70e55a71"><Timestamp>2021-01-13 14:19:19</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_977a5b63-e5e7-43c9-ad91-f310d711ea43" Target="#_b63543d1-1436-4355-9c66-0ddeb793ce63"><Timestamp>2021-01-13 14:22:02</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
