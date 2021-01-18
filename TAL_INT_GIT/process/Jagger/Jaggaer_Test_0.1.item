@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="AMC_Database" prompt="AMC_Database?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="AMC"/>
-    <contextParameter comment="" name="AMC_Password" prompt="AMC_Password?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_Password" value="enc:system.encryption.key.v1:s+PpE0WAfMS2gm0bCxMXe/efdfFmY5KoXsQSf+Vl6npH"/>
+    <contextParameter comment="" name="AMC_Password" prompt="AMC_Password?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_Password" value="enc:system.encryption.key.v1:hdvLsTkEx+w5BQlAU15TEPWZkFGS1PK1AURu9CYLA/NQ"/>
     <contextParameter comment="" name="AMC_Port" prompt="AMC_Port?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="3307"/>
     <contextParameter comment="" name="AMC_AdditionalParams" prompt="AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="noDatetimeStringSync=true"/>
     <contextParameter comment="" name="AMC_Login" prompt="AMC_Login?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="talend"/>
@@ -26,7 +26,7 @@
     <contextParameter comment="" name="new4" prompt="new4?" promptNeeded="false" type="id_String" value=""/>
   </context>
   <context confirmationNeeded="false" name="DEV">
-    <contextParameter comment="" name="AMC_Password" prompt="AMC_Password?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_Password" value="enc:system.encryption.key.v1:VCi4gXi/KFAI9LsmfU9HRkvLDEoyX36EleaCwirn1hAT"/>
+    <contextParameter comment="" name="AMC_Password" prompt="AMC_Password?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_Password" value="enc:system.encryption.key.v1:VkKewK9WdLpMYpJ2sEgN4iG9nNp+MtK1RFpHYH749E1A"/>
     <contextParameter comment="" name="AMC_AdditionalParams" prompt="AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="noDatetimeStringSync=true"/>
     <contextParameter comment="" name="AMC_Server" prompt="AMC_Server?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="10.1.51.25"/>
     <contextParameter comment="" name="AMC_Port" prompt="AMC_Port?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="3307"/>
@@ -80,7 +80,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:spxh7BXT4a9H8o2FNwtNjq3W5eZE/8OY9k83wV9b"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:q/G1HwRNPBCXhq/bqETapMv2xG7NcihXQK+qQdDc"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -117,7 +117,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="context.AMC_AdditionalParams"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="context.AMC_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:GVKKrbYviZCCLgDvqWoQjJig9/DK4t6AZpd7RCyZKeEjCt17ifNN766D7TwoPLbR"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Hfqi7ZZCQSnYLyZec19cPBcmKtFjTboRHMg4vX7Ii4jVuBS+GHyteotfgqh59kdb"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statcatcher&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logcatcher&quot;"/>
@@ -205,7 +205,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_3"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#13;&#10;context.Bearer_Token = input_row.token;&#13;&#10;&#10;System.out.println(&quot;Token : &quot;+context.Bearer_Token);&#10;&#10;&#10;&#10;context.Last_MOdified_Time = context.Last_Run_time+&quot;.00 %2B0300&quot;;&#10;&#10;System.out.println(context.Last_MOdified_Time);&#10;&#10;System.out.print(&quot;LASTMODTIME=gt='2021-01-13 06:00:00.00 %2B0300';TYPE==SELLER;STATUS==ENABLED&quot;);"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#13;&#10;context.Bearer_Token = input_row.token;&#13;&#10;&#10;System.out.println(&quot;Token : &quot;+context.Bearer_Token);&#10;&#10;&#10;&#10;context.Last_MOdified_Time = &quot;LASTMODTIME=gt='&quot;+context.Last_Run_time+&quot;.00 %2B0300';TYPE==SELLER;STATUS==ENABLED&quot;;&#10;&#10;System.out.println(context.Last_MOdified_Time);&#10;&#10;System.out.print(&quot;LASTMODTIME=gt='2021-01-13 06:00:00.00 %2B0300';TYPE==SELLER;STATUS==ENABLED&quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tJavaRow_3">
@@ -221,7 +221,7 @@
     <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" value="application/json"/>
     <elementParameter field="TABLE" name="QUERY">
       <elementValue elementRef="NAME" value="&quot;flt&quot;"/>
-      <elementValue elementRef="VALUE" value="&quot;LASTMODTIME=gt='context.Last_MOdified_Time';TYPE==SELLER;STATUS==ENABLED&quot;"/>
+      <elementValue elementRef="VALUE" value="context.Last_MOdified_Time"/>
       <elementValue elementRef="NAME" value="&quot;comp&quot;"/>
       <elementValue elementRef="VALUE" value="&quot;DEBASIC&quot;"/>
       <elementValue elementRef="NAME" value="&quot;start&quot;"/>
@@ -234,7 +234,7 @@
     <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="OAUTH2_BEARER"/>
     <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="&quot;username&quot;"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:YT07VKID/yMqes71TNi7Wge8etgas9jn8zNKdbNG8Fw0Eq9OjJg="/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:RQgBGY8qr+wyXyyEzE549voq8tWVD951YRQNECtW43OU19CAqbk="/>
     <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" value="context.Bearer_Token"/>
     <elementParameter field="CHECK" name="NEED_AUTHORIZATION" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROLE" show="false" value="&quot;&quot;"/>
@@ -262,7 +262,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8080"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:Leased+4I7LoSH2VElUawuPW3gEvLFfkVqWw3Wxl"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:Oib1vJd71AxxOXgl67iKtwpvMnE0fpJbtkkWQGmB"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRESTClient_1">
       <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
@@ -433,7 +433,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.AMC_Database"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="context.AMC_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:zrjHErvIu6tw4Yxj6fgSeMYYWBxvzm9Pr1fGNAoatca+hfmTNTZcTeIoM5zV8g/O"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:2jKi4rECmphuafn2FmPGiKlVkBDU65+n22BZgwDXOh483hQxzCtthL9vntPYDMBk"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;statcatcher&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -625,13 +625,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1d6eb446-eb2a-4ec3-9f5b-facc55182533"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kLbCOjjkJZKFlxReqXCYpUl2fCA6DKlYicPppFaj+fSTlBB3IDqMKtoUCdu7bHAEPXZqyUDx+hi6&#13;
-gIDQLONv9A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a985a4a5-9bef-4024-b979-ff0b947d6e4d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pzi7ngv3Ob9d2I//JS84Ei3wYC1LfvHlqblq6XPT7/6H36pOyacCwAiErjzFMR9h9JNxaYhWqwtd&#13;
-qjQ7b5/eFw==</DigestValue></Reference></SignedInfo><SignatureValue>FdS6iBuode2Hi878eM6XRpookm1KbnZSV4FMLKH05erJhi7iQIB4Hll2QjgqDrMn7m1RARtD8OET&#13;
-ifWczXHxHRL/AczUn8GVdyGU2bl61jRBy843UTdQI9vsfNEHVArpSTWJj4Z6shCTRt1YATwpbNnS&#13;
-Wb9MLtUp/wRTgadv6LQaL/B6B8ebRPj3wOc78o9ZTpFxZ+KmxU2QO8eR5fLrfWFMhrjU1n30szk6&#13;
-h6wskRKum8TTdUNV9uTZbeZw9CivbMS99TLcFPNZ6JRqR3GUWZXX+U8aXOGMXF00JG/v5cqv6jDm&#13;
-pLE0nhRPDCkhiO4Z3HHh2CF2Fy3d3nVvAc/PaQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0eb9564e-21ea-4582-b636-2ad4b4eebdea"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>tyC6yyTJerLJ+xD+Aj5oxvbpMAETjw05JiOzKY28VMe0v5/YB6QYhy1JVgv9OYL1qBRgWLJRGRu0&#13;
+xA5e+/M2Nw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_67e08b57-fe9a-4825-b8ef-dd0fb2bc0116"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VhJ5W/4iSNDVMUkgvLF2Emmfz48NWRct1C0qCF9+vDVPXeEK0zufYcW7Chm3xD2XK7O4pBaqtfbG&#13;
+1NrdGf7Tfg==</DigestValue></Reference></SignedInfo><SignatureValue>oohznV6nKZzmlByrigPgxDcC09ka5yzOCMObVviMAe9Gb4pjZn7upR7jr0EOo7ho3c7c4VN/pvR9&#13;
+9GaC4q4sIAEUdqDHUnZkWyc8m2OGCS4xGbJ166iDenVNXRpGnpHwyDrremENKFKoCnZe5j4xu80W&#13;
+4PT69XXRjKdbgMJ0SfulzvhWPbLy5ys/9scKyi4Xmjz6dhGTVFGvAsQurK1is5OP1N8oeID3YKNq&#13;
+5vCDKtgYB43PRDWdsb4up6YKnajWzOHQ6Nj9jwQXjwYOAkItDT9U6yRNqoYgAI6/TRCx/qABQhxF&#13;
+bVS/bMtaK9ZANqwzc+vmSuwNCsjWk5+z/KsNdg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -653,4 +653,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a985a4a5-9bef-4024-b979-ff0b947d6e4d" Target="#_1d6eb446-eb2a-4ec3-9f5b-facc55182533"><Timestamp>2021-01-18 06:06:58</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_67e08b57-fe9a-4825-b8ef-dd0fb2bc0116" Target="#_0eb9564e-21ea-4582-b636-2ad4b4eebdea"><Timestamp>2021-01-18 06:20:00</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
