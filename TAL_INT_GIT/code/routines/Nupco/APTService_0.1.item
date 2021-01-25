@@ -1,5 +1,8 @@
 package routines;
-
+mport java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 /*
  * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
  * it must be before the "{talendTypes}" key.
@@ -32,6 +35,20 @@ public class APTService {
      * 
      * {example} helloExemple("world") # hello world !.
      */
+	public static String addHours(String input)
+	{
+		String result="";
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		SimpleDateFormat df = new SimpleDateFormat("yyyyMMdd HH:mm:ss");
+        Calendar c = Calendar.getInstance();
+        c.setTime(dateFormat.parse(input));
+        c.add(Calendar.HOUR,4);
+        Date currentDatePlusOne = c.getTime();
+        System.out.println("Updated Date " + df.format(currentDatePlusOne));
+        result=df.format(currentDatePlusOne);
+		return result;
+		
+	}
     public static void helloExample(String message) {
         if (message == null) {
             message = "World"; //$NON-NLS-1$
