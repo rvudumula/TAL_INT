@@ -38,6 +38,8 @@ public class APTService {
 	public static String addHours(String input)
 	{
 		String result="";
+		try
+		{
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		SimpleDateFormat df = new SimpleDateFormat("yyyyMMddHHmmss");
         Calendar c = Calendar.getInstance();
@@ -46,6 +48,11 @@ public class APTService {
         Date currentDatePlusOne = c.getTime();
         result=df.format(currentDatePlusOne);
 		return result;
+		}
+		catch(Exception e)
+		{
+		return input;	
+		}
 		
 	}
     public static void helloExample(String message) {
