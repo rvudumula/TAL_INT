@@ -23,44 +23,64 @@ import java.util.Date;
  */
 public class APTService {
 
-    /**
-     * helloExample: not return value, only print "hello" + message.
-     * 
-     * 
-     * {talendTypes} String
-     * 
-     * {Category} User Defined
-     * 
-     * {param} string("world") input: The string need to be printed.
-     * 
-     * {example} helloExemple("world") # hello world !.
-     */
+	/**
+	 * helloExample: not return value, only print "hello" + message.
+	 * 
+	 * 
+	 * {talendTypes} String
+	 * 
+	 * {Category} User Defined
+	 * 
+	 * {param} string("world") input: The string need to be printed.
+	 * 
+	 * {example} helloExemple("world") # hello world !.
+	 */
 	public static String addHours(String d)
 	{
 		String result="";
 		try
 		{
-			 SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
-				SimpleDateFormat df = new SimpleDateFormat("yyyyMMddHHmmss");
-				
-		        Calendar c = Calendar.getInstance();
-		        c.setTime(dateFormat.parse(d));
-		        c.add(Calendar.HOUR,4);
-		        Date currentDatePlusOne = c.getTime();
-		        result= df.format(currentDatePlusOne);
-		return result;
+			SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
+			SimpleDateFormat df = new SimpleDateFormat("yyyyMMddHHmmss");
+
+			Calendar c = Calendar.getInstance();
+			c.setTime(dateFormat.parse(d));
+			c.add(Calendar.HOUR,4);
+			Date currentDatePlusOne = c.getTime();
+			result= df.format(currentDatePlusOne);
+			return result;
 		}
 		catch(Exception e)
 		{
 			System.out.println("Exception in addhours"+e);
-		return d;	
+			return d;	
 		}
-		
+
 	}
-    public static void helloExample(String message) {
-        if (message == null) {
-            message = "World"; //$NON-NLS-1$
-        }
-        System.out.println("Hello " + message + " !"); //$NON-NLS-1$ //$NON-NLS-2$
-    }
+	public static String formatdate(String d)
+	{
+		String result="";
+		try
+		{
+			SimpleDateFormat ddf = new SimpleDateFormat("yyyy-MM-ddHH:mm:ss");
+			SimpleDateFormat cf = new SimpleDateFormat("yyyyMMddHHmmss");
+			Calendar c1 = Calendar.getInstance();
+			c1.setTime(ddf.parse("2021-02-0109:00:00"));
+			Date cd = c1.getTime();
+			result=cf.format(cd);
+			return result;
+		}
+		catch(Exception e)
+		{
+			System.out.println("Exception in addhours"+e);
+			return d;	
+		}
+
+	}
+	public static void helloExample(String message) {
+		if (message == null) {
+			message = "World"; //$NON-NLS-1$
+		}
+		System.out.println("Hello " + message + " !"); //$NON-NLS-1$ //$NON-NLS-2$
+	}
 }
