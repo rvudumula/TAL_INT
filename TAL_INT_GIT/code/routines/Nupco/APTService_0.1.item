@@ -35,23 +35,25 @@ public class APTService {
      * 
      * {example} helloExemple("world") # hello world !.
      */
-	public static String addHours(String input)
+	public static String addHours(String d)
 	{
 		String result="";
 		try
 		{
-		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		SimpleDateFormat df = new SimpleDateFormat("yyyyMMddHHmmss");
-        Calendar c = Calendar.getInstance();
-        c.setTime(dateFormat.parse(input));
-        c.add(Calendar.HOUR,4);
-        Date currentDatePlusOne = c.getTime();
-        result=df.format(currentDatePlusOne);
+			 SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
+				SimpleDateFormat df = new SimpleDateFormat("yyyyMMddHHmmss");
+				
+		        Calendar c = Calendar.getInstance();
+		        c.setTime(dateFormat.parse(d));
+		        c.add(Calendar.HOUR,4);
+		        Date currentDatePlusOne = c.getTime();
+		        result= df.format(currentDatePlusOne);
 		return result;
 		}
 		catch(Exception e)
 		{
-		return input;	
+			System.out.println("Exception in addhours"+e);
+		return d;	
 		}
 		
 	}
