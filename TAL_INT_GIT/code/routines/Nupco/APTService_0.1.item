@@ -77,6 +77,26 @@ public class APTService {
 		}
 
 	}
+	public static String formatinvdate(String d)
+	{
+		String result="";
+		try
+		{
+			SimpleDateFormat ddf = new SimpleDateFormat("yyyy-MM-dd");
+			SimpleDateFormat cf = new SimpleDateFormat("dd-MM-yyyy HH:MM:ss");
+			Calendar c1 = Calendar.getInstance();
+			c1.setTime(ddf.parse(d));
+			Date cd = c1.getTime();
+			result=cf.format(cd);
+			return result;
+		}
+		catch(Exception e)
+		{
+			System.out.println("Exception in formatdate"+e);
+			return d;	
+		}
+
+	}
 	public static void helloExample(String message) {
 		if (message == null) {
 			message = "World"; //$NON-NLS-1$
