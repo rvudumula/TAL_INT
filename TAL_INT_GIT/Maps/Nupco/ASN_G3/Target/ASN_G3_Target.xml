@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/Nupco/ASN_G3/Input/output/asn_sap_soap_res.xml' outStruct='Structures/Nupco/ASN_G3/Input/output/asn_hos_input_json.xml' inputRep='172' outputRep='177' nextMap='' inputStructUserName='asn_sap_soap_res' outputStructUserName='asn_hos_input_json' V1='4' name='ASN_G3_Target' incarnation='109'>
+<root t='190' id='1' V190='11' inStruct='Structures/Nupco/ASN_G3/Input/output/asn_sap_soap_res.xml' outStruct='Structures/Nupco/ASN_G3/Input/output/asn_hos_input_json.xml' inputRep='172' outputRep='177' nextMap='' inputStructUserName='asn_sap_soap_res' outputStructUserName='asn_hos_input_json' V1='4' name='ASN_G3_Target' incarnation='117'>
   <inputMapElem t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='7' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' namespaceIndex='1' V281='13' V1='4' name='Envelope'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='5' V200='8' input='true' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' namespaceIndex='1' V281='13' V1='4' name='Header'>
@@ -21,7 +21,7 @@
       </child>
     </child>
   </inputMapElem>
-  <outputMapElem t='200' id='11' V200='8' structElemExists='true' usedCount='10' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='asn_hos_input_json'>
+  <outputMapElem t='200' id='11' V200='8' structElemExists='true' usedCount='12' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='asn_hos_input_json'>
     <mapNode t='190' idref='1'/>
     <loop>SimpleLoop([autoAdded="true"],in$/soap-env:Envelope,{Filter},{Sort Keys},{Contexts})</loop>
     <child t='200' id='12' V200='8' structElemExists='true' usedCount='4' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='mat_doc_year'>
@@ -32,8 +32,9 @@
       <mapNode t='190' idref='1'/>
       <value>in$/soap-env:Envelope/soap-env:Body/n0:Z_GRN_HOS_OUTBOUNDResponse/MATERIALDOCUMENT</value>
     </child>
-    <child t='200' id='14' V200='8' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='asn_id'>
+    <child t='200' id='14' V200='8' structElemExists='true' usedCount='3' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='asn_id'>
       <mapNode t='190' idref='1'/>
+      <value>Constant([value="1",dataType="2"],)</value>
     </child>
   </outputMapElem>
   <inputNsList t='161' id='15' V161='1' namespaceUri='___osdtDummy___' V1='4'>
