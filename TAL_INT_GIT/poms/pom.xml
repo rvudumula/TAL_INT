@@ -2,26 +2,13 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.nupco.tal_int_git</groupId>
+  <groupId>org.example.tal_int_git</groupId>
   <artifactId>code.Master</artifactId>
   <version>7.3.1</version>
   <packaging>pom</packaging>
   <name>TAL_INT_GIT Codes Master</name>
   <url>http://www.talend.org/</url>
   <modules>
-    <module>jobs/process/HOS/Dev/job_hos_asn_3_grn_0.1</module>
-    <module>jobs/process/HOS/hos_asn_g3_service_0.1</module>
-    <module>jobs/process/HOS/hos_customermaster_0.1</module>
-    <module>jobs/process/HOS/hos_materialmasterservice_0.1</module>
-    <module>jobs/process/HOS/hos_plantservice_0.1</module>
-    <module>jobs/process/HOS/hos_podetailsservice_0.1</module>
-    <module>jobs/process/HOS/hos_poservice_0.1</module>
-    <module>jobs/process/HOS/hos_reservationservice_0.1</module>
-    <module>jobs/process/HOS/hos_slocservice_0.1</module>
-    <module>jobs/process/HOS/hos_salesorderservice_0.1</module>
-    <module>jobs/process/HOS/hos_uomservicedi_0.1</module>
-    <module>jobs/process/HOS/hos_vendorservice_0.1</module>
-    <module>jobs/process/HOS/hos_ware_housing_0.1</module>
     <module>jobs/process/BY_PP/job_consumptionhistory_by_pp_0.1</module>
     <module>jobs/process/BY_PP/job_customermaster_by_pp_0.1</module>
     <module>jobs/process/BY_PP/job_itemlocationcustomermaster_by_pp_0.1</module>
@@ -47,10 +34,23 @@
     <module>jobs/process/BY_WMS/job_item_materialmaster_by_wms02_0.1</module>
     <module>jobs/process/BY_WMS/job_item_materialmaster_by_wms_0.1</module>
     <module>jobs/process/BY_WMS/job_stg_esp_wms_outbound_by_wms_0.1</module>
+    <module>jobs/process/BY_WMS/job_suppliermaster_by_wms_0.1</module>
     <module>jobs/process/BY_WMS/job_stg_wms_inventory_by_wms_0.1</module>
     <module>jobs/process/BY_WMS/job_stg_wms_open_sto_by_wms_0.1</module>
-    <module>jobs/process/BY_WMS/job_suppliermaster_by_wms_0.1</module>
     <module>jobs/process/by_wms_0.1</module>
+    <module>jobs/process/HOS/Dev/job_hos_asn_3_grn_0.1</module>
+    <module>jobs/process/HOS/hos_asn_g3_service_0.1</module>
+    <module>jobs/process/HOS/hos_customermaster_0.1</module>
+    <module>jobs/process/HOS/hos_materialmasterservice_0.1</module>
+    <module>jobs/process/HOS/hos_plantservice_0.1</module>
+    <module>jobs/process/HOS/hos_podetailsservice_0.1</module>
+    <module>jobs/process/HOS/hos_poservice_0.1</module>
+    <module>jobs/process/HOS/hos_reservationservice_0.1</module>
+    <module>jobs/process/HOS/hos_slocservice_0.1</module>
+    <module>jobs/process/HOS/hos_salesorderservice_0.1</module>
+    <module>jobs/process/HOS/hos_uomservicedi_0.1</module>
+    <module>jobs/process/HOS/hos_vendorservice_0.1</module>
+    <module>jobs/process/HOS/hos_ware_housing_0.1</module>
     <module>jobs/process/HOS_BY_PP/job_customerorder_hos_0.1</module>
     <module>jobs/process/HOS_BY_PP/job_intransit_inventory_and_transit_hos_0.1</module>
     <module>jobs/process/HOS_BY_PP/job_stg_customer_trade_item_mapping_bypp_0.1</module>
@@ -70,6 +70,7 @@
     <module>jobs/process/Jagger/job_exchangerate_interface_0.1</module>
     <module>jobs/process/Jagger/job_supplier_master_interface_0.1</module>
     <module>jobs/process/Jagger/job_supplier_master_interface_nomodifications_0.1</module>
+    <module>jobs/process/Jagger/job_tender_fee_0.1</module>
     <module>jobs/process/jaggerapi_0.1</module>
     <module>jobs/process/json_to_other_0.1</module>
     <module>jobs/process/masterservice_0.1</module>
@@ -81,7 +82,6 @@
     <module>jobs/process/nupco/token_0.1</module>
     <module>jobs/process/split_data_0.1</module>
     <module>jobs/process/test_0.1</module>
-    <module>jobs/routes/Nupco_HOS_Dev/route_hos_sap_asn_3_grn_0.1</module>
     <module>jobs/routes/c_by_wms_soap_ui_0.1</module>
     <module>jobs/routes/ftp_connection_check_0.1</module>
     <module>jobs/routes/hos_sap_asn_g3_service_0.1</module>
@@ -112,6 +112,7 @@
     <module>jobs/routes/Nupco/Soap_Old/hos_sap_vendormaster_old_0.1</module>
     <module>jobs/routes/Nupco/Soap_Old/sap_warehousing_soap_0.1</module>
     <module>jobs/routes/Nupco/Soap_Old/sample_0.1</module>
+    <module>jobs/routes/Nupco_HOS_Dev/route_hos_sap_asn_3_grn_0.1</module>
     <module>jobs/routes/test_route_api_0.1</module>
     <module>jobs/routes/sampleapi_0.1</module>
     <module>jobs/joblets/amc_0.1</module>
@@ -122,14 +123,13 @@
     <module>jobs/services/soap_sap_warehouse_0.1</module>
     <module>code/routines</module>
     <module>code/beans</module>
-    <module>jobs/process/Jagger/job_tender_fee_0.1</module>
   </modules>
   <properties>
-    <signer.version>7.3.1</signer.version>
     <talend.project.name>TAL_INT_GIT</talend.project.name>
+    <signer.version>7.3.1</signer.version>
     <encoding>UTF-8</encoding>
-    <talend.docker.tag>${project.version}</talend.docker.tag>
     <maven.deploy.skip>true</maven.deploy.skip>
+    <talend.docker.tag>${project.version}</talend.docker.tag>
     <talend.docker.name>${talend.project.name.lowercase}/${talend.job.folder}%a</talend.docker.name>
   </properties>
   <build>
