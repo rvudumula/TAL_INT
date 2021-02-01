@@ -3,12 +3,12 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.example.tal_int_git.route</groupId>
+    <groupId>org.nupco.tal_int_git.route</groupId>
     <artifactId>FTP_Connection_Check-Kar</artifactId>
     <version>0.1.0</version>
     <relativePath>/</relativePath>
   </parent>
-  <groupId>org.example.tal_int_git.route</groupId>
+  <groupId>org.nupco.tal_int_git.route</groupId>
   <artifactId>FTP_Connection_Check</artifactId>
   <version>0.1.0</version>
   <name>TAL_INT_GIT FTP_Connection_Check-${project.version} (0.1,Routes) Bundle</name>
@@ -30,7 +30,7 @@
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
-    <talend.routine.groupid>org.example.tal_int_git.code</talend.routine.groupid>
+    <talend.routine.groupid>org.nupco.tal_int_git.code</talend.routine.groupid>
     <talend.job.folder></talend.job.folder>
     <bundle.config.import.package>@BundleConfigImportPackage@</bundle.config.import.package>
     <talend.job.id>_1005ECNFEeugs4_0pVYkDg</talend.job.id>
@@ -43,7 +43,7 @@
     <talend.job.path>tal_int_git</talend.job.path>
     <talend.job.context>Default</talend.job.context>
     <talend.job.stat>true</talend.job.stat>
-    <talend.pigudf.groupid>org.example.tal_int_git.pigudf</talend.pigudf.groupid>
+    <talend.pigudf.groupid>org.nupco.tal_int_git.pigudf</talend.pigudf.groupid>
     <talend.job.framework></talend.job.framework>
     <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.job.type>Standard</talend.job.type>
@@ -65,6 +65,11 @@
     <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>camel-core-2.24.2</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>camel-cxf-2.24.2</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
@@ -98,6 +103,11 @@
       <version>6.0.0-SNAPSHOT</version>
     </dependency>
     <dependency>
+      <groupId>org.apache.cxf</groupId>
+      <artifactId>cxf-core</artifactId>
+      <version>3.3.4</version>
+    </dependency>
+    <dependency>
       <groupId>org.dom4j</groupId>
       <artifactId>dom4j</artifactId>
       <version>2.1.1</version>
@@ -118,6 +128,11 @@
       <groupId>com.sun.activation</groupId>
       <artifactId>javax.activation</artifactId>
       <version>1.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.ws.rs</groupId>
+      <artifactId>javax.ws.rs-api</artifactId>
+      <version>2.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
@@ -185,12 +200,12 @@
       <version>6.0.0</version>
     </dependency>
     <dependency>
-      <groupId>org.example.tal_int_git.code</groupId>
+      <groupId>org.nupco.tal_int_git.code</groupId>
       <artifactId>routines</artifactId>
       <version>7.3.1</version>
     </dependency>
     <dependency>
-      <groupId>org.example.tal_int_git.bean</groupId>
+      <groupId>org.nupco.tal_int_git.bean</groupId>
       <artifactId>beans</artifactId>
       <version>7.3.1</version>
     </dependency>
