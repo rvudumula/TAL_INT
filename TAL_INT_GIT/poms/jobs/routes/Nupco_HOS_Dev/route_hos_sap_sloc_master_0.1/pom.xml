@@ -2,20 +2,13 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>org.example.tal_int_git</groupId>
-    <artifactId>code.Master</artifactId>
-    <version>7.3.1</version>
-    <relativePath>../../../../</relativePath>
-  </parent>
   <groupId>org.example.demo.route</groupId>
-  <artifactId>Route_HOS_SAP_SLOC_Master-Kar</artifactId>
+  <artifactId>Route_HOS_SAP_SLOC_Master-MicSvc</artifactId>
   <version>0.1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>TAL_INT_GIT Route_HOS_SAP_SLOC_Master-${project.version} (0.1,Routes) Kar</name>
+  <name>TAL_INT_GIT Route_HOS_SAP_SLOC_Master-${project.version} (0.1,Routes) Microservice Aggregator</name>
   <modules>
-    <module>pom-bundle.xml</module>
-    <module>pom-feature.xml</module>
+    <module>pom-microservice.xml</module>
   </modules>
   <dependencies>
     <dependency>
@@ -252,11 +245,6 @@
       <version>6.0.0</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>jetty-all-9.4.18.v20190429-uber</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-api</artifactId>
       <version>2.12.1</version>
@@ -366,27 +354,129 @@
       <artifactId>Job_HOS_SLOCService</artifactId>
       <version>0.1.0</version>
     </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <version>2.1.2.RELEASE</version>
+      <exclusions>
+        <exclusion>
+          <artifactId>jackson-databind</artifactId>
+          <groupId>com.fasterxml.jackson.core</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jackson-datatype-jdk8</artifactId>
+          <groupId>com.fasterxml.jackson.datatype</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>jackson-datatype-jsr310</artifactId>
+          <groupId>com.fasterxml.jackson.datatype</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.datatype</groupId>
+      <artifactId>jackson-datatype-jdk8</artifactId>
+      <version>2.10.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.datatype</groupId>
+      <artifactId>jackson-datatype-jsr310</artifactId>
+      <version>2.10.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.tomcat.embed</groupId>
+      <artifactId>tomcat-embed-core</artifactId>
+      <version>9.0.30</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.tomcat.embed</groupId>
+      <artifactId>tomcat-embed-el</artifactId>
+      <version>9.0.30</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.tomcat.embed</groupId>
+      <artifactId>tomcat-embed-websocket</artifactId>
+      <version>9.0.30</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>4.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jolokia</groupId>
+      <artifactId>jolokia-core</artifactId>
+      <version>1.6.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.cxf</groupId>
+      <artifactId>cxf-rt-management</artifactId>
+      <version>3.3.4</version>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.woodstox</groupId>
+      <artifactId>stax2-api</artifactId>
+      <version>3.1.4</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.camel</groupId>
+      <artifactId>camel-spring-boot</artifactId>
+      <version>2.24.2</version>
+      <exclusions>
+        <exclusion>
+          <artifactId>camel-spring</artifactId>
+          <groupId>org.apache.camel</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter</artifactId>
+      <version>2.1.2.RELEASE</version>
+      <exclusions>
+        <exclusion>
+          <artifactId>spring-boot-starter-logging</artifactId>
+          <groupId>org.springframework.boot</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+      <version>2.1.2.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-log4j2</artifactId>
+      <version>2.1.2.RELEASE</version>
+    </dependency>
   </dependencies>
-  <build />
-  <profiles>
-    <profile>
-      <id>deploy-cloud</id>
-      <activation>
-        <property>
-          <name>!altDeploymentRepository</name>
-        </property>
-      </activation>
-      <build>
-        <plugins>
-          <plugin>
-            <artifactId>maven-deploy-plugin</artifactId>
-            <version>2.7</version>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <version>2.7</version>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.talend.ci</groupId>
+        <artifactId>osgihelper-maven-plugin</artifactId>
+        <version>7.3.1</version>
+        <executions>
+          <execution>
+            <id>feature-helper</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>generate</goal>
+            </goals>
             <configuration>
-              <skip>true</skip>
+              <bundles />
             </configuration>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 </project>
