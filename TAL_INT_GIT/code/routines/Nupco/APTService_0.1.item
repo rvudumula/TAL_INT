@@ -77,6 +77,26 @@ public class APTService {
 		}
 
 	}
+	public static String formatasndate(String d)
+	{
+		String result="";
+		try
+		{
+			SimpleDateFormat ddf = new SimpleDateFormat("yyyy-MM-dd");
+			SimpleDateFormat cf = new SimpleDateFormat("yyyyMMddHHmmss");
+			Calendar c1 = Calendar.getInstance();
+			c1.setTime(ddf.parse(d));
+			Date cd = c1.getTime();
+			result=cf.format(cd);
+			return result;
+		}
+		catch(Exception e)
+		{
+			System.out.println("Exception in formatasndate"+e);
+			return d;	
+		}
+
+	}
 	public static String formatinvdate(String d)
 	{
 		String result="";
