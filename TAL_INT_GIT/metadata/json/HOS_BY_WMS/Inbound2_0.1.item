@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendJSON:JSONFileConnection Encoding="UTF-8" JSONFilePath="D:/InboundShipmentASN/Inboundshipment/inboundASN.json" dataPackage="_QL-p6W8zEeuYNv_sSS1IOQ" name="Inbound2" readbyMode="JSONPATH" xmi:id="_QL-p0G8zEeuYNv_sSS1IOQ">
+    <schema AbsoluteXPathQuery="$.data[*]" LimitBoucle="50" flag="ROOT" xmi:id="_QL-p0W8zEeuYNv_sSS1IOQ">
+      <schemaTargets RelativeXPathQuery="asn_common_details.asn-id" TagName="asn_id" xmi:id="_QL-p0m8zEeuYNv_sSS1IOQ"/>
+      <schemaTargets RelativeXPathQuery="asn_common_details.status" TagName="status" xmi:id="_QL-p028zEeuYNv_sSS1IOQ"/>
+      <schemaTargets RelativeXPathQuery="asn_common_details.vendor_no" TagName="vendor_no" xmi:id="_QL-p1G8zEeuYNv_sSS1IOQ"/>
+      <schemaTargets RelativeXPathQuery="asn_common_details.vendor_name" TagName="vendor_name" xmi:id="_QL-p1W8zEeuYNv_sSS1IOQ"/>
+      <schemaTargets RelativeXPathQuery="asn_common_details.plant" TagName="plant" xmi:id="_QL-p1m8zEeuYNv_sSS1IOQ"/>
+      <schemaTargets RelativeXPathQuery="asn_common_details.delivery_region" TagName="delivery_region" xmi:id="_QL-p128zEeuYNv_sSS1IOQ"/>
+      <schemaTargets RelativeXPathQuery="asn_common_details.invoice_no" TagName="invoice_no" xmi:id="_QL-p2G8zEeuYNv_sSS1IOQ"/>
+      <schemaTargets RelativeXPathQuery="asn_common_details.delivery_date" TagName="delivery_date" xmi:id="_QL-p2W8zEeuYNv_sSS1IOQ"/>
+      <schemaTargets RelativeXPathQuery="asn_common_details.delivery_time" TagName="delivery_time" xmi:id="_QL-p2m8zEeuYNv_sSS1IOQ"/>
+      <schemaTargets RelativeXPathQuery="asn_common_details.total_pallet_count" TagName="total_pallet_count" xmi:id="_QL-p228zEeuYNv_sSS1IOQ"/>
+      <schemaTargets RelativeXPathQuery="asn_common_details.asn_details_change_id" TagName="asn_details_change_id" xmi:id="_QL-p3G8zEeuYNv_sSS1IOQ"/>
+      <schemaTargets RelativeXPathQuery="asn_common_details.truck_no" TagName="truck_no" xmi:id="_QL-p3W8zEeuYNv_sSS1IOQ"/>
+      <schemaTargets RelativeXPathQuery="asn_common_details.created_date" TagName="created_date" xmi:id="_QL-p3m8zEeuYNv_sSS1IOQ"/>
+      <schemaTargets RelativeXPathQuery="item[*].po_no" TagName="po_no" xmi:id="_QL-p328zEeuYNv_sSS1IOQ"/>
+      <schemaTargets RelativeXPathQuery="item[*].po_item" TagName="po_item" xmi:id="_QL-p4G8zEeuYNv_sSS1IOQ"/>
+      <schemaTargets RelativeXPathQuery="item[*].nupco_material_description" TagName="nupco_material_description" xmi:id="_QL-p4W8zEeuYNv_sSS1IOQ"/>
+      <schemaTargets RelativeXPathQuery="item[*].nupco_material" TagName="nupco_material" xmi:id="_QL-p4m8zEeuYNv_sSS1IOQ"/>
+      <schemaTargets RelativeXPathQuery="item[*].pallet_count" TagName="pallet_count" xmi:id="_QL-p428zEeuYNv_sSS1IOQ"/>
+      <schemaTargets RelativeXPathQuery="item[*].delivery_qty" TagName="delivery_qty" xmi:id="_QL-p5G8zEeuYNv_sSS1IOQ"/>
+      <schemaTargets RelativeXPathQuery="item[*].batch_qty" TagName="batch_qty" xmi:id="_QL-p5W8zEeuYNv_sSS1IOQ"/>
+      <schemaTargets RelativeXPathQuery="item[*].batch_no" TagName="batch_no" xmi:id="_QL-p5m8zEeuYNv_sSS1IOQ"/>
+      <schemaTargets RelativeXPathQuery="item[*].manufacturing_date" TagName="manufacturing_date" xmi:id="_QL-p528zEeuYNv_sSS1IOQ"/>
+      <schemaTargets RelativeXPathQuery="item[*].expiry_date" TagName="expiry_date" xmi:id="_QL-p6G8zEeuYNv_sSS1IOQ"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile dataManager="_QL-p0G8zEeuYNv_sSS1IOQ" name="default" xmi:id="_QL-p6W8zEeuYNv_sSS1IOQ">
+    <ownedElement id="_2K3RUG8yEeuYNv_sSS1IOQ" label="metadata" xmi:id="_QL-p6m8zEeuYNv_sSS1IOQ" xsi:type="TalendMetadata:MetadataTable">
+      <feature label="asn_id" length="-1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_QL-p628zEeuYNv_sSS1IOQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="status" length="1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_QL-p7G8zEeuYNv_sSS1IOQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="vendor_no" length="-1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_QL-p7W8zEeuYNv_sSS1IOQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="vendor_name" length="30" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_QL-p7m8zEeuYNv_sSS1IOQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="plant" length="4" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_QL-p728zEeuYNv_sSS1IOQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="delivery_region" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_QL-p8G8zEeuYNv_sSS1IOQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="invoice_no" length="7" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_QL-p8W8zEeuYNv_sSS1IOQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="delivery_date" length="-1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_QL-p8m8zEeuYNv_sSS1IOQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="delivery_time" length="8" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_QL-p828zEeuYNv_sSS1IOQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="total_pallet_count" length="3" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_Integer" xmi:id="_QL-p9G8zEeuYNv_sSS1IOQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="asn_details_change_id" length="-1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_QL-p9W8zEeuYNv_sSS1IOQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="truck_no" length="-1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_QL-p9m8zEeuYNv_sSS1IOQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="created_date" length="-1" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_QL-p928zEeuYNv_sSS1IOQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="po_no" length="14" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_QL-p-G8zEeuYNv_sSS1IOQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="po_item" length="6" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_QL-p-W8zEeuYNv_sSS1IOQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="nupco_material_description" length="44" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_QL-p-m8zEeuYNv_sSS1IOQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="nupco_material" length="17" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_QL-p-28zEeuYNv_sSS1IOQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="pallet_count" length="7" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_QL-p_G8zEeuYNv_sSS1IOQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="delivery_qty" length="10" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_QL-p_W8zEeuYNv_sSS1IOQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="batch_qty" length="10" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_QL-p_m8zEeuYNv_sSS1IOQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="batch_no" length="12" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_QL-p_28zEeuYNv_sSS1IOQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="manufacturing_date" length="14" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_QL-qAG8zEeuYNv_sSS1IOQ" xsi:type="TalendMetadata:MetadataColumn"/>
+      <feature label="expiry_date" length="14" pattern="&quot;dd-MM-yyyy&quot;" talendType="id_String" xmi:id="_QL-qAW8zEeuYNv_sSS1IOQ" xsi:type="TalendMetadata:MetadataColumn">
+        <initialValue body="" xmi:id="_QL-qAm8zEeuYNv_sSS1IOQ"/>
+      </feature>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1acab339-94c9-4b3d-a521-de6a2f4d11eb"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>EIt6bQjTaZDX7zWirhseAtgM4zSf3OZRdAnUZQDvv0FNQeN5n63i5AV+R5vucMs75rqKYgtpqb1i&#13;
+IxUq3S0mZw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3fbb3e77-2cb3-4557-a32c-12dc85560640"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>MmOxiy5hmLgmK3vKf1q+4/f/jH/XBx451EeilAMOj/ghCD3YXJqyI0Bg3IuYTu2lpuHFuMmTLJOI&#13;
+gNq71/lqhQ==</DigestValue></Reference></SignedInfo><SignatureValue>XDI7TWi6yD8XJzvapTIlGZOrrwWpUqTm5T25jsjvH6aUX4CCe3k/FMV4lpkonrTpDqPPmHCcv31E&#13;
+R1gfshVcAPj6+zi9bW7FygWchHCA4DaCkImqBRmgN4QRU+yxfP8xVEg5L/npy4BoCjr2VgbmHbHh&#13;
+/PXNDKCxa5RLfBVMkIIf/Huo7zr1WZ6akJpC458nT0MIfbu82WGF+9R897qWZfkMfLhxOdyz8Zqu&#13;
+mbZ89muk6gzCO302Mh4Cxco8/AFvV3DkW7gnI3Q3gkN7SBg63gqJavCZkCWiGxqWFgjqkO6Cp2Ty&#13;
+UvgdvZ2gvtBrg7iUd8f19YEaotE+QCm+3ML0Bg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3fbb3e77-2cb3-4557-a32c-12dc85560640" Target="#_1acab339-94c9-4b3d-a521-de6a2f4d11eb"><Timestamp>2021-02-15 02:12:28</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
