@@ -1,0 +1,47 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:sap-com:document:sap:rfc:functions">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <urn:ZMM_POST_SALESORDER_V2>
+         <!--Optional:-->
+         <I_SO_DET>
+            <!--Zero or more repetitions:-->
+            <item>
+               <I_HEADER>
+                  <SALESDOCUMENTIN></SALESDOCUMENTIN>
+                  <DOC_TYPE></DOC_TYPE>
+                  <SALES_ORG></SALES_ORG>
+                  <DISTR_CHAN></DISTR_CHAN>
+                  <DIVISION></DIVISION>
+                  <REQ_DATE_H></REQ_DATE_H>
+                  <PURCH_DATE></PURCH_DATE>
+                  <PURCH_NO_C></PURCH_NO_C>
+                  <CURRENCY></CURRENCY>
+                  <MAWARID_NO></MAWARID_NO>
+                  <ORD_REASON></ORD_REASON>
+                  <REF_DOC></REF_DOC>
+               </I_HEADER>
+               <I_T_ITEM>
+                  <!--Zero or more repetitions:-->
+                  <item>
+                     <ITM_NUMBER></ITM_NUMBER>
+                     <MATERIAL></MATERIAL>
+                     <BATCH></BATCH>
+                     <PLANT></PLANT>
+                     <STORE_LOC></STORE_LOC>
+                     <TARGET_QTY></TARGET_QTY>
+                     <SALES_UNIT></SALES_UNIT>
+                     <DLV_PRIO></DLV_PRIO>
+                  </item>
+               </I_T_ITEM>
+               <I_T_PARTNERS>
+                  <!--Zero or more repetitions:-->
+                  <item>
+                     <PARTN_ROLE></PARTN_ROLE>
+                     <PARTN_NUMB></PARTN_NUMB>
+                  </item>
+               </I_T_PARTNERS>
+            </item>
+         </I_SO_DET>
+      </urn:ZMM_POST_SALESORDER_V2>
+   </soapenv:Body>
+</soapenv:Envelope>
