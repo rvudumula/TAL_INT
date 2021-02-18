@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/BY_WMS/Inventory_Attribute_Adjustment/Input/INV-ATTR-ADJ.xml' outStruct='Structures/BY_WMS/Inventory_Attribute_Adjustment/Input/INV-ATTR-ADJ_request.xml' inputRep='172' outputRep='172' nextMap='' inputStructUserName='INV-ATTR-ADJ' outputStructUserName='INV-ATTR-ADJ_request' V1='4' name='Invent_Attr_Adj' incarnation='1848'>
+<root t='190' id='1' V190='11' inStruct='Structures/BY_WMS/Inventory_Attribute_Adjustment/Input/INV-ATTR-ADJ.xml' outStruct='Structures/BY_WMS/Inventory_Attribute_Adjustment/Input/INV-ATTR-ADJ_request.xml' inputRep='172' outputRep='172' nextMap='' inputStructUserName='INV-ATTR-ADJ' outputStructUserName='INV-ATTR-ADJ_request' V1='4' name='Invent_Attr_Adj' incarnation='1890'>
   <inputMapElem t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='247' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INVENTORY_ATTR_ADJUST'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='5' V200='8' input='true' structElemExists='true' usedCount='226' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='INVENTORY_ATTR_ADJUST_IFD'>
@@ -364,7 +364,7 @@
             </child>
             <child t='200' id='123' V200='8' structElemExists='true' usedCount='22' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_validate='true' modifiedFromParent_value='true' V1='4' name='TO_MANDTE'>
               <mapNode t='190' idref='1'/>
-              <value>IfThenElse(HasValue(in$/INVENTORY_ATTR_ADJUST/INVENTORY_ATTR_ADJUST_IFD/TO_MANDTE),Replace(Java([className="Validate",methodName="formatinvdate"],in$/INVENTORY_ATTR_ADJUST/INVENTORY_ATTR_ADJUST_IFD/TO_MANDTE),Constant([value="-",dataType="2"],),Constant([value="",dataType="2"],)),in$/INVENTORY_ATTR_ADJUST/INVENTORY_ATTR_ADJUST_IFD/TO_MANDTE)</value>
+              <value>IfThenElse(HasValue(in$/INVENTORY_ATTR_ADJUST/INVENTORY_ATTR_ADJUST_IFD/TO_MANDTE),Java([className="Validate",methodName="formatinvdate"],in$/INVENTORY_ATTR_ADJUST/INVENTORY_ATTR_ADJUST_IFD/TO_MANDTE),in$/INVENTORY_ATTR_ADJUST/INVENTORY_ATTR_ADJUST_IFD/TO_MANDTE)</value>
             </child>
             <child t='200' id='124' V200='8' structElemExists='true' usedCount='21' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='ADJQTY'>
               <mapNode t='190' idref='1'/>
