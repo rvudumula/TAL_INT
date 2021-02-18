@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/BY_WMS/Inboundrequest.xml' outStruct='Structures/BY_WMS/InboundXML.xml' inputRep='177' outputRep='172' nextMap='' inputStructUserName='Inboundrequest' outputStructUserName='InboundXML' V1='4' name='InboundShipment' incarnation='579'>
+<root t='190' id='1' V190='11' inStruct='Structures/BY_WMS/Inboundrequest.xml' outStruct='Structures/BY_WMS/InboundXML.xml' inputRep='177' outputRep='172' nextMap='' inputStructUserName='Inboundrequest' outputStructUserName='InboundXML' V1='4' name='InboundShipment' incarnation='597'>
   <inputMapElem t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='9' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='Inboundrequest'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='5' V200='8' input='true' structElemExists='true' usedCount='1' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='status'>
@@ -99,16 +99,18 @@
       </child>
     </child>
   </inputMapElem>
-  <outputMapElem t='200' id='37' V200='8' structElemExists='true' usedCount='13' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='RCPT_INB_IFD'>
+  <outputMapElem t='200' id='37' V200='8' structElemExists='true' usedCount='19' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='RCPT_INB_IFD'>
     <mapNode t='190' idref='1'/>
     <loop>SimpleLoop([autoAdded="true"],in$/Inboundrequest,{Filter},{Sort Keys},{Contexts})</loop>
-    <child t='200' id='38' V200='8' structElemExists='true' usedCount='9' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CTRL_SEG'>
+    <child t='200' id='38' V200='8' structElemExists='true' usedCount='15' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CTRL_SEG'>
       <mapNode t='190' idref='1'/>
-      <child t='200' id='39' V200='8' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRNNAM'>
+      <child t='200' id='39' V200='8' structElemExists='true' usedCount='2' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='TRNNAM'>
         <mapNode t='190' idref='1'/>
+        <value>Constant([value="RCPT_TRAN",dataType="2"],)</value>
       </child>
-      <child t='200' id='40' V200='8' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRNVER'>
+      <child t='200' id='40' V200='8' structElemExists='true' usedCount='2' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='TRNVER'>
         <mapNode t='190' idref='1'/>
+        <value>Constant([value="2017.1V0",dataType="2"],)</value>
       </child>
       <child t='200' id='41' V200='8' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='WHSE_ID'>
         <mapNode t='190' idref='1'/>
@@ -119,7 +121,7 @@
       <child t='200' id='43' V200='8' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='RCPT_TRUCK_SEG'>
         <mapNode t='190' idref='1'/>
       </child>
-      <child t='200' id='44' V200='8' structElemExists='true' usedCount='9' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='RCPT_INVOICE_SEG'>
+      <child t='200' id='44' V200='8' structElemExists='true' usedCount='11' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='RCPT_INVOICE_SEG'>
         <mapNode t='190' idref='1'/>
         <loop>SimpleLoop(in$/Inboundrequest/data,{Filter},{Sort Keys},{Contexts})</loop>
         <child t='200' id='45' V200='8' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SEGNAM'>
@@ -146,11 +148,12 @@
         <child t='200' id='52' V200='8' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRKNUM'>
           <mapNode t='190' idref='1'/>
         </child>
-        <child t='200' id='53' V200='8' structElemExists='true' usedCount='6' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='RCPT_LINE_SEG'>
+        <child t='200' id='53' V200='8' structElemExists='true' usedCount='8' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='RCPT_LINE_SEG'>
           <mapNode t='190' idref='1'/>
           <loop>SimpleLoop(in$/Inboundrequest/data/item,{Filter},{Sort Keys},{Contexts})</loop>
-          <child t='200' id='54' V200='8' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='SEGNAM'>
+          <child t='200' id='54' V200='8' structElemExists='true' usedCount='2' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='SEGNAM'>
             <mapNode t='190' idref='1'/>
+            <value>Constant([value="",dataType="2"],)</value>
           </child>
           <child t='200' id='55' V200='8' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='TRNTYP'>
             <mapNode t='190' idref='1'/>
