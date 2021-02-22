@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='Structures/BY_WMS/HOS_Outbound_Order/hos_outbound_source.xml' outStruct='Structures/BY_WMS/HOS_Outbound_Order/hos_outbound_target.xml' inputRep='177' outputRep='172' nextMap='' inputStructUserName='hos_outbound_source' outputStructUserName='hos_outbound_target' V1='4' name='Hos_outbound_target' incarnation='772'>
+<root t='190' id='1' V190='11' inStruct='Structures/BY_WMS/HOS_Outbound_Order/hos_outbound_source.xml' outStruct='Structures/BY_WMS/HOS_Outbound_Order/hos_outbound_target.xml' inputRep='177' outputRep='172' nextMap='' inputStructUserName='hos_outbound_source' outputStructUserName='hos_outbound_target' V1='4' name='Hos_outbound_target' incarnation='780'>
   <inputMapElem t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='30' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='hos_outbound_source'>
     <mapNode t='190' idref='1'/>
     <child t='200' id='5' V200='8' input='true' structElemExists='true' usedCount='2' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='12' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='status'>
@@ -111,10 +111,10 @@
       </child>
     </child>
   </inputMapElem>
-  <outputMapElem t='200' id='41' V200='8' structElemExists='true' usedCount='116' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='ORDER_INB_IFD'>
+  <outputMapElem t='200' id='41' V200='8' structElemExists='true' usedCount='118' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='ORDER_INB_IFD'>
     <mapNode t='190' idref='1'/>
     <loop>SimpleLoop([autoAdded="true"],in$/hos_outbound_source,{Filter},{Sort Keys},{Contexts})</loop>
-    <child t='200' id='42' V200='8' structElemExists='true' usedCount='110' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CTRL_SEG'>
+    <child t='200' id='42' V200='8' structElemExists='true' usedCount='112' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='CTRL_SEG'>
       <mapNode t='190' idref='1'/>
       <child t='200' id='43' V200='8' structElemExists='true' usedCount='5' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='TRNNAM'>
         <mapNode t='190' idref='1'/>
@@ -128,7 +128,7 @@
         <mapNode t='190' idref='1'/>
         <value>Constant([value="1",dataType="2"],)</value>
       </child>
-      <child t='200' id='46' V200='8' structElemExists='true' usedCount='97' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ORDER_SEG'>
+      <child t='200' id='46' V200='8' structElemExists='true' usedCount='99' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='ORDER_SEG'>
         <mapNode t='190' idref='1'/>
         <child t='200' id='47' V200='8' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='SEGNAM'>
           <mapNode t='190' idref='1'/>
@@ -181,7 +181,7 @@
           <mapNode t='190' idref='1'/>
           <value>Constant([value="1",dataType="2"],)</value>
         </child>
-        <child t='200' id='60' V200='8' structElemExists='true' usedCount='49' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='ORDER_LINE_SEG'>
+        <child t='200' id='60' V200='8' structElemExists='true' usedCount='51' V283='2' occurMinTimes='1' occurMaxTimes='-1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='ORDER_LINE_SEG'>
           <mapNode t='190' idref='1'/>
           <loop>SimpleLoop(in$/hos_outbound_source/data,{Filter},{Sort Keys},{Contexts})</loop>
           <child t='200' id='61' V200='8' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='SEGNAM'>
@@ -237,8 +237,9 @@
           <child t='200' id='75' V200='8' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='PARFLG'>
             <mapNode t='190' idref='1'/>
           </child>
-          <child t='200' id='76' V200='8' structElemExists='true' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' inheritsFrom='' V281='13' V1='4' name='BCKFLG'>
+          <child t='200' id='76' V200='8' structElemExists='true' usedCount='2' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='BCKFLG'>
             <mapNode t='190' idref='1'/>
+            <value>Constant([value="ABA",dataType="2"],)</value>
           </child>
           <child t='200' id='77' V200='8' structElemExists='true' usedCount='4' V283='2' occurMinTimes='1' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='INVSTS_PRG'>
             <mapNode t='190' idref='1'/>
