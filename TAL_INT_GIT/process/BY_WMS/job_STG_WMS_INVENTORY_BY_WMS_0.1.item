@@ -21,11 +21,11 @@
     <contextParameter comment="" name="AMC_AdditionalParams" prompt="AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="noDatetimeStringSync=true"/>
     <contextParameter comment="" name="AMC_Database" prompt="AMC_Database?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="AMC"/>
     <contextParameter comment="" name="AMC_Login" prompt="AMC_Login?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="talend"/>
-    <contextParameter comment="" name="AMC_Password" prompt="AMC_Password?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_Password" value="enc:system.encryption.key.v1:ahTq4Xmdjv7KAlhDeVHHZ9R7/BD8t0YyvCwjH5Kkf3mi"/>
+    <contextParameter comment="" name="AMC_Password" prompt="AMC_Password?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_Password" value="enc:system.encryption.key.v1:gA/Bs9rTK0HKZgy1t0TVxWbW/FW4gVL5uUPFyQlyQiM/"/>
     <contextParameter comment="" name="AMC_Port" prompt="AMC_Port?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="3307"/>
     <contextParameter comment="" name="AMC_Server" prompt="AMC_Server?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="10.1.51.25"/>
     <contextParameter comment="" name="BY_PP_sftp_hostname" prompt="BY_PP_sftp_hostname?" promptNeeded="false" repositoryContextId="_g5kPUEuCEeu1hJK2f4Kg4A" type="id_String" value="bypdap1"/>
-    <contextParameter comment="" name="BY_PP_sftp_password" prompt="BY_PP_sftp_password?" promptNeeded="false" repositoryContextId="_g5kPUEuCEeu1hJK2f4Kg4A" type="id_Password" value="enc:system.encryption.key.v1:RIHj9XKt5HWaE9HgMhwZk+XDInzqirJYRXYOrpaVtWuiUrlp"/>
+    <contextParameter comment="" name="BY_PP_sftp_password" prompt="BY_PP_sftp_password?" promptNeeded="false" repositoryContextId="_g5kPUEuCEeu1hJK2f4Kg4A" type="id_Password" value="enc:system.encryption.key.v1:E19QhsxNhLj2ddcuKhHC+3hnmZLQphVrMKD99YMp9ljAxxn7"/>
     <contextParameter comment="" name="BY_PP_sftp_port" prompt="BY_PP_sftp_port?" promptNeeded="false" repositoryContextId="_g5kPUEuCEeu1hJK2f4Kg4A" type="id_Integer" value="22"/>
     <contextParameter comment="" name="BY_PP_sftp_Remote_path" prompt="BY_PP_sftp_Remote_path?" promptNeeded="false" repositoryContextId="_g5kPUEuCEeu1hJK2f4Kg4A" type="id_String" value="/inbound/"/>
     <contextParameter comment="" name="BY_PP_sftp_username" prompt="BY_PP_sftp_username?" promptNeeded="false" repositoryContextId="_g5kPUEuCEeu1hJK2f4Kg4A" type="id_String" value="sftpuser"/>
@@ -75,7 +75,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:+UoTEm0biNL4PdRGfy2shlXREXgz2Y5LyTlfn18S"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:lBpDaO2VzMZe6aUNAujrCJzBWyl25xpNfX/g1i6e"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -112,7 +112,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="context.AMC_AdditionalParams"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="context.AMC_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:xRehpUYUaHuqiFlM7wAmGZxjkyoDrF2Ss+D7E1oN2RUXFgte8Xmjngcen+cIWwSh"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:PAnlw+XIzK5Vm0hZr62u12jd/E13Ira4ahqZ5WoLF5YBznUxA6yfsVHvFPBbSpxv"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statcatcher&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logcatcher&quot;"/>
@@ -533,7 +533,7 @@
         <mapperTableEntries expression="/*TalendDate.parseDate(&quot;yyyyMMddHHmmss&quot;,row1.EXPIRE_DTE )*/&#13;&#10;!Relational.ISNULL(row1.EXPIRE_DTE) &amp;&amp; !row1.EXPIRE_DTE.isEmpty() &amp;&amp; !row1.EXPIRE_DTE.equals(&quot;&quot;) ? TalendDate.parseDate(&quot;yyyyMMddHHmmss&quot;,row1.EXPIRE_DTE ) : null " name="var2" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="row2.S4_Plant_Id!=null &amp;&amp;   row2.Storage_Location_Code !=null ? row2.S4_Plant_Id+&quot;_&quot;+row2.Storage_Location_Code : &quot;&quot; " name="LOC" nullable="true" type="id_String"/>
       </varTables>
-      <outputTables activateExpressionFilter="true" expressionFilter="row1.UNTQTY !=null &amp;&amp; Integer.parseInt(row1.UNTQTY ) &gt;0 ?true :false" name="MPL" sizeState="INTERMEDIATE">
+      <outputTables activateExpressionFilter="true" expressionFilter="row1.UNTQTY !=null &amp;&amp; Integer.parseInt(row1.UNTQTY ) &gt;0 &amp;&amp; row1.INVSTS.equalsIgnoreCase(&quot;A&quot;) ?true :false" name="MPL" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.PRTNUM " name="ITEM" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.REVLVL " name="TRADE_CODE_ITEM" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.LOTNUM " name="LOT_NUMBER" nullable="true" type="id_String"/>
@@ -724,77 +724,6 @@
       <column comment="" key="false" length="45" name="Client_Description" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tUniqRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="288">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tUniqRow_1"/>
-    <elementParameter field="TABLE" name="UNIQUE_KEY">
-      <elementValue elementRef="SCHEMA_COLUMN" value="ITEM"/>
-      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
-      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TRADE_CODE_ITEM"/>
-      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
-      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOT_NUMBER"/>
-      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
-      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITY"/>
-      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
-      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOC"/>
-      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
-      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BATCH_DATE"/>
-      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
-      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXPIRE_DTE"/>
-      <elementValue elementRef="KEY_ATTRIBUTE" value="true"/>
-      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXTRACT_DATE_TIME"/>
-      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
-      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXTRACTED_BY"/>
-      <elementValue elementRef="KEY_ATTRIBUTE" value="false"/>
-      <elementValue elementRef="CASE_SENSITIVE" value="false"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="ONLY_ONCE_EACH_DUPLICATED_KEY" value="false"/>
-    <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="false"/>
-    <elementParameter field="OPENED_LIST" name="BUFFER_SIZE" show="false" value="M"/>
-    <elementParameter field="DIRECTORY" name="TEMP_DIRECTORY" show="false" value=""/>
-    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="MPL" name="tUniqRow_1">
-      <column comment="" key="true" length="50" name="ITEM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="50" name="TRADE_CODE_ITEM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="50" name="LOT_NUMBER" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="QUANTITY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="4" name="LOC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="25" name="BATCH_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="true" length="25" name="EXPIRE_DTE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EXTRACT_DATE_TIME" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EXTRACTED_BY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="UNIQUE" label="MPL" name="UNIQUE">
-      <column comment="" key="true" length="50" name="ITEM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="50" name="TRADE_CODE_ITEM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="50" name="LOT_NUMBER" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="QUANTITY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="4" name="LOC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="25" name="BATCH_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="true" length="25" name="EXPIRE_DTE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EXTRACT_DATE_TIME" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EXTRACTED_BY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="DUPLICATE" label="MPL" name="DUPLICATE">
-      <column comment="" key="true" length="50" name="ITEM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="50" name="TRADE_CODE_ITEM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="50" name="LOT_NUMBER" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="QUANTITY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="4" name="LOC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="25" name="BATCH_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="true" length="25" name="EXPIRE_DTE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EXTRACT_DATE_TIME" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EXTRACTED_BY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tSchemaComplianceCheck" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="288">
@@ -1003,55 +932,6 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="ITEM"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TRADE_CODE_ITEM"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOT_NUMBER"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITY"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOC"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BATCH_DATE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXPIRE_DTE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXTRACT_DATE_TIME"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXTRACTED_BY"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
-    <elementParameter field="TEXT" name="LABEL" value="Duplicates"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="MPL" name="tLogRow_2">
-      <column comment="" key="true" length="50" name="ITEM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="50" name="TRADE_CODE_ITEM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="50" name="LOT_NUMBER" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="QUANTITY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="4" name="LOC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="25" name="BATCH_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="true" length="25" name="EXPIRE_DTE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EXTRACT_DATE_TIME" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EXTRACTED_BY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="context.Current_Date=TalendDate.formatDate(&quot;yyyyMMddHHmmss&quot;,TalendDate.getCurrentDate());&#10;&#10;&#10;System.out.println(&quot;Files will be created with this timestamp:&quot; + context.Current_Date);&#10;&#10;&#10; "/>
@@ -1142,18 +1022,18 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="context.BY_PP_sftp_port"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
     <elementParameter field="TEXT" name="USERNAME" show="false" value="context.BY_PP_sftp_username"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:9ZniY8+7eLe5TBjFrSCkZSERjTk91LIQ3IB6+GJ9tBk0QMV3yj4g2h4eOm1yR3ybmS0UM+Pn8A=="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:nYKcDjR+5HSRvUhIHnNhhVEd6unnk3XEZQQVKL76/iarAN8TZfKOakLlC7obcmhn8KWGeYbWLQ=="/>
     <elementParameter field="CHECK" name="SFTP" show="false" value="true"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" show="false" value="PASSWORD"/>
     <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:qKOKimQ51jU6p5B/ka91L8pRqP2/O2oFnQedPcfylRxpPCQ4"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:AN4lCzqyQPOXYymtucxjVy8J378ZicnVSCvmKdpeiZ5u7oll"/>
     <elementParameter field="DIRECTORY" name="LOCALDIR" value="context.MPLoutfilepath"/>
     <elementParameter field="TEXT" name="REMOTEDIR" value="context.BY_PP_sftp_Remote_path"/>
     <elementParameter field="CHECK" name="CREATE_DIR_IF_NOT_EXIST" value="false"/>
     <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" value="true"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:mfN97MizZEnahCah5ktniRU6TvEbYLgucXq1nBjQuvpnzg/U"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:MOuKgOFspyrsO247cPf/6C9VX/qc8bWsjcyEy+UNbgzBydXD"/>
     <elementParameter field="CLOSED_LIST" name="MODE" show="false" value="ascii"/>
     <elementParameter field="CLOSED_LIST" name="OVERWRITE" show="false" value="never"/>
     <elementParameter field="CHECK" name="APPEND" show="false" value="false"/>
@@ -1177,7 +1057,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:wr/6ODoTCuzsl1gjZ2MdeVAnFSORQxF9YNrYw3j0"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:LpNR/zS5AYAcddsSCf4+1jg1AdRpf1vOdElyfEeS"/>
     <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
     <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
@@ -1335,7 +1215,7 @@
     <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
     <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
     <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;raghava.vudumula@thinkartha.com&quot;"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:JB/Ux5kbh6M6X7l9LyllDBxbgQRWqLheJzV0zlYgD7Ido0QB46QDQw=="/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:Z+1Nbvt4IVYe3PmNaY5tEG+jQEY7ruJbaOTWRc4zWXDQn5CnVaxLUQ=="/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
     <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="html"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
@@ -1351,14 +1231,14 @@
     <elementParameter field="TEXT" name="PORT" value="context.BY_PP_sftp_port"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
     <elementParameter field="TEXT" name="USER" value="context.BY_PP_sftp_username"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:6fOzqTMqpTFlhTxAN4vAD9nFMetF7sNLP0SBR8FuUId3MwM/YJIAFvdoJBX7Gos5awlb7jAHQw=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:MhK3QtHjYZ3Y13ayGyypQtFogt/HnTZTn4lfHD8CdbaGNZRNdMPvoEEKNwpgF9Riocnv8x/ngw=="/>
     <elementParameter field="CHECK" name="SFTP" value="true"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:cq4X7pV3nY3Zb2ju+Nk10tCT1WvCCH0+ZX0logEZRnHmHJ/9"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:jtBbUa4hIlCseWIkG9QgX31Ys6XrmM4ctSAsBWZqB1wxdGrD"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
     <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:/han0f0fcqflFDGFL5qtB400K3tTIYNQedKypLdngDHPSYmL"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:cbxaSOS1ry09EL6Zk0TaZeA6RWDrsAgRyT6cPWWoOgND9Cyh"/>
     <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" show="false" value="PASSIVE"/>
     <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" show="false" value="IMPLICIT"/>
     <elementParameter field="CHECK" name="USE_ENCODING" value="false"/>
@@ -1368,7 +1248,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:ilXgo4ZdfAS0wFPItXAGNx8FoBdJU1oahD+kuw3R"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:v3559Dh5PVzdaF8Y5Euf1vh6MzVv4Z0pb2hv5BRT"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
     <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
     <elementParameter field="CHECK" name="REMOTE_VERIFICATION" show="false" value="true"/>
@@ -1384,29 +1264,13 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputXML_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputXML_1" target="tJava_3">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk6"/>
   </connection>
-  <connection connectorName="FLOW" label="MPL" lineStyle="0" metaname="MPL" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tUniqRow_1">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="EXTRACTED_BY"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="EXTRACT_DATE_TIME"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
+  <connection connectorName="FLOW" label="MPL" lineStyle="0" metaname="MPL" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tSchemaComplianceCheck_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="MPL"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
-  </connection>
-  <connection connectorName="UNIQUE" label="row6" lineStyle="0" metaname="UNIQUE" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tUniqRow_1" target="tSchemaComplianceCheck_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
-  </connection>
-  <connection connectorName="DUPLICATE" label="row7" lineStyle="0" metaname="DUPLICATE" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tUniqRow_1" target="tLogRow_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row7"/>
   </connection>
   <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tSchemaComplianceCheck_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tSchemaComplianceCheck_1" target="tFileOutputDelimited_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
@@ -1508,13 +1372,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_54ee383b-92d2-40af-8074-b19e8d01f563"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pXHFf9RrDhVddiK8lA/jIhcebCL22Z6yAALw4pqZHWZEV0nXuZ17OUPJKvvwfcU7kodfdl9dXN5X&#13;
-+xjL+5xn1A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1e4ba840-3126-434c-b791-7f900bfd31c5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nkqIAtMLd9JqRGuo6HqkeN1xIbxux3eLIITSR4SAC87XflDzqW6/OFMYsEkGlvP7T4wqdSTqoi5f&#13;
-w8RiQgsZWg==</DigestValue></Reference></SignedInfo><SignatureValue>phLhdmnp61meAR3ZM2MhKznW7nC69ZtPGF7JgtFL7sRy1wbbna6XyR9d9UXPMqSdacabg2Er1lws&#13;
-k18woh2u3iy/6SZo6izG3K1oGX9b8LozcHciBRRSv+t8EhzENermg0MqSAweVv5MxLF6PYk/ItPZ&#13;
-p9gB6/SiwOuWQKqrsnAupbdxA8dJHWFPBTYjpzgeiW7Geip/DUC3ork8dDTLT8zZRadkBJyKwhul&#13;
-cD/m3LjCFLBOeogmlI1x8vCQHev4ZKZ0yb9NPx6ffhwmEUG7gcNN15J/luURe50J62fJAMriwLZv&#13;
-4xiJK+JtpO6BiIgv4szZxpJYfxWd8NRonm/8ow==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_fa937282-28ee-4cff-b149-efc96d0084a4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>yC/7S7QCKGo4xNH0XJVprRqC7/hk7wjrI5PmR5YF8vzo+wZH2BQC71LygbpNJd+C8i//WVhg68C0&#13;
+Ace42ugvuA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e2fc6239-602e-4685-a0f4-4f119789ef8f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1e0qz9RRxRh755oU7UdngnSGKmL3aHdqJxGTWWikSPYUhMZ8I0LyS16J47lQ1+0GBYXoQEKiwDh6&#13;
+cSzDtWT5pQ==</DigestValue></Reference></SignedInfo><SignatureValue>RUaJ96H1xKiA0+xouBVh/3/ECPRGgZfjG50Rz5hiKAjyvJsIQW5WF1fdTBAdjRzGOoaA+lG2ffzS&#13;
+QWqUgwH0GZ/4jetz/VfHVdZJ25FxT1v7cYbBN+h9SpJsEDK5IGU4iTiRKWi/wqav7A9KIadRgmZV&#13;
+hhjw7OBq7JlXN94Qt1HtTIQ4U3B0ImbBjb3PEDSbfX7glS1qNt7a10bgjNHKYp0VcqlhZd1cao1u&#13;
+yrq25Ded5A/WcEVv+RUzLub76fCuKOpR/7s3FdTylm7xIFoVlURKyZBziVvJsr0RQneVkongnB72&#13;
+/146lXeXp1yblhFa/QBcO70/gIyYj1oWjpEwyA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1536,4 +1400,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1e4ba840-3126-434c-b791-7f900bfd31c5" Target="#_54ee383b-92d2-40af-8074-b19e8d01f563"><Timestamp>2021-02-22 09:02:09</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e2fc6239-602e-4685-a0f4-4f119789ef8f" Target="#_fa937282-28ee-4cff-b149-efc96d0084a4"><Timestamp>2021-02-22 13:18:18</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
