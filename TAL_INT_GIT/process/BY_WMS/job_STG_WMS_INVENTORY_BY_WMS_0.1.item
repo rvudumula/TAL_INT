@@ -21,11 +21,11 @@
     <contextParameter comment="" name="AMC_AdditionalParams" prompt="AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="noDatetimeStringSync=true"/>
     <contextParameter comment="" name="AMC_Database" prompt="AMC_Database?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="AMC"/>
     <contextParameter comment="" name="AMC_Login" prompt="AMC_Login?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="talend"/>
-    <contextParameter comment="" name="AMC_Password" prompt="AMC_Password?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_Password" value="enc:system.encryption.key.v1:us2buEIF7SWNWb9jGDXsiLqqC7yaigjly9QDAureYY2h"/>
+    <contextParameter comment="" name="AMC_Password" prompt="AMC_Password?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_Password" value="enc:system.encryption.key.v1:YlCaupqU/IhzG6eOc4bBixQ6yoO0h6oRJzlC0zyDMwxC"/>
     <contextParameter comment="" name="AMC_Port" prompt="AMC_Port?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="3307"/>
     <contextParameter comment="" name="AMC_Server" prompt="AMC_Server?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="10.1.51.25"/>
     <contextParameter comment="" name="BY_PP_sftp_hostname" prompt="BY_PP_sftp_hostname?" promptNeeded="false" repositoryContextId="_g5kPUEuCEeu1hJK2f4Kg4A" type="id_String" value="bypdap1"/>
-    <contextParameter comment="" name="BY_PP_sftp_password" prompt="BY_PP_sftp_password?" promptNeeded="false" repositoryContextId="_g5kPUEuCEeu1hJK2f4Kg4A" type="id_Password" value="enc:system.encryption.key.v1:p4BWKURDI0WdycLeGXaIzzptcvEYHlbGSBz1O2mgCNqz10/O"/>
+    <contextParameter comment="" name="BY_PP_sftp_password" prompt="BY_PP_sftp_password?" promptNeeded="false" repositoryContextId="_g5kPUEuCEeu1hJK2f4Kg4A" type="id_Password" value="enc:system.encryption.key.v1:OGQy0uoiwtmDvBrpK8+94ihtmUxNtGRh7em5hw0Y818zHtZc"/>
     <contextParameter comment="" name="BY_PP_sftp_port" prompt="BY_PP_sftp_port?" promptNeeded="false" repositoryContextId="_g5kPUEuCEeu1hJK2f4Kg4A" type="id_Integer" value="22"/>
     <contextParameter comment="" name="BY_PP_sftp_Remote_path" prompt="BY_PP_sftp_Remote_path?" promptNeeded="false" repositoryContextId="_g5kPUEuCEeu1hJK2f4Kg4A" type="id_String" value="/inbound/"/>
     <contextParameter comment="" name="BY_PP_sftp_username" prompt="BY_PP_sftp_username?" promptNeeded="false" repositoryContextId="_g5kPUEuCEeu1hJK2f4Kg4A" type="id_String" value="sftpuser"/>
@@ -75,7 +75,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:0cCmskD0m6lYgf1G8vfspgDkbcJ0hpXLOz0AlMqa"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:2wXTsb3cQ1lMLEdyJCLpU/In+AmZtcrqb881/sHu"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -112,7 +112,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="context.AMC_AdditionalParams"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="context.AMC_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:pzAfcIRDrpizlcAKnERAh/GT5EKF+CVkmIh0M9rMnJ70yINQ1VASY/queKExgABV"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:zHvNI2DlwMRb2FJlSnP0GkFEViELK3rYSCJlOdEM4Z+Ok2Adm6WTZyI6U+UKzsNC"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statcatcher&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logcatcher&quot;"/>
@@ -535,8 +535,8 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables name="Var" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="/*!Relational.ISNULL(row1.MANDTE) &amp;&amp; !row1.MANDTE.isEmpty() &amp;&amp; row1.MANDTE.equals(&quot;&quot;) ? TalendDate.parseDate(&quot;yyyyMMddHHmmss&quot;,row1.MANDTE ) : null */&#13;&#10;&#13;&#10;TalendDate.parseDate(&quot;yyyyMMddHHmmss&quot;,row1.MANDTE ) " name="var1" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="/*!Relational.ISNULL(row1.EXPIRE_DTE) &amp;&amp; !row1.EXPIRE_DTE.isEmpty() &amp;&amp; row1.EXPIRE_DTE.equals(&quot;&quot;) ? TalendDate.parseDate(&quot;yyyyMMddHHmmss&quot;,row1.EXPIRE_DTE ) : null */&#13;&#10;&#13;&#10;TalendDate.parseDate(&quot;yyyyMMddHHmmss&quot;,row1.EXPIRE_DTE ) " name="var2" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="/*!Relational.ISNULL(row1.MANDTE)TalendDate.parseDate(&quot;yyyyMMddHHmmss&quot;,row1.MANDTE )*/&#13;&#10;!Relational.ISNULL(row1.MANDTE) &amp;&amp; !row1.MANDTE.isEmpty() &amp;&amp; !row1.MANDTE.equals(&quot;&quot;) ? TalendDate.parseDate(&quot;yyyyMMddHHmmss&quot;,row1.MANDTE ) : null " name="var1" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="/*TalendDate.parseDate(&quot;yyyyMMddHHmmss&quot;,row1.EXPIRE_DTE )*/&#13;&#10;!Relational.ISNULL(row1.EXPIRE_DTE) &amp;&amp; !row1.EXPIRE_DTE.isEmpty() &amp;&amp; !row1.EXPIRE_DTE.equals(&quot;&quot;) ? TalendDate.parseDate(&quot;yyyyMMddHHmmss&quot;,row1.EXPIRE_DTE ) : null " name="var2" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="row2.S4_Plant_Id!=null &amp;&amp;   row2.Storage_Location_Code !=null ? row2.S4_Plant_Id+&quot;_&quot;+row2.Storage_Location_Code : &quot;&quot; " name="LOC" nullable="true" type="id_String"/>
       </varTables>
       <outputTables minimized="true" name="MPL" sizeState="INTERMEDIATE">
@@ -738,8 +738,160 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="384">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
+  <node componentName="tSchemaComplianceCheck" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSchemaComplianceCheck_1"/>
+    <elementParameter field="RADIO" name="CHECK_ALL" value="false"/>
+    <elementParameter field="RADIO" name="CUSTOMER" value="true"/>
+    <elementParameter field="TABLE" name="CHECKCOLS">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ITEM"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TRADE_CODE_ITEM"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOT_NUMBER"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITY"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOC"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BATCH_DATE"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXPIRE_DTE"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXTRACT_DATE_TIME"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXTRACTED_BY"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String"/>
+      <elementValue elementRef="DATEPATTERN" value=""/>
+      <elementValue elementRef="NULLABLE" value="false"/>
+      <elementValue elementRef="MAX_LENGTH" value="false"/>
+    </elementParameter>
+    <elementParameter field="LABEL" name="NOTE_CUSTOMER" value="Please note:&#10;(1) Nullable setting in this table is more preferential than the default schema.&#10;(2) Length checking is base on the value of the default schema."/>
+    <elementParameter field="RADIO" name="CHECK_ANOTHER" value="false"/>
+    <elementParameter field="LABEL" name="NOTE_CHECK_ANOTHER" show="false" value="Please note: only index matching, for example, the second column of checking schema is correspond to the second of input schema"/>
+    <elementParameter field="CHECK" name="SUB_STRING" value="false"/>
+    <elementParameter field="LABEL" name="NOTE_SUB_STRING" value="     If exceed, either trim the field when above option checked or reject the row."/>
+    <elementParameter field="LABEL" name="INFO" value="If only one column has error, the errCode value is a summation of all error code; else the errCode is 16:&#10;(1) Type discrepancy (include wrong date pattern): 2&#10;(2) Empty or NULL: 4&#10;(3) Length/Precision Error: 8"/>
+    <elementParameter field="CHECK" name="FAST_DATE_CHECK" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with multi-threaded jobs)"/>
+    <elementParameter field="CHECK" name="STRICT_DATE_CHECK" value="false"/>
+    <elementParameter field="CHECK" name="IGNORE_TIMEZONE" value="false"/>
+    <elementParameter field="CHECK" name="EMPTY_IS_NULL" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ALL_EMPTY_ARE_NULL" value="true"/>
+    <elementParameter field="TABLE" name="EMPTY_NULL_TABLE" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ITEM"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TRADE_CODE_ITEM"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOT_NUMBER"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITY"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOC"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BATCH_DATE"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXPIRE_DTE"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXTRACT_DATE_TIME"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXTRACTED_BY"/>
+      <elementValue elementRef="EMPTY_NULL" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="MPL" name="tSchemaComplianceCheck_1">
+      <column comment="" key="true" length="50" name="ITEM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="50" name="TRADE_CODE_ITEM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="0" name="LOT_NUMBER" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="QUANTITY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="4" name="LOC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="25" name="BATCH_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="true" length="25" name="EXPIRE_DTE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EXTRACT_DATE_TIME" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EXTRACTED_BY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="OTHER" name="OTHER"/>
+    <metadata connector="REJECT" label="MPL" name="REJECT">
+      <column comment="" key="true" length="50" name="ITEM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="50" name="TRADE_CODE_ITEM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="0" name="LOT_NUMBER" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="QUANTITY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="4" name="LOC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="25" name="BATCH_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="true" length="25" name="EXPIRE_DTE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EXTRACT_DATE_TIME" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EXTRACTED_BY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.MPLoutfilepath + ((String)globalMap.get(&quot;DATA_FILE&quot;))"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="MPL" name="tFileOutputDelimited_1">
+      <column comment="" key="true" length="50" name="ITEM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="50" name="TRADE_CODE_ITEM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="0" name="LOT_NUMBER" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="QUANTITY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="4" name="LOC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="25" name="BATCH_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="true" length="25" name="EXPIRE_DTE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EXTRACT_DATE_TIME" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EXTRACTED_BY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -752,23 +904,44 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ITEM"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TRADE_CODE_ITEM"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOT_NUMBER"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITY"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOC"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BATCH_DATE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="EXPIRE_DTE"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MANDTE"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXTRACT_DATE_TIME"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="var1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXTRACTED_BY"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="var2"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="errorCode"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="errorMessage"/>
       <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_2">
-      <column comment="" key="false" length="0" name="EXPIRE_DTE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="MANDTE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="var1" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="var2" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+    <metadata connector="FLOW" label="MPL" name="tLogRow_1">
+      <column comment="" key="true" length="50" name="ITEM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="50" name="TRADE_CODE_ITEM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="0" name="LOT_NUMBER" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="QUANTITY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="4" name="LOC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="25" name="BATCH_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="true" length="25" name="EXPIRE_DTE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EXTRACT_DATE_TIME" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EXTRACTED_BY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="32">
@@ -793,7 +966,6 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_3"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;File created: &quot; + ((String)globalMap.get(&quot;tFileOutputDelimited_1_FILE_NAME&quot;)) );"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -801,7 +973,6 @@
   </node>
   <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
     <elementParameter field="TABLE" name="VALUES" show="false">
@@ -823,7 +994,6 @@
   </node>
   <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
     <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
     <elementParameter field="FILE" name="FILENAME" value="context.MPLoutfilepath + ((String)globalMap.get(&quot;FLAG_FILE&quot;))"/>
@@ -858,29 +1028,28 @@
   </node>
   <node componentName="tFTPPut" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="672">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPPut_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tFTPConnection_1"/>
     <elementParameter field="TEXT" name="HOST" show="false" value="context.BY_PP_sftp_hostname"/>
     <elementParameter field="TEXT" name="PORT" show="false" value="context.BY_PP_sftp_port"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
     <elementParameter field="TEXT" name="USERNAME" show="false" value="context.BY_PP_sftp_username"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:ZmDIGGmcX1zUGyOXW6qHfu7IGGU/zIMkkt8f198jWrCv1Z7mBKyZu1gR9IQqKKpQAtpQKY2HIA=="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:WsxbR0Gwdq8NflxLkkbKXhyewHRU4Som8a6kWIUCOv3wV9r5l7jpu0QsA1yU3wLggiMD1JHpFQ=="/>
     <elementParameter field="CHECK" name="SFTP" show="false" value="true"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" show="false" value="PASSWORD"/>
     <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:VHKbdAWfcVgV9fT6BC+hIw+OexM4xkuncQcnbTSnlO6OlUeu"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:VLcOQp5beJ3hOkn9Bney3prhMMxUF9MFi/yrUSbY8wA9SvdJ"/>
     <elementParameter field="DIRECTORY" name="LOCALDIR" value="context.MPLoutfilepath"/>
     <elementParameter field="TEXT" name="REMOTEDIR" value="context.BY_PP_sftp_Remote_path"/>
     <elementParameter field="CHECK" name="CREATE_DIR_IF_NOT_EXIST" value="false"/>
     <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" value="true"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:3j7ow6bWsAWruY3P9jFm+KE1eg/W2XREqDr7fDOzGfmHkklf"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:z4wUPeIoSMJrm7Joa8QavODJVTOIWzIwtAwknRinu1tvoZDN"/>
     <elementParameter field="CLOSED_LIST" name="MODE" show="false" value="ascii"/>
     <elementParameter field="CLOSED_LIST" name="OVERWRITE" show="false" value="never"/>
     <elementParameter field="CHECK" name="APPEND" show="false" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="SFTPOVERWRITE" show="false" value="overwrite"/>
+    <elementParameter field="CLOSED_LIST" name="SFTPOVERWRITE" value="overwrite"/>
     <elementParameter field="CLOSED_LIST" name="FTPSOVERWRITE" show="false" value="always"/>
     <elementParameter field="LABEL" name="NOTE_CUSTOMER" show="false" value="Note: File can not be renamed while using &quot;append&quot; mode in SFTP"/>
     <elementParameter field="CHECK" name="PERL5_REGEX" value="false"/>
@@ -900,7 +1069,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:tSBLGhFqnBMRVDe7xmvjerXEiPMuNKU0VfFkkXZl"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:02frELOq64aPu223ukeqhIm041hJ/Uxb7gKU1Wp5"/>
     <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" show="false" value="false"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
     <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
@@ -911,7 +1080,6 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="672">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_4"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;File created: &quot; + ((String)globalMap.get(&quot;tFileOutputDelimited_2_FILE_NAME&quot;)) );"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -1059,7 +1227,7 @@
     <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
     <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
     <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;raghava.vudumula@thinkartha.com&quot;"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:n3qkjft8W+vjoO7L7ROCwaZ+/bXE8wlb7gnWQKXuPjQm3TQIxYq9rQ=="/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:hDhSgCasJn+hZzVS5Osz4yjWrro9i8+XvpLDoB+NFE/ELmfz2o7HqQ=="/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
     <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="html"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
@@ -1071,19 +1239,18 @@
   </node>
   <node componentName="tFTPConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="672">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFTPConnection_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="HOST" value="context.BY_PP_sftp_hostname"/>
     <elementParameter field="TEXT" name="PORT" value="context.BY_PP_sftp_port"/>
     <elementParameter field="TEXT" name="FTPS_PORT" show="false" value="990"/>
     <elementParameter field="TEXT" name="USER" value="context.BY_PP_sftp_username"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Y7+aSGsE1y/iAnQOooJxo6lm/nGUwqMjYUei5Ob/oPJVko6cmQmCGv9RZ4WwVwNbIfJCLRms0Q=="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:9Lp7TiT7fJl9ZEW9CylEjeYlFCe+SXx6mz0Cq2oDWmP4U9l9kaGkD2gOGM3vicMfBBRaqM02og=="/>
     <elementParameter field="CHECK" name="SFTP" value="true"/>
     <elementParameter field="CHECK" name="FTPS" show="false" value="false"/>
     <elementParameter field="FILE" name="KEYSTORE_FILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:tfi5bPLD+0Hvk6Bj41ilTRp7suromL8K7qkxFmnZj+8LngTz"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" show="false" value="enc:system.encryption.key.v1:cVMnkHJT07xkvXoEjWYhybhdM1LfLsnXxI5Zwmjqil0FHNEA"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
     <elementParameter field="FILE" name="PRIVATEKEY" show="false" value="&quot;/.ssh/id_dsa&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:6nOQdawxM3d9J/5800l7YGfQycxS/6m94JreHfzU8Ubr77qY"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" show="false" value="enc:system.encryption.key.v1:IAtEl1Fl/amClAI8ZVTRx7ISYZPOgq0u/AFRl/1Jf21rIh8L"/>
     <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" show="false" value="PASSIVE"/>
     <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" show="false" value="IMPLICIT"/>
     <elementParameter field="CHECK" name="USE_ENCODING" value="false"/>
@@ -1093,231 +1260,23 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;1080&quot;"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:/eiOCS/f02BAqE57gAhFRYkxHYbGUBTpOHWtFLGT"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:v+3MO4l0i+LFqvoT6JIUdft6jAPmzScdOuULNhRV"/>
     <elementParameter field="OPENED_LIST" name="FTPS_PROT" show="false" value="&quot;P&quot;"/>
     <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" show="false" value="0"/>
     <elementParameter field="CHECK" name="REMOTE_VERIFICATION" show="false" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="0"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tSchemaComplianceCheck" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="288">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSchemaComplianceCheck_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="RADIO" name="CHECK_ALL" value="false"/>
-    <elementParameter field="RADIO" name="CUSTOMER" value="true"/>
-    <elementParameter field="TABLE" name="CHECKCOLS">
-      <elementValue elementRef="SCHEMA_COLUMN" value="ITEM"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String"/>
-      <elementValue elementRef="DATEPATTERN" value=""/>
-      <elementValue elementRef="NULLABLE" value="false"/>
-      <elementValue elementRef="MAX_LENGTH" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TRADE_CODE_ITEM"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String"/>
-      <elementValue elementRef="DATEPATTERN" value=""/>
-      <elementValue elementRef="NULLABLE" value="false"/>
-      <elementValue elementRef="MAX_LENGTH" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOT_NUMBER"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String"/>
-      <elementValue elementRef="DATEPATTERN" value=""/>
-      <elementValue elementRef="NULLABLE" value="false"/>
-      <elementValue elementRef="MAX_LENGTH" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITY"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String"/>
-      <elementValue elementRef="DATEPATTERN" value=""/>
-      <elementValue elementRef="NULLABLE" value="false"/>
-      <elementValue elementRef="MAX_LENGTH" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOC"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String"/>
-      <elementValue elementRef="DATEPATTERN" value=""/>
-      <elementValue elementRef="NULLABLE" value="false"/>
-      <elementValue elementRef="MAX_LENGTH" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BATCH_DATE"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String"/>
-      <elementValue elementRef="DATEPATTERN" value=""/>
-      <elementValue elementRef="NULLABLE" value="false"/>
-      <elementValue elementRef="MAX_LENGTH" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXPIRE_DTE"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String"/>
-      <elementValue elementRef="DATEPATTERN" value=""/>
-      <elementValue elementRef="NULLABLE" value="false"/>
-      <elementValue elementRef="MAX_LENGTH" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXTRACT_DATE_TIME"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String"/>
-      <elementValue elementRef="DATEPATTERN" value=""/>
-      <elementValue elementRef="NULLABLE" value="false"/>
-      <elementValue elementRef="MAX_LENGTH" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXTRACTED_BY"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String"/>
-      <elementValue elementRef="DATEPATTERN" value=""/>
-      <elementValue elementRef="NULLABLE" value="false"/>
-      <elementValue elementRef="MAX_LENGTH" value="false"/>
-    </elementParameter>
-    <elementParameter field="LABEL" name="NOTE_CUSTOMER" value="Please note:&#10;(1) Nullable setting in this table is more preferential than the default schema.&#10;(2) Length checking is base on the value of the default schema."/>
-    <elementParameter field="RADIO" name="CHECK_ANOTHER" value="false"/>
-    <elementParameter field="LABEL" name="NOTE_CHECK_ANOTHER" show="false" value="Please note: only index matching, for example, the second column of checking schema is correspond to the second of input schema"/>
-    <elementParameter field="CHECK" name="SUB_STRING" value="false"/>
-    <elementParameter field="LABEL" name="NOTE_SUB_STRING" value="     If exceed, either trim the field when above option checked or reject the row."/>
-    <elementParameter field="LABEL" name="INFO" value="If only one column has error, the errCode value is a summation of all error code; else the errCode is 16:&#10;(1) Type discrepancy (include wrong date pattern): 2&#10;(2) Empty or NULL: 4&#10;(3) Length/Precision Error: 8"/>
-    <elementParameter field="CHECK" name="FAST_DATE_CHECK" value="false"/>
-    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with multi-threaded jobs)"/>
-    <elementParameter field="CHECK" name="STRICT_DATE_CHECK" value="false"/>
-    <elementParameter field="CHECK" name="IGNORE_TIMEZONE" value="false"/>
-    <elementParameter field="CHECK" name="EMPTY_IS_NULL" show="false" value="false"/>
-    <elementParameter field="CHECK" name="ALL_EMPTY_ARE_NULL" value="true"/>
-    <elementParameter field="TABLE" name="EMPTY_NULL_TABLE" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="ITEM"/>
-      <elementValue elementRef="EMPTY_NULL" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TRADE_CODE_ITEM"/>
-      <elementValue elementRef="EMPTY_NULL" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOT_NUMBER"/>
-      <elementValue elementRef="EMPTY_NULL" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITY"/>
-      <elementValue elementRef="EMPTY_NULL" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOC"/>
-      <elementValue elementRef="EMPTY_NULL" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BATCH_DATE"/>
-      <elementValue elementRef="EMPTY_NULL" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXPIRE_DTE"/>
-      <elementValue elementRef="EMPTY_NULL" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXTRACT_DATE_TIME"/>
-      <elementValue elementRef="EMPTY_NULL" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXTRACTED_BY"/>
-      <elementValue elementRef="EMPTY_NULL" value="false"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="MPL" name="tSchemaComplianceCheck_1">
-      <column comment="" key="true" length="50" name="ITEM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="50" name="TRADE_CODE_ITEM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="0" name="LOT_NUMBER" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="QUANTITY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="4" name="LOC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="25" name="BATCH_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="true" length="25" name="EXPIRE_DTE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EXTRACT_DATE_TIME" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EXTRACTED_BY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="OTHER" name="OTHER"/>
-    <metadata connector="REJECT" label="MPL" name="REJECT">
-      <column comment="" key="true" length="50" name="ITEM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="50" name="TRADE_CODE_ITEM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="0" name="LOT_NUMBER" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="QUANTITY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="4" name="LOC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="25" name="BATCH_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="true" length="25" name="EXPIRE_DTE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EXTRACT_DATE_TIME" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EXTRACTED_BY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="288">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
-    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.MPLoutfilepath + ((String)globalMap.get(&quot;DATA_FILE&quot;))"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
-    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
-    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="APPEND" value="true"/>
-    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
-    <elementParameter field="CHECK" name="COMPRESS" show="false" value="false"/>
-    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
-    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
-    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
-    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
-    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
-    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
-    <elementParameter field="CHECK" name="CREATE" value="true"/>
-    <elementParameter field="CHECK" name="SPLIT" value="false"/>
-    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
-    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
-    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
-    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
-    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" show="false" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="MPL" name="tFileOutputDelimited_1">
-      <column comment="" key="true" length="50" name="ITEM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="50" name="TRADE_CODE_ITEM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="0" name="LOT_NUMBER" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="QUANTITY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="4" name="LOC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="25" name="BATCH_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="true" length="25" name="EXPIRE_DTE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EXTRACT_DATE_TIME" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EXTRACTED_BY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="352">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="ITEM"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TRADE_CODE_ITEM"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOT_NUMBER"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QUANTITY"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LOC"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BATCH_DATE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXPIRE_DTE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXTRACT_DATE_TIME"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXTRACTED_BY"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="errorCode"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="errorMessage"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="MPL" name="tLogRow_1">
-      <column comment="" key="true" length="50" name="ITEM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="50" name="TRADE_CODE_ITEM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="0" name="LOT_NUMBER" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="10" name="QUANTITY" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="4" name="LOC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="true" length="25" name="BATCH_DATE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="true" length="25" name="EXPIRE_DTE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="5" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EXTRACT_DATE_TIME" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy HH:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EXTRACTED_BY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputXML_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputXML_1" target="tMap_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="false"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;Src_STG_WMS_INVENTORY_cnt&quot;"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileInputXML_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputXML_1" target="tJava_3">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk6"/>
   </connection>
-  <connection connectorName="FLOW" label="MPL" lineStyle="0" metaname="MPL" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tSchemaComplianceCheck_1">
+  <connection connectorName="FLOW" label="MPL" lineStyle="0" metaname="MPL" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tSchemaComplianceCheck_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="EXTRACTED_BY"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
@@ -1327,24 +1286,21 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="MPL"/>
-  </connection>
-  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tLogRow_2">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="var2"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="var1"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out1"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tSchemaComplianceCheck_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tSchemaComplianceCheck_1" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="false"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;Tgt_STG_WMS_INVONTORY_Cnt&quot;"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="REJECT" label="row4" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tSchemaComplianceCheck_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tSetGlobalVar_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
@@ -1353,20 +1309,16 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tFixedFlowInput_1">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tFTPConnection_1">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
   </connection>
   <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tFileOutputDelimited_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tFTPConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
+  </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFTPPut_1" offsetLabelX="0" offsetLabelY="0" source="tFTPPut_1" target="tJava_4">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk5"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tLogCatcher_1">
@@ -1385,18 +1337,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row17"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFTPConnection_1" offsetLabelX="0" offsetLabelY="0" source="tFTPConnection_1" target="tFTPPut_1">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
-  </connection>
-  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tSchemaComplianceCheck_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tSchemaComplianceCheck_1" target="tFileOutputDelimited_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
-  </connection>
-  <connection connectorName="REJECT" label="row4" lineStyle="0" metaname="REJECT" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tSchemaComplianceCheck_1" target="tLogRow_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
   </connection>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
@@ -1451,18 +1392,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSchemaComplianceCheck_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3aaa2f73-1a57-4cc1-b7a5-be3d1c318226"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6mjukCKEd7Lj2Mu0B/dyE9FDvinJmpZ7yQOWlG0sB9i5mcWjaEsji3VR4zlcR7Vm/OJsJsGdrdpe&#13;
-E2BkC3J90g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_412b3b92-2ccc-4513-b6e7-9512973f2660"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mHZ08TbEH4iSn0duECac0Q3SbuhH8mhAa8yNyVbDCAzHuOWer9CIbCAtm9B4jxjXDDgqE61vfYj/&#13;
-8GBFY3xpfQ==</DigestValue></Reference></SignedInfo><SignatureValue>afc+VX7kEkgcIfOmJHxktcVq2+z9P1g5/rlUZTGRmXBygU/x4xDN9Td3A2AvIBqA7kwqzWmQcPF2&#13;
-Gr6yJxPL1V/RFUxYyRmRaWvAY4Ek7txIVVT/ftZRWAe7J1ymrv6D6LMK3TPiax2uUxrZbFavLzgc&#13;
-9MhPUSbjspNGrPMxJuhNDbMT4tOEDORONot+h3+uJmWRiNkP6/L3/93AQ8nZzQMkBMtbpiGSlpCT&#13;
-649Jpee/pPLgDtWr6PAEF5odZuU1Ei2wiH7lmKH0hRfbUzM5TDslx8MYcU1I6HTSn4mZ1cSxTpeo&#13;
-FooZP3oidfxpH41AQaWfleGuLzUSqByV7HwuNA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7ee5c61e-b59f-4356-8161-64d6d7833441"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>r5FQwfumSnrQGfaINLWDxbC6HXoIyoPZlM4ORkszRa7+HnoyqxqzIJhNJjrR1S2ObvMyboHh6TS4&#13;
+6q8KtTgeVA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2729d32e-01ac-46f5-8c15-a0c853f994e3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>b9FurkP+SBuKG7hb7RFfelMXHOzZElI9vDUf+11NGLizfZmbMgpTTg2HLcYjfVFPTlJins+HKHYc&#13;
+GSVT83c0Hw==</DigestValue></Reference></SignedInfo><SignatureValue>eLb44fmM4MBDmYuU7AKYTWvDm4LDR465YEIWXVqrrUn4sv/drATlNdivFoDXt5zfRW2X5X5A39Ac&#13;
+aA9NkJEaDZvHG1qcTjOi6YZUtEboUEorp+w4bGSg1YbCszKVAEkirA/BEIAdaGsoqzTF1Zkh8RDJ&#13;
+fwtdkVcjjtuikK5wWrI3zBc+S7AHx1unYCcGRzmEKEdGgTilplOjAypnFZpqrTZCWQcu0s/u2jN5&#13;
+65GRoOZ0ZijfjtrmTp8N6F+5VJwzE++nJjFc9q6tncY7QATQIXlsk7I0vmg7/5xaHLCfuvBNxGX6&#13;
+8DdpO+GIx/VCHy/xDwFAjeR61cGHKa66i2f/wg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1484,4 +1420,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_412b3b92-2ccc-4513-b6e7-9512973f2660" Target="#_3aaa2f73-1a57-4cc1-b7a5-be3d1c318226"><Timestamp>2021-02-22 05:59:47</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2729d32e-01ac-46f5-8c15-a0c853f994e3" Target="#_7ee5c61e-b59f-4356-8161-64d6d7833441"><Timestamp>2021-02-22 06:08:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
