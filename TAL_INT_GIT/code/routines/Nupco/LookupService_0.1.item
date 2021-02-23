@@ -1,0 +1,173 @@
+package routines;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class LookupService {
+	public static String getPlantIDbywhclientId(String whid,String clientid)
+	{
+		HashMap<String,String> plantMap = new LinkedHashMap<String,String>();
+		plantMap.put("C100NUPCO-EM","C1C1");
+		plantMap.put("C100NUPCO-RC","C1C1");
+		plantMap.put("C100NUPCO-DN","C1C1");
+		plantMap.put("C100MOH","C2C1");
+		plantMap.put("C100MOH-PMAH","C2C1");
+		plantMap.put("C100MOH-DIW","C2C1");
+		plantMap.put("E100NUPCO-RC","E1C1");
+		plantMap.put("E100MOH","E2C1");
+		plantMap.put("E100MOD","E3C1");
+		plantMap.put("#","E2C1");
+		plantMap.put("W100NUPCO-RC","W1C1");
+		plantMap.put("W100MOH","W2C1");
+		String result="";
+		if(plantMap.containsKey(whid+clientid))
+			result = plantMap.get(whid+clientid);
+		return result;
+		
+	}
+	public static String getStorageLocationbywhclientId(String whid,String clientid)
+	{
+		HashMap<String,String> plantMap = new LinkedHashMap<String,String>();
+		plantMap.put("C100NUPCO-EM","1000");
+		plantMap.put("C100NUPCO-RC","2000");
+		plantMap.put("C100NUPCO-DN","3000");
+		plantMap.put("C100MOH","1000");
+		plantMap.put("C100MOH-PMAH","2000");
+		plantMap.put("C100MOH-DIW","3000");
+		plantMap.put("E100NUPCO-RC","1000");
+		plantMap.put("E100MOH","1000");
+		plantMap.put("E100MOD","1000");
+		plantMap.put("#","2000");
+		plantMap.put("W100NUPCO-RC","1000");
+		plantMap.put("W100MOH","1000");
+		String result="";
+		if(plantMap.containsKey(whid+clientid))
+			result = plantMap.get(whid+clientid);
+		return result;
+		
+	}
+	public static String getWHID(String plantid)
+	{
+		HashMap<String,String> plantMap = new LinkedHashMap<String,String>();
+		plantMap.put("C1C1","C100");
+		plantMap.put("C1C1","C100");
+		plantMap.put("C1C1","C100");
+		plantMap.put("C2C1","C100");
+		plantMap.put("C2C1","C100");
+		plantMap.put("C2C1","C100");
+		plantMap.put("C3C1","C100");
+		plantMap.put("E1C1","E100");
+		plantMap.put("E2C1","E100");
+		plantMap.put("E3C1","E100");
+		plantMap.put("E2C1","");
+		plantMap.put("W1C1","W100");
+		plantMap.put("W2C1","W100");
+		String result="";
+		if(plantMap.containsKey(plantid))
+			result = plantMap.get(plantid);
+		return result;
+		
+	}
+	public static String getClientId(String plantid)
+	{
+		HashMap<String,String> plantMap = new LinkedHashMap<String,String>();
+		plantMap.put("C1C1","NUPCO-EM");
+		plantMap.put("C1C1","NUPCO-RC");
+		plantMap.put("C1C1","NUPCO-DN");
+		plantMap.put("C2C1","MOH");
+		plantMap.put("C2C1","MOH-PMAH");
+		plantMap.put("C2C1","MOH-DIW");
+		plantMap.put("C3C1","KSMC");
+		plantMap.put("E1C1","NUPCO-RC");
+		plantMap.put("E2C1","E100");
+		plantMap.put("E3C1","MOD");
+		plantMap.put("E2C1","");
+		plantMap.put("W1C1","NUPCO-RC");
+		plantMap.put("W2C1","MOH");
+		String result="";
+		if(plantMap.containsKey(plantid))
+			result = plantMap.get(plantid);
+		return result;
+		
+	}
+	public static String getWareHouseByPlant(String plantid)
+	{
+		HashMap<String,String> plantMap = new LinkedHashMap<String,String>();
+		plantMap.put("C1C1","C100");
+		plantMap.put("C1C1","C100");
+		plantMap.put("C1C1","C100");
+		plantMap.put("C2C1","C100");
+		plantMap.put("C2C1","C100");
+		plantMap.put("C2C1","C100");
+		plantMap.put("C3C1","#");
+		plantMap.put("E1C1","E100");
+		plantMap.put("E2C1","E100");
+		plantMap.put("E3C1","E100");
+		plantMap.put("E2C1","#");
+		plantMap.put("W1C1","W100");
+		plantMap.put("W2C1","W100");
+		String result="";
+		if(plantMap.containsKey(plantid))
+			result = plantMap.get(plantid);
+		return result;
+		
+	}
+	public static String formatDate(String d)
+	{
+		String result="";
+		try
+		{
+			SimpleDateFormat ddf = new SimpleDateFormat("yyyy-MM-dd");
+			SimpleDateFormat cf = new SimpleDateFormat("yyyyMMddHHmmss");
+			Calendar c1 = Calendar.getInstance();
+			c1.setTime(ddf.parse(d));
+			Date cd = c1.getTime();
+			result=cf.format(cd);
+			return result;
+		}
+		catch(Exception e)
+		{
+			System.out.println("Exception in formatdate"+e);
+			return d;	
+		}
+	}
+
+
+    /**
+     * helloExample: not return value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+    public static void helloExample(String message) {
+        if (message == null) {
+            message = "World"; //$NON-NLS-1$
+        }
+        System.out.println("Hello " + message + " !"); //$NON-NLS-1$ //$NON-NLS-2$
+    }
+}
