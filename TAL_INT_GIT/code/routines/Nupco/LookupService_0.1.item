@@ -131,7 +131,7 @@ public class LookupService {
 		return result;
 		
 	}
-	public static String getClientIdByplantstorage(String plantid)
+	public static String getClientIdByplantstorage(String plantid,String stoloc)
 	{
 		HashMap<String,String> plantMap = new LinkedHashMap<String,String>();
 		plantMap.put("C1C11000","NUPCO-EM");
@@ -148,8 +148,8 @@ public class LookupService {
 		plantMap.put("W1C11000","NUPCO-RC");
 		plantMap.put("W2C11000","MOH");
 		String result="";
-		if(plantMap.containsKey(plantid))
-			result = plantMap.get(plantid);
+		if(plantMap.containsKey(plantid+stoloc))
+			result = plantMap.get(plantid+stoloc);
 		return result;
 		
 	}
