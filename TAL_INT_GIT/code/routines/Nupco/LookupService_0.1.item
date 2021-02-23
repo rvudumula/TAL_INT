@@ -131,6 +131,28 @@ public class LookupService {
 		return result;
 		
 	}
+	public static String getClientIdByplantstorage(String plantid)
+	{
+		HashMap<String,String> plantMap = new LinkedHashMap<String,String>();
+		plantMap.put("C1C11000","NUPCO-EM");
+		plantMap.put("C1C12000","NUPCO-RC");
+		plantMap.put("C1C13000","NUPCO-DN");
+		plantMap.put("C2C11000","MOH");
+		plantMap.put("C2C12000","MOH-PMAH");
+		plantMap.put("C2C13000","MOH-DIW");
+		plantMap.put("C3C1","KSMC");
+		plantMap.put("E1C11000","NUPCO-RC");
+		plantMap.put("E2C11000","MOH");
+		plantMap.put("E3C11000","MOD");
+		plantMap.put("E2C12000","");
+		plantMap.put("W1C11000","NUPCO-RC");
+		plantMap.put("W2C11000","MOH");
+		String result="";
+		if(plantMap.containsKey(plantid))
+			result = plantMap.get(plantid);
+		return result;
+		
+	}
 	public static String formatDate(String d)
 	{
 		String result="";
