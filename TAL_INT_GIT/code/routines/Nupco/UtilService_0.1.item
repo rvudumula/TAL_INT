@@ -3,9 +3,6 @@ package routines;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.*;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 /*
  * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
@@ -25,14 +22,14 @@ import org.json.JSONObject;
  * 
  * 5. {example} gives a example for the Function. it is optional.
  */
-public class UtilService1 {
+public class UtilService {
 
 	public static List<String> getJsonList() {
 		return jsonList;
 	}
 
 	public static void setJsonList(List<String> jsonList) {
-		UtilService1.jsonList = jsonList;
+		UtilService.jsonList = jsonList;
 	}
 	public static List<String> jsonList = new ArrayList<String>();
 	public static String formatCreateDate(String d)
@@ -53,18 +50,6 @@ public class UtilService1 {
 			System.out.println("Exception in formatdate"+e);
 			return d;	
 		}
-	}
-	public static List<String> getJsonValues(String json) throws JSONException
-	{
-		List<String> mylist = new ArrayList<String>();
-		final JSONObject obj = new JSONObject(json);
-		final JSONArray geodata = obj.getJSONArray("data");
-		final int n = geodata.length();
-		for (int i = 0; i < n; ++i) {
-			final JSONObject js = geodata.getJSONObject(i);
-			mylist.add(js.toString());
-		}
-		return mylist;
 	}
 	public static List<String> getJson()
 	{
