@@ -1,0 +1,117 @@
+package routines;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.*;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class hosutl {
+
+	public static List<String> getJsonList() {
+		return jsonList;
+	}
+
+	public static void setJsonList(List<String> jsonList) {
+		UtilService.jsonList = jsonList;
+	}
+	public static List<String> jsonList = new ArrayList<String>();
+	public static String formatCreateDate(String d)
+	{
+		String result="";
+		try
+		{
+			SimpleDateFormat ddf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+			SimpleDateFormat cf = new SimpleDateFormat("yyyyMMddHHmmss");
+			Calendar c1 = Calendar.getInstance();
+			c1.setTime(ddf.parse(d));
+			Date cd = c1.getTime();
+			result=cf.format(cd);
+			return result;
+		}
+		catch(Exception e)
+		{
+			System.out.println("Exception in formatdate"+e);
+			return d;	
+		}
+	}
+	public static List<String> getJsonValues(String json) throws JSONException
+	{
+		List<String> mylist = new ArrayList<String>();
+		final JSONObject obj = new JSONObject(json);
+		final JSONArray geodata = obj.getJSONArray("data");
+		final int n = geodata.length();
+		for (int i = 0; i < n; ++i) {
+			final JSONObject js = geodata.getJSONObject(i);
+			mylist.add(js.toString());
+		}
+		return mylist;
+	}
+	public static List<String> getJson()
+	{
+		 List<String> js = new ArrayList<String>();
+		
+	//UtilService.setJsonList(js);
+		return js;
+	}
+
+    /**
+     * helloExample: not return value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+	public static int getRecordCount(String input)
+	{
+		if(!input.contains("Updated"))
+		{
+			input=input+" and 0 Records has Updated";
+		}
+		int r=0;
+		try
+		{
+		 String separator =" ";
+	      int sepPos = input.indexOf(separator);
+	      if (sepPos == -1) {
+	         System.out.println("");
+	      }
+		r=Integer.parseInt(input.split(" ")[0].replaceAll("\\D+",""))+Integer.parseInt(input.substring(sepPos +       separator.length()).replaceAll("\\D+",""));
+		return r;
+		}
+		catch(Exception e)
+		{
+			return 0;
+		}
+	}
+    public static void helloExample(String message) {
+        if (message == null) {
+            message = "World"; //$NON-NLS-1$
+        }
+        System.out.println("Hello " + message + " !"); //$NON-NLS-1$ //$NON-NLS-2$
+    }
+}
