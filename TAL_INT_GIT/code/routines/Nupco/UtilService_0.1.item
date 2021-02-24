@@ -2,7 +2,7 @@ package routines;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
+import java.util.*;
 
 /*
  * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
@@ -24,6 +24,14 @@ import java.util.Date;
  */
 public class UtilService {
 
+	public static List<String> getJsonList() {
+		return jsonList;
+	}
+
+	public static void setJsonList(List<String> jsonList) {
+		UtilService.jsonList = jsonList;
+	}
+	public static List<String> jsonList = new ArrayList<String>();
 	public static String formatCreateDate(String d)
 	{
 		String result="";
@@ -42,6 +50,14 @@ public class UtilService {
 			System.out.println("Exception in formatdate"+e);
 			return d;	
 		}
+	}
+	public static List<String> getJson()
+	{
+		 List<String> js = new ArrayList<String>();
+		js.add("helo");
+		js.add("bolo");
+		//UtilService.setJsonList(js);
+		return js;
 	}
 
     /**
