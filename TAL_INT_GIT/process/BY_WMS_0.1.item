@@ -2,7 +2,7 @@
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="cookie" prompt="cookie?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="AMC_Database" prompt="AMC_Database?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="AMC"/>
-    <contextParameter comment="" name="AMC_Password" prompt="AMC_Password?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_Password" value="enc:system.encryption.key.v1:lHL9zy2SML4eVqb00Ys9gNPwWwi48MS4DBsRfQnslWEN"/>
+    <contextParameter comment="" name="AMC_Password" prompt="AMC_Password?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_Password" value="enc:system.encryption.key.v1:h87lpTTY6dYuDllp21X+14LFt4Nu0GciIFKsIgUHAPl+"/>
     <contextParameter comment="" name="AMC_Port" prompt="AMC_Port?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="3307"/>
     <contextParameter comment="" name="AMC_AdditionalParams" prompt="AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="noDatetimeStringSync=true"/>
     <contextParameter comment="" name="AMC_Login" prompt="AMC_Login?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="talend"/>
@@ -50,7 +50,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:0akJI/3uXCOJ+b84qE2jhbIBJT4hH8FUFS/weURX"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:mbY23jtEwkVVF1TzGfLR895jIyuLwkTVZhnJTz2z"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -87,7 +87,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="context.AMC_AdditionalParams"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="context.AMC_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:uJkWUWy1i9Vb8bACpS8B90ppLG3oU4fOD3kvOYatBqgci/R0XGBtN2bx8A8ev3qK"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:tLNhJShA+P0EMIDxkc7J7lKKVwWy2EXlFlrrv7gRlv/2EHHI+LXKleuqaPjsJZ76"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statcatcher&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logcatcher&quot;"/>
@@ -124,7 +124,7 @@
     <elementParameter field="TEXT" name="SERVERPORT" value="&quot;61617&quot;"/>
     <elementParameter field="TABLE" name="SERVERS" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Uif0Q7YFeH3usUsTOZf4x6f4qOx217fCJd2MHm4i"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:yf1WMu9bdDunQ7V5quUQNQjE6bSFZROj7IOZ42dO"/>
     <elementParameter field="CHECK" name="USE_SSL" value="false"/>
     <elementParameter field="LABEL" name="USE_SSL_NOTE" show="false" value="Notice: You should use tSetKeysore or JVM arguments to specify keystore or truststore"/>
     <elementParameter field="CHECK" name="IS_TRANSACTED" show="false" value="false"/>
@@ -132,12 +132,12 @@
     <elementParameter field="CHECK" name="LINK_THMAP" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="MAPPING" value="tHMap_1"/>
     <elementParameter field="TEXT" name="IDOC_TYPE" show="false" value="&quot;ZWMS_SUPP_SEG&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="MODE" value="REAL_TIME"/>
-    <elementParameter field="CHECK" name="LISTEN_INTERVAL" value="true"/>
-    <elementParameter field="TEXT" name="INTERVAL" value="25"/>
-    <elementParameter field="CHECK" name="LISTEN_COUNT" value="false"/>
-    <elementParameter field="TEXT" name="COUNT" value="10000"/>
-    <elementParameter field="TEXT" name="TIMEOUT" show="false" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="MODE" value="BATCH"/>
+    <elementParameter field="CHECK" name="LISTEN_INTERVAL" show="false" value="true"/>
+    <elementParameter field="TEXT" name="INTERVAL" show="false" value="25"/>
+    <elementParameter field="CHECK" name="LISTEN_COUNT" show="false" value="false"/>
+    <elementParameter field="TEXT" name="COUNT" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="TIMEOUT" value="60"/>
     <elementParameter field="TABLE" name="ADDITIONAL_OPTIONS" show="false"/>
     <elementParameter field="CLOSED_LIST" name="ACKNOWLEDGMENT_MODE" show="false" value="AUTO_ACKNOWLEDGE"/>
     <elementParameter field="TEXT" name="LABEL" value="ZWMS_SUPP_SEG"/>
@@ -295,13 +295,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_63e85b78-b363-42e3-96a6-89e797f8866d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>u23y2AHd8laSmZD5Vq3HxbFE+UXxu8uw9rEHfaTdkOrL5lAi8CMRbwjCPpKLH689S/hTijwYWoGe&#13;
-PC9eJAVfUw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bd7b45c4-3b4d-4d66-9f59-b6eeba1e41b6"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vdBhcCn5p6IUzyqEG8O0V1+WmuL4RumZdP6QvzeVLf6DJixs14KzaoS46/AeJCHOXv+RpOCWKWO8&#13;
-eCqTcxe37w==</DigestValue></Reference></SignedInfo><SignatureValue>DgTu9nVhD06xD0omtqvb9qlPj4tNFGniDFgeuabVCwBEAVoh5UNLjVWWEkTpuauYxSB9zewVNb33&#13;
-dF8I8oW3cx21RFz5gIobjzBc4jg6cPtK9Y+FQqCRmYJDHJj3FRb4BKdbH0jivcMlGkY5m0qwzzs1&#13;
-+m/rRawqYc5PL1378EEAWS52BPM5RiER9EQJdNmmnQGzEAOONIQrQIPF+39rfI4iQnIB9Cl6FDrq&#13;
-m8sJdpIZcdMZPJJND4xxOT07TfP3U5AXziUja1yxCYQ5n1O5ofgCjsPMdhh4InutInAyoJ2T0fID&#13;
-uW/bqzpGvp0Zqs9uAMsJ61TG7c5Hi5ezN0E8WQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_75422248-54c9-47b8-91b0-a0d97db444ed"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VStp4RCjXbTGeRLIyIn8taDRcJkvYFj4KQuh8GNAXV6NM0BD0AwNSLc9iro0kiPqr+7h56GHOnXF&#13;
+zfYe5ut/bA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_02e1e6d1-daa6-4e66-a6d0-644e3b8b639d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>q0vfgyuPfRqEd6Z/T8DiR4rbGa0+M6qaZfPrh5BccIZhi4h01/N6GhTs5MM8B39O9nqVdAYIbvly&#13;
+OvLC1RECRQ==</DigestValue></Reference></SignedInfo><SignatureValue>nv+PVp7eBPMrNKxqui+NX9hx+BsKpFnfXpvpvhSzoA0ZBVvX7FgAElnnbtUuMXI56zF7+jHvhOCJ&#13;
+K98oU1jC2AdAZl3j9DsQP8kATrge6Hr2i5vdmpFCD2O7lj8Zq09y85b2NhcNo6BGh2GWD0vUlLOh&#13;
+Rq9tzQOf5W+WlidOK+QMGOWs8bJai0vVEoSTOd+jm0YwatbNV1dNDui/EOZnyUrXesU9K+8q2k8/&#13;
+glKiCJB6taiosp5jX0TmAV/4w5PljMEuhhBl79Avo+2wkFiyOucFrWoVjQhAjkoYa1ZQgwlo3oWK&#13;
+iBCRnTZHfcJSElaycKKOG2XlkjFOZAHp1rncmA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -323,4 +323,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bd7b45c4-3b4d-4d66-9f59-b6eeba1e41b6" Target="#_63e85b78-b363-42e3-96a6-89e797f8866d"><Timestamp>2021-02-24 13:05:27</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_02e1e6d1-daa6-4e66-a6d0-644e3b8b639d" Target="#_75422248-54c9-47b8-91b0-a0d97db444ed"><Timestamp>2021-02-24 13:06:07</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
