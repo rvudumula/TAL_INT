@@ -2,7 +2,7 @@
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="cookie" prompt="cookie?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="AMC_Database" prompt="AMC_Database?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="AMC"/>
-    <contextParameter comment="" name="AMC_Password" prompt="AMC_Password?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_Password" value="enc:system.encryption.key.v1:DX0Q5TkXUTvYuKeLMk12VzM/7qIg5LxU5aQaBKZ99XFW"/>
+    <contextParameter comment="" name="AMC_Password" prompt="AMC_Password?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_Password" value="enc:system.encryption.key.v1:P9f3deorMpVdorKJZ4FZOobQpZDueA2nVUT0yFvr99xa"/>
     <contextParameter comment="" name="AMC_Port" prompt="AMC_Port?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="3307"/>
     <contextParameter comment="" name="AMC_AdditionalParams" prompt="AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="noDatetimeStringSync=true"/>
     <contextParameter comment="" name="AMC_Login" prompt="AMC_Login?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="talend"/>
@@ -50,7 +50,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:TXwzS4Z5IDx1+gvqiqQTYP8qnzzwJJavmgxq9VFT"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:hIS88rqEkns1pAID5Ke78wsxxUsIMfiMR/ft56wY"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -87,7 +87,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="context.AMC_AdditionalParams"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="context.AMC_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ZezxANsqLdF3zWgOBMgA9ZCi8uZfy+zxDTNnYn4W2PBqj6PMVA72SwSrBx5v0kwu"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:eqXQpUJYJnvqcDB+jNFaATFDxgtNlzA0gENFJlcVdrqXNlUwYwvd++HiiYnf2rCf"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statcatcher&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logcatcher&quot;"/>
@@ -124,7 +124,7 @@
     <elementParameter field="TEXT" name="SERVERPORT" value="&quot;61617&quot;"/>
     <elementParameter field="TABLE" name="SERVERS" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:TYIAhTD+OsKDofQ1LGqRXQAboBGQXFpDYp0TyD+0"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:emzZvdvCuuuSmCBYltL7PcrDbQGfe4wKiQu4YucV"/>
     <elementParameter field="CHECK" name="USE_SSL" value="false"/>
     <elementParameter field="LABEL" name="USE_SSL_NOTE" show="false" value="Notice: You should use tSetKeysore or JVM arguments to specify keystore or truststore"/>
     <elementParameter field="CHECK" name="IS_TRANSACTED" show="false" value="false"/>
@@ -144,32 +144,6 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSAPIDocReceiver_1">
       <column key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="320">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFlowToIterate_1"/>
-    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
-    <elementParameter field="TABLE" name="MAP" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFlowToIterate_1"/>
-  </node>
-  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="288">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
-    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
-    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
-    <elementParameter field="TABLE" name="VALUES">
-      <elementValue elementRef="SCHEMA_COLUMN" value="message"/>
-      <elementValue elementRef="VALUE" value="((String)globalMap.get(&quot;row8.message&quot;))"/>
-    </elementParameter>
-    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
-    <elementParameter field="TABLE" name="INTABLE" show="false"/>
-    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
-    <elementParameter field="MEMO" name="INLINECONTENT" show="false" value=""/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFixedFlowInput_1">
-      <column comment="" key="false" length="-1" name="message" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tHMap" componentVersion="1.0" offsetLabelX="0" offsetLabelY="0" posX="416" posY="160">
@@ -254,25 +228,39 @@
       <column comment="" key="false" length="-1" name="message" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tSAPIDocReceiver_1" offsetLabelX="0" offsetLabelY="0" source="tSAPIDocReceiver_1" target="tFlowToIterate_1">
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFlowToIterate_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_1"/>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="message"/>
+      <elementValue elementRef="VALUE" value="((String)globalMap.get(&quot;row8.message&quot;))"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" show="false" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" length="-1" name="message" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tSAPIDocReceiver_1" offsetLabelX="0" offsetLabelY="0" source="tSAPIDocReceiver_1" target="tHMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
     <elementParameter field="CHECK" name="USEROWLABEL" value="false"/>
     <elementParameter field="TEXT" name="METTERLABEL" value="&quot;Src_ZWMS_SUPP_SEG_Cnt&quot;"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row8"/>
-  </connection>
-  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_1" target="tFixedFlowInput_1">
-    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
-    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
-  </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tHMap_1">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="message"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <connection connectorName="FLOW" label="S" lineStyle="0" metaname="S" offsetLabelX="0" offsetLabelY="0" source="tHMap_1" target="tLogRow_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -290,18 +278,29 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row9"/>
   </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_1" target="tFixedFlowInput_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
+  </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSAPIDocReceiver_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b89f8fe4-a1fa-43ea-8104-0d5c8bff36b8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2uRsRGEuzCn4Q0xNJtSbR95p3UjyvWw+zS/mz892ej5C2C7t3sRuQuxLkRijTodhvazEcAZXDYtn&#13;
-ZTCzyRRKyw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9c9aeab8-5214-483d-a5e8-3e25c27a4c31"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bTXrDbRI6NChsCp51jv0znR8sfLhwR58vbhsUihfyBRlge0ZQYTSmJk2v0ZmSRSCenO6Wf/Z/R3F&#13;
-adgehNVNfA==</DigestValue></Reference></SignedInfo><SignatureValue>Ww8srDuh1O9SJSdx3/GqAk7AuSEOS5VTlimFmcsyO3QIuxwuYTDP84eBDUei/Qlz2nDHcWNjyRff&#13;
-WrWx4O2UaEqLvDlLbk2DRtcJuXBDjwEgzlH9y8rqpiAnYpdq0xkQwEpYzg19i7OVxtit/JP7yte/&#13;
-WFJFwJSyLuFa3/SwZ/NH7Yvo1IV3pnn39Db62OPJSinoU3NhS1E7XHyyi41xL/u7vu2qQuSBBba8&#13;
-NOkXpGfAuLaG7ZpOis+ygofCUxDpJVfBt6yxdwI8Xh+j20Aqsf6Teyx//61C4+xL4rzvXk4RwdXO&#13;
-w//FS7BJ5bBc8d4qSaCcjcpKUdkHaMzd/SgEjQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFlowToIterate_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7b4c651f-5537-45fb-bbb0-d42538ad279d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0uxBHT5iCQXod12cLhjGqbkXD+/bci2he4ibcSssNnf1SW2yl5fBusRuD+TijKJaHanF1cS/8+0J&#13;
+h/D9AZJtIA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_05a8a456-7b3f-431e-a2a3-0c6875d452a9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>f/hykNsheEJGoQCP92SK1t1VGZMStj5IIglzK39KLjzgaVwDPzOy5lD/7T6WvtMpGibSWfOLmNZs&#13;
+5Of3VfLy3A==</DigestValue></Reference></SignedInfo><SignatureValue>TDtK2nMoJIbqxRum0J2Zud1Sm/qdyeTBglt8Zuu2tWYDqpQw/r5Vj07q40olCY+eT+31fZP8UV4m&#13;
+b7XDnkGquinYWnYivDUFitHxGepWYnPiPxMDbLjjQqDyK5EdjWCX1ij7SOj8QlxjtLkYxaJDujwt&#13;
+6zj21auZRPmG0iwvvSX73xt36ZBiik7CFp9h83axam7qjL9k7/0L/CcbmhzsfYsFbSAakeyovY+8&#13;
++Vtw1SI8FDgK+2Dt4+3y5pRWP1x8QG3K4+KOM+lbUdjYeV+DvIu65jVYyShSVuGMXq/kjuqcqxY/&#13;
+bXMmFHvwV/q6pX866MnAPSIkloG6W3IikSrCxQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -323,4 +322,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9c9aeab8-5214-483d-a5e8-3e25c27a4c31" Target="#_b89f8fe4-a1fa-43ea-8104-0d5c8bff36b8"><Timestamp>2021-02-24 12:59:19</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_05a8a456-7b3f-431e-a2a3-0c6875d452a9" Target="#_7b4c651f-5537-45fb-bbb0-d42538ad279d"><Timestamp>2021-02-24 13:04:17</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
