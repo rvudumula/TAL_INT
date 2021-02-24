@@ -1,4 +1,6 @@
 package routines;
+import java.util.*;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -35,6 +37,13 @@ public class APTService {
 	 * 
 	 * {example} helloExemple("world") # hello world !.
 	 */
+	public static List<String> jsonList = new ArrayList<String>();
+	public static List<String> getJsonList() {
+		return jsonList;
+	}
+	public static void setJsonList(List<String> jsonList) {
+		APTService.jsonList = jsonList;
+	}
 	public static String addHours(String d)
 	{
 		String result="";
