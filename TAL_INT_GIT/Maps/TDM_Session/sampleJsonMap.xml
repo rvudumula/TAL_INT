@@ -1,7 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root t='190' id='1' V190='11' inStruct='' outStruct='' nextMap='' V1='4' name='sampleJsonMap' incarnation='3'>
+<root t='190' id='1' V190='11' inStruct='Structures/TDM_Session/input.xml' outStruct='Structures/TDM_Session/output.xml' inputRep='177' outputRep='177' nextMap='' inputStructUserName='input' outputStructUserName='output' V1='4' name='sampleJsonMap' incarnation='133'>
+  <inputMapElem t='200' id='4' V200='8' input='true' structElemExists='true' usedCount='8' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' V1='4' name='input'>
+    <mapNode t='190' idref='1'/>
+    <child t='200' id='5' V200='8' input='true' structElemExists='true' usedCount='6' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='employee'>
+      <mapNode t='190' idref='1'/>
+      <child t='200' id='6' V200='8' input='true' structElemExists='true' usedCount='2' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='employeeid'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='7' V200='8' input='true' structElemExists='true' usedCount='2' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='employeename'>
+        <mapNode t='190' idref='1'/>
+      </child>
+      <child t='200' id='8' V200='8' input='true' structElemExists='true' usedCount='2' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' V1='4' name='address'>
+        <mapNode t='190' idref='1'/>
+      </child>
+    </child>
+  </inputMapElem>
+  <outputMapElem t='200' id='9' V200='8' structElemExists='true' usedCount='14' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' inheritsFrom='' V281='13' modifiedFromParent_loop='true' V1='4' name='output'>
+    <mapNode t='190' idref='1'/>
+    <loop>SimpleLoop([autoAdded="true"],in$/input,{Filter},{Sort Keys},{Contexts})</loop>
+    <child t='200' id='10' V200='8' structElemExists='true' usedCount='11' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' groupType='1' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_emit='true' modifiedFromParent_null='true' V1='4' name='employee_target'>
+      <mapNode t='190' idref='1'/>
+      <emit>IsPresent(in$/input/employee)</emit>
+      <null>IsNull(in$/input/employee)</null>
+      <child t='200' id='11' V200='8' structElemExists='true' usedCount='3' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='empid'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/input/employee/employeeid</value>
+      </child>
+      <child t='200' id='12' V200='8' structElemExists='true' usedCount='3' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='ename'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/input/employee/employeename</value>
+      </child>
+      <child t='200' id='13' V200='8' structElemExists='true' usedCount='3' V283='2' occurMaxTimes='1' minSize='-1' maxSize='-1' dataType='2' repHandlerStruct='' visible='true' nullable='true' inheritsFrom='' V281='13' modifiedFromParent_value='true' V1='4' name='eaddress'>
+        <mapNode t='190' idref='1'/>
+        <value>in$/input/employee/address</value>
+      </child>
+    </child>
+  </outputMapElem>
+  <inputRepRuntime t='697' id='14' V697='1' V690='1' padOutput='true'>
+  </inputRepRuntime>
+  <outputRepRuntime t='697' id='15' V697='1' V690='1' padOutput='true'>
+  </outputRepRuntime>
   <valueSets></valueSets>
   <child t='165' id='2' V1='4' name='Document Bindings'>
+    <child t='166' id='16' V166='5' docType='1' docReposPath='/TAL_INT_GIT/Sample Data/TDM_Session/input/input' V1='4' name='in$/input'>
+      <elemNode t='200' idref='4'/>
+    </child>
+    <child t='166' id='17' V166='5' docType='2' docReposPath='/TAL_INT_GIT/Sample Data/TDM_Session/output/output' V1='4' name='out$/output'>
+      <elemNode t='200' idref='9'/>
+    </child>
   </child>
   <child t='201' id='3' V1='4' name='Inherits From'>
   </child>
