@@ -10,7 +10,7 @@
   </parent>
   <groupId>org.example.tal_int_git.service</groupId>
   <artifactId>job_InboundShipment_ASN_BY_WMS_QA</artifactId>
-  <version>0.7.0-SNAPSHOT</version>
+  <version>0.1.0-SNAPSHOT</version>
   <packaging>bundle</packaging>
   <name>TAL_INT_GIT job_InboundShipment_ASN_BY_WMS_QA-${project.version} (0.1,Job Designs) Bundle</name>
   <properties>
@@ -47,7 +47,7 @@
     <talend.job.stat>true</talend.job.stat>
     <talend.pigudf.groupid>org.example.tal_int_git.pigudf</talend.pigudf.groupid>
     <talend.job.framework></talend.job.framework>
-    <talend.job.jvmargs>-Xms256M -Xmx10G -XX:-UseGCOverheadLimit </talend.job.jvmargs>
+    <talend.job.jvmargs>-Xms256M -Xmx10G -XX:-UseGCOverheadLimit -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.job.type>Standard</talend.job.type>
     <item.project.name>@ItemProjectName@</item.project.name>
     <resources.path>${basedir}/src/main/resources</resources.path>
@@ -841,9 +841,6 @@
     </profile>
     <profile>
       <id>include-running-log4j</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
       <properties>
         <log4j.running.dir>${current.resources.dir}/</log4j.running.dir>
       </properties>
