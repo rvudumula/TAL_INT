@@ -47,7 +47,7 @@
     <talend.job.stat>true</talend.job.stat>
     <talend.pigudf.groupid>org.example.tal_int_git.pigudf</talend.pigudf.groupid>
     <talend.job.framework></talend.job.framework>
-    <talend.job.jvmargs>-Xms256M -Xmx10G -XX:-UseGCOverheadLimit </talend.job.jvmargs>
+    <talend.job.jvmargs>-Xms256M -Xmx10G -XX:-UseGCOverheadLimit -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.job.type>Standard</talend.job.type>
     <item.project.name>@ItemProjectName@</item.project.name>
     <resources.path>${basedir}/src/main/resources</resources.path>
@@ -57,6 +57,11 @@
       <groupId>net.minidev</groupId>
       <artifactId>accessors-smart</artifactId>
       <version>1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>activation</artifactId>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
@@ -393,6 +398,11 @@
       <groupId>org.talend.daikon</groupId>
       <artifactId>logging-event-layout</artifactId>
       <version>1.8.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>mail-1.4</artifactId>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>mysql</groupId>
@@ -841,9 +851,6 @@
     </profile>
     <profile>
       <id>include-running-log4j</id>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
       <properties>
         <log4j.running.dir>${current.resources.dir}/</log4j.running.dir>
       </properties>
