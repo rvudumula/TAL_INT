@@ -6,7 +6,7 @@
     <contextParameter comment="" name="additionalparam" prompt="additionalparam?" promptNeeded="false" repositoryContextId="_5_UYkFSSEeuqf7_vOiNIlw" type="id_String" value="noDatetimeStringSync=true"/>
     <contextParameter comment="" name="amcport" prompt="amcport?" promptNeeded="false" repositoryContextId="_5_UYkFSSEeuqf7_vOiNIlw" type="id_String" value="3307"/>
     <contextParameter comment="" name="amchost" prompt="amchost?" promptNeeded="false" repositoryContextId="_5_UYkFSSEeuqf7_vOiNIlw" type="id_String" value="10.1.51.25"/>
-    <contextParameter comment="" name="amcpassword" prompt="amcpassword?" promptNeeded="false" repositoryContextId="_5_UYkFSSEeuqf7_vOiNIlw" type="id_Password" value="enc:system.encryption.key.v1:evNFXEqPoTsnvU6OGa89ZonH5RXSGHayhXdPrZn+eoZS"/>
+    <contextParameter comment="" name="amcpassword" prompt="amcpassword?" promptNeeded="false" repositoryContextId="_5_UYkFSSEeuqf7_vOiNIlw" type="id_Password" value="enc:system.encryption.key.v1:P5wyIIbAkQlK/wg1tmwlPtxwYC6nEmvGYiIKOFyGNemd"/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="288"/>
@@ -50,7 +50,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:0aSz8iWAEmsr9H8PKKqCnlALVLEApE6OzlxdQg03"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:EFjGxELrStiD9K8QyUHOnfLsfYNBpwUPhIV0YKa6"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -87,7 +87,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="context.additionalparam"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="context.amcuser"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ja3UqSmkK1TllCA33A7UHVJFoGql6lYsIPotAqFaaarkpzf7tM6KGkxP3S6j8OI="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:vnlzv4/TLrvAgszNsgypAcd2DaiyujEheMcM5iIWUdQEbPKunTjPFytcvgemHEw="/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statcatcher&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logcatcher&quot;"/>
@@ -210,7 +210,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="&#13;&#10;&#10;&#10;output_row.payload=&quot;&lt;soapenv:Envelope xmlns:soapenv=\&quot;http://schemas.xmlsoap.org/soap/envelope/\&quot; xmlns:urn=\&quot;urn:sap-com:document:sap:rfc:functions\&quot;&gt;\n&quot; + &#10;&#9;&#9;&quot;   &lt;soapenv:Header/&gt;\n&quot; + &#10;&#9;&#9;&quot;   &lt;soapenv:Body&gt;\n&quot; + &#10;&#9;&#9;&quot;      &lt;urn:ZMM_GET_RESERVATION_DATA_V1&gt;\n&quot; + &#10;&#9;&#9;&quot;         &lt;PLANT&gt;&quot;+input_row.PLANT+&quot;&lt;/PLANT&gt;\n&quot; + &#10;&#9;&#9;&quot;         &lt;SLOC&gt;&quot;+input_row.SLOC+&quot;&lt;/SLOC&gt;\n&quot; + &#10;&#9;&#9;&quot;         &lt;VENDOR&gt;&quot;+input_row.VENDOR+&quot;&lt;/VENDOR&gt;\n&quot; + &#10;&#9;&#9;&quot;         &lt;ZDATE&gt;&quot;+input_row.ZDATE+&quot;&lt;/ZDATE&gt;\n&quot; + &#10;&#9;&#9;&quot;      &lt;/urn:ZMM_GET_RESERVATION_DATA_V1&gt;\n&quot; + &#10;&#9;&#9;&quot;   &lt;/soapenv:Body&gt;\n&quot; + &#10;&#9;&#9;&quot;&lt;/soapenv:Envelope&gt;&quot;;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="&#13;&#10;System.setProperty(&quot;javax.net.ssl.trustStore&quot;,&quot;C:\\ssl\\hos_quaity_sap.jks&quot;);&#10;System.setProperty(&quot;javax.net.ssl.trustStorePassword&quot;,&quot;talend&quot;);&#10;&#10;output_row.payload=&quot;&lt;soapenv:Envelope xmlns:soapenv=\&quot;http://schemas.xmlsoap.org/soap/envelope/\&quot; xmlns:urn=\&quot;urn:sap-com:document:sap:rfc:functions\&quot;&gt;\n&quot; + &#10;&#9;&#9;&quot;   &lt;soapenv:Header/&gt;\n&quot; + &#10;&#9;&#9;&quot;   &lt;soapenv:Body&gt;\n&quot; + &#10;&#9;&#9;&quot;      &lt;urn:ZMM_GET_RESERVATION_DATA_V1&gt;\n&quot; + &#10;&#9;&#9;&quot;         &lt;PLANT&gt;&quot;+input_row.PLANT+&quot;&lt;/PLANT&gt;\n&quot; + &#10;&#9;&#9;&quot;         &lt;SLOC&gt;&quot;+input_row.SLOC+&quot;&lt;/SLOC&gt;\n&quot; + &#10;&#9;&#9;&quot;         &lt;VENDOR&gt;&quot;+input_row.VENDOR+&quot;&lt;/VENDOR&gt;\n&quot; + &#10;&#9;&#9;&quot;         &lt;ZDATE&gt;&quot;+input_row.ZDATE+&quot;&lt;/ZDATE&gt;\n&quot; + &#10;&#9;&#9;&quot;      &lt;/urn:ZMM_GET_RESERVATION_DATA_V1&gt;\n&quot; + &#10;&#9;&#9;&quot;   &lt;/soapenv:Body&gt;\n&quot; + &#10;&#9;&#9;&quot;&lt;/soapenv:Envelope&gt;&quot;;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_1">
@@ -264,8 +264,8 @@
   </node>
   <node componentName="tRESTClient" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTClient_1"/>
-    <elementParameter field="TEXT" name="URL" value="&quot;http://saphq1ap1.nupco.com:8020&quot;"/>
-    <elementParameter field="TEXT" name="PATH" value="&quot;/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/scs/sap/z_ws_get_reservation_data_v1?sap-client=100&quot;"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;https://saphq1ap1.nupco.com:44320&quot;"/>
+    <elementParameter field="TEXT" name="PATH" value="&quot;/sap/bc/srt/scs/sap/z_ws_get_reservation_data_v1?sap-client=100&quot;"/>
     <elementParameter field="CLOSED_LIST" name="METHOD" value="POST"/>
     <elementParameter field="CLOSED_LIST" name="CONTENT_TYPE" value="application/xml"/>
     <elementParameter field="CLOSED_LIST" name="ACCEPT_TYPE" value="application/xml"/>
@@ -276,8 +276,8 @@
     <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
     <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC"/>
-    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;ZRFC1&quot;"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:LyGsusQVgq0F0LwTTLKAQ2ZO5nCTVN8vEES5ewYbPsvYkdJre997DUA="/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;rfchoshq1100&quot;"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:WwRSYpaIdvz7YKlXNbKX9HSi/sYkztKOal8rLthUXDZJJedXEO9cAjI="/>
     <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="NEED_AUTHORIZATION" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROLE" show="false" value="&quot;&quot;"/>
@@ -308,7 +308,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8080"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:rNKqe5dq19w4ktv/k1GszVrCpna6nUyNz2V5cUyJ"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:HSBc5IQ1tywidKvqQXnTWvkgE/O+QD9PgHvnuh5H"/>
     <elementParameter field="TEXT" name="LABEL" value="SAP_SOAP_Call"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRESTClient_1">
@@ -444,7 +444,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1344" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_3"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#10;if(input_row.string!=null &amp;&amp; !input_row.string.contains(&quot;[&quot;))&#13;&#10;context.payload = &quot;[&quot;+input_row.string+&quot;]&quot;;&#10;else&#10;context.payload = input_row.string;&#13;&#10;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#10;if(input_row.string!=null &amp;&amp; !input_row.string.contains(&quot;[&quot;))&#13;&#10;context.payload = &quot;[&quot;+input_row.string+&quot;]&quot;;&#10;else if(input_row.string!=null)&#10;context.payload = input_row.string;&#13;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="opt" name="tJavaRow_3">
@@ -564,7 +564,7 @@
   </node>
   <node componentName="tREST" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-256" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tREST_1"/>
-    <elementParameter field="TEXT" name="URL" value="&quot;https://hos-dev.nupco.com/HOS_S4/api/reservation-api&quot;"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;http://10.1.51.28/HOS_S4/api/reservation-api&quot;"/>
     <elementParameter field="CLOSED_LIST" name="METHOD" value="POST"/>
     <elementParameter field="TABLE" name="HEADERS">
       <elementValue elementRef="NAME" value="&quot;Content-Type&quot;"/>
@@ -869,13 +869,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b5833b36-7bd8-4deb-80ea-0662b3ba30c7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>H40fOzPsp3GYWruwyTbDye7/Oyqf8vV+OkkgSXN3odziGQecTfWdP/wd8CCDJ1VhohJQBmpjF8M4&#13;
-TiGAMdPDng==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_500c8687-1450-40c7-89c3-89ae21097306"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>RFpQQVIPLnM4R4Cp7FTydHLhflHp+IUYpjrxmnUrIjWYwVjWxJvqxfLKQvrbU+PbS7CknX1dTn9E&#13;
-H+KbEijIkA==</DigestValue></Reference></SignedInfo><SignatureValue>KtumT+juX5u+69FHYy18OrFRo/+4YhDKQDZMKwsavez8t3QScTGtq0PL2MV0qLYi1Gui1WVETlKS&#13;
-Y1ZAWtW8kCFiKZ3kyBnMsLPWX0guNi9s+LDqg3ygW6Viprr3DaWuv+uVZlKxst4Q+mABCLhcD8bi&#13;
-ubve3OhkhDvD5j4IR0LkwsdzLSYN5N3u7Af13aBXMR/balFZFM7EjViHdWVb+XvLj+0jMfk9PqNl&#13;
-xJRJNZJm7mZz5lOg5oWi8atOKsUn5NDYfND3f9rNZRmRZi+iYjskism3Hp4u6iIPfoad5cHRRDZ6&#13;
-51ZJmAbMmtdxOhInmsznSODsSquQzgnwOnJLdQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_35b03974-b205-44e3-a059-dd252a52d60a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nuMcsG5649O3xDkwc2RcMY55hwZLGofgsELKf1oc6m2XVI5Vtu8QEH+GjyVYKIjnFXZkAnZa4ERI&#13;
+JsLIHIDcAQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7c1ad611-3a2e-4c7e-b5c7-656270684536"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>y/6PwdtQSKDG8u3b/vOY4IMdsrSTc3mqpPHs2VfWhdNUsqs4l6f2jE14vZZgV1wTEGeAn89Qfwhi&#13;
+wIpdnSf+yg==</DigestValue></Reference></SignedInfo><SignatureValue>bkvsRA3kgMW7orBL4FIVa0cLqZT+bVBFgdx0x8XepRD6XklwIIU6zbDFAM1TPJtWp94D3Jx85DrP&#13;
+bQjxpTzcfrzKZwANjww8hYER8hs+gF1wtXiOCpk2LK2rL04z8Yy/7+PjmUDrahzC3IdTh4Ps9i7p&#13;
+XyW8d6Rdnh8SDidiToZChMH5pPCiTJF1N+VjqUjIxEdNR/FfNZiTn0m9fH7CDCvyDnH2SqLU+Sjw&#13;
+6Cs0W14ygx5nlfyvEHEpMUYQrpS8rgwuJ+7g4Ck516c2/8hvfEVogP1yAGEI/CnVObPn5k4vGlrs&#13;
+XECT9yzYKN0PG9jNv9xAMR2+91fbFG/dcjOGbA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -897,4 +897,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_500c8687-1450-40c7-89c3-89ae21097306" Target="#_b5833b36-7bd8-4deb-80ea-0662b3ba30c7"><Timestamp>2021-03-29 11:59:37</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7c1ad611-3a2e-4c7e-b5c7-656270684536" Target="#_35b03974-b205-44e3-a059-dd252a52d60a"><Timestamp>2021-03-29 12:02:00</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
