@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="DEV" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="PROD">
     <contextParameter comment="" name="plant" prompt="plant?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="jsonPayload" prompt="jsonPayload?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="plant_code" prompt="plant_code?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="nupco_generic_code" prompt="nupco_generic_code?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="order_type" prompt="order_type?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="batch_no" prompt="batch_no?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="created_date" prompt="created_date?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="hss_master_no" prompt="hss_master_no?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="item_text" prompt="item_text?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="order_id" prompt="order_id?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="sloc_id" prompt="sloc_id?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="delivery_date" prompt="delivery_date?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="listSize" prompt="listSize?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="innerpayload" prompt="innerpayload?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="AMC_AdditionalParams" prompt="AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="noDatetimeStringSync=true"/>
     <contextParameter comment="" name="AMC_Database" prompt="AMC_Database?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="AMC"/>
     <contextParameter comment="" name="AMC_Login" prompt="AMC_Login?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="talendamc"/>
-    <contextParameter comment="" name="AMC_Password" prompt="AMC_Password?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_Password" value="enc:system.encryption.key.v1:Z7TWwN0la/8nMKooNW+NLyFxD5aFCx5hDooHhsuyWglB"/>
+    <contextParameter comment="" name="AMC_Password" prompt="AMC_Password?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_Password" value="enc:system.encryption.key.v1:waIRKDH/tBxfqSRepobVrzRVpIjRdvCkoPlQfbosZ1Cw"/>
     <contextParameter comment="" name="AMC_Port" prompt="AMC_Port?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="3308"/>
     <contextParameter comment="" name="AMC_Server" prompt="AMC_Server?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="TLDPDB1W16"/>
     <contextParameter comment="" name="auth_url" prompt="auth_url?" promptNeeded="false" repositoryContextId="_azBsgGFHEeuBKpV1cCX3ow" type="id_String" value="http://10.1.12.34:50010/ws/auth/login"/>
@@ -28,6 +41,16 @@
     <contextParameter comment="" name="hos_outbound_target_api" prompt="hos_outbound_target_api?" promptNeeded="false" repositoryContextId="_lR6GMGFHEeuBKpV1cCX3ow" type="id_String" value="http://10.1.12.34:50010"/>
     <contextParameter comment="" name="hos_outbound_target_relpath" prompt="hos_outbound_target_relpath?" promptNeeded="false" repositoryContextId="_lR6GMGFHEeuBKpV1cCX3ow" type="id_String" value="/ws/integration/api/NUPCO_INBOUND"/>
     <contextParameter comment="" name="response" prompt="response?" promptNeeded="false" repositoryContextId="_lR6GMGFHEeuBKpV1cCX3ow" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_CC" prompt="SMTP_CC?" promptNeeded="false" repositoryContextId="_PAGBQI1KEeuwUe8Sm4n0wQ" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_From" prompt="SMTP_From?" promptNeeded="false" repositoryContextId="_PAGBQI1KEeuwUe8Sm4n0wQ" type="id_String" value="alert.talend@nupco.com"/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" repositoryContextId="_PAGBQI1KEeuwUe8Sm4n0wQ" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_Password" prompt="SMTP_Password?" promptNeeded="false" repositoryContextId="_PAGBQI1KEeuwUe8Sm4n0wQ" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_PAGBQI1KEeuwUe8Sm4n0wQ" type="id_String" value="25"/>
+    <contextParameter comment="" name="SMTP_To" prompt="SMTP_To?" promptNeeded="false" repositoryContextId="_PAGBQI1KEeuwUe8Sm4n0wQ" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_UserName" prompt="SMTP_UserName?" promptNeeded="false" repositoryContextId="_PAGBQI1KEeuwUe8Sm4n0wQ" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" name="plant" prompt="plant?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="jsonPayload" prompt="jsonPayload?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="plant_code" prompt="plant_code?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="nupco_generic_code" prompt="nupco_generic_code?" promptNeeded="false" type="id_String" value=""/>
@@ -41,13 +64,10 @@
     <contextParameter comment="" name="delivery_date" prompt="delivery_date?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="listSize" prompt="listSize?" promptNeeded="false" type="id_Integer" value=""/>
     <contextParameter comment="" name="innerpayload" prompt="innerpayload?" promptNeeded="false" type="id_String" value=""/>
-  </context>
-  <context confirmationNeeded="false" name="DEV">
-    <contextParameter comment="" name="plant" prompt="plant?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="AMC_AdditionalParams" prompt="AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="noDatetimeStringSync=true"/>
     <contextParameter comment="" name="AMC_Database" prompt="AMC_Database?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="AMC"/>
     <contextParameter comment="" name="AMC_Login" prompt="AMC_Login?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="talend"/>
-    <contextParameter comment="" name="AMC_Password" prompt="AMC_Password?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_Password" value="enc:system.encryption.key.v1:8tlNjxFD4aUgGroD7MbfP1ye0ZnyJ2qjUDgVZRspk+Jd"/>
+    <contextParameter comment="" name="AMC_Password" prompt="AMC_Password?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_Password" value="enc:system.encryption.key.v1:CiubvM4AI+hhZdNSglkWVVrHMPtU62thpB0T2hwlaiPe"/>
     <contextParameter comment="" name="AMC_Port" prompt="AMC_Port?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="3307"/>
     <contextParameter comment="" name="AMC_Server" prompt="AMC_Server?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="10.1.51.25"/>
     <contextParameter comment="" name="auth_url" prompt="auth_url?" promptNeeded="false" repositoryContextId="_azBsgGFHEeuBKpV1cCX3ow" type="id_String" value="http://10.1.12.34:50010/ws/auth/login"/>
@@ -71,6 +91,16 @@
     <contextParameter comment="" name="hos_outbound_target_api" prompt="hos_outbound_target_api?" promptNeeded="false" repositoryContextId="_lR6GMGFHEeuBKpV1cCX3ow" type="id_String" value="http://10.1.12.34:50010"/>
     <contextParameter comment="" name="hos_outbound_target_relpath" prompt="hos_outbound_target_relpath?" promptNeeded="false" repositoryContextId="_lR6GMGFHEeuBKpV1cCX3ow" type="id_String" value="/ws/integration/api/NUPCO_INBOUND"/>
     <contextParameter comment="" name="response" prompt="response?" promptNeeded="false" repositoryContextId="_lR6GMGFHEeuBKpV1cCX3ow" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_CC" prompt="SMTP_CC?" promptNeeded="false" repositoryContextId="_PAGBQI1KEeuwUe8Sm4n0wQ" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_From" prompt="SMTP_From?" promptNeeded="false" repositoryContextId="_PAGBQI1KEeuwUe8Sm4n0wQ" type="id_String" value="alert.talend@nupco.com"/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" repositoryContextId="_PAGBQI1KEeuwUe8Sm4n0wQ" type="id_String" value="192.168.1.22"/>
+    <contextParameter comment="" name="SMTP_Password" prompt="SMTP_Password?" promptNeeded="false" repositoryContextId="_PAGBQI1KEeuwUe8Sm4n0wQ" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_PAGBQI1KEeuwUe8Sm4n0wQ" type="id_String" value="25"/>
+    <contextParameter comment="" name="SMTP_To" prompt="SMTP_To?" promptNeeded="false" repositoryContextId="_PAGBQI1KEeuwUe8Sm4n0wQ" type="id_String" value="raghava.vudumula@thinkartha.com"/>
+    <contextParameter comment="" name="SMTP_UserName" prompt="SMTP_UserName?" promptNeeded="false" repositoryContextId="_PAGBQI1KEeuwUe8Sm4n0wQ" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="QA">
+    <contextParameter comment="" name="plant" prompt="plant?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="jsonPayload" prompt="jsonPayload?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="plant_code" prompt="plant_code?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="nupco_generic_code" prompt="nupco_generic_code?" promptNeeded="false" type="id_String" value=""/>
@@ -84,13 +114,10 @@
     <contextParameter comment="" name="delivery_date" prompt="delivery_date?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="listSize" prompt="listSize?" promptNeeded="false" type="id_Integer" value=""/>
     <contextParameter comment="" name="innerpayload" prompt="innerpayload?" promptNeeded="false" type="id_String" value=""/>
-  </context>
-  <context confirmationNeeded="false" name="QA">
-    <contextParameter comment="" name="plant" prompt="plant?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="AMC_AdditionalParams" prompt="AMC_AdditionalParams?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="noDatetimeStringSync=true"/>
     <contextParameter comment="" name="AMC_Database" prompt="AMC_Database?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="AMC"/>
     <contextParameter comment="" name="AMC_Login" prompt="AMC_Login?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="talend"/>
-    <contextParameter comment="" name="AMC_Password" prompt="AMC_Password?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_Password" value="enc:system.encryption.key.v1:gzwGdgogUukji60OaWY6Rzth/3Jq1Hc9Ve4YUR1mpSGg"/>
+    <contextParameter comment="" name="AMC_Password" prompt="AMC_Password?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_Password" value="enc:system.encryption.key.v1:f4hitxPZeMid5Kz4fTWwh/PPuVOkTvn0teP2jx1QET/B"/>
     <contextParameter comment="" name="AMC_Port" prompt="AMC_Port?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="3307"/>
     <contextParameter comment="" name="AMC_Server" prompt="AMC_Server?" promptNeeded="false" repositoryContextId="_PuiZIFQGEeuJgom7eX6COQ" type="id_String" value="10.1.51.25"/>
     <contextParameter comment="" name="auth_url" prompt="auth_url?" promptNeeded="false" repositoryContextId="_azBsgGFHEeuBKpV1cCX3ow" type="id_String" value="http://10.1.51.51:50000/ws/auth/login"/>
@@ -114,19 +141,13 @@
     <contextParameter comment="" name="hos_outbound_target_api" prompt="hos_outbound_target_api?" promptNeeded="false" repositoryContextId="_lR6GMGFHEeuBKpV1cCX3ow" type="id_String" value="http://10.1.51.51:50000"/>
     <contextParameter comment="" name="hos_outbound_target_relpath" prompt="hos_outbound_target_relpath?" promptNeeded="false" repositoryContextId="_lR6GMGFHEeuBKpV1cCX3ow" type="id_String" value="/ws/integration/api/NUPCO_INBOUND"/>
     <contextParameter comment="" name="response" prompt="response?" promptNeeded="false" repositoryContextId="_lR6GMGFHEeuBKpV1cCX3ow" type="id_String" value=""/>
-    <contextParameter comment="" name="jsonPayload" prompt="jsonPayload?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="plant_code" prompt="plant_code?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="nupco_generic_code" prompt="nupco_generic_code?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="order_type" prompt="order_type?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="batch_no" prompt="batch_no?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="created_date" prompt="created_date?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="hss_master_no" prompt="hss_master_no?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="item_text" prompt="item_text?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="order_id" prompt="order_id?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="sloc_id" prompt="sloc_id?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="delivery_date" prompt="delivery_date?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="listSize" prompt="listSize?" promptNeeded="false" type="id_Integer" value=""/>
-    <contextParameter comment="" name="innerpayload" prompt="innerpayload?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_CC" prompt="SMTP_CC?" promptNeeded="false" repositoryContextId="_PAGBQI1KEeuwUe8Sm4n0wQ" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_From" prompt="SMTP_From?" promptNeeded="false" repositoryContextId="_PAGBQI1KEeuwUe8Sm4n0wQ" type="id_String" value="alert.talend@nupco.com"/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" repositoryContextId="_PAGBQI1KEeuwUe8Sm4n0wQ" type="id_String" value="192.168.1.22"/>
+    <contextParameter comment="" name="SMTP_Password" prompt="SMTP_Password?" promptNeeded="false" repositoryContextId="_PAGBQI1KEeuwUe8Sm4n0wQ" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_PAGBQI1KEeuwUe8Sm4n0wQ" type="id_String" value="25"/>
+    <contextParameter comment="" name="SMTP_To" prompt="SMTP_To?" promptNeeded="false" repositoryContextId="_PAGBQI1KEeuwUe8Sm4n0wQ" type="id_String" value="raghava.vudumula@thinkartha.com"/>
+    <contextParameter comment="" name="SMTP_UserName" prompt="SMTP_UserName?" promptNeeded="false" repositoryContextId="_PAGBQI1KEeuwUe8Sm4n0wQ" type="id_String" value=""/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -170,7 +191,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:25mkhydfZmnK3PtgCdfaHf9c6ExGFL2hyEIJPM6x"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:8iLV53mBVkFL0mLvkUEGfwtjY3mFeB+Ns+ohreV+"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -207,7 +228,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="context.AMC_AdditionalParams"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" value="context.AMC_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:VT0EyIaZ4QTXlAkCZXwygMOx7CxlfvCF8vB9Zr+hYtJZuacF+MkYNUloQ6yr8P8q"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:/sLE4bWuZKGJzAQDY4Q9JRZ9v/+/yW1hwLqV9jAmgyoMd8YJJySKlKRVI8fFRc7z"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;statcatcher&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;logcatcher&quot;"/>
@@ -413,7 +434,7 @@
     <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" show="false" value="BASIC"/>
     <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="&quot;username&quot;"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:j3F551Jm4sT18wgLcrlFmYPh1o3j5KVTr8hTbXaZsMBnFH13pr8="/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:Ezcn6LreWwf3lgOnLqBV709dPs4Bnh4sEJ452nmoiUHYwSzHbaU="/>
     <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="NEED_AUTHORIZATION" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROLE" show="false" value="&quot;&quot;"/>
@@ -444,7 +465,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8080"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:rrmhxughsNkFg1Fnta+ICJ4mStxy6bXwrUPm131r"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:oT+S/srH2qQ0i7rb2+6kG/H2YMcNqNpldoqXAT1P"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRESTClient_2">
       <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
@@ -667,7 +688,7 @@
     <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
     <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
     <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="&quot;raghava.vudumula@thinkartha.com&quot;"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:6MFDte1ks6nGxneLQ/mKMK9koG+99ZIcNrPHnF1KFqcDrUvJyT962Q=="/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:GYtj9B/54lU4R8WR6AJZJuB+olWkIh5QZKNrqeF+8Yjm0i78D87yXg=="/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
     <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="html"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
@@ -862,7 +883,7 @@
     <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" show="false" value="BASIC"/>
     <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="&quot;username&quot;"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:ilb97E6+nhuwy6scWN/YQ6getwYlQzP4loF9OLhOaD0ISeau324="/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:ZkvfDIJye2wik/sP2Axar+wMNPqIRUIQif0b2BnKP2XT+SriMDM="/>
     <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="NEED_AUTHORIZATION" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROLE" show="false" value="&quot;&quot;"/>
@@ -893,7 +914,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8080"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:A0FBSoy6htjikd7nasOICc/k8UdfrRt8PRERRN/g"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:09fwG1xjeiMqbArM28xuLWNvs0tlfxv7FHh4GSwX"/>
     <elementParameter field="TEXT" name="LABEL" value="HOS_Order"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out10" name="tRESTClient_4">
@@ -980,7 +1001,7 @@
     <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" show="false" value="BASIC"/>
     <elementParameter field="TEXT" name="AUTH_USERNAME" show="false" value="&quot;WMCOMUSER&quot;"/>
-    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:7SF3mnpoljzKZURaRU8UpAmLL9LCvL1eGUETfxnkUSagW4+26Kdl"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" show="false" value="enc:system.encryption.key.v1:ki2IKGJNqQglVAIvyDS0qA1JLFA/u0LmclJsV+gHdgLwg8YmKMl7"/>
     <elementParameter field="TEXT" name="AUTH_BEARER_TOKEN" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="NEED_AUTHORIZATION" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROLE" show="false" value="&quot;&quot;"/>
@@ -1008,7 +1029,7 @@
     <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;61.163.92.4&quot;"/>
     <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="8080"/>
     <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:fbUwYZWdy9m0yE0F2SKcUK9/a/PUPPWQjRdgWrUw"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:xQ5tsXQUXJ8Mp2vd8EPoNJwySM/sOzic1JL0T4LS"/>
     <elementParameter field="TEXT" name="LABEL" value="ws/auth/login"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRESTClient_5">
@@ -1616,13 +1637,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_839ce0bf-f86b-4360-a2ea-1eefe14e3d53"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>syLsdIxYmZjpmE+XfcXbu7iQ9e74u7WWi+gMa3Bz4NCWIfhM6J2sDdNtYJWBZKUFvOzAG/8qJ/Bm&#13;
-Ov4EelXMNg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e5df1f46-1dc1-4f0c-9de5-4f6239b72ca5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QCPajgYMDHB1Cbcl3kFEWnYqQYSjs0O7aUy4OZwhz/LN44QpmOIMRR2Y4+pFENLcRoFRlAu0V64c&#13;
-HBSuWoNx5A==</DigestValue></Reference></SignedInfo><SignatureValue>HghIvt18XWXBcSpd+TPfvDg8ufMBxOx850AbHvvQynO9nBjTVpGryivGlnGhulQ5ixieUZbVputH&#13;
-eZNve387h0vdcFmRVbfDuRMvVMoDNyD/hDAVnq4dFNg7pGmObEyo34oW5DsAh4GvIZLuGGgmYCd5&#13;
-PdOvG9wNOHcD3lVwwpzHAj+6+sNQgvyKuSpjOQvleu+T9Bltf/Sa+IATy1HqQpmU8iV/8DWcrzDz&#13;
-EI9u2WVmYbxUeNTxvNFI1w0Ahv4DHEfg2IEFvXjNElP1Lfm7SL1FiegfDxeoo95zNfCT7HypXMWA&#13;
-OPYKDPulvsR30oyXnKZXBJIty/1JwEC79HYjNw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_55105f93-431f-4862-a1f5-b153b5b75b3c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FIPxJZmuXf0ptPkl7U7dMyRHJhKuzTa50S1VhSN5XMw1dQyiqQ4vly6FoXTZA2vGllN6gkRCpxr6&#13;
+7yeMcPllQA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_19f07ca4-f7ec-4a87-8bb0-48c053573ac6"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>A5jiGtUYEYUCTsqznSwH3I+/KJO+s78wjVESI7S4T3Gpu6ouj8Gq/L3TS2PJxqfT0EFAQ7hx+2gI&#13;
+7Ft7h79YOw==</DigestValue></Reference></SignedInfo><SignatureValue>oxf0Xl81eedPx2v4E/aPf1B8vis72SjKDCalF152XvN5MwKZfDmRMZblL99PVv9Cor7oiFWWQByG&#13;
+ym6tBMptrLkrAg9VIkjm7599UeKhQvpjWTwV9QOQaHus257n0IxNUWZ9EgYsQMjBKDb81nkd6+0B&#13;
+597YVFnmkVyHN0PFFHOtnL/koTzH4QpjX3aDhhwD0uKthB2GINr/n36FSEkJG66SEkh53Dg8eDj+&#13;
+l/FHkCXifQGqULbyWXLd3KzksRYEcFyyDCC7NMVK/ubKKvSw3RmGoql29A/+HN5YU3vsR4KfMbOy&#13;
+0o19jlby1pSJh8XVuyP+KNzPx3oa99PcY3wm/Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1644,4 +1665,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e5df1f46-1dc1-4f0c-9de5-4f6239b72ca5" Target="#_839ce0bf-f86b-4360-a2ea-1eefe14e3d53"><Timestamp>2021-03-31 09:38:11</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_19f07ca4-f7ec-4a87-8bb0-48c053573ac6" Target="#_55105f93-431f-4862-a1f5-b153b5b75b3c"><Timestamp>2021-03-31 09:39:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
