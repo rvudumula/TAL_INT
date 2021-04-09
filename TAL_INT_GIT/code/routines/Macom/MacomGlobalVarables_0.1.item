@@ -1,0 +1,93 @@
+package routines;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class MacomGlobalVarables {
+
+    /**
+     * helloExample: not return value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+	private static String  testConfig;
+	private static String binningTopicName;
+	public static String getBinningTopicName() {
+		return binningTopicName;
+	}
+
+	public static void setBinningTopicName(String binningTopicName) {
+		MacomGlobalVarables.binningTopicName = binningTopicName;
+	}
+	public static String getTestConfig() {
+		return testConfig;
+	}
+
+	public static void setTestConfig(String testConfig) {
+		MacomGlobalVarables.testConfig = testConfig;
+	}
+	private static String  retestCode;
+	private static String  startDate;
+	private static Integer  maxtopiccount=0;
+	private static boolean errorFlag ;
+
+	
+	public static boolean isErrorFlag() {
+		return errorFlag;
+	}
+
+	public static void setErrorFlag(boolean errorFlag) {
+		MacomGlobalVarables.errorFlag = errorFlag;
+	}
+
+	public static String getRetestCode() {
+		return retestCode;
+	}
+	public static String getStartDate() {
+		return startDate;
+	}
+
+	public static Integer getMaxtopiccount() {
+		return maxtopiccount;
+	}
+
+	public static void setMaxtopiccount(Integer maxtopiccount) {
+		MacomGlobalVarables.maxtopiccount = maxtopiccount;
+	}
+
+	public static void setStartDate(String startDate) {
+		MacomGlobalVarables.startDate = startDate;
+	}
+
+	public static void setRetestCode(String retestCode) {
+		MacomGlobalVarables.retestCode = retestCode;
+	}
+    public static void helloExample(String message) {
+        if (message == null) {
+            message = "World"; //$NON-NLS-1$
+        }
+        System.out.println("Hello " + message + " !"); //$NON-NLS-1$ //$NON-NLS-2$
+    }
+}

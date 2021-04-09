@@ -1,0 +1,423 @@
+package routines;
+import java.text.SimpleDateFormat;  
+import java.util.Date; 
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class ExtractTestValues {
+
+	public static String getTestStep(String input)
+	{
+		return generateTestValue(input,"teststep");
+	}
+	public static String getTestLevel(String input)
+	{
+		return generateTestValue(input,"testlevel");
+	}
+	public static String getTestType(String input)
+	{
+		return generateTestValue(input,"testtype");
+	}
+	public static String getTestMode(String input)
+	{
+		return generateTestValue(input,"testmode");
+	}
+	public static String generateTestValue(String input,String flag)
+	{
+		String output="";
+		//CASE J
+		if(input!=null && input.equalsIgnoreCase("J"))
+		{
+			if(flag.equalsIgnoreCase("teststep"))
+			{
+				output =  "DIE";
+			}
+			else if(flag.equalsIgnoreCase("testlevel"))
+			{
+				output =  "FirstPass";
+			}
+			else if(flag.equalsIgnoreCase("testtype"))
+			{
+				output =  "Prime";
+			}
+			else if(flag.equalsIgnoreCase("testmode"))
+			{
+				output =  "Production";
+			}
+		}
+		//CASE K
+		else if(input!=null && input.equalsIgnoreCase("K"))
+		{
+			if(flag.equalsIgnoreCase("teststep"))
+			{
+				output =  "DIE";
+			}
+			else if(flag.equalsIgnoreCase("testlevel"))
+			{
+				output =  "ReTest";
+			}
+			else if(flag.equalsIgnoreCase("testtype"))
+			{
+				output =  "Prime";
+			}
+			else if(flag.equalsIgnoreCase("testmode"))
+			{
+				output =  "Production";
+			}
+		}
+		//CASE L
+		else if(input!=null && input.equalsIgnoreCase("L"))
+		{
+			if(flag.equalsIgnoreCase("teststep"))
+			{
+				output =  "DIE";
+			}
+			else if(flag.equalsIgnoreCase("testlevel"))
+			{
+				output =  "FirstPass";
+			}
+			else if(flag.equalsIgnoreCase("testtype"))
+			{
+				output =  "RE-Screen";
+			}
+			else if(flag.equalsIgnoreCase("testmode"))
+			{
+				output =  "Production";
+			}
+		}
+		//CASE M
+		else if(input!=null && input.equalsIgnoreCase("M"))
+		{
+			if(flag.equalsIgnoreCase("teststep"))
+			{
+				output =  "DIE";
+			}
+			else if(flag.equalsIgnoreCase("testlevel"))
+			{
+				output =  "ReTest";
+			}
+			else if(flag.equalsIgnoreCase("testtype"))
+			{
+				output =  "RE-Screen";
+			}
+			else if(flag.equalsIgnoreCase("testmode"))
+			{
+				output =  "Production";
+			}
+		}
+		//CASE S
+		else if(input!=null && input.equalsIgnoreCase("S"))
+		{
+			if(flag.equalsIgnoreCase("teststep"))
+			{
+				output =  "";
+			}
+			else if(flag.equalsIgnoreCase("testlevel"))
+			{
+				output =  "";
+			}
+			else if(flag.equalsIgnoreCase("testtype"))
+			{
+				output =  "Sample";
+			}
+			else if(flag.equalsIgnoreCase("testmode"))
+			{
+				output =  "Engineering";
+			}
+		}
+		//CASE Q
+		else if(input!=null && input.equalsIgnoreCase("Q"))
+		{
+			if(flag.equalsIgnoreCase("teststep"))
+			{
+				output =  "";
+			}
+			else if(flag.equalsIgnoreCase("testlevel"))
+			{
+				output =  "";
+			}
+			else if(flag.equalsIgnoreCase("testtype"))
+			{
+				output =  "Test Station Qual";
+			}
+			else if(flag.equalsIgnoreCase("testmode"))
+			{
+				output =  "Engineering";
+			}
+		}
+		//CASE F
+		else if(input!=null && input.equalsIgnoreCase("F"))
+		{
+			if(flag.equalsIgnoreCase("teststep"))
+			{
+				output =  "PCM";
+			}
+			else if(flag.equalsIgnoreCase("testlevel"))
+			{
+				output =  " ";
+			}
+			else if(flag.equalsIgnoreCase("testtype"))
+			{
+				output =  "PCM Final Test";
+			}
+			else if(flag.equalsIgnoreCase("testmode"))
+			{
+				output =  "Production";
+			}
+		}
+		//CASE X
+		else if(input!=null && input.equalsIgnoreCase("X"))
+		{
+			if(flag.equalsIgnoreCase("teststep"))
+			{
+				output =  " ";
+			}
+			else if(flag.equalsIgnoreCase("testlevel"))
+			{
+				output =  " ";
+			}
+			else if(flag.equalsIgnoreCase("testtype"))
+			{
+				output =  "System Standard";
+			}
+			else if(flag.equalsIgnoreCase("testmode"))
+			{
+				output =  "Engineering";
+			}
+		}
+		//CASE Y
+		else if(input!=null && input.equalsIgnoreCase("Y"))
+		{
+			if(flag.equalsIgnoreCase("teststep"))
+			{
+				output =  " ";
+			}
+			else if(flag.equalsIgnoreCase("testlevel"))
+			{
+				output =  " ";
+			}
+			else if(flag.equalsIgnoreCase("testtype"))
+			{
+				output =  "Board Standard";
+			}
+			else if(flag.equalsIgnoreCase("testmode"))
+			{
+				output =  "Engineering";
+			}
+		}
+		//CASE Z
+		else if(input!=null && input.equalsIgnoreCase("Z"))
+		{
+			if(flag.equalsIgnoreCase("teststep"))
+			{
+				output =  " ";
+			}
+			else if(flag.equalsIgnoreCase("testlevel"))
+			{
+				output =  " ";
+			}
+			else if(flag.equalsIgnoreCase("testtype"))
+			{
+				output =  "Lab Standard";
+			}
+			else if(flag.equalsIgnoreCase("testmode"))
+			{
+				output =  "Engineering";
+			}
+		}
+		//CASE H
+		else if(input!=null && input.equalsIgnoreCase("H"))
+		{
+			if(flag.equalsIgnoreCase("teststep"))
+			{
+				output =  " ";
+			}
+			else if(flag.equalsIgnoreCase("testlevel"))
+			{
+				output =  "FirstPass";
+			}
+			else if(flag.equalsIgnoreCase("testtype"))
+			{
+				output =  "PreSeal Testing";
+			}
+			else if(flag.equalsIgnoreCase("testmode"))
+			{
+				output =  "Production";
+			}
+		}
+		//CASE I
+		else if(input!=null && input.equalsIgnoreCase("I"))
+		{
+			if(flag.equalsIgnoreCase("teststep"))
+			{
+				output =  " ";
+			}
+			else if(flag.equalsIgnoreCase("testlevel"))
+			{
+				output =  "ReTest";
+			}
+			else if(flag.equalsIgnoreCase("testtype"))
+			{
+				output =  "PreSeal Testing";
+			}
+			else if(flag.equalsIgnoreCase("testmode"))
+			{
+				output =  "Production";
+			}
+		}
+		//CASE D
+		else if(input!=null && input.equalsIgnoreCase("D"))
+		{
+			if(flag.equalsIgnoreCase("teststep"))
+			{
+				output =  " ";
+			}
+			else if(flag.equalsIgnoreCase("testlevel"))
+			{
+				output =  "FirstPass";
+			}
+			else if(flag.equalsIgnoreCase("testtype"))
+			{
+				output =  "Temperature Testing";
+			}
+			else if(flag.equalsIgnoreCase("testmode"))
+			{
+				output =  "Production";
+			}
+		}
+		//CASE E
+		else if(input!=null && input.equalsIgnoreCase("E"))
+		{
+			if(flag.equalsIgnoreCase("teststep"))
+			{
+				output =  " ";
+			}
+			else if(flag.equalsIgnoreCase("testlevel"))
+			{
+				output =  "ReTest";
+			}
+			else if(flag.equalsIgnoreCase("testtype"))
+			{
+				output =  "Temperature Testing";
+			}
+			else if(flag.equalsIgnoreCase("testmode"))
+			{
+				output =  "Production";
+			}
+		}
+		//CASE V
+		else if(input!=null && input.equalsIgnoreCase("V"))
+		{
+			if(flag.equalsIgnoreCase("teststep"))
+			{
+				output =  " ";
+			}
+			else if(flag.equalsIgnoreCase("testlevel"))
+			{
+				output =  " ";
+			}
+			else if(flag.equalsIgnoreCase("testtype"))
+			{
+				output =  "Visual Rejections";
+			}
+			else if(flag.equalsIgnoreCase("testmode"))
+			{
+				output =  "Production";
+			}
+		}
+		//CASE B
+		else if(input!=null && input.equalsIgnoreCase("B"))
+		{
+			if(flag.equalsIgnoreCase("teststep"))
+			{
+				output =  " ";
+			}
+			else if(flag.equalsIgnoreCase("testlevel"))
+			{
+				output =  " ";
+			}
+			else if(flag.equalsIgnoreCase("testtype"))
+			{
+				output =  "Handler Bin Check";
+			}
+			else if(flag.equalsIgnoreCase("testmode"))
+			{
+				output =  "Engineering";
+			}
+		}
+		//CASE T
+		else if(input!=null && input.equalsIgnoreCase("T"))
+		{
+			if(flag.equalsIgnoreCase("teststep"))
+			{
+				output =  " ";
+			}
+			else if(flag.equalsIgnoreCase("testlevel"))
+			{
+				output =  " ";
+			}
+			else if(flag.equalsIgnoreCase("testtype"))
+			{
+				output =  "Lot Combine Re-Tape";
+			}
+			else if(flag.equalsIgnoreCase("testmode"))
+			{
+				output =  "Production";
+			}
+		}
+
+		return output;
+	}
+	public static String getfQtr(String input)throws Exception
+	{
+		SimpleDateFormat sdf=new SimpleDateFormat("dd MMM yyyy");
+		Date date=sdf.parse(input);
+		sdf=new SimpleDateFormat("yyyy-MM-dd");
+		String formater = sdf.format(date);
+		if(Integer.parseInt(formater.split("-")[1])<=3)
+		{
+			return formater.split("-")[0]+"Q1";
+		}
+		else if(Integer.parseInt(formater.split("-")[1])<=6 && Integer.parseInt(formater.split("-")[1])>=4)
+		{
+			return formater.split("-")[0]+"Q2";
+		}
+		else if(Integer.parseInt(formater.split("-")[1])<=9 && Integer.parseInt(formater.split("-")[1])>=7)
+		{
+			return formater.split("-")[0]+"Q3";
+		}
+		else 
+		{
+			return formater.split("-")[0]+"Q4";
+		}
+	}
+	public static String getCalMon(String input)throws Exception
+	{
+		SimpleDateFormat sdf=new SimpleDateFormat("dd MMM yyyy");
+		Date date=sdf.parse(input);
+		sdf=new SimpleDateFormat("yyyy-MM-dd");
+		String formater = sdf.format(date);
+		return formater.split("-")[0]+formater.split("-")[1];
+	}
+	public static void helloExample(String message) {
+		if (message == null) {
+			message = "World"; //$NON-NLS-1$
+		}
+		System.out.println("Hello " + message + " !"); //$NON-NLS-1$ //$NON-NLS-2$
+	}
+}

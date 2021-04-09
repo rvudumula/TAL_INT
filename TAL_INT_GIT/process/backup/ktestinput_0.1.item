@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Test" jobType="Standard">
+  <context confirmationNeeded="false" name="Prod">
+    <contextParameter comment="" name="ConsumerGroupId" prompt="ConsumerGroupId?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_String" value="mygroup"/>
+    <contextParameter comment="" name="Kafka_broker_list" prompt="Kafka_broker_list?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_String" value="10.88.183.216:9092"/>
+    <contextParameter comment="" name="kafka_topic_fixuture" prompt="kafka_topic_fixuture?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_String" value="kafka_fixture"/>
+    <contextParameter comment="" name="kafka_topic_name" prompt="kafka_topic_name?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Kafka_Zookeeper_list" prompt="Kafka_Zookeeper_list?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_String" value="10.88.183.216:2181,10.88.183.221:2181"/>
+    <contextParameter comment="" name="kafkaHost" prompt="kafkaHost?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_String" value="10.88.183.216"/>
+    <contextParameter comment="" name="kafkaPort" prompt="kafkaPort?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_String" value="9092"/>
+    <contextParameter comment="" name="maxMesgsToRead" prompt="maxMesgsToRead?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_Integer" value="5000"/>
+    <contextParameter comment="" name="maxTime_ms_BetwnMsgs" prompt="maxTime_ms_BetwnMsgs?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_Integer" value="10000"/>
+    <contextParameter comment="" name="MongoDB_DataBase" prompt="MongoDB_DataBase?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_String" value="eds2commericaldb"/>
+    <contextParameter comment="" name="MongoDB_Host" prompt="MongoDB_Host?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_String" value="10.88.160.245"/>
+    <contextParameter comment="" name="MongoDB_Password" prompt="MongoDB_Password?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_Password" value="enc:system.encryption.key.v1:147K0yKb+B6jQq1+pLQXdF7qe63q3MEixrGbscStk/xrWfI2"/>
+    <contextParameter comment="" name="MongoDB_Port" prompt="MongoDB_Port?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_String" value="37017"/>
+    <contextParameter comment="" name="MongoDB_User" prompt="MongoDB_User?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_String" value="eds2core"/>
+    <contextParameter comment="" name="topicName_Wafer" prompt="topicName_Wafer?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_String" value="kafka_wafer"/>
+  </context>
+  <context confirmationNeeded="false" name="Test">
+    <contextParameter comment="" name="ConsumerGroupId" prompt="ConsumerGroupId?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_String" value="mygroup"/>
+    <contextParameter comment="" name="Kafka_broker_list" prompt="Kafka_broker_list?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_String" value="10.88.183.216:9092"/>
+    <contextParameter comment="" name="kafka_topic_fixuture" prompt="kafka_topic_fixuture?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_String" value="kafka_fixture"/>
+    <contextParameter comment="" name="kafka_topic_name" prompt="kafka_topic_name?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_String" value=""/>
+    <contextParameter comment="" name="Kafka_Zookeeper_list" prompt="Kafka_Zookeeper_list?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_String" value="10.88.183.216:2181,10.88.183.221:2181"/>
+    <contextParameter comment="" name="kafkaHost" prompt="kafkaHost?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_String" value="10.88.183.216"/>
+    <contextParameter comment="" name="kafkaPort" prompt="kafkaPort?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_String" value="9092"/>
+    <contextParameter comment="" name="maxMesgsToRead" prompt="maxMesgsToRead?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_Integer" value="5000"/>
+    <contextParameter comment="" name="maxTime_ms_BetwnMsgs" prompt="maxTime_ms_BetwnMsgs?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_Integer" value="10000"/>
+    <contextParameter comment="" name="MongoDB_DataBase" prompt="MongoDB_DataBase?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_String" value="eds2commericaldb"/>
+    <contextParameter comment="" name="MongoDB_Host" prompt="MongoDB_Host?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_String" value="10.88.160.245"/>
+    <contextParameter comment="" name="MongoDB_Password" prompt="MongoDB_Password?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_Password" value="enc:system.encryption.key.v1:gfa7qE8qygjFPdwY/43QUSAk220c5xo3pXplg5Wj8UDhYZvt"/>
+    <contextParameter comment="" name="MongoDB_Port" prompt="MongoDB_Port?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_String" value="37017"/>
+    <contextParameter comment="" name="MongoDB_User" prompt="MongoDB_User?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_String" value="eds2core"/>
+    <contextParameter comment="" name="topicName_Wafer" prompt="topicName_Wafer?" promptNeeded="false" repositoryContextId="_HwkgoFBtEemoqLzb0NqUOQ" type="id_String" value="kafka_wafer"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:m4ti6k1Dr3Bu1SizkCQlZe/mVWp5h+3cHQPeWyCv" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Raja/TalendStudio/Talend-Studio-20181026_1147-V7.1.1/EDS2.0-Dev-Workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:lMxopm5ylUJow1gYbOAAy55WyTM4C6w6uUpqBJXu" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_FMCn0EteEemp1bSQdXrEpA" name="DQTechnical"/>
+    <routinesParameter id="_FHSDoEteEemp1bSQdXrEpA" name="DataMasking"/>
+    <routinesParameter id="_FMYmEEteEemp1bSQdXrEpA" name="DataOperation"/>
+    <routinesParameter id="_FLcK4EteEemp1bSQdXrEpA" name="DataQualityDependencies"/>
+    <routinesParameter id="_FLIo4EteEemp1bSQdXrEpA" name="DataQuality"/>
+    <routinesParameter id="_FLw7AEteEemp1bSQdXrEpA" name="DqStringHandling"/>
+    <routinesParameter id="_FMpr0EteEemp1bSQdXrEpA" name="Mathematical"/>
+    <routinesParameter id="_FNJbEEteEemp1bSQdXrEpA" name="Numeric"/>
+    <routinesParameter id="_FNc9EEteEemp1bSQdXrEpA" name="Relational"/>
+    <routinesParameter id="_FPgykEteEemp1bSQdXrEpA" name="SQLike"/>
+    <routinesParameter id="_FNup4EteEemp1bSQdXrEpA" name="StringHandling"/>
+    <routinesParameter id="_FOGdUEteEemp1bSQdXrEpA" name="TalendDataGenerator"/>
+    <routinesParameter id="_FOcbkEteEemp1bSQdXrEpA" name="TalendDate"/>
+    <routinesParameter id="_FPPs0EteEemp1bSQdXrEpA" name="TalendStringUtil"/>
+    <routinesParameter id="_FO1dIEteEemp1bSQdXrEpA" name="TalendString"/>
+    <routinesParameter id="_rVbPkGW-Eem4I4eq--XKOw" name="MacomGlobalVarables"/>
+  </parameters>
+  <node componentName="tKafkaConnection" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tKafkaConnection_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="KAFKA_VERSION" value="KAFKA_1_1_0"/>
+    <elementParameter field="TEXT" name="ZOOKEEPER_CONNECT" value="context.Kafka_Zookeeper_list"/>
+    <elementParameter field="TEXT" name="BROKER_LIST" value="context.Kafka_broker_list"/>
+    <elementParameter field="CHECK" name="USE_HTTPS" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="HTTPS_SETTING" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="false"/>
+    <elementParameter field="FILE" name="JAAS_CONF" value="&quot;/etc/kafka/kafka_client_jaas.conf&quot;" show="false"/>
+    <elementParameter field="TEXT" name="KRB_SERVICE_NAME" value="&quot;kafka&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_KINIT_PATH" value="false" show="false"/>
+    <elementParameter field="FILE" name="KINIT_PATH" value="&quot;/usr/bin/kinit&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_KRB5_CONF" value="false" show="false"/>
+    <elementParameter field="FILE" name="KRB5_CONF" value="&quot;/etc/kafka/krb5.conf&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_1" show="false"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;C:\\test_files\\in&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
+    <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
+    <elementParameter field="CHECK" name="ERROR" value="false"/>
+    <elementParameter field="CHECK" name="GLOBEXPRESSIONS" value="true"/>
+    <elementParameter field="TABLE" name="FILES"/>
+    <elementParameter field="RADIO" name="ORDER_BY_NOTHING" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILENAME" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_FILESIZE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_BY_MODIFIEDDATE" value="false"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_ASC" value="true"/>
+    <elementParameter field="RADIO" name="ORDER_ACTION_DESC" value="false"/>
+    <elementParameter field="CHECK" name="IFEXCLUDE" value="false"/>
+    <elementParameter field="TEXT" name="EXCLUDEFILEMASK" value="&quot;*.txt&quot;" show="false"/>
+    <elementParameter field="CHECK" name="FORMAT_FILEPATH_TO_SLASH" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFileInputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputRaw_1" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;))"/>
+    <elementParameter field="RADIO" name="AS_STRING" value="true"/>
+    <elementParameter field="RADIO" name="AS_BYTEARRAY" value="false"/>
+    <elementParameter field="RADIO" name="AS_INPUTSTREAM" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputRaw_1">
+      <column defaultValue="" key="false" length="0" name="content" nullable="true" precision="0" sourceType="" type="id_Object" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="576" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_I-pJsHijEem7fOerQ01SuA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="oo" name="oo">
+      <column comment="" key="false" length="-1" name="content" nullable="true" pattern="" precision="-1" sourceType="" type="id_byte[]" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="oo">
+        <mapperTableEntries name="content" expression="row1.content.toString().getBytes() " type="id_byte[]" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="content" type="id_Object" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tKafkaOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tKafkaOutput_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tKafkaConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="KAFKA_VERSION" value="KAFKA_1_1_0" show="false"/>
+    <elementParameter field="TEXT" name="BROKER_LIST" value="&quot;host1:port1,host2:port2,...&quot;" show="false"/>
+    <elementParameter field="TEXT" name="KAFKA_TOPIC" value="&quot;srcloaderTopicname&quot;"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="COMPRESSION" value="GZIP" show="false"/>
+    <elementParameter field="CHECK" name="USE_HTTPS" value="false" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="HTTPS_SETTING" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_KRB" value="false" show="false"/>
+    <elementParameter field="FILE" name="JAAS_CONF" value="&quot;/etc/kafka/kafka_client_jaas.conf&quot;" show="false"/>
+    <elementParameter field="TEXT" name="KRB_SERVICE_NAME" value="&quot;kafka&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_KINIT_PATH" value="false" show="false"/>
+    <elementParameter field="FILE" name="KINIT_PATH" value="&quot;/usr/bin/kinit&quot;" show="false"/>
+    <elementParameter field="CHECK" name="SET_KRB5_CONF" value="false" show="false"/>
+    <elementParameter field="FILE" name="KRB5_CONF" value="&quot;/etc/kafka/krb5.conf&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TABLE" name="KAFKA_PRODUCER_PROPERTIES"/>
+    <elementParameter field="TEXT" name="LABEL" value="Binning_Topic"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tKafkaOutput_1">
+      <column defaultValue="" key="false" length="0" name="serializedValue" nullable="true" precision="0" sourceType="" type="id_byte[]" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tKafkaConnection_1" offsetLabelX="0" offsetLabelY="0" source="tKafkaConnection_1" target="tFileList_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tFileInputRaw_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" value="2" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="iterate1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputRaw_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputRaw_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="oo" lineStyle="0" metaname="oo" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tKafkaOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="oo" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tKafkaConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

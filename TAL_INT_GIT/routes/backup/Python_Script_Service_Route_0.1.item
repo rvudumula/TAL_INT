@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_G3yTcJkpEeudivPWb2m4dA" defaultContext="Default" jobType="Standard">
+  <context xmi:id="_G3yTcZkpEeudivPWb2m4dA" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_G3yTcpkpEeudivPWb2m4dA" comment="" name="binningTopicName" prompt="binningTopicName?" promptNeeded="false" type="id_String" value="binningTopicName"/>
+    <contextParameter xmi:id="_G3yTc5kpEeudivPWb2m4dA" comment="" name="BrokerList" prompt="BrokerList?" promptNeeded="false" repositoryContextId="_h24AAGBkEemKxPpJ4TA9nA" type="id_String" value="10.88.183.216:9092"/>
+    <contextParameter xmi:id="_G3yTdJkpEeudivPWb2m4dA" comment="" name="kafka_jsonpath_enrich" prompt="kafka_jsonpath_enrich?" promptNeeded="false" type="id_String" value="C:\\macom_testing\\kafka_json\\enrich\\"/>
+    <contextParameter xmi:id="_G3yTdZkpEeudivPWb2m4dA" comment="" name="kafka_jsonpath_python" prompt="kafka_jsonpath_python?" promptNeeded="false" type="id_String" value="C:\\macom_testing\\kafka_json\\python\\"/>
+    <contextParameter xmi:id="_G3yTdpkpEeudivPWb2m4dA" comment="" name="kafka_jsonpath_transform" prompt="kafka_jsonpath_transform?" promptNeeded="false" type="id_String" value="C:\\macom_testing\\kafka_json\\transform\\"/>
+    <contextParameter xmi:id="_G3yTd5kpEeudivPWb2m4dA" comment="" name="kafkagroupid" prompt="kafkagroupid?" promptNeeded="false" repositoryContextId="_h24AAGBkEemKxPpJ4TA9nA" type="id_String" value="mygroup"/>
+  </context>
+  <context xmi:id="_G3yTeJkpEeudivPWb2m4dA" confirmationNeeded="false" name="Prod">
+    <contextParameter xmi:id="_G3yTeZkpEeudivPWb2m4dA" comment="" name="binningTopicName" prompt="binningTopicName?" promptNeeded="false" type="id_String" value="binningTopicName"/>
+    <contextParameter xmi:id="_G3yTepkpEeudivPWb2m4dA" comment="" name="BrokerList" prompt="BrokerList?" promptNeeded="false" repositoryContextId="_h24AAGBkEemKxPpJ4TA9nA" type="id_String" value="10.88.183.216:9092"/>
+    <contextParameter xmi:id="_G3yTe5kpEeudivPWb2m4dA" comment="" name="kafkagroupid" prompt="kafkagroupid?" promptNeeded="false" repositoryContextId="_h24AAGBkEemKxPpJ4TA9nA" type="id_String" value="mygroup"/>
+    <contextParameter xmi:id="_G3yTfJkpEeudivPWb2m4dA" comment="" name="kafka_jsonpath_transform" prompt="kafka_jsonpath_transform?" promptNeeded="false" type="id_String" value="C:\\macom_testing\\kafka_json\\transform\\"/>
+    <contextParameter xmi:id="_G3yTfZkpEeudivPWb2m4dA" comment="" name="kafka_jsonpath_enrich" prompt="kafka_jsonpath_enrich?" promptNeeded="false" type="id_String" value="C:\\macom_testing\\kafka_json\\enrich\\"/>
+    <contextParameter xmi:id="_G3yTfpkpEeudivPWb2m4dA" comment="" name="kafka_jsonpath_python" prompt="kafka_jsonpath_python?" promptNeeded="false" type="id_String" value="C:\\macom_testing\\kafka_json\\python\\"/>
+  </context>
+  <context xmi:id="_G3yTf5kpEeudivPWb2m4dA" confirmationNeeded="false" name="Test">
+    <contextParameter xmi:id="_G3yTgJkpEeudivPWb2m4dA" comment="" name="binningTopicName" prompt="binningTopicName?" promptNeeded="false" type="id_String" value="binningTopicName"/>
+    <contextParameter xmi:id="_G3yTgZkpEeudivPWb2m4dA" comment="" name="kafka_jsonpath_enrich" prompt="kafka_jsonpath_enrich?" promptNeeded="false" type="id_String" value="C:\\macom_testing\\kafka_json\\enrich\\"/>
+    <contextParameter xmi:id="_G3yTgpkpEeudivPWb2m4dA" comment="" name="kafka_jsonpath_python" prompt="kafka_jsonpath_python?" promptNeeded="false" type="id_String" value="C:\\macom_testing\\kafka_json\\python\\"/>
+    <contextParameter xmi:id="_G3yTg5kpEeudivPWb2m4dA" comment="" name="kafka_jsonpath_transform" prompt="kafka_jsonpath_transform?" promptNeeded="false" type="id_String" value="C:\\macom_testing\\kafka_json\\transform\\"/>
+    <contextParameter xmi:id="_G3yThJkpEeudivPWb2m4dA" comment="" name="BrokerList" prompt="BrokerList?" promptNeeded="false" repositoryContextId="_h24AAGBkEemKxPpJ4TA9nA" type="id_String" value="10.88.183.216:9092"/>
+    <contextParameter xmi:id="_G3yThZkpEeudivPWb2m4dA" comment="" name="kafkagroupid" prompt="kafkagroupid?" promptNeeded="false" repositoryContextId="_h24AAGBkEemKxPpJ4TA9nA" type="id_String" value="mygroup"/>
+  </context>
+  <parameters xmi:id="_G3yThpkpEeudivPWb2m4dA">
+    <elementParameter xmi:id="_G3yTh5kpEeudivPWb2m4dA" field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter xmi:id="_G3yTiJkpEeudivPWb2m4dA" field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter xmi:id="_G3yTiZkpEeudivPWb2m4dA" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_G3yTipkpEeudivPWb2m4dA" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_G3yTi5kpEeudivPWb2m4dA" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_G3yTjJkpEeudivPWb2m4dA" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_G3yTjZkpEeudivPWb2m4dA" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_G3yTjpkpEeudivPWb2m4dA" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_G3yTj5kpEeudivPWb2m4dA" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_G3yTkJkpEeudivPWb2m4dA" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_G3yTkZkpEeudivPWb2m4dA" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_G3yTkpkpEeudivPWb2m4dA" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_G3yTk5kpEeudivPWb2m4dA" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_G3yTlJkpEeudivPWb2m4dA" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_G3yTlZkpEeudivPWb2m4dA" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_G3yTlpkpEeudivPWb2m4dA" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_G3yTl5kpEeudivPWb2m4dA" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <routinesParameter xmi:id="_G3yTmJkpEeudivPWb2m4dA" id="_FMCn0EteEemp1bSQdXrEpA" name="DQTechnical"/>
+    <routinesParameter xmi:id="_G3yTmZkpEeudivPWb2m4dA" id="_FHSDoEteEemp1bSQdXrEpA" name="DataMasking"/>
+    <routinesParameter xmi:id="_G3yTmpkpEeudivPWb2m4dA" id="_FMYmEEteEemp1bSQdXrEpA" name="DataOperation"/>
+    <routinesParameter xmi:id="_G3yTm5kpEeudivPWb2m4dA" id="_FLcK4EteEemp1bSQdXrEpA" name="DataQualityDependencies"/>
+    <routinesParameter xmi:id="_G3yTnJkpEeudivPWb2m4dA" id="_FLIo4EteEemp1bSQdXrEpA" name="DataQuality"/>
+    <routinesParameter xmi:id="_G3yTnZkpEeudivPWb2m4dA" id="_FLw7AEteEemp1bSQdXrEpA" name="DqStringHandling"/>
+    <routinesParameter xmi:id="_G3yTnpkpEeudivPWb2m4dA" id="_FMpr0EteEemp1bSQdXrEpA" name="Mathematical"/>
+    <routinesParameter xmi:id="_G3yTn5kpEeudivPWb2m4dA" id="_FNJbEEteEemp1bSQdXrEpA" name="Numeric"/>
+    <routinesParameter xmi:id="_G3yToJkpEeudivPWb2m4dA" id="_FNc9EEteEemp1bSQdXrEpA" name="Relational"/>
+    <routinesParameter xmi:id="_G3yToZkpEeudivPWb2m4dA" id="_FPgykEteEemp1bSQdXrEpA" name="SQLike"/>
+    <routinesParameter xmi:id="_G3yTopkpEeudivPWb2m4dA" id="_FNup4EteEemp1bSQdXrEpA" name="StringHandling"/>
+    <routinesParameter xmi:id="_G3yTo5kpEeudivPWb2m4dA" id="_FOGdUEteEemp1bSQdXrEpA" name="TalendDataGenerator"/>
+    <routinesParameter xmi:id="_G3yTpJkpEeudivPWb2m4dA" id="_FOcbkEteEemp1bSQdXrEpA" name="TalendDate"/>
+    <routinesParameter xmi:id="_G3yTpZkpEeudivPWb2m4dA" id="_FPPs0EteEemp1bSQdXrEpA" name="TalendStringUtil"/>
+    <routinesParameter xmi:id="_G3yTppkpEeudivPWb2m4dA" id="_FO1dIEteEemp1bSQdXrEpA" name="TalendString"/>
+  </parameters>
+  <node xmi:id="_G3yTp5kpEeudivPWb2m4dA" componentName="cOnException" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="320">
+    <elementParameter xmi:id="_G3yTqJkpEeudivPWb2m4dA" field="TEXT" name="UNIQUE_NAME" value="cOnException_1" show="false"/>
+    <elementParameter xmi:id="_G3yTqZkpEeudivPWb2m4dA" field="TABLE" name="EXCEPTIONS">
+      <elementValue xmi:id="_G3yTqpkpEeudivPWb2m4dA" elementRef="EXCEPTION" value="java.lang.Exception"/>
+    </elementParameter>
+    <elementParameter xmi:id="_G3yTq5kpEeudivPWb2m4dA" field="CHECK" name="SET_MAX_REDELIVERY" value="false"/>
+    <elementParameter xmi:id="_G3yTrJkpEeudivPWb2m4dA" field="TEXT" name="MAX_REDELIVERY" value="2" show="false"/>
+    <elementParameter xmi:id="_G3yTrZkpEeudivPWb2m4dA" field="CHECK" name="ASYNC_REDELIVERY" value="false"/>
+    <elementParameter xmi:id="_G3yTrpkpEeudivPWb2m4dA" field="RADIO" name="NONE" value="true"/>
+    <elementParameter xmi:id="_G3yTr5kpEeudivPWb2m4dA" field="RADIO" name="HANDLE" value="false"/>
+    <elementParameter xmi:id="_G3yTsJkpEeudivPWb2m4dA" field="RADIO" name="CONTINUE" value="false"/>
+    <elementParameter xmi:id="_G3yTsZkpEeudivPWb2m4dA" field="CHECK" name="USE_ORIGINAL_MESSAGE" value="false"/>
+    <elementParameter xmi:id="_G3yTspkpEeudivPWb2m4dA" field="TEXT" name="LABEL" value="Exception_Block"/>
+    <elementParameter xmi:id="_G3yTs5kpEeudivPWb2m4dA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_G3yTtJkpEeudivPWb2m4dA" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="320">
+    <elementParameter xmi:id="_G3yTtZkpEeudivPWb2m4dA" field="TEXT" name="UNIQUE_NAME" value="cLog_3" show="false"/>
+    <elementParameter xmi:id="_G3yTtpkpEeudivPWb2m4dA" field="TEXT" name="LOGGING_CATEGORY" value="&quot;Htbasic_wafer_Read.cLog_2&quot;"/>
+    <elementParameter xmi:id="_G3yTt5kpEeudivPWb2m4dA" field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN"/>
+    <elementParameter xmi:id="_G3yTuJkpEeudivPWb2m4dA" field="RADIO" name="NOTHING" value="true"/>
+    <elementParameter xmi:id="_G3yTuZkpEeudivPWb2m4dA" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_G3yTupkpEeudivPWb2m4dA" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_G3yTu5kpEeudivPWb2m4dA" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_G3yTvJkpEeudivPWb2m4dA" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_G3yTvZkpEeudivPWb2m4dA" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_G3yTvpkpEeudivPWb2m4dA" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_G3yTv5kpEeudivPWb2m4dA" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_G3yTwJkpEeudivPWb2m4dA" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_G3yTwZkpEeudivPWb2m4dA" field="RADIO" name="USE_LOGEIP" value="false"/>
+    <elementParameter xmi:id="_G3yTwpkpEeudivPWb2m4dA" field="TEXT" name="MESSAGE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_G3yTw5kpEeudivPWb2m4dA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_G3yTxJkpEeudivPWb2m4dA" componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="96">
+    <elementParameter xmi:id="_G3yTxZkpEeudivPWb2m4dA" field="TEXT" name="UNIQUE_NAME" value="cLog_1" show="false"/>
+    <elementParameter xmi:id="_G3yTxpkpEeudivPWb2m4dA" field="TEXT" name="LOGGING_CATEGORY" value="&quot;Python_Script_Service_Route.cLog_1&quot;"/>
+    <elementParameter xmi:id="_G3yTx5kpEeudivPWb2m4dA" field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN"/>
+    <elementParameter xmi:id="_G3yTyJkpEeudivPWb2m4dA" field="RADIO" name="NOTHING" value="true"/>
+    <elementParameter xmi:id="_G3yTyZkpEeudivPWb2m4dA" field="RADIO" name="GROUP_SIZE" value="false"/>
+    <elementParameter xmi:id="_G3yTypkpEeudivPWb2m4dA" field="TEXT" name="SIZE" value="1" show="false"/>
+    <elementParameter xmi:id="_G3yTy5kpEeudivPWb2m4dA" field="RADIO" name="GROUP_INTERVAL" value="false"/>
+    <elementParameter xmi:id="_G3yTzJkpEeudivPWb2m4dA" field="TEXT" name="INTERVAL" value="1" show="false"/>
+    <elementParameter xmi:id="_G3yTzZkpEeudivPWb2m4dA" field="TEXT" name="DELAY" value="0" show="false"/>
+    <elementParameter xmi:id="_G3yTzpkpEeudivPWb2m4dA" field="CHECK" name="ACTIVE_ONLY" value="true" show="false"/>
+    <elementParameter xmi:id="_G3yTz5kpEeudivPWb2m4dA" field="RADIO" name="FORMAT" value="false"/>
+    <elementParameter xmi:id="_G3yT0JkpEeudivPWb2m4dA" field="TABLE" name="ARGUMENTS" show="false"/>
+    <elementParameter xmi:id="_G3yT0ZkpEeudivPWb2m4dA" field="RADIO" name="USE_LOGEIP" value="false"/>
+    <elementParameter xmi:id="_G3yT0pkpEeudivPWb2m4dA" field="TEXT" name="MESSAGE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_G3yT05kpEeudivPWb2m4dA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_G3yT1JkpEeudivPWb2m4dA" componentName="cFile" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="96">
+    <elementParameter xmi:id="_G3yT1ZkpEeudivPWb2m4dA" field="TEXT" name="UNIQUE_NAME" value="cFile_1" show="false"/>
+    <elementParameter xmi:id="_G3yT1pkpEeudivPWb2m4dA" field="DIRECTORY" name="URI" value="context.kafka_jsonpath_python"/>
+    <elementParameter xmi:id="_G3yT15kpEeudivPWb2m4dA" field="CHECK" name="NOOP" value="true"/>
+    <elementParameter xmi:id="_G3yT2JkpEeudivPWb2m4dA" field="CHECK" name="FLATTEN" value="false"/>
+    <elementParameter xmi:id="_G3yT2ZkpEeudivPWb2m4dA" field="CHECK" name="AUTOCREATE" value="true"/>
+    <elementParameter xmi:id="_G3yT2pkpEeudivPWb2m4dA" field="TEXT" name="BUFFER_SIZE" value="&quot;128&quot;"/>
+    <elementParameter xmi:id="_G3yT25kpEeudivPWb2m4dA" field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter xmi:id="_G3yT3JkpEeudivPWb2m4dA" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter xmi:id="_G3yT3ZkpEeudivPWb2m4dA" field="TEXT" name="FILENAME" value="&quot;input.json&quot;"/>
+    <elementParameter xmi:id="_G3yT3pkpEeudivPWb2m4dA" field="TABLE" name="ADVARGUMENTS"/>
+    <elementParameter xmi:id="_G3yT35kpEeudivPWb2m4dA" field="TEXT" name="LABEL" value="storing_json_payload"/>
+    <elementParameter xmi:id="_G3yT4JkpEeudivPWb2m4dA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_G3yT4ZkpEeudivPWb2m4dA" componentName="cKafka" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="96">
+    <elementParameter xmi:id="_G3yT4pkpEeudivPWb2m4dA" field="TEXT" name="UNIQUE_NAME" value="cKafka_1" show="false"/>
+    <elementParameter xmi:id="_G3yT45kpEeudivPWb2m4dA" field="TEXT" name="BROKER_LIST" value="context.BrokerList"/>
+    <elementParameter xmi:id="_G3yT5JkpEeudivPWb2m4dA" field="TEXT" name="CLIENT_ID" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_G3yT5ZkpEeudivPWb2m4dA" field="TEXT" name="TOPIC" value="context.binningTopicName"/>
+    <elementParameter xmi:id="_G3yT5pkpEeudivPWb2m4dA" field="TEXT" name="GROUP_ID" value="context.kafkagroupid"/>
+    <elementParameter xmi:id="_G3yT55kpEeudivPWb2m4dA" field="TEXT" name="PARTITIONER" value="&quot;org.apache.kafka.clients.producer.internals.DefaultPartitioner&quot;" show="false"/>
+    <elementParameter xmi:id="_G3yT6JkpEeudivPWb2m4dA" field="TEXT" name="SERIALIZER_CLASS" value="&quot;org.apache.kafka.common.serialization.StringSerializer&quot;" show="false"/>
+    <elementParameter xmi:id="_G3yT6ZkpEeudivPWb2m4dA" field="TEXT" name="KEY_SERIALIZER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_G3yT6pkpEeudivPWb2m4dA" field="TEXT" name="SEND_BUFFER_BYTES" value="&quot;131072&quot;"/>
+    <elementParameter xmi:id="_G3yT65kpEeudivPWb2m4dA" field="CLOSED_LIST" name="REQUEST_REQUIRED_ACKS" value="1" show="false"/>
+    <elementParameter xmi:id="_G3yT7JkpEeudivPWb2m4dA" field="TEXT" name="REQUEST_TIMEOUT_MS" value="&quot;30000&quot;" show="false"/>
+    <elementParameter xmi:id="_G3yT7ZkpEeudivPWb2m4dA" field="CLOSED_LIST" name="COMPRESSION_CODEC" value="none" show="false"/>
+    <elementParameter xmi:id="_G3yT7pkpEeudivPWb2m4dA" field="TEXT" name="BUFFER_MEMORY_SIZE" value="&quot;33554432&quot;" show="false"/>
+    <elementParameter xmi:id="_G3yT75kpEeudivPWb2m4dA" field="TEXT" name="RETRIES" value="&quot;0&quot;" show="false"/>
+    <elementParameter xmi:id="_G3yT8JkpEeudivPWb2m4dA" field="TEXT" name="RETRY_BACKOFF_MS" value="&quot;100&quot;"/>
+    <elementParameter xmi:id="_G3yT8ZkpEeudivPWb2m4dA" field="TEXT" name="PRODUCER_BATCH_SIZE" value="&quot;16384&quot;" show="false"/>
+    <elementParameter xmi:id="_G3yT8pkpEeudivPWb2m4dA" field="TEXT" name="CONNECTION_MAX_IDLE_MS" value="&quot;540000&quot;"/>
+    <elementParameter xmi:id="_G3yT85kpEeudivPWb2m4dA" field="TEXT" name="LINGER_MS" value="&quot;0&quot;" show="false"/>
+    <elementParameter xmi:id="_G3yT9JkpEeudivPWb2m4dA" field="TEXT" name="MAX_BLOCK_MS" value="&quot;60000&quot;" show="false"/>
+    <elementParameter xmi:id="_G3yT9ZkpEeudivPWb2m4dA" field="TEXT" name="MAX_REQUEST_SIZE" value="&quot;1048576&quot;" show="false"/>
+    <elementParameter xmi:id="_G3yT9pkpEeudivPWb2m4dA" field="TEXT" name="RECEIVE_BUFFER_BYTES" value="&quot;32768&quot;"/>
+    <elementParameter xmi:id="_G3yT95kpEeudivPWb2m4dA" field="TEXT" name="MAX_IN_FLIGHT_REQUEST" value="&quot;5&quot;" show="false"/>
+    <elementParameter xmi:id="_G3yT-JkpEeudivPWb2m4dA" field="TEXT" name="METADATA_MAX_AGE_MS" value="&quot;300000&quot;"/>
+    <elementParameter xmi:id="_G3yT-ZkpEeudivPWb2m4dA" field="TEXT" name="RECONNECT_BACKOFF_MS" value="&quot;50&quot;"/>
+    <elementParameter xmi:id="_G3yT-pkpEeudivPWb2m4dA" field="TEXT" name="BARRIER_AWAIT_TIMEOUT_MS" value="&quot;10000&quot;"/>
+    <elementParameter xmi:id="_G3yT-5kpEeudivPWb2m4dA" field="CHECK" name="AUTO_COMMIT_ENABLE" value="true"/>
+    <elementParameter xmi:id="_G3yT_JkpEeudivPWb2m4dA" field="TEXT" name="AUTO_COMMIT_INTERVAL_MS" value="&quot;5000&quot;"/>
+    <elementParameter xmi:id="_G3yT_ZkpEeudivPWb2m4dA" field="TEXT" name="FETCH_MIN_BYTES" value="&quot;1&quot;"/>
+    <elementParameter xmi:id="_G3yT_pkpEeudivPWb2m4dA" field="TEXT" name="FETCH_WAIT_MAX_MS" value="&quot;100&quot;"/>
+    <elementParameter xmi:id="_G3yT_5kpEeudivPWb2m4dA" field="CLOSED_LIST" name="AUTO_OFFSET_RESET" value="latest"/>
+    <elementParameter xmi:id="_G3yUAJkpEeudivPWb2m4dA" field="TEXT" name="HEARTBEAT_INTERVAL_MS" value="&quot;3000&quot;"/>
+    <elementParameter xmi:id="_G3yUAZkpEeudivPWb2m4dA" field="TEXT" name="MAX_PARTITION_FETCH_BYTES" value="&quot;1048576&quot;"/>
+    <elementParameter xmi:id="_G3yUApkpEeudivPWb2m4dA" field="TEXT" name="SESSION_TIMEOUT_MS" value="&quot;30000&quot;"/>
+    <elementParameter xmi:id="_G3yUA5kpEeudivPWb2m4dA" field="TEXT" name="PARTITION_ASSIGNOR" value="&quot;org.apache.kafka.clients.consumer.RangeAssignor&quot;"/>
+    <elementParameter xmi:id="_G3yUBJkpEeudivPWb2m4dA" field="TEXT" name="CONSUMER_REQUEST_TIMEOUT_MS" value="&quot;40000&quot;"/>
+    <elementParameter xmi:id="_G3yUBZkpEeudivPWb2m4dA" field="TABLE" name="URI_OPTIONS"/>
+    <elementParameter xmi:id="_G3yUBpkpEeudivPWb2m4dA" field="PASSWORD" name="SSL_KEY_PASSWORD" value="enc:system.encryption.key.v1:Jw2OP5MvNigiMWgcHFcEJ8oh71DMWXelvurhtFpx"/>
+    <elementParameter xmi:id="_G3yUB5kpEeudivPWb2m4dA" field="TEXT" name="SSL_KEYSTORE_LOCATION" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_G3yUCJkpEeudivPWb2m4dA" field="PASSWORD" name="SSL_KEYSTORE_PASSWORD" value="enc:system.encryption.key.v1:uYKp1NjyMxIv0bjgNIJYqFVC4jUCEnfXPDhqGWaY"/>
+    <elementParameter xmi:id="_G3yUCZkpEeudivPWb2m4dA" field="TEXT" name="SSL_TRUSTSTORE_LOCATION" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_G3yUCpkpEeudivPWb2m4dA" field="PASSWORD" name="SSL_TRUSTSTORE_PASSWORD" value="enc:system.encryption.key.v1:yZiTbWUnHNm6WXP7qdH9LvKw1yXl4DixjAs6B4aO"/>
+    <elementParameter xmi:id="_G3yUC5kpEeudivPWb2m4dA" field="TEXT" name="SSL_CIPHER_SUITS" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_G3yUDJkpEeudivPWb2m4dA" field="TEXT" name="SSL_ENDPOINT_ALGORITHM" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_G3yUDZkpEeudivPWb2m4dA" field="TEXT" name="SASL_KERBEROS_SERVICE_NAME" value="&quot;&quot;"/>
+    <elementParameter xmi:id="_G3yUDpkpEeudivPWb2m4dA" field="CLOSED_LIST" name="SECURITY_PROTOCOL" value="PLAINTEXT"/>
+    <elementParameter xmi:id="_G3yUD5kpEeudivPWb2m4dA" field="TEXT" name="LABEL" value="BinningTopic"/>
+    <elementParameter xmi:id="_G3yUEJkpEeudivPWb2m4dA" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <connection xmi:id="_G3yUEZkpEeudivPWb2m4dA" connectorName="ROUTE" label="route9" lineStyle="14" metaname="cOnException_1" offsetLabelX="0" offsetLabelY="0" source="cOnException_1" target="cLog_3">
+    <elementParameter xmi:id="_G3yUEpkpEeudivPWb2m4dA" field="TEXT" name="UNIQUE_NAME" value="route9" show="false"/>
+  </connection>
+  <connection xmi:id="_G3yUE5kpEeudivPWb2m4dA" connectorName="ROUTE" label="route2" lineStyle="14" metaname="cLog_1" offsetLabelX="0" offsetLabelY="0" source="cLog_1" target="cFile_1">
+    <elementParameter xmi:id="_G3yUFJkpEeudivPWb2m4dA" field="TEXT" name="UNIQUE_NAME" value="route2" show="false"/>
+  </connection>
+  <connection xmi:id="_G3yUFZkpEeudivPWb2m4dA" connectorName="ROUTE" label="route1" lineStyle="14" metaname="cKafka_1" offsetLabelX="0" offsetLabelY="0" source="cKafka_1" target="cLog_1">
+    <elementParameter xmi:id="_G3yUFpkpEeudivPWb2m4dA" field="TEXT" name="UNIQUE_NAME" value="route1" show="false"/>
+  </connection>
+  <note xmi:id="_G3yUF5kpEeudivPWb2m4dA" opaque="true" posX="192" posY="224" sizeHeight="64" sizeWidth="353" text="Exception Handling block"/>
+  <subjob xmi:id="_G3yUGJkpEeudivPWb2m4dA">
+    <elementParameter xmi:id="_G3yUGZkpEeudivPWb2m4dA" field="TEXT" name="UNIQUE_NAME" value="cOnException_1" show="false"/>
+    <elementParameter xmi:id="_G3yUGpkpEeudivPWb2m4dA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_G3yUG5kpEeudivPWb2m4dA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_G3yUHJkpEeudivPWb2m4dA">
+    <elementParameter xmi:id="_G3yUHZkpEeudivPWb2m4dA" field="TEXT" name="UNIQUE_NAME" value="cLog_3" show="false"/>
+    <elementParameter xmi:id="_G3yUHpkpEeudivPWb2m4dA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_G3yUH5kpEeudivPWb2m4dA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_G3yUIJkpEeudivPWb2m4dA">
+    <elementParameter xmi:id="_G3yUIZkpEeudivPWb2m4dA" field="TEXT" name="UNIQUE_NAME" value="cLog_1" show="false"/>
+    <elementParameter xmi:id="_G3yUIpkpEeudivPWb2m4dA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_G3yUI5kpEeudivPWb2m4dA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_G3yUJJkpEeudivPWb2m4dA">
+    <elementParameter xmi:id="_G3yUJZkpEeudivPWb2m4dA" field="TEXT" name="UNIQUE_NAME" value="cFile_1" show="false"/>
+    <elementParameter xmi:id="_G3yUJpkpEeudivPWb2m4dA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_G3yUJ5kpEeudivPWb2m4dA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_G3yUKJkpEeudivPWb2m4dA">
+    <elementParameter xmi:id="_G3yUKZkpEeudivPWb2m4dA" field="TEXT" name="UNIQUE_NAME" value="cKafka_1" show="false"/>
+    <elementParameter xmi:id="_G3yUKpkpEeudivPWb2m4dA" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_G3yUK5kpEeudivPWb2m4dA" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>
