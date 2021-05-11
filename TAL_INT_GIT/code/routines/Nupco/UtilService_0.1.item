@@ -92,6 +92,10 @@ public class UtilService {
 	}
 	public static int getRecordCount(String input)
 	{
+		if(input!=null && input.equalsIgnoreCase("No records Found"))
+		{
+			return 0;
+		}
 		if(!input.contains("Updated"))
 		{
 			input=input+" and 0 Records has Updated";
