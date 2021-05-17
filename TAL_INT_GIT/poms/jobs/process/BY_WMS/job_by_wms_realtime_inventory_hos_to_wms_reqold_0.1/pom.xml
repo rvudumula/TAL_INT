@@ -9,15 +9,15 @@
     <relativePath>../../../../</relativePath>
   </parent>
   <groupId>org.example.tal_int_git.service</groupId>
-  <artifactId>job_BY_WMS_RealTime_Inventory_WMS_To_HOS_Response</artifactId>
+  <artifactId>job_BY_WMS_RealTime_Inventory_HOS_To_WMS_ReqOLD</artifactId>
   <version>0.1.0</version>
   <packaging>bundle</packaging>
-  <name>TAL_INT_GIT job_BY_WMS_RealTime_Inventory_WMS_To_HOS_Response-${project.version} (0.1,Job Designs) Bundle</name>
+  <name>TAL_INT_GIT job_BY_WMS_RealTime_Inventory_HOS_To_WMS_ReqOLD-${project.version} (0.1,Job Designs) Bundle</name>
   <properties>
     <item.name>@ItemName@</item.name>
     <bundle.config.export.service>@BundleConfigExportService@</bundle.config.export.service>
     <bundle.config.bundle.classpath>@BundleConfigBundleClasspath@</bundle.config.bundle.classpath>
-    <talend.job.name>job_BY_WMS_RealTime_Inventory_WMS_To_HOS_Response</talend.job.name>
+    <talend.job.name>job_BY_WMS_RealTime_Inventory_HOS_To_WMS_ReqOLD</talend.job.name>
     <current.test.resources.dir>${basedir}/src/test/resources</current.test.resources.dir>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
     <docker.skip>true</docker.skip>
@@ -35,7 +35,7 @@
     <talend.routine.groupid>org.example.tal_int_git.code</talend.routine.groupid>
     <talend.job.folder>by_wms/</talend.job.folder>
     <bundle.config.import.package>@BundleConfigImportPackage@</bundle.config.import.package>
-    <talend.job.id>_JRR7ELB6Eeup8eTMW34CDQ</talend.job.id>
+    <talend.job.id>_Joz2MK5JEeuOsraqNViBWA</talend.job.id>
     <talend.project.name.lowercase>tal_int_git</talend.project.name.lowercase>
     <talend.job.finalName>${talend.job.name}-bundle-${project.version}</talend.job.finalName>
     <lib.path>${resources.path}/lib</lib.path>
@@ -61,6 +61,11 @@
     <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>activation</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>advancedPersistentLookupLib-1.2</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
@@ -274,7 +279,7 @@
       <version>6.0.0</version>
     </dependency>
     <dependency>
-      <groupId>org.talend.libraries</groupId>
+      <groupId>jakarta.xml.bind</groupId>
       <artifactId>jakarta.xml.bind-api</artifactId>
       <version>2.3.2</version>
     </dependency>
@@ -331,12 +336,7 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>jersey-client-1.4</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>jersey-core-1.4</artifactId>
+      <artifactId>jboss-serialization</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
@@ -368,6 +368,11 @@
       <groupId>net.minidev</groupId>
       <artifactId>json-smart</artifactId>
       <version>2.2.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-1.2-api</artifactId>
+      <version>2.12.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
@@ -481,11 +486,6 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>org.json</artifactId>
-      <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
       <artifactId>reflections</artifactId>
       <version>6.0.0</version>
     </dependency>
@@ -586,28 +586,18 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>tdm-eclipse-7.3.1-20200214_0759</artifactId>
-      <version>7.3.1</version>
+      <artifactId>talendcsv</artifactId>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>tdm-lib-di-7.3.1-20200214_0759</artifactId>
-      <version>7.3.1</version>
+      <artifactId>trove</artifactId>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>txw2-2.3.2</artifactId>
       <version>6.0.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>utillookup</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.libraries</groupId>
-      <artifactId>validate</artifactId>
-      <version>6.0.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>javax.validation</groupId>
