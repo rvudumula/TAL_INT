@@ -22,36 +22,46 @@ import java.util.LinkedHashMap;
  * 
  * 5. {example} gives a example for the Function. it is optional.
  */
-public class LookupService {
-	public static String getPlantIDbywhclientId(String whid, String clientid) { 
+public class LookupService
+{
+    public static String getPlantIDbywhclientId(final String whid, final String clientid) {
         final HashMap<String, String> plantMap = new LinkedHashMap<String, String>();
         plantMap.put("C100NUPCO-EM", "C1C1");
         plantMap.put("C100NUPCO-RC", "C1C1");
         plantMap.put("C100NUPCO-DN", "C1C1");
+        plantMap.put("C100NUPCO-CC", "C1C1");
         plantMap.put("C100MOH", "C2C1");
         plantMap.put("C100MOH-PMAH", "C2C1");
         plantMap.put("C100MOH-DIW", "C2C1");
+        plantMap.put("C100MOH-MOH-DAIR", "C2C1");
+        plantMap.put("C100MOH-MOH-DSUL", "C2C1");
+        plantMap.put("C100MOH-KSMC", "C2C1");
         plantMap.put("E100NUPCO-RC", "E1C1");
         plantMap.put("E100MOH", "E2C1");
         plantMap.put("E100MODA", "E3C1");
         plantMap.put("#", "E2C1");
         plantMap.put("W100NUPCO-RC", "W1C1");
         plantMap.put("W100MOH", "W2C1");
+        
         String result = "";
-        if (plantMap.containsKey(String.valueOf(String.valueOf(whid)) + clientid)) {
-            result = plantMap.get(String.valueOf(String.valueOf(whid)) + clientid);
+        if (plantMap.containsKey(String.valueOf(whid) + clientid)) {
+            result = plantMap.get(String.valueOf(whid) + clientid);
         }
         return result;
     }
     
-    public static String getStorageLocationbywhclientId(String whid, String clientid) {
+    public static String getStorageLocationbywhclientId(final String whid, final String clientid) {
         final HashMap<String, String> plantMap = new LinkedHashMap<String, String>();
         plantMap.put("C100NUPCO-EM", "1000");
         plantMap.put("C100NUPCO-RC", "2000");
         plantMap.put("C100NUPCO-DN", "3000");
+        plantMap.put("C100NUPCO-CC", "7000");
         plantMap.put("C100MOH", "1000");
         plantMap.put("C100MOH-PMAH", "2000");
         plantMap.put("C100MOH-DIW", "3000");
+        plantMap.put("C100MOH-MOH-DAIR", "4000");
+        plantMap.put("C100MOH-MOH-DSUL", "5000");
+        plantMap.put("C100MOH-KSMC", "6000");
         plantMap.put("E100NUPCO-RC", "1000");
         plantMap.put("E100MOH", "1000");
         plantMap.put("E100MODA", "1000");
@@ -59,20 +69,24 @@ public class LookupService {
         plantMap.put("W100NUPCO-RC", "1000");
         plantMap.put("W100MOH", "1000");
         String result = "";
-        if (plantMap.containsKey(String.valueOf(String.valueOf(whid)) + clientid)) {
-            result = plantMap.get(String.valueOf(String.valueOf(whid)) + clientid);
+        if (plantMap.containsKey(String.valueOf(whid) + clientid)) {
+            result = plantMap.get(String.valueOf(whid) + clientid);
         }
         return result;
     }
     
-    public static String getWHID(String plantid) {
+    public static String getWHID(final String plantid) {
         final HashMap<String, String> plantMap = new LinkedHashMap<String, String>();
         plantMap.put("C1C1", "C100");
         plantMap.put("C1C1", "C100");
         plantMap.put("C1C1", "C100");
+        plantMap.put("C1C1", "C100");
         plantMap.put("C2C1", "C100");
         plantMap.put("C2C1", "C100");
         plantMap.put("C2C1", "C100");
+        plantMap.put("C2C1", "C100");
+        plantMap.put("C2C1", "C100");
+        plantMap.put("C2C1", "C100");        
         plantMap.put("C3C1", "C100");
         plantMap.put("E1C1", "E100");
         plantMap.put("E2C1", "E100");
@@ -87,17 +101,21 @@ public class LookupService {
         return result;
     }
     
-    public static String getClientId(String plantid) {
+    public static String getClientId(final String plantid) {
         final HashMap<String, String> plantMap = new LinkedHashMap<String, String>();
         plantMap.put("C1C1", "NUPCO-EM");
         plantMap.put("C1C1", "NUPCO-RC");
         plantMap.put("C1C1", "NUPCO-DN");
+        plantMap.put("C1C1", "NUPCO-CC");
         plantMap.put("C2C1", "MOH");
         plantMap.put("C2C1", "MOH-PMAH");
         plantMap.put("C2C1", "MOH-DIW");
+        plantMap.put("C2C1", "MOH-DAIR");
+        plantMap.put("C2C1", "MOH-DSUL");
+        plantMap.put("C2C1", "KSMC");
         plantMap.put("C3C1", "KSMC");
         plantMap.put("E1C1", "NUPCO-RC");
-        plantMap.put("E2C1", "E100");
+        plantMap.put("E2C1", "MOH");
         plantMap.put("E3C1", "MODA");
         plantMap.put("E2C1", "");
         plantMap.put("W1C1", "NUPCO-RC");
@@ -109,14 +127,18 @@ public class LookupService {
         return result;
     }
     
-    public static String getClientIdByplantstorage(String plantid, String stoloc) {
+    public static String getClientIdByplantstorage(final String plantid, final String stoloc) {
         final HashMap<String, String> plantMap = new LinkedHashMap<String, String>();
         plantMap.put("C1C11000", "NUPCO-EM");
         plantMap.put("C1C12000", "NUPCO-RC");
         plantMap.put("C1C13000", "NUPCO-DN");
+        plantMap.put("C1C17000", "NUPCO-CC");
         plantMap.put("C2C11000", "MOH");
         plantMap.put("C2C12000", "MOH-PMAH");
         plantMap.put("C2C13000", "MOH-DIW");
+        plantMap.put("C2C14000", "MOH-DAIR");
+        plantMap.put("C2C15000", "MOH-DSUL");
+        plantMap.put("C2C16000", "KSMC");
         plantMap.put("C3C1", "KSMC");
         plantMap.put("E1C11000", "NUPCO-RC");
         plantMap.put("E2C11000", "MOH");
@@ -125,17 +147,21 @@ public class LookupService {
         plantMap.put("W1C11000", "NUPCO-RC");
         plantMap.put("W2C11000", "MOH");
         String result = "";
-        if (plantMap.containsKey(String.valueOf(String.valueOf(plantid)) + stoloc)) {
-            result = plantMap.get(String.valueOf(String.valueOf(plantid)) + stoloc);
+        if (plantMap.containsKey(String.valueOf(plantid) + stoloc)) {
+            result = plantMap.get(String.valueOf(plantid) + stoloc);
         }
         return result;
     }
     
-    public static String getWareHouseByPlant(String plantid) {
+    public static String getWareHouseByPlant(final String plantid) {
         final HashMap<String, String> plantMap = new LinkedHashMap<String, String>();
         plantMap.put("C1C1", "C100");
         plantMap.put("C1C1", "C100");
         plantMap.put("C1C1", "C100");
+        plantMap.put("C1C1", "C100");
+        plantMap.put("C2C1", "C100");
+        plantMap.put("C2C1", "C100");
+        plantMap.put("C2C1", "C100");
         plantMap.put("C2C1", "C100");
         plantMap.put("C2C1", "C100");
         plantMap.put("C2C1", "C100");
@@ -153,14 +179,18 @@ public class LookupService {
         return result;
     }
     
-    public static String getWareHouseByPlantStorage(String plantid, String storaeg) {
+    public static String getWareHouseByPlantStorage(final String plantid, final String storaeg) {
         final HashMap<String, String> plantMap = new LinkedHashMap<String, String>();
         plantMap.put("C1C11000", "C100");
         plantMap.put("C1C12000", "C100");
         plantMap.put("C1C13000", "C100");
+        plantMap.put("C1C17000", "C100");
         plantMap.put("C2C11000", "C100");
         plantMap.put("C2C12000", "C100");
         plantMap.put("C2C13000", "C100");
+        plantMap.put("C2C14000", "C100");
+        plantMap.put("C2C15000", "C100");
+        plantMap.put("C2C16000", "C100");
         plantMap.put("C3C11000", "#");
         plantMap.put("E1C11000", "E100");
         plantMap.put("E2C11000", "E100");
@@ -169,13 +199,13 @@ public class LookupService {
         plantMap.put("W1C11000", "W100");
         plantMap.put("W2C11000", "W100");
         String result = "";
-        if (plantMap.containsKey(String.valueOf(String.valueOf(plantid)) + storaeg)) {
-            result = plantMap.get(String.valueOf(String.valueOf(plantid)) + storaeg);
+        if (plantMap.containsKey(String.valueOf(plantid) + storaeg)) {
+            result = plantMap.get(String.valueOf(plantid) + storaeg);
         }
         return result;
     }
     
-    public static String formatDate(String d) {
+    public static String formatDate(final String d) {
         String result = "";
         try {
             final SimpleDateFormat ddf = new SimpleDateFormat("yyyy-MM-dd");
@@ -191,5 +221,4 @@ public class LookupService {
             return d;
         }
     }
-
 }
