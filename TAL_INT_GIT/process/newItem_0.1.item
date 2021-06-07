@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:ppZ38cCkejXVFERFZOEasOPPuDiydNU+Na/KWUwM"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:Wpn1DegkfF0Kubv9RXlMOaRR55PjwGe0d8lWny0d"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -80,7 +80,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.AMC_AdditionalParams"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.AMC_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:8nTntpMDcHp6xKbQN3ztx+V/C+OS7d8kwS3ssu7iQoiPDRbG7uWGlyAl4G42ChjU"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:uZJzWgWWKUIENPCWY2yzEhJpfFuxxKewmu8I1C7xk3BsNsugLsx0txGm7lPTkZpT"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;statcatcher&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;logcatcher&quot;"/>
@@ -354,6 +354,8 @@
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" show="false" value="true"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -469,6 +471,425 @@
       <column comment="" key="false" length="19" name="CIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tWriteXMLField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWriteXMLField_1"/>
+    <elementParameter field="COLUMN_LIST" name="XMLFIELD" value="string"/>
+    <elementParameter field="TABLE" name="ROOT" show="false">
+      <elementValue elementRef="PATH" value="/PART_INB_IFD"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="1"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="2"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/TRNNAM"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="3"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/TRNVER"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="4"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/WHSE_ID"/>
+      <elementValue elementRef="COLUMN" value="WHSE_ID"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="5"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="GROUP" show="false"/>
+    <elementParameter field="TABLE" name="LOOP" show="false">
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="6"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/SEGNAM"/>
+      <elementValue elementRef="COLUMN" value="SEGNAM"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="7"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/TRNTYP"/>
+      <elementValue elementRef="COLUMN" value="TRNTYP"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="8"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PRTNUM"/>
+      <elementValue elementRef="COLUMN" value="PRTNUM"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="9"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PRT_CLIENT_ID"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="10"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PRTFAM"/>
+      <elementValue elementRef="COLUMN" value="PRTFAM"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="11"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/LODLVL"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="12"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/LOTFLG"/>
+      <elementValue elementRef="COLUMN" value="LOTFLG"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="13"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/STKUOM"/>
+      <elementValue elementRef="COLUMN" value="STKUOM"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="14"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/VELZON"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="15"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/RCVSTS"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="16"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/RCVFLG"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="17"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PRDFLG"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="18"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/FIFWIN"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="19"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/DTE_CODE"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="20"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/CNZFLG"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="21"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/CNZAMT"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="22"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/TIME_TO_WARN_FOR_EXP"/>
+      <elementValue elementRef="COLUMN" value="TIME_TO_WARN_FOR_EXP"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="23"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PRTADJFLG"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="24"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/UNTCST"/>
+      <elementValue elementRef="COLUMN" value="UNTCST"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="25"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/ABCCOD"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="26"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/TIMCOD"/>
+      <elementValue elementRef="COLUMN" value="TIMCOD"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="27"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PRTSTYLE"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="28"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/HAZMAT_FLG"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="29"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/SHELF_LIFE"/>
+      <elementValue elementRef="COLUMN" value="SHELF_LIFE"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="30"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/DSP_PRTNUM"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="31"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PRTCOLOR"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="32"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/THRESH_PCK_VAR"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="33"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/DSPUOM"/>
+      <elementValue elementRef="COLUMN" value="DSPUOM"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="34"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/DTE_WIN_TYP"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="35"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/SHELF_TIMECODE"/>
+      <elementValue elementRef="COLUMN" value="SHELF_TIMECODE"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="36"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/TYPCOD"/>
+      <elementValue elementRef="COLUMN" value="TYPCOD"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="37"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/REVFLG"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="38"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/ATTR_STR1"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="39"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PART_DESCRIPTION_SEG"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="40"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PART_DESCRIPTION_SEG/SEGNAM"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="41"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PART_DESCRIPTION_SEG/LNGDSC"/>
+      <elementValue elementRef="COLUMN" value="LNGDSC"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="42"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PART_DESCRIPTION_SEG/SHORT_DSC"/>
+      <elementValue elementRef="COLUMN" value="SHORT_DSC"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="43"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PART_DESCRIPTION_SEG/LOCALE_ID"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="44"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PART_FOOTPRINT_SEG"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="45"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PART_FOOTPRINT_SEG/SEGNAM"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="46"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PART_FOOTPRINT_SEG/FTPCOD"/>
+      <elementValue elementRef="COLUMN" value="FTPCOD"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="47"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PART_FOOTPRINT_SEG/LNGDSC"/>
+      <elementValue elementRef="COLUMN" value="LNGDSC"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="48"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PART_FOOTPRINT_SEG/SHORT_DSC"/>
+      <elementValue elementRef="COLUMN" value="SHORT_DSC"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="49"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PART_FOOTPRINT_SEG/LOCALE_ID"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="50"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PART_FOOTPRINT_SEG/CASLVL"/>
+      <elementValue elementRef="COLUMN" value="CASLVL"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="51"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PART_FOOTPRINT_SEG/DEFFTP_FLG"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="52"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PART_FOOTPRINT_SEG/PART_FOOTPRINT_DTL_SEG"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="53"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PART_FOOTPRINT_SEG/PART_FOOTPRINT_DTL_SEG/SEGNAM"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="54"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PART_FOOTPRINT_SEG/PART_FOOTPRINT_DTL_SEG/UOMCOD"/>
+      <elementValue elementRef="COLUMN" value="UOMCOD"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="55"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PART_FOOTPRINT_SEG/PART_FOOTPRINT_DTL_SEG/UOMLVL"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="56"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PART_FOOTPRINT_SEG/PART_FOOTPRINT_DTL_SEG/LEN"/>
+      <elementValue elementRef="COLUMN" value="LEN"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="57"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PART_FOOTPRINT_SEG/PART_FOOTPRINT_DTL_SEG/WID"/>
+      <elementValue elementRef="COLUMN" value="WID"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="58"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PART_FOOTPRINT_SEG/PART_FOOTPRINT_DTL_SEG/HGT"/>
+      <elementValue elementRef="COLUMN" value="HGT"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="59"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PART_FOOTPRINT_SEG/PART_FOOTPRINT_DTL_SEG/GRSWGT"/>
+      <elementValue elementRef="COLUMN" value="GRSWGT"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="60"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PART_FOOTPRINT_SEG/PART_FOOTPRINT_DTL_SEG/NETWGT"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="61"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PART_FOOTPRINT_SEG/PART_FOOTPRINT_DTL_SEG/PAL_FLG"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="62"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PART_FOOTPRINT_SEG/PART_FOOTPRINT_DTL_SEG/CAS_FLG"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="63"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PART_FOOTPRINT_SEG/PART_FOOTPRINT_DTL_SEG/PAK_FLG"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="64"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PART_FOOTPRINT_SEG/PART_FOOTPRINT_DTL_SEG/STK_FLG"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="65"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PART_FOOTPRINT_SEG/PART_FOOTPRINT_DTL_SEG/RCV_FLG"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="66"/>
+      <elementValue elementRef="PATH" value="/PART_INB_IFD/CTRL_SEG/PART_SEG/PART_FOOTPRINT_SEG/PART_FOOTPRINT_DTL_SEG/UNTQTY"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="67"/>
+    </elementParameter>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="TABLE" name="GROUPBYS"/>
+    <elementParameter field="CHECK" name="REMOVE_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="CREATE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CREATE_EMPTY_ELEMENT" value="true"/>
+    <elementParameter field="CHECK" name="EXPAND_EMPTY_ELM" value="false"/>
+    <elementParameter field="CHECK" name="OUTPUT_AS_XSD" value="false"/>
+    <elementParameter field="FILE" name="XSD_FILE" show="false" value="&quot;C:/Users/Administrator/Wksp/file.xsd&quot;"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="Null"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWriteXMLField_1">
+      <column comment="" key="false" length="-1" name="string" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFlowToIterate_1"/>
+    <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
+    <elementParameter field="TABLE" name="MAP" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFlowToIterate_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="string"/>
+      <elementValue elementRef="VALUE" value="((String)globalMap.get(&quot;row11.string&quot;))"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" show="false" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" length="-1" name="string" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="string"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_2">
+      <column comment="" key="false" length="-1" name="string" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputXML_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputXML_1" target="tNormalize_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
@@ -477,18 +898,45 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tWriteXMLField_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="FLOW" label="row11" lineStyle="0" metaname="tWriteXMLField_1" offsetLabelX="0" offsetLabelY="0" source="tWriteXMLField_1" target="tFlowToIterate_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="true"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="false"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;Tgt_Item_ALTPRT_Empty_Cnt&quot;"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row11"/>
+  </connection>
+  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFlowToIterate_1" offsetLabelX="0" offsetLabelY="0" source="tFlowToIterate_1" target="tJava_1">
+    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
+    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tFixedFlowInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row17" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tLogRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row17"/>
+  </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputXML_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ef5068dd-2476-43a1-9b41-31131c15df49"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bVY8dZoRhpxjH4LYmf/orAJa08IPjtRow7/UBPosCEIvEZuV3Rfzfyg+IMt43XzR6xHjskE1NUVj&#13;
-3P/W8uWOvw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7cdbf19e-f576-4ce0-9863-ca545740ac45"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>k5g7SwfslxEHFqcdL0ekNghadgXOnTgIE5daAl50C/GhN8ok7Jrb32dFFMK3+dLcM6JFgRbuwhyF&#13;
-I3ow7ZM/Eg==</DigestValue></Reference></SignedInfo><SignatureValue>EosznKqdTDV0LSJvqVNPGdRr2/sOXnvtXAr1s7rxgtxz8IwsKbg2PbyYLNTC51VrcGE3sAwL05q1&#13;
-i+XUVJYD9w2LiHcZf/n6H43hqiepzvGFG5Gfsnkynr676u6blGvYXM+Bl7/CuEGImp6DTBH+5Uvm&#13;
-WLsSMOr6CXSN2+xOKp0ikiH4tqmtMKIgmxhD1IWrIPOS/9usOWGMTnzd36ZDx5Fn7VToyQ6im/gD&#13;
-KhxdzchVxqnkICYX90rJYV9SF494yWno0bHcVEBUPB9qEGDiOXOneFpH5hfZzFk+RHlqeYO69T9I&#13;
-fmQxIP2X0gxfZCPOqeLrwmr/5q7oCS0kq/8Tyw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_cdbcf25e-2bda-44b0-8783-251c0f54e7d4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>swwdzR6swbDMxXtgRPlLMObw7maCNEkx1trseWsexOXELAcjJ/P5ifeeTFJfpc3fWDoX4oY+oQtz&#13;
+Tfa9/v7PoQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_357afab3-241e-4d70-96b5-286ccec2ea4f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>khJ745h+cspgiz64a5sg4VhMrCC++n3CfsXNGnI/bJW87UbSqidbc4hm/lREvPBFhUwKQPL2odn0&#13;
+q3rCs06EyQ==</DigestValue></Reference></SignedInfo><SignatureValue>j6r0siQasAdJqbfKU51UkQ85i8I4L4lu1GpieOKifaT/thrJV4jOtlEcHjJ3pE93PZQWtkbEYFZq&#13;
+u1IjUR7sTR1MFtdkBw2LJcDQu9ofU180ik/G+Jl2/BuTcnygyIOzBm5/IyiFKqeog8APyQmS5bgI&#13;
+JNghXadS6o+J18ameJwjtNysRRJo5Owm078ThxGWtObJglKRRnQxLlhjEESQpNVBXDCx/VjY0BQk&#13;
+XrvsflfVO2wLEAC/ACb1LTxZtQ4Ref4WhfK0zihKS141APsyQD6ewgM7HKxlI6qCd/MV6SNe2a6K&#13;
+BUCsLyuiOJJjM51cMTHt7c5wb7XQp5N+BHv7ag==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -510,4 +958,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7cdbf19e-f576-4ce0-9863-ca545740ac45" Target="#_ef5068dd-2476-43a1-9b41-31131c15df49"><Timestamp>2021-06-07 05:21:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_357afab3-241e-4d70-96b5-286ccec2ea4f" Target="#_cdbcf25e-2bda-44b0-8783-251c0f54e7d4"><Timestamp>2021-06-07 05:24:46</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
