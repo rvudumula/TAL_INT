@@ -61,7 +61,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:huWd/oynp97pRhKUp6Kvr2GobmkCpZrOzfeaU2T6"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:1Lexl9EXW6TJPaopjwiMiDri/sIax1RQ+DpLz7p+"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -98,7 +98,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.AMC_AdditionalParams"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.AMC_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Wy6UUtKIsBtfMY2qps/YiXUMDykA6q7Wb/C4xZuSXwmetEfG5hQcURNY9SoyfW9Q"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:0qVtzAYrzuc2Mv2+L72bqKHsxEt3eaY0l4e6PGh2Gyp0KRObuQeKwCjxCg1/NXoY"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;statcatcher&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;logcatcher&quot;"/>
@@ -370,6 +370,123 @@
       <column comment="" key="false" length="20" name="CIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_3"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="SEGNAM"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MANDT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DOCNUM"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SEGNUM"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PSGNUM"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HLEVEL"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRTNUM"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WHSE_ID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRTFAM"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOTFLG"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UNTCST"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STKUOM"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TIMCOD"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TIME_TO_WARN_FOR_EXP"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DSPUOM"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SHELF_LIFE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SHELF_TIMECODE"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LNGDSC"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SHORT_DSC"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ALT_PRT_TYP"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ALT_PRTNUM"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FTPCOD"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UOMCOD"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CASLVL"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LEN"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="WID"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HGT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GRSWGT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TRNTYP"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRTFIT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TYPCOD"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CIN"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tLogRow_3">
+      <column comment="" key="false" length="16" name="SEGNAM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="MANDT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="DOCNUM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="SEGNUM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="PSGNUM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="HLEVEL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="18" name="PRTNUM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="9" name="WHSE_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="PRTFAM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LOTFLG" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="UNTCST" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="STKUOM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="TIMCOD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="TIME_TO_WARN_FOR_EXP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="DSPUOM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="SHELF_LIFE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="SHELF_TIMECODE" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="38" name="LNGDSC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="38" name="SHORT_DSC" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="ALT_PRT_TYP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="ALT_PRTNUM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="FTPCOD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="UOMCOD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="CASLVL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LEN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="WID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="HGT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="GRSWGT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="TRNTYP" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="PRTFIT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="TYPCOD" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="CIN" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
@@ -448,55 +565,55 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables name="Var" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row13.LOTFLG !=null &amp;&amp; row13.LOTFLG.equals('X') ? '1' :'0' " name="LOTFLG" nullable="true" type="id_Character"/>
-        <mapperTableEntries expression="row13.WHSE_ID!=null ? row13.WHSE_ID.substring(0,StringHandling.INDEX(row13.WHSE_ID,&quot;_&quot;)) : row13.WHSE_ID " name="Plant_ID" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row13.WHSE_ID!=null ? row13.WHSE_ID.substring(StringHandling.INDEX(row13.WHSE_ID,&quot;_&quot;)+1,row13.WHSE_ID.length()) &#13;&#10;: row13.WHSE_ID " name="Storage_Loc_Code" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row13.PRTNUM!=null ? row13.PRTNUM.replaceAll(&quot;^0+(?!$)&quot;, &quot;&quot;) : &quot;&quot; " name="PRTNUM" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="/*row13.HAZMAT_FLG!=null ? row13.HAZMAT_FLG.replaceAll(&quot;^0+(?!$)&quot;, &quot;&quot;) : &quot;&quot; &#13;&#10;&#13;&#10;row13.HAZMAT_FLG!=null ? StringHandling.RIGHT(row13.HAZMAT_FLG,1) : &quot;&quot; */&#10;&quot;&quot; " name="HAZMAT_FLG" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.LOTFLG !=null &amp;&amp; row4.LOTFLG.equals('X') ? '1' :'0' " name="LOTFLG" nullable="true" type="id_Character"/>
+        <mapperTableEntries expression="row4.WHSE_ID!=null ? row4.WHSE_ID.substring(0,StringHandling.INDEX(row4.WHSE_ID,&quot;_&quot;)) : row4.WHSE_ID " name="Plant_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.WHSE_ID!=null ? row4.WHSE_ID.substring(StringHandling.INDEX(row4.WHSE_ID,&quot;_&quot;)+1,row4.WHSE_ID.length()) &#13;&#10;: row4.WHSE_ID " name="Storage_Loc_Code" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.PRTNUM!=null ? row4.PRTNUM.replaceAll(&quot;^0+(?!$)&quot;, &quot;&quot;) : &quot;&quot; " name="PRTNUM" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="/*row4.HAZMAT_FLG!=null ? row4.HAZMAT_FLG.replaceAll(&quot;^0+(?!$)&quot;, &quot;&quot;) : &quot;&quot; &#13;&#10;&#13;&#10;row4.HAZMAT_FLG!=null ? StringHandling.RIGHT(row4.HAZMAT_FLG,1) : &quot;&quot; */&#10;&quot;&quot; " name="HAZMAT_FLG" nullable="true" type="id_String"/>
       </varTables>
       <outputTables name="out11" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="&quot;PART_TRAN&quot;" name="TRNNAM" nullable="true" type="id_String"/>
         <mapperTableEntries expression="&quot;2019.1&quot;" name="TRNVER" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row13.WHSE_ID" name="WHSE_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.WHSE_ID" name="WHSE_ID" nullable="true" type="id_String"/>
         <mapperTableEntries expression="&quot;PART&quot;" name="SEGNAM" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row13.TRNTYP" name="TRNTYP" nullable="true" type="id_Character"/>
+        <mapperTableEntries expression="row4.TRNTYP" name="TRNTYP" nullable="true" type="id_Character"/>
         <mapperTableEntries expression="Var.PRTNUM " name="PRTNUM" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row13.PRTFAM " name="PRTFAM" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.PRTFAM " name="PRTFAM" nullable="true" type="id_String"/>
         <mapperTableEntries expression="'L'" name="LODLVL" nullable="true" type="id_Character"/>
-        <mapperTableEntries expression="row13.UNTCST " name="UNTCST" nullable="true" type="id_Float"/>
+        <mapperTableEntries expression="row4.UNTCST " name="UNTCST" nullable="true" type="id_Float"/>
         <mapperTableEntries expression="Var.LOTFLG " name="LOTFLG" nullable="true" type="id_Character"/>
         <mapperTableEntries expression="365" name="FIFWIN" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="/*row13.STKUOM!=null &amp;&amp; row13.STKUOM.equalsIgnoreCase(&quot;BOT&quot;) ? &quot;BT&quot; : row13.STKUOM &#13;&#10;&#13;&#10;row4.STKUOM!=null &amp;&amp; row4.STKUOM.equalsIgnoreCase(&quot;BOT&quot;) ? &quot;BT&quot; :&#13;&#10;row4.STKUOM.equalsIgnoreCase(&quot;GLL&quot;) ? &quot;GL&quot; :&#13;&#10;row4.STKUOM.equalsIgnoreCase(&quot;SUP&quot;) ? &quot;SP&quot;: row4.STKUOM*/&#13;&#10;&#13;&#10;row13.STKUOM!=null &amp;&amp; row13.STKUOM.equalsIgnoreCase(&quot;BOT&quot;) ? &quot;BT&quot; :&#13;&#10;row13.STKUOM.equalsIgnoreCase(&quot;GLL&quot;) ? &quot;GAL&quot; :&#10;row13.STKUOM.equalsIgnoreCase(&quot;ST&quot;) ? &quot;SET&quot;&#10;: row13.STKUOM " name="STKUOM" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="//row13.VELZON &#13;&#10;&#13;&#10;'A' " name="VELZON" nullable="true" type="id_Character"/>
+        <mapperTableEntries expression="/*row4.STKUOM!=null &amp;&amp; row4.STKUOM.equalsIgnoreCase(&quot;BOT&quot;) ? &quot;BT&quot; : row4.STKUOM &#13;&#10;&#13;&#10;row4.STKUOM!=null &amp;&amp; row4.STKUOM.equalsIgnoreCase(&quot;BOT&quot;) ? &quot;BT&quot; :&#13;&#10;row4.STKUOM.equalsIgnoreCase(&quot;GLL&quot;) ? &quot;GL&quot; :&#13;&#10;row4.STKUOM.equalsIgnoreCase(&quot;SUP&quot;) ? &quot;SP&quot;: row4.STKUOM*/&#13;&#10;&#13;&#10;row4.STKUOM!=null &amp;&amp; row4.STKUOM.equalsIgnoreCase(&quot;BOT&quot;) ? &quot;BT&quot; :&#13;&#10;row4.STKUOM.equalsIgnoreCase(&quot;GLL&quot;) ? &quot;GAL&quot; :&#10;row4.STKUOM.equalsIgnoreCase(&quot;ST&quot;) ? &quot;SET&quot;&#10;: row4.STKUOM " name="STKUOM" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="//row4.VELZON &#13;&#10;&#13;&#10;'A' " name="VELZON" nullable="true" type="id_Character"/>
         <mapperTableEntries expression="'A'" name="RCVSTS" nullable="true" type="id_Character"/>
         <mapperTableEntries expression="0" name="RCVFLG" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="1" name="PRDFLG" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row13.FTPCOD " name="FTPCOD" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="//row13.ABCCOD &#13;&#10;&#13;&#10;'A' " name="ABCCOD" nullable="true" type="id_Character"/>
+        <mapperTableEntries expression="row4.FTPCOD " name="FTPCOD" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="//row4.ABCCOD &#13;&#10;&#13;&#10;'A' " name="ABCCOD" nullable="true" type="id_Character"/>
         <mapperTableEntries expression="/*If LOTFLG is 1 then expect value 'B' other wise 0.*/&#13;&#10;&#13;&#10;/*Var.LOTFLG!=null &amp;&amp; Var.LOTFLG == 1 ? 'B' : '0'*/&#10;&#10;Var.LOTFLG!=null &amp;&amp; Var.LOTFLG.equals('1') ? 'B' : '0' " name="DTE_CODE" nullable="true" type="id_Character"/>
         <mapperTableEntries expression="Var.LOTFLG!=null &amp;&amp; Var.LOTFLG.equals('1') ? &quot;E&quot; : &quot;&quot; " name="DTE_WIN_TYP" nullable="true" type="id_String"/>
         <mapperTableEntries expression="0" name="CNZFLG" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="1" name="CNZAMT" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row13.SHELF_LIFE " name="SHELF_LIFE" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row13.TIME_TO_WARN_FOR_EXP" name="TIME_TO_WARN_FOR_EXP" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row4.SHELF_LIFE " name="SHELF_LIFE" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row4.TIME_TO_WARN_FOR_EXP" name="TIME_TO_WARN_FOR_EXP" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="1" name="PRTADJFLG" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="Var.HAZMAT_FLG" name="HAZMAT_FLG" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="/*row13.PRTCOLOR.equals(&quot;1&quot;) || row13.PRTCOLOR.equals(&quot;01&quot;) ? &quot;01-Room Temp (15-25)°C1&quot; :&#13;&#10;row13.PRTCOLOR.equals(&quot;2&quot;) || row13.PRTCOLOR.equals(&quot;02&quot;) ? &quot;02-Cold Temp (2-8)°C&quot; :&#13;&#10;row13.PRTCOLOR.equals(&quot;3&quot;) || row13.PRTCOLOR.equals(&quot;03&quot;)? &quot;03-Freezing (-20)°C&quot; : &quot;&quot; */&#10;//row13.PRTCOLOR &#10;&#10;&quot;&quot; " name="PRTCOLOR" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row13.DSPUOM" name="DSPUOM" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row13.SHELF_TIMECODE " name="SHELF_TIMECODE" nullable="true" type="id_Character"/>
+        <mapperTableEntries expression="/*row4.PRTCOLOR.equals(&quot;1&quot;) || row4.PRTCOLOR.equals(&quot;01&quot;) ? &quot;01-Room Temp (15-25)°C1&quot; :&#13;&#10;row4.PRTCOLOR.equals(&quot;2&quot;) || row4.PRTCOLOR.equals(&quot;02&quot;) ? &quot;02-Cold Temp (2-8)°C&quot; :&#13;&#10;row4.PRTCOLOR.equals(&quot;3&quot;) || row4.PRTCOLOR.equals(&quot;03&quot;)? &quot;03-Freezing (-20)°C&quot; : &quot;&quot; */&#10;//row4.PRTCOLOR &#10;&#10;&quot;&quot; " name="PRTCOLOR" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.DSPUOM" name="DSPUOM" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.SHELF_TIMECODE " name="SHELF_TIMECODE" nullable="true" type="id_Character"/>
         <mapperTableEntries expression="0" name="THRESH_PCK_VAR" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="Var.PRTNUM " name="DSP_PRTNUM" nullable="true" type="id_String"/>
         <mapperTableEntries expression="&quot;PART_DESC&quot;" name="SEGNAM_DESC_SEG" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row13.LNGDSC " name="LNGDSC" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row13.SHORT_DSC " name="SHORT_DSC" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row13.ALT_PRT_TYP " name="ALT_PRT_TYP" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row13.ALT_PRTNUM " name="ALT_PRTNUM" nullable="true" type="id_Long"/>
-        <mapperTableEntries expression="row13.CASLVL " name="CASLVL" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row13.LEN " name="LEN" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row13.WID " name="WID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row13.HGT " name="HGT" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row13.GRSWGT " name="GRSWGT" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row13.TIMCOD" name="TIMCOD" nullable="true" type="id_Character"/>
+        <mapperTableEntries expression="row4.LNGDSC " name="LNGDSC" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.SHORT_DSC " name="SHORT_DSC" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.ALT_PRT_TYP " name="ALT_PRT_TYP" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.ALT_PRTNUM " name="ALT_PRTNUM" nullable="true" type="id_Long"/>
+        <mapperTableEntries expression="row4.CASLVL " name="CASLVL" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.LEN " name="LEN" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row4.WID " name="WID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row4.HGT " name="HGT" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row4.GRSWGT " name="GRSWGT" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row4.TIMCOD" name="TIMCOD" nullable="true" type="id_Character"/>
         <mapperTableEntries expression="0" name="DEFFTP_FLG" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="1" name="NETWGT" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="1" name="PAL_FLG" nullable="true" type="id_Integer"/>
@@ -506,16 +623,16 @@
         <mapperTableEntries expression="1" name="RCV_FLG" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="1" name="UNTQTY" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="" name="PRTSTYLE" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row13.PRTFIT!=null &amp;&amp; row13.PRTFIT.equalsIgnoreCase(&quot;BOT&quot;) ? &quot;BT&quot; :&#13;&#10;row13.PRTFIT.equalsIgnoreCase(&quot;GLL&quot;) ? &quot;GAL&quot; :&#13;&#10;row13.PRTFIT.equalsIgnoreCase(&quot;ST&quot;) ? &quot;SET&quot;&#13;&#10;: row13.PRTFIT " name="PRTFIT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.PRTFIT!=null &amp;&amp; row4.PRTFIT.equalsIgnoreCase(&quot;BOT&quot;) ? &quot;BT&quot; :&#13;&#10;row4.PRTFIT.equalsIgnoreCase(&quot;GLL&quot;) ? &quot;GAL&quot; :&#13;&#10;row4.PRTFIT.equalsIgnoreCase(&quot;ST&quot;) ? &quot;SET&quot;&#13;&#10;: row4.PRTFIT " name="PRTFIT" nullable="true" type="id_String"/>
         <mapperTableEntries expression="Var.Plant_ID " name="Plant_ID" nullable="true" type="id_String"/>
         <mapperTableEntries expression="Var.Storage_Loc_Code " name="Storage_Loc_Code" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row13.UOMCOD " name="UOMCOD" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.UOMCOD " name="UOMCOD" nullable="true" type="id_String"/>
         <mapperTableEntries expression="&quot;US_ENGLISH&quot;" name="LOCALE_ID" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row13.TYPCOD " name="TYPCOD" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row13.TYPCOD.equals(&quot;Z001&quot;) ? &quot;1&quot; : &quot;&quot; " name="REVFLG" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row13.TYPCOD.equals(&quot;Z001&quot;) ? &quot;T&quot; : &quot;&quot; " name="ATTR_STR1" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.TYPCOD " name="TYPCOD" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.TYPCOD.equals(&quot;Z001&quot;) ? &quot;1&quot; : &quot;&quot; " name="REVFLG" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row4.TYPCOD.equals(&quot;Z001&quot;) ? &quot;T&quot; : &quot;&quot; " name="ATTR_STR1" nullable="true" type="id_String"/>
       </outputTables>
-      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row13" sizeState="INTERMEDIATE">
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row4" sizeState="INTERMEDIATE">
         <mapperTableEntries name="SEGNAM" nullable="true" type="id_String"/>
         <mapperTableEntries name="MANDT" nullable="true" type="id_String"/>
         <mapperTableEntries name="DOCNUM" nullable="true" type="id_String"/>
@@ -951,6 +1068,8 @@
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" show="false" value="true"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -1426,9 +1545,13 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
-  <connection connectorName="FLOW" label="row13" lineStyle="0" metaname="tNormalize_1" offsetLabelX="0" offsetLabelY="0" source="tNormalize_1" target="tMap_1">
+  <connection connectorName="FLOW" label="row13" lineStyle="0" metaname="tNormalize_1" offsetLabelX="0" offsetLabelY="0" source="tNormalize_1" target="tLogRow_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row13"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tLogRow_3" offsetLabelX="0" offsetLabelY="0" source="tLogRow_3" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
   </connection>
   <connection connectorName="FLOW" label="out11" lineStyle="0" metaname="out11" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMap_2">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -1621,13 +1744,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8e419cd8-6e22-42fb-87e2-5b2a6ac222b9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>sRJlmqKJImzX2F1xFXRpyS9ZHXWXLAOjecXNE6j83Rt4pO2n78iN7l26P7moAjziOkytGvSsWprt&#13;
-n4DaF+L9uQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_095f663d-d3dc-4d93-b1e2-6ea38bfa3c56"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hzUjb+i5fvZv77tmX93HJgSQr3MblL+d8McXfqzC7TOtKfwleAM9reTcMX5SdokfwLw+gk8trFJ2&#13;
-+teKgShVSA==</DigestValue></Reference></SignedInfo><SignatureValue>N0M0pCh9XItNd/+hNQems6Riv69RTCeBCUFPSWdemz3A0Q5/blt05RcL8ztesviUhbW2kyNznsM9&#13;
-R/AMfgdT2+AeMFTfUeKocIwvUnKf8m4RlzOuLy8izySSQZeQtDMpc/Di+3x/2VZnwhY3HRZL7xzM&#13;
-OqWTYRgWgx9OtHcjjNhryRT9UcPfBiqvkbw2YKFhyjN6zqkm6zU+xPZpGkVYKnOI80JyO8ez1hpB&#13;
-lfN6xNxMkEMDaczxnHRH2DIT7zG57XTlIAdT3thr5Fis+xx3I2OOxdGppulbrJUih51xtepjxcbO&#13;
-LzYha4ZRSdFBDNYrEOY08ochOWATzJHZqblkYw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_94fa0df2-1aa1-4bb2-9256-76ed278c4a84"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9noJD9d0WMHoXCbS24paKkvXOWbqyULCAExtz76P5FfNnUvOBx256/zV7VIMPpbuzTtt71izeXyL&#13;
+LmefW8X8zg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4a76591c-0d79-46d4-a359-7019b16cde3b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bf2GO/kt6KwaOaPq1BPSwKgco6PoTEeXkC+tlKCcK1esFK2A5dAZgvALVTExIhuyhHghWOrLqbSR&#13;
+xTEOrjE8qw==</DigestValue></Reference></SignedInfo><SignatureValue>pe3fWFfLNmcJTaWmpXgHkp/j8Y/UiE5+/3Jh+JbxFbVgO8fzqfMEJ0vaqx30mW1em73o7TRrWlv2&#13;
+5Hnh7J/5puUmdlz3TrEM+3RndA44QtDtrxe54KykT7wdQPcAtKP0WYCBF0vjDy9BRL6XLacaDAvU&#13;
+tLFF2GfzIKhgxqPebG6JPdyh4oKzWL56lVBR6V5H/XHTom9VfNzPwUULC/bC5cx8TUiMpFCtOiLW&#13;
+ot0PH2m89W6Tupn3rhDC3mDTiek+lu+E0SVqOIGfXfpILMtdeKskb6K/uF2tC3AkAv4zmdDIrHtf&#13;
+3iaBDysYlI474K1soD6y4Plmpy8YyuXBLqA6PQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1649,4 +1772,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_095f663d-d3dc-4d93-b1e2-6ea38bfa3c56" Target="#_8e419cd8-6e22-42fb-87e2-5b2a6ac222b9"><Timestamp>2021-06-08 07:58:57</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4a76591c-0d79-46d4-a359-7019b16cde3b" Target="#_94fa0df2-1aa1-4bb2-9256-76ed278c4a84"><Timestamp>2021-06-08 08:01:27</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
