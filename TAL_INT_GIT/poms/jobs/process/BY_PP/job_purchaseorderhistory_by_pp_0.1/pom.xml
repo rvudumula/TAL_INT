@@ -28,7 +28,7 @@
     <talend.pigudf.groupid>org.example.tal_int_git.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.tal_int_git.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
-    <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
+    <talend.job.jvmargs>-Xms256M -Xmx10G -XX:-UseGCOverheadLimit -Dfile.encoding=UTF-8 </talend.job.jvmargs>
     <talend.job.stat>true</talend.job.stat>
     <talend.job.context>QA</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
@@ -98,11 +98,6 @@
       <version>1.1</version>
     </dependency>
     <dependency>
-      <groupId>com.jcraft</groupId>
-      <artifactId>jsch</artifactId>
-      <version>0.1.55</version>
-    </dependency>
-    <dependency>
       <groupId>net.minidev</groupId>
       <artifactId>json-smart</artifactId>
       <version>2.2.1</version>
@@ -141,11 +136,6 @@
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
       <version>1.7.25</version>
-    </dependency>
-    <dependency>
-      <groupId>org.talend.components.lib</groupId>
-      <artifactId>talend-proxy</artifactId>
-      <version>1.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
