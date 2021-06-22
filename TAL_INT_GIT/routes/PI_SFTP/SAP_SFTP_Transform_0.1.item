@@ -1,39 +1,108 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:id="_6hKTQNM3EeuIW_28bM4jYA" xmi:version="2.0">
-  <context confirmationNeeded="false" name="Default" xmi:id="_6hKTQdM3EeuIW_28bM4jYA"/>
-  <parameters xmi:id="_6hKTQtM3EeuIW_28bM4jYA">
-    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value="" xmi:id="_6hKTQ9M3EeuIW_28bM4jYA"/>
-    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value="" xmi:id="_6hKTRNM3EeuIW_28bM4jYA"/>
-    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value="" xmi:id="_6hKTRdM3EeuIW_28bM4jYA"/>
-    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value="" xmi:id="_6hKTRtM3EeuIW_28bM4jYA"/>
-    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value="" xmi:id="_6hKTR9M3EeuIW_28bM4jYA"/>
-    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value="" xmi:id="_6hKTSNM3EeuIW_28bM4jYA"/>
-    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value="" xmi:id="_6hKTSdM3EeuIW_28bM4jYA"/>
-    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value="" xmi:id="_6hKTStM3EeuIW_28bM4jYA"/>
-    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value="" xmi:id="_6hKTS9M3EeuIW_28bM4jYA"/>
-    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value="" xmi:id="_6hKTTNM3EeuIW_28bM4jYA"/>
-    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value="" xmi:id="_6hKTTdM3EeuIW_28bM4jYA"/>
-    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value="" xmi:id="_6hKTTtM3EeuIW_28bM4jYA"/>
-    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value="" xmi:id="_6hKTT9M3EeuIW_28bM4jYA"/>
-    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value="" xmi:id="_6hKTUNM3EeuIW_28bM4jYA"/>
-    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value="" xmi:id="_6hKTUdM3EeuIW_28bM4jYA"/>
-    <routinesParameter id="_ORnckEtdEeu1hJK2f4Kg4A" name="DataOperation" xmi:id="_6hKTUtM3EeuIW_28bM4jYA"/>
-    <routinesParameter id="_OUZDwEtdEeu1hJK2f4Kg4A" name="Mathematical" xmi:id="_6hKTU9M3EeuIW_28bM4jYA"/>
-    <routinesParameter id="_OUfKYEtdEeu1hJK2f4Kg4A" name="Numeric" xmi:id="_6hKTVNM3EeuIW_28bM4jYA"/>
-    <routinesParameter id="_OUl4EEtdEeu1hJK2f4Kg4A" name="Relational" xmi:id="_6hKTVdM3EeuIW_28bM4jYA"/>
-    <routinesParameter id="_OVIDkEtdEeu1hJK2f4Kg4A" name="SQLike" xmi:id="_6hKTVtM3EeuIW_28bM4jYA"/>
-    <routinesParameter id="_OUvCAEtdEeu1hJK2f4Kg4A" name="StringHandling" xmi:id="_6hKTV9M3EeuIW_28bM4jYA"/>
-    <routinesParameter id="_OU2WwEtdEeu1hJK2f4Kg4A" name="TalendDataGenerator" xmi:id="_6hKTWNM3EeuIW_28bM4jYA"/>
-    <routinesParameter id="_OU72UEtdEeu1hJK2f4Kg4A" name="TalendDate" xmi:id="_6hKTWdM3EeuIW_28bM4jYA"/>
-    <routinesParameter id="_OVEZMEtdEeu1hJK2f4Kg4A" name="TalendStringUtil" xmi:id="_6hKTWtM3EeuIW_28bM4jYA"/>
-    <routinesParameter id="_OVAHwEtdEeu1hJK2f4Kg4A" name="TalendString" xmi:id="_6hKTW9M3EeuIW_28bM4jYA"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="DEV" jobType="Standard" xmi:id="_ae7a8NM5EeuIW_28bM4jYA" xmi:version="2.0">
+  <context confirmationNeeded="false" name="QA" xmi:id="_ae7a8dM5EeuIW_28bM4jYA">
+    <contextParameter comment="" name="Local_Path" prompt="Local_Path?" promptNeeded="false" repositoryContextId="_VHwXEM1IEeuowfjj420jiw" type="id_String" value="D:\PI_SAP\" xmi:id="_ae7a8tM5EeuIW_28bM4jYA"/>
+    <contextParameter comment="" name="Remote_path" prompt="Remote_path?" promptNeeded="false" repositoryContextId="_VHwXEM1IEeuowfjj420jiw" type="id_String" value="/var/ftp/home/hybris/QUALITY/INVOICE/" xmi:id="_ae7a89M5EeuIW_28bM4jYA"/>
+    <contextParameter comment="" name="sftp_hostname" prompt="sftp_hostname?" promptNeeded="false" repositoryContextId="_VHwXEM1IEeuowfjj420jiw" type="id_String" value="10.1.12.92" xmi:id="_ae7a9NM5EeuIW_28bM4jYA"/>
+    <contextParameter comment="" name="sftp_password" prompt="sftp_password?" promptNeeded="false" repositoryContextId="_VHwXEM1IEeuowfjj420jiw" type="id_Password" value="enc:system.encryption.key.v1:lbxMKPJrTmuILYPPm+4wit6Md81tb/Bf/AdUTDc7K3Lg77qH" xmi:id="_ae7a9dM5EeuIW_28bM4jYA"/>
+    <contextParameter comment="" name="sftp_port" prompt="sftp_port?" promptNeeded="false" repositoryContextId="_VHwXEM1IEeuowfjj420jiw" type="id_Integer" value="22" xmi:id="_ae7a9tM5EeuIW_28bM4jYA"/>
+    <contextParameter comment="" name="sftp_username" prompt="sftp_username?" promptNeeded="false" repositoryContextId="_VHwXEM1IEeuowfjj420jiw" type="id_String" value="hybris" xmi:id="_ae7a99M5EeuIW_28bM4jYA"/>
+    <contextParameter comment="" name="Source_Path" prompt="Source_Path?" promptNeeded="false" repositoryContextId="_VHwXEM1IEeuowfjj420jiw" type="id_String" value="/var/ftp/S4HANA/Hybris/HQ1/Customer_Invoice/" xmi:id="_ae7a-NM5EeuIW_28bM4jYA"/>
+  </context>
+  <context confirmationNeeded="false" name="PROD" xmi:id="_ae7a-dM5EeuIW_28bM4jYA">
+    <contextParameter comment="" name="Local_Path" prompt="Local_Path?" promptNeeded="false" repositoryContextId="_VHwXEM1IEeuowfjj420jiw" type="id_String" value="D:\PI_SAP\" xmi:id="_ae7a-tM5EeuIW_28bM4jYA"/>
+    <contextParameter comment="" name="Remote_path" prompt="Remote_path?" promptNeeded="false" repositoryContextId="_VHwXEM1IEeuowfjj420jiw" type="id_String" value="/hybris/PRODUCTION/INVOICE/" xmi:id="_ae7a-9M5EeuIW_28bM4jYA"/>
+    <contextParameter comment="" name="sftp_hostname" prompt="sftp_hostname?" promptNeeded="false" repositoryContextId="_VHwXEM1IEeuowfjj420jiw" type="id_String" value="10.1.12.92" xmi:id="_ae7a_NM5EeuIW_28bM4jYA"/>
+    <contextParameter comment="" name="sftp_password" prompt="sftp_password?" promptNeeded="false" repositoryContextId="_VHwXEM1IEeuowfjj420jiw" type="id_Password" value="enc:system.encryption.key.v1:LwYjWFsl9Mt9Kh0xiHAVQPMkEw2snNqhkTbmlVySxmY9LhEA" xmi:id="_ae7a_dM5EeuIW_28bM4jYA"/>
+    <contextParameter comment="" name="sftp_port" prompt="sftp_port?" promptNeeded="false" repositoryContextId="_VHwXEM1IEeuowfjj420jiw" type="id_Integer" value="22" xmi:id="_ae7a_tM5EeuIW_28bM4jYA"/>
+    <contextParameter comment="" name="sftp_username" prompt="sftp_username?" promptNeeded="false" repositoryContextId="_VHwXEM1IEeuowfjj420jiw" type="id_String" value="hybris" xmi:id="_ae7a_9M5EeuIW_28bM4jYA"/>
+    <contextParameter comment="" name="Source_Path" prompt="Source_Path?" promptNeeded="false" repositoryContextId="_VHwXEM1IEeuowfjj420jiw" type="id_String" value="/var/ftp/S4HANA/Hybris/HP1/Customer_Invoice/" xmi:id="_ae7bANM5EeuIW_28bM4jYA"/>
+  </context>
+  <context confirmationNeeded="false" name="DEV" xmi:id="_ae7bAdM5EeuIW_28bM4jYA">
+    <contextParameter comment="" name="Local_Path" prompt="Local_Path?" promptNeeded="false" repositoryContextId="_VHwXEM1IEeuowfjj420jiw" type="id_String" value="D:\PI_SAP\" xmi:id="_ae7bAtM5EeuIW_28bM4jYA"/>
+    <contextParameter comment="" name="Remote_path" prompt="Remote_path?" promptNeeded="false" repositoryContextId="_VHwXEM1IEeuowfjj420jiw" type="id_String" value="/var/ftp/home/hybris/DEVELOPMENT/INVOICE/" xmi:id="_ae7bA9M5EeuIW_28bM4jYA"/>
+    <contextParameter comment="" name="sftp_hostname" prompt="sftp_hostname?" promptNeeded="false" repositoryContextId="_VHwXEM1IEeuowfjj420jiw" type="id_String" value="10.1.12.92" xmi:id="_ae7bBNM5EeuIW_28bM4jYA"/>
+    <contextParameter comment="" name="sftp_password" prompt="sftp_password?" promptNeeded="false" repositoryContextId="_VHwXEM1IEeuowfjj420jiw" type="id_Password" value="enc:system.encryption.key.v1:YdXnlJIFmIjYg2D1kHferPIU2shTjJwRjzJvzGLrDDOm459C" xmi:id="_ae7bBdM5EeuIW_28bM4jYA"/>
+    <contextParameter comment="" name="sftp_port" prompt="sftp_port?" promptNeeded="false" repositoryContextId="_VHwXEM1IEeuowfjj420jiw" type="id_Integer" value="22" xmi:id="_ae7bBtM5EeuIW_28bM4jYA"/>
+    <contextParameter comment="" name="sftp_username" prompt="sftp_username?" promptNeeded="false" repositoryContextId="_VHwXEM1IEeuowfjj420jiw" type="id_String" value="hybris" xmi:id="_ae7bB9M5EeuIW_28bM4jYA"/>
+    <contextParameter comment="" name="Source_Path" prompt="Source_Path?" promptNeeded="false" repositoryContextId="_VHwXEM1IEeuowfjj420jiw" type="id_String" value="/var/ftp/S4HANA/Hybris/HD1/Customer_Invoice/" xmi:id="_ae7bCNM5EeuIW_28bM4jYA"/>
+  </context>
+  <parameters xmi:id="_ae7bCdM5EeuIW_28bM4jYA">
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0" xmi:id="_ae7bCtM5EeuIW_28bM4jYA"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0" xmi:id="_ae7bC9M5EeuIW_28bM4jYA"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value="" xmi:id="_ae7bDNM5EeuIW_28bM4jYA"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value="" xmi:id="_ae7bDdM5EeuIW_28bM4jYA"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value="" xmi:id="_ae7bDtM5EeuIW_28bM4jYA"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value="" xmi:id="_ae7bD9M5EeuIW_28bM4jYA"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value="" xmi:id="_ae7bENM5EeuIW_28bM4jYA"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value="" xmi:id="_ae7bEdM5EeuIW_28bM4jYA"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value="" xmi:id="_ae7bEtM5EeuIW_28bM4jYA"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value="" xmi:id="_ae7bE9M5EeuIW_28bM4jYA"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value="" xmi:id="_ae7bFNM5EeuIW_28bM4jYA"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value="" xmi:id="_ae7bFdM5EeuIW_28bM4jYA"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value="" xmi:id="_ae7bFtM5EeuIW_28bM4jYA"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value="" xmi:id="_ae7bF9M5EeuIW_28bM4jYA"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value="" xmi:id="_ae7bGNM5EeuIW_28bM4jYA"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value="" xmi:id="_ae7bGdM5EeuIW_28bM4jYA"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value="" xmi:id="_ae7bGtM5EeuIW_28bM4jYA"/>
+    <routinesParameter id="_ORnckEtdEeu1hJK2f4Kg4A" name="DataOperation" xmi:id="_ae7bG9M5EeuIW_28bM4jYA"/>
+    <routinesParameter id="_OUZDwEtdEeu1hJK2f4Kg4A" name="Mathematical" xmi:id="_ae7bHNM5EeuIW_28bM4jYA"/>
+    <routinesParameter id="_OUfKYEtdEeu1hJK2f4Kg4A" name="Numeric" xmi:id="_ae7bHdM5EeuIW_28bM4jYA"/>
+    <routinesParameter id="_OUl4EEtdEeu1hJK2f4Kg4A" name="Relational" xmi:id="_ae7bHtM5EeuIW_28bM4jYA"/>
+    <routinesParameter id="_OVIDkEtdEeu1hJK2f4Kg4A" name="SQLike" xmi:id="_ae7bH9M5EeuIW_28bM4jYA"/>
+    <routinesParameter id="_OUvCAEtdEeu1hJK2f4Kg4A" name="StringHandling" xmi:id="_ae7bINM5EeuIW_28bM4jYA"/>
+    <routinesParameter id="_OU2WwEtdEeu1hJK2f4Kg4A" name="TalendDataGenerator" xmi:id="_ae7bIdM5EeuIW_28bM4jYA"/>
+    <routinesParameter id="_OU72UEtdEeu1hJK2f4Kg4A" name="TalendDate" xmi:id="_ae7bItM5EeuIW_28bM4jYA"/>
+    <routinesParameter id="_OVEZMEtdEeu1hJK2f4Kg4A" name="TalendStringUtil" xmi:id="_ae7bI9M5EeuIW_28bM4jYA"/>
+    <routinesParameter id="_OVAHwEtdEeu1hJK2f4Kg4A" name="TalendString" xmi:id="_ae7bJNM5EeuIW_28bM4jYA"/>
   </parameters>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_26cf5d01-b692-494c-b63a-e68bbc4ee743"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>DUKqkayQke4PaGe3OSYw/g45aXAoo8ExYLTOKy28r6SsdYB233HSGoas2CMVqAkV5o9RSP4nozNV&#13;
-NblHCf3tGw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_dc1aea8b-2d3b-4c5f-9927-69987fb45039"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8KH9aJ470TVUUWUWgimd2/P4xFcAL4Jj5AE8PM0sIVg9v4gib/sMvBySb42cFzPSg00oYXpDPv5k&#13;
-J0EnvRZ27Q==</DigestValue></Reference></SignedInfo><SignatureValue>Bmhnn9yYwL/s4GU1djSfA6tN9CZdmk8i1p9xDuKnJ+GDE9Q3cErqj/PlOFGoSO0Fv0JBVwC0MSdR&#13;
-P5tVZR2alfJaz/0XBxj7bGO1AS3IGYUwpUdfb0dYjVWQpw0vvyDiWBQna+k4QqrfyJkZBF7U+YlB&#13;
-kiKizjDW0ovb2zRaH+sWbuezh7/8tq+Samq7W1P+H0lFdU3oK4Fba+1kNfqKL1kCMy8Gx/YufSgi&#13;
-96hPMFFRVp0bcZZY79ML5gJ7U6eJEjsDwUdpe4SWPja9ASGqlTi1HRfjJutP5vUyvyLh33JblsRP&#13;
-7eiHQOgNJZi1TqeNh5RZLGkVafBf8RD74ILksw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <node componentName="cFtp" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="96" xmi:id="_ae7bJdM5EeuIW_28bM4jYA">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cFtp_1" xmi:id="_ae7bJtM5EeuIW_28bM4jYA"/>
+    <elementParameter field="CLOSED_LIST" name="TYPE" value="ftp" xmi:id="_ae7bJ9M5EeuIW_28bM4jYA"/>
+    <elementParameter field="TEXT" name="SERVER" value="context.sftp_hostname" xmi:id="_ae7bKNM5EeuIW_28bM4jYA"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;21&quot;" xmi:id="_ae7bKdM5EeuIW_28bM4jYA"/>
+    <elementParameter field="TEXT" name="USERNAME" value="context.sftp_username" xmi:id="_ae7bKtM5EeuIW_28bM4jYA"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:yz/mWVN1bRGPodM21wqL3+UMHYuAEGfUXKLrwRvKE8KQQyEQpExaW/YB/tF9U7CC3Q==" xmi:id="_ae7bK9M5EeuIW_28bM4jYA"/>
+    <elementParameter field="TEXT" name="DIRECTORY" value="context.Source_Path" xmi:id="_ae7bLNM5EeuIW_28bM4jYA"/>
+    <elementParameter field="TABLE" name="ADVARGUMENTS" xmi:id="_ae7bLdM5EeuIW_28bM4jYA"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_ae7bLtM5EeuIW_28bM4jYA"/>
+  </node>
+  <node componentName="cLog" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="96" xmi:id="_ae7bL9M5EeuIW_28bM4jYA">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cLog_1" xmi:id="_ae7bMNM5EeuIW_28bM4jYA"/>
+    <elementParameter field="TEXT" name="LOGGING_CATEGORY" value="&quot;SAP_SFTP_Transform.cLog_1&quot;" xmi:id="_ae7bMdM5EeuIW_28bM4jYA"/>
+    <elementParameter field="CLOSED_LIST" name="LEVEL_TYPE" value="WARN" xmi:id="_ae7bMtM5EeuIW_28bM4jYA"/>
+    <elementParameter field="RADIO" name="NOTHING" value="true" xmi:id="_ae7bM9M5EeuIW_28bM4jYA"/>
+    <elementParameter field="RADIO" name="GROUP_SIZE" value="false" xmi:id="_ae7bNNM5EeuIW_28bM4jYA"/>
+    <elementParameter field="TEXT" name="SIZE" show="false" value="1" xmi:id="_ae7bNdM5EeuIW_28bM4jYA"/>
+    <elementParameter field="RADIO" name="GROUP_INTERVAL" value="false" xmi:id="_ae7bNtM5EeuIW_28bM4jYA"/>
+    <elementParameter field="TEXT" name="INTERVAL" show="false" value="1" xmi:id="_ae7bN9M5EeuIW_28bM4jYA"/>
+    <elementParameter field="TEXT" name="DELAY" show="false" value="0" xmi:id="_ae7bONM5EeuIW_28bM4jYA"/>
+    <elementParameter field="CHECK" name="ACTIVE_ONLY" show="false" value="true" xmi:id="_ae7bOdM5EeuIW_28bM4jYA"/>
+    <elementParameter field="RADIO" name="FORMAT" value="false" xmi:id="_ae7bOtM5EeuIW_28bM4jYA"/>
+    <elementParameter field="TABLE" name="ARGUMENTS" show="false" xmi:id="_ae7bO9M5EeuIW_28bM4jYA"/>
+    <elementParameter field="RADIO" name="USE_LOGEIP" value="false" xmi:id="_ae7bPNM5EeuIW_28bM4jYA"/>
+    <elementParameter field="TEXT" name="MESSAGE" show="false" value="&quot;&quot;" xmi:id="_ae7bPdM5EeuIW_28bM4jYA"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row" xmi:id="_ae7bPtM5EeuIW_28bM4jYA"/>
+  </node>
+  <connection connectorName="ROUTE" label="route1" lineStyle="14" metaname="cFtp_1" offsetLabelX="0" offsetLabelY="0" source="cFtp_1" target="cLog_1" xmi:id="_ae7bP9M5EeuIW_28bM4jYA">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="route1" xmi:id="_ae7bQNM5EeuIW_28bM4jYA"/>
+  </connection>
+  <subjob xmi:id="_ae7bQdM5EeuIW_28bM4jYA">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cFtp_1" xmi:id="_ae7bQtM5EeuIW_28bM4jYA"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150" xmi:id="_ae7bQ9M5EeuIW_28bM4jYA"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_ae7bRNM5EeuIW_28bM4jYA"/>
+  </subjob>
+  <subjob xmi:id="_ae7bRdM5EeuIW_28bM4jYA">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="cLog_1" xmi:id="_ae7bRtM5EeuIW_28bM4jYA"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150" xmi:id="_ae7bR9M5EeuIW_28bM4jYA"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236" xmi:id="_ae7bSNM5EeuIW_28bM4jYA"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_698aeaea-f1fe-4ced-9d53-70820627b49e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wCfAkcizF7SuE5p/f0QXfOy02wdh6FSglF9UG8rV4wnUuYcVxuRaJ/nmAbwGE87cBA4njae11BRo&#13;
+J20hVeqO0g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4d5b24d0-d57a-48db-8ce5-5fe98c2fde07"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6SoGrVcjxIxaY247gRlBbzQjlbXC0S7Kpg3vSLOPy0kH/a1CcNlCUGrQ0y8CiQALr1jgX0nRjz7H&#13;
+xFo0A0E2kA==</DigestValue></Reference></SignedInfo><SignatureValue>QyrMR9SZYidi4T169pSDPAu/mc+jy6YBxC1+EJiHQlaNscBTvpu/X8CMQmGoGMPpGZ1TDNe5lv64&#13;
+I2mXfP5UxcFITYL4CTzTiL/xNGtjG77xZrGJKdu87TgZfmpey4W7SktZDklLSXQ4KI3X57ZUit5U&#13;
+/n7mXIWp3jC/y/es3MK9DyywZxda7oWqXgAx0lpGubIji8zMmbV6ON7w88sfgttr0f3iZ3GB3FEA&#13;
+OPa9N5kcXic0tQaPVCZNmAtKSPQVAqtBqlba2uZnljAjKotxm0eLgNK7Nz3Go/AT8Trvva9zLD2y&#13;
+dv1okPHQu8EBhotiG4CyjdD7f9cBHuAHEF+TGA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -55,4 +124,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_dc1aea8b-2d3b-4c5f-9927-69987fb45039" Target="#_26cf5d01-b692-494c-b63a-e68bbc4ee743"><Timestamp>2021-06-22 08:57:46</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4d5b24d0-d57a-48db-8ce5-5fe98c2fde07" Target="#_698aeaea-f1fe-4ced-9d53-70820627b49e"><Timestamp>2021-06-22 09:08:30</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
